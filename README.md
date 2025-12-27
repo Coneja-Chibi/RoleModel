@@ -15,13 +15,14 @@ Comprehensive database of LLM models with context limits, pricing, and capabilit
 ## Installation
 
 ```bash
-npm install @chiev/llm-model-registry
+# Install directly from GitHub
+npm install github:Coneja-Chibi/llm-model-registry
 ```
 
 ## Basic Usage
 
 ```typescript
-import { fetchRegistry, getContextLimit, formatContextLength } from '@chiev/llm-model-registry';
+import { fetchRegistry, getContextLimit, formatContextLength } from 'llm-model-registry';
 
 // Fetch latest models (with automatic fallback to snapshot)
 const registry = await fetchRegistry();
@@ -38,7 +39,7 @@ console.log(model?.contextLength); // 128000
 ## React Hooks
 
 ```tsx
-import { useModelRegistry, useContextLimit } from '@chiev/llm-model-registry/react';
+import { useModelRegistry, useContextLimit } from 'llm-model-registry/react';
 
 function ModelSelector() {
   const { models, isLoading, queryModels } = useModelRegistry();
@@ -132,15 +133,20 @@ import {
   getTierEmoji,         // "large" → "🦅"
   getBudgetStatus,      // tokens + limit → { status, color, message }
   getStats,             // models → { total, providers, avgContext, ... }
-} from '@chiev/llm-model-registry';
+} from 'llm-model-registry';
 ```
 
 ## How Updates Work
 
 1. **GitHub Actions** runs daily at 6 AM UTC
 2. Fetches latest models from OpenRouter `/api/v1/models`
-3. Updates `snapshots/latest.json` if changed
-4. Auto-bumps version and publishes to npm
+3. Updates `snapshots/latest.json` and rebuilds if changed
+4. Commits updated files to the repo
+
+To get the latest updates in your project, run:
+```bash
+npm update llm-model-registry
+```
 
 The bundled snapshot ensures the package works even if:
 - OpenRouter API is down

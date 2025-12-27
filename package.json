@@ -1,5 +1,5 @@
 {
-  "name": "@chiev/llm-model-registry",
+  "name": "llm-model-registry",
   "version": "1.0.0",
   "description": "Comprehensive LLM model registry with context limits, pricing, and capabilities. Auto-updated daily from OpenRouter.",
   "main": "dist/index.js",
@@ -30,9 +30,8 @@
     "test:watch": "vitest",
     "lint": "eslint src --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run build",
-    "update-snapshot": "node scripts/update-snapshot.mjs",
-    "release": "npm version patch && npm publish --access public"
+    "prepare": "npm run build",
+    "update-snapshot": "node scripts/update-snapshot.mjs"
   },
   "keywords": [
     "llm",
@@ -51,12 +50,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chiev/llm-model-registry.git"
+    "url": "git+https://github.com/Coneja-Chibi/llm-model-registry.git"
   },
   "bugs": {
-    "url": "https://github.com/chiev/llm-model-registry/issues"
+    "url": "https://github.com/Coneja-Chibi/llm-model-registry/issues"
   },
-  "homepage": "https://github.com/chiev/llm-model-registry#readme",
+  "homepage": "https://github.com/Coneja-Chibi/llm-model-registry#readme",
   "devDependencies": {
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.45",
