@@ -29,11 +29,14 @@ jobs:
           mkdir -p snapshots/archive
           if [ -f snapshots/latest.json ]; then
             DATE=$(date +%B-%d-%Y)
-            # If we already have one for today, add timestamp
+            # Find next available run number for today
             if [ -f "snapshots/archive/${DATE}.json" ]; then
-              DATETIME=$(date +%B-%d-%Y_%H-%M-%S)
-              cp snapshots/latest.json "snapshots/archive/${DATETIME}.json"
-              echo "Archived to snapshots/archive/${DATETIME}.json"
+              RUN=2
+              while [ -f "snapshots/archive/${DATE}-Run${RUN}.json" ]; do
+                RUN=$((RUN + 1))
+              done
+              cp snapshots/latest.json "snapshots/archive/${DATE}-Run${RUN}.json"
+              echo "Archived to snapshots/archive/${DATE}-Run${RUN}.json"
             else
               cp snapshots/latest.json "snapshots/archive/${DATE}.json"
               echo "Archived to snapshots/archive/${DATE}.json"
