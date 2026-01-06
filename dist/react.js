@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-05T06:49:51.148Z",
-        modelCount: 351,
+        fetchedAt: "2026-01-06T06:44:49.105Z",
+        modelCount: 350,
         providerCount: 57,
         source: "openrouter"
       },
@@ -184,6 +184,7 @@ var require_latest = __commonJS({
             "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -364,10 +365,10 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "allenai/olmo-3.1-32b-think:free",
+          id: "allenai/olmo-3.1-32b-think",
           canonical_slug: "allenai/olmo-3.1-32b-think-20251215",
           hugging_face_id: "allenai/Olmo-3.1-32B-Think",
-          name: "AllenAI: Olmo 3.1 32B Think (free)",
+          name: "AllenAI: Olmo 3.1 32B Think",
           created: 1765907719,
           description: "Olmo 3.1 32B Think is a large-scale, 32-billion-parameter model designed for deep reasoning, complex multi-step logic, and advanced instruction following. Building on the Olmo 3 series, version 3.1 delivers refined reasoning behavior and stronger performance across demanding evaluations and nuanced conversational tasks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Think continues the Olmo initiative\u2019s commitment to openness, providing full transparency across model weights, code, and training methodology.",
           context_length: 65536,
@@ -383,8 +384,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0",
+            prompt: "0.00000015",
+            completion: "0.0000005",
             request: "0",
             image: "0",
             web_search: "0",
@@ -1690,6 +1691,62 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "tngtech/tng-r1t-chimera:free",
+          canonical_slug: "tngtech/tng-r1t-chimera",
+          hugging_face_id: null,
+          name: "TNG: R1T Chimera (free)",
+          created: 1764184161,
+          description: 'TNG-R1T-Chimera is an experimental LLM with a faible for creative storytelling and character interaction. It is a derivate of the original TNG/DeepSeek-R1T-Chimera released in April 2025 and is available exclusively via Chutes and OpenRouter.\n\nCharacteristics and improvements include:\n\nWe think that it has a creative and pleasant personality.\nIt has a preliminary EQ-Bench3 value of about 1305.\nIt is quite a bit more intelligent than the original, albeit a slightly slower.\nIt is much more think-token consistent, i.e. reasoning and answer blocks are properly delineated.\nTool calling is much improved.\n\nTNG Tech, the model authors, ask that users follow the careful guidelines that Microsoft has created for their "MAI-DS-R1" DeepSeek-based model. These guidelines are available on Hugging Face (https://huggingface.co/microsoft/MAI-DS-R1).',
+          context_length: 163840,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 163840,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          }
+        },
+        {
           id: "tngtech/tng-r1t-chimera",
           canonical_slug: "tngtech/tng-r1t-chimera",
           hugging_face_id: null,
@@ -1732,7 +1789,6 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -1802,10 +1858,10 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "allenai/olmo-3-32b-think:free",
+          id: "allenai/olmo-3-32b-think",
           canonical_slug: "allenai/olmo-3-32b-think-20251121",
           hugging_face_id: "allenai/Olmo-3-32B-Think",
-          name: "AllenAI: Olmo 3 32B Think (free)",
+          name: "AllenAI: Olmo 3 32B Think",
           created: 1763758276,
           description: "Olmo 3 32B Think is a large-scale, 32-billion-parameter model purpose-built for deep reasoning, complex logic chains and advanced instruction-following scenarios. Its capacity enables strong performance on demanding evaluation tasks and highly nuanced conversational reasoning. Developed by Ai2 under the Apache 2.0 license, Olmo 3 32B Think embodies the Olmo initiative\u2019s commitment to openness, offering full transparency across weights, code and training methodology.",
           context_length: 65536,
@@ -1821,8 +1877,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0",
+            prompt: "0.00000015",
+            completion: "0.0000005",
             request: "0",
             image: "0",
             web_search: "0",
@@ -2422,7 +2478,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 256e3,
-            max_completion_tokens: 32768,
+            max_completion_tokens: 128e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2484,11 +2540,16 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -7194,7 +7255,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "frequency_penalty",
             "max_tokens",
             "presence_penalty",
-            "repetition_penalty",
             "seed",
             "stop",
             "temperature",
@@ -9216,7 +9276,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "NousResearch/DeepHermes-3-Mistral-24B-Preview",
           name: "Nous: DeepHermes 3 Mistral 24B Preview",
           created: 1746830904,
-          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \u201Cdeep reasoning\u201D mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
+          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \uFFFD\uFFFD\uFFFDdeep reasoning\u201D mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
           context_length: 32768,
           architecture: {
             modality: "text->text",
@@ -12835,52 +12895,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {}
         },
         {
-          id: "perplexity/sonar-reasoning",
-          canonical_slug: "perplexity/sonar-reasoning",
-          hugging_face_id: "",
-          name: "Perplexity: Sonar Reasoning",
-          created: 1738131107,
-          description: "Sonar Reasoning is a reasoning model provided by Perplexity based on [DeepSeek R1](/deepseek/deepseek-r1).\n\nIt allows developers to utilize long chain of thought with built-in web search. Sonar Reasoning is uncensored and hosted in US datacenters. ",
-          context_length: 127e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: "deepseek-r1"
-          },
-          pricing: {
-            prompt: "0.000001",
-            completion: "0.000005",
-            request: "0.005",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 127e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "temperature",
-            "top_k",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {}
-        },
-        {
           id: "perplexity/sonar",
           canonical_slug: "perplexity/sonar",
           hugging_face_id: "",
@@ -15557,7 +15571,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           name: "Meta: Llama 3.1 8B Instruct",
           created: 1721692800,
           description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-          context_length: 131072,
+          context_length: 16384,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -15571,14 +15585,14 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.00000003",
+            completion: "0.00000005",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 131072,
+            context_length: 16384,
             max_completion_tokens: 16384,
             is_moderated: false
           },
@@ -16839,53 +16853,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             internal_reasoning: "0",
             input_cache_read: "0.00000003",
             input_cache_write: "0.0000003"
-          },
-          top_provider: {
-            context_length: 2e5,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {}
-        },
-        {
-          id: "anthropic/claude-3-opus",
-          canonical_slug: "anthropic/claude-3-opus",
-          hugging_face_id: null,
-          name: "Anthropic: Claude 3 Opus",
-          created: 1709596800,
-          description: "Claude 3 Opus is Anthropic's most powerful model for highly complex tasks. It boasts top-level performance, intelligence, fluency, and understanding.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-family)\n\n#multimodal",
-          context_length: 2e5,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Claude",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000015",
-            completion: "0.000075",
-            request: "0",
-            image: "0.024",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.0000015",
-            input_cache_write: "0.00001875"
           },
           top_provider: {
             context_length: 2e5,
