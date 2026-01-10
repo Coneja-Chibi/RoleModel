@@ -31,12 +31,66 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-09T06:43:45.702Z",
-        modelCount: 348,
+        fetchedAt: "2026-01-10T06:39:00.407Z",
+        modelCount: 349,
         providerCount: 57,
         source: "openrouter"
       },
       data: [
+        {
+          id: "allenai/molmo-2-8b:free",
+          canonical_slug: "allenai/molmo-2-8b-20260109",
+          hugging_face_id: "allenai/Molmo2-8B",
+          name: "AllenAI: Molmo2 8B (free)",
+          created: 1767996672,
+          description: "Molmo2-8B is an open vision-language model developed by the Allen Institute for AI (Ai2) as part of the Molmo2 family, supporting image, video, and multi-image understanding and grounding. It is based on Qwen3-8B and uses SigLIP 2 as its vision backbone, outperforming other open-weight, open-data models on short videos, counting, and captioning, while remaining competitive on long-video tasks.",
+          context_length: 36864,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 36864,
+            max_completion_tokens: 36864,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          }
+        },
         {
           id: "allenai/olmo-3.1-32b-instruct",
           canonical_slug: "allenai/olmo-3.1-32b-instruct-20251215",
@@ -1005,10 +1059,10 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "nex-agi/deepseek-v3.1-nex-n1:free",
+          id: "nex-agi/deepseek-v3.1-nex-n1",
           canonical_slug: "nex-agi/deepseek-v3.1-nex-n1",
           hugging_face_id: "nex-agi/DeepSeek-V3.1-Nex-N1",
-          name: "Nex AGI: DeepSeek V3.1 Nex N1 (free)",
+          name: "Nex AGI: DeepSeek V3.1 Nex N1",
           created: 1765204393,
           description: "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series \u2014 a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. \n\nNex-N1 demonstrates competitive performance across all evaluation scenarios, showing particularly strong results in practical coding and HTML generation tasks.",
           context_length: 131072,
@@ -1024,8 +1078,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0",
+            prompt: "0.00000027",
+            completion: "0.000001",
             request: "0",
             image: "0",
             web_search: "0",
@@ -11345,7 +11399,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "max_tokens",
             "response_format",
             "seed",
-            "structured_outputs",
+            "stop",
             "temperature",
             "top_p"
           ],
@@ -11437,6 +11491,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "max_tokens",
             "seed",
+            "stop",
             "temperature",
             "top_p"
           ],
@@ -11664,7 +11719,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
