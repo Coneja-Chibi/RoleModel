@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-11T06:40:47.599Z",
-        modelCount: 349,
+        fetchedAt: "2026-01-12T06:48:20.649Z",
+        modelCount: 348,
         providerCount: 57,
         source: "openrouter"
       },
@@ -2554,60 +2554,6 @@ var require_latest = __commonJS({
             "structured_outputs",
             "tool_choice",
             "tools"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
-        },
-        {
-          id: "kwaipilot/kat-coder-pro:free",
-          canonical_slug: "kwaipilot/kat-coder-pro-v1",
-          hugging_face_id: "",
-          name: "Kwaipilot: KAT-Coder-Pro V1 (free)",
-          created: 1762745912,
-          description: "KAT-Coder-Pro V1 is KwaiKAT's most advanced agentic coding model in the KAT-Coder series. Designed specifically for agentic coding tasks, it excels in real-world software engineering scenarios, achieving 73.4% solve rate on the SWE-Bench Verified benchmark. \n\nThe model has been optimized for tool-use capability, multi-turn interaction, instruction following, generalization, and comprehensive capabilities through a multi-stage training process, including mid-training, supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and scalable agentic RL.",
-          context_length: 256e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 128e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
           ],
           default_parameters: {
             temperature: null,
@@ -14264,52 +14210,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           }
         },
         {
-          id: "anthropic/claude-3.5-sonnet",
-          canonical_slug: "anthropic/claude-3.5-sonnet",
-          hugging_face_id: null,
-          name: "Anthropic: Claude 3.5 Sonnet",
-          created: 1729555200,
-          description: "New Claude 3.5 Sonnet delivers better-than-Opus capabilities, faster-than-Sonnet speeds, at the same Sonnet prices. Sonnet is particularly good at:\n\n- Coding: Scores ~49% on SWE-Bench Verified, higher than the last best score, and without any fancy prompt scaffolding\n- Data science: Augments human data science expertise; navigates unstructured data while using multiple tools for insights\n- Visual processing: excelling at interpreting charts, graphs, and images, accurately transcribing text to derive insights beyond just the text alone\n- Agentic tasks: exceptional tool use, making it great at agentic tasks (i.e. complex, multi-step problem solving tasks that require engaging with other systems)\n\n#multimodal",
-          context_length: 2e5,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Claude",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000006",
-            completion: "0.00003",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 2e5,
-            max_completion_tokens: 8192,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {}
-        },
-        {
           id: "anthracite-org/magnum-v4-72b",
           canonical_slug: "anthracite-org/magnum-v4-72b",
           hugging_face_id: "anthracite-org/magnum-v4-72b",
@@ -14357,6 +14257,52 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_a",
             "top_k",
             "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {}
+        },
+        {
+          id: "anthropic/claude-3.5-sonnet",
+          canonical_slug: "anthropic/claude-3.5-sonnet",
+          hugging_face_id: null,
+          name: "Anthropic: Claude 3.5 Sonnet",
+          created: 1729555200,
+          description: "New Claude 3.5 Sonnet delivers better-than-Opus capabilities, faster-than-Sonnet speeds, at the same Sonnet prices. Sonnet is particularly good at:\n\n- Coding: Scores ~49% on SWE-Bench Verified, higher than the last best score, and without any fancy prompt scaffolding\n- Data science: Augments human data science expertise; navigates unstructured data while using multiple tools for insights\n- Visual processing: excelling at interpreting charts, graphs, and images, accurately transcribing text to derive insights beyond just the text alone\n- Agentic tasks: exceptional tool use, making it great at agentic tasks (i.e. complex, multi-step problem solving tasks that require engaging with other systems)\n\n#multimodal",
+          context_length: 2e5,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Claude",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000006",
+            completion: "0.00003",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 2e5,
+            max_completion_tokens: 8192,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {}
@@ -15191,6 +15137,57 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           default_parameters: {}
         },
         {
+          id: "sao10k/l3.1-euryale-70b",
+          canonical_slug: "sao10k/l3.1-euryale-70b",
+          hugging_face_id: "Sao10K/L3.1-70B-Euryale-v2.2",
+          name: "Sao10K: Llama 3.1 Euryale 70B v2.2",
+          created: 1724803200,
+          description: "Euryale L3.1 70B v2.2 is a model focused on creative roleplay from [Sao10k](https://ko-fi.com/sao10k). It is the successor of [Euryale L3 70B v2.1](/models/sao10k/l3-euryale-70b).",
+          context_length: 32768,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.00000065",
+            completion: "0.00000075",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 32768,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {}
+        },
+        {
           id: "qwen/qwen-2.5-vl-7b-instruct:free",
           canonical_slug: "qwen/qwen-2-vl-7b-instruct",
           hugging_face_id: "Qwen/Qwen2.5-VL-7B-Instruct",
@@ -15277,57 +15274,6 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "seed",
             "stop",
             "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {}
-        },
-        {
-          id: "sao10k/l3.1-euryale-70b",
-          canonical_slug: "sao10k/l3.1-euryale-70b",
-          hugging_face_id: "Sao10K/L3.1-70B-Euryale-v2.2",
-          name: "Sao10K: Llama 3.1 Euryale 70B v2.2",
-          created: 1724803200,
-          description: "Euryale L3.1 70B v2.2 is a model focused on creative roleplay from [Sao10k](https://ko-fi.com/sao10k). It is the successor of [Euryale L3 70B v2.1](/models/sao10k/l3-euryale-70b).",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.00000065",
-            completion: "0.00000075",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -15681,13 +15627,13 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {}
         },
         {
-          id: "meta-llama/llama-3.1-70b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
-          name: "Meta: Llama 3.1 70B Instruct",
+          id: "meta-llama/llama-3.1-8b-instruct",
+          canonical_slug: "meta-llama/llama-3.1-8b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          name: "Meta: Llama 3.1 8B Instruct",
           created: 1721692800,
-          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-          context_length: 131072,
+          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
+          context_length: 16384,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -15700,22 +15646,23 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000004",
+            prompt: "0.00000002",
+            completion: "0.00000005",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
+            context_length: 16384,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15723,10 +15670,12 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {}
@@ -15826,13 +15775,13 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {}
         },
         {
-          id: "meta-llama/llama-3.1-8b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-8b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-8B-Instruct",
-          name: "Meta: Llama 3.1 8B Instruct",
+          id: "meta-llama/llama-3.1-70b-instruct",
+          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          name: "Meta: Llama 3.1 70B Instruct",
           created: 1721692800,
-          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-          context_length: 16384,
+          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -15845,23 +15794,22 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.00000002",
-            completion: "0.00000005",
+            prompt: "0.0000004",
+            completion: "0.0000004",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 16384,
-            max_completion_tokens: 16384,
+            context_length: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15869,12 +15817,10 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {}
@@ -15933,10 +15879,10 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           }
         },
         {
-          id: "openai/gpt-4o-mini",
-          canonical_slug: "openai/gpt-4o-mini",
+          id: "openai/gpt-4o-mini-2024-07-18",
+          canonical_slug: "openai/gpt-4o-mini-2024-07-18",
           hugging_face_id: null,
-          name: "OpenAI: GPT-4o-mini",
+          name: "OpenAI: GPT-4o-mini (2024-07-18)",
           created: 1721260800,
           description: "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/models/openai/gpt-3.5-turbo). It maintains SOTA intelligence, while being significantly more cost-effective.\n\nGPT-4o mini achieves an 82% score on MMLU and presently ranks higher than GPT-4 on chat preferences [common leaderboards](https://arena.lmsys.org/).\n\nCheck out the [launch announcement](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) to learn more.\n\n#multimodal",
           context_length: 128e3,
@@ -15957,7 +15903,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             prompt: "0.00000015",
             completion: "0.0000006",
             request: "0",
-            image: "0.000217",
+            image: "0.007225",
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.000000075"
@@ -15988,10 +15934,10 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {}
         },
         {
-          id: "openai/gpt-4o-mini-2024-07-18",
-          canonical_slug: "openai/gpt-4o-mini-2024-07-18",
+          id: "openai/gpt-4o-mini",
+          canonical_slug: "openai/gpt-4o-mini",
           hugging_face_id: null,
-          name: "OpenAI: GPT-4o-mini (2024-07-18)",
+          name: "OpenAI: GPT-4o-mini",
           created: 1721260800,
           description: "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/models/openai/gpt-3.5-turbo). It maintains SOTA intelligence, while being significantly more cost-effective.\n\nGPT-4o mini achieves an 82% score on MMLU and presently ranks higher than GPT-4 on chat preferences [common leaderboards](https://arena.lmsys.org/).\n\nCheck out the [launch announcement](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) to learn more.\n\n#multimodal",
           context_length: 128e3,
@@ -16012,7 +15958,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             prompt: "0.00000015",
             completion: "0.0000006",
             request: "0",
-            image: "0.007225",
+            image: "0.000217",
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.000000075"
@@ -16180,55 +16126,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {}
         },
         {
-          id: "mistralai/mistral-7b-instruct-v0.3",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.3",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.3",
-          name: "Mistral: Mistral 7B Instruct v0.3",
-          created: 1716768e3,
-          description: "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct v0.2](/models/mistralai/mistral-7b-instruct-v0.2), with the following changes:\n\n- Extended vocabulary to 32768\n- Supports v3 Tokenizer\n- Supports function calling\n\nNOTE: Support for function calling depends on the provider.",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 4096,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          }
-        },
-        {
           id: "nousresearch/hermes-2-pro-llama-3-8b",
           canonical_slug: "nousresearch/hermes-2-pro-llama-3-8b",
           hugging_face_id: "NousResearch/Hermes-2-Pro-Llama-3-8B",
@@ -16380,6 +16277,102 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {
             temperature: 0.3
           }
+        },
+        {
+          id: "mistralai/mistral-7b-instruct-v0.3",
+          canonical_slug: "mistralai/mistral-7b-instruct-v0.3",
+          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.3",
+          name: "Mistral: Mistral 7B Instruct v0.3",
+          created: 1716768e3,
+          description: "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct v0.2](/models/mistralai/mistral-7b-instruct-v0.2), with the following changes:\n\n- Extended vocabulary to 32768\n- Supports v3 Tokenizer\n- Supports function calling\n\nNOTE: Support for function calling depends on the provider.",
+          context_length: 32768,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: "mistral"
+          },
+          pricing: {
+            prompt: "0.0000002",
+            completion: "0.0000002",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 32768,
+            max_completion_tokens: 4096,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3
+          }
+        },
+        {
+          id: "meta-llama/llama-guard-2-8b",
+          canonical_slug: "meta-llama/llama-guard-2-8b",
+          hugging_face_id: "meta-llama/Meta-Llama-Guard-2-8B",
+          name: "Meta: LlamaGuard 2 8B",
+          created: 1715558400,
+          description: "This safeguard model has 8B parameters and is based on the Llama 3 family. Just like is predecessor, [LlamaGuard 1](https://huggingface.co/meta-llama/LlamaGuard-7b), it can do both prompt and response classification.\n\nLlamaGuard 2 acts as a normal LLM would, generating text that indicates whether the given input/output is safe/unsafe. If deemed unsafe, it will also share the content categories violated.\n\nFor best results, please use raw prompt input or the `/completions` endpoint, instead of the chat API.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
+          context_length: 8192,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "none"
+          },
+          pricing: {
+            prompt: "0.0000002",
+            completion: "0.0000002",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 8192,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {}
         },
         {
           id: "openai/gpt-4o-2024-05-13",
@@ -16553,53 +16546,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_logprobs",
             "top_p",
             "web_search_options"
-          ],
-          default_parameters: {}
-        },
-        {
-          id: "meta-llama/llama-guard-2-8b",
-          canonical_slug: "meta-llama/llama-guard-2-8b",
-          hugging_face_id: "meta-llama/Meta-Llama-Guard-2-8B",
-          name: "Meta: LlamaGuard 2 8B",
-          created: 1715558400,
-          description: "This safeguard model has 8B parameters and is based on the Llama 3 family. Just like is predecessor, [LlamaGuard 1](https://huggingface.co/meta-llama/LlamaGuard-7b), it can do both prompt and response classification.\n\nLlamaGuard 2 acts as a normal LLM would, generating text that indicates whether the given input/output is safe/unsafe. If deemed unsafe, it will also share the content categories violated.\n\nFor best results, please use raw prompt input or the `/completions` endpoint, instead of the chat API.\n\nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "none"
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
           ],
           default_parameters: {}
         },
@@ -17707,13 +17653,13 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           default_parameters: {}
         },
         {
-          id: "openai/gpt-3.5-turbo",
-          canonical_slug: "openai/gpt-3.5-turbo",
+          id: "openai/gpt-4-0314",
+          canonical_slug: "openai/gpt-4-0314",
           hugging_face_id: null,
-          name: "OpenAI: GPT-3.5 Turbo",
+          name: "OpenAI: GPT-4 (older v0314)",
           created: 1685232e3,
-          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-          context_length: 16385,
+          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
+          context_length: 8191,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -17726,15 +17672,15 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000005",
-            completion: "0.0000015",
+            prompt: "0.00003",
+            completion: "0.00006",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 16385,
+            context_length: 8191,
             max_completion_tokens: 4096,
             is_moderated: true
           },
@@ -17809,13 +17755,13 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           default_parameters: {}
         },
         {
-          id: "openai/gpt-4-0314",
-          canonical_slug: "openai/gpt-4-0314",
+          id: "openai/gpt-3.5-turbo",
+          canonical_slug: "openai/gpt-3.5-turbo",
           hugging_face_id: null,
-          name: "OpenAI: GPT-4 (older v0314)",
+          name: "OpenAI: GPT-3.5 Turbo",
           created: 1685232e3,
-          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
-          context_length: 8191,
+          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+          context_length: 16385,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -17828,15 +17774,15 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00003",
-            completion: "0.00006",
+            prompt: "0.0000005",
+            completion: "0.0000015",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 8191,
+            context_length: 16385,
             max_completion_tokens: 4096,
             is_moderated: true
           },
