@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-12T06:48:20.649Z",
+        fetchedAt: "2026-01-13T06:44:04.990Z",
         modelCount: 348,
         providerCount: 57,
         source: "openrouter"
@@ -274,17 +274,16 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000028",
-            completion: "0.0000012",
+            prompt: "0.00000027",
+            completion: "0.00000112",
             request: "0",
             image: "0",
             web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000014"
+            internal_reasoning: "0"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: null,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -455,11 +454,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000003",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000003"
           },
           top_provider: {
             context_length: 32768,
@@ -865,11 +860,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0"
           },
           top_provider: {
             context_length: 262144,
@@ -1326,11 +1317,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 262144,
@@ -1383,11 +1370,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.00000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000015"
           },
           top_provider: {
             context_length: 262144,
@@ -1436,11 +1419,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 131072,
@@ -1489,11 +1468,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000005",
-            completion: "0.0000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000015"
           },
           top_provider: {
             context_length: 262144,
@@ -1948,7 +1923,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 2e5,
-            max_completion_tokens: 32e3,
+            max_completion_tokens: 64e3,
             is_moderated: true
           },
           per_request_limits: null,
@@ -2802,11 +2777,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000001",
             completion: "0.0000003",
-            request: "0",
-            image: "0",
-            audio: "0.0001",
-            web_search: "0",
-            internal_reasoning: "0"
+            audio: "0.0001"
           },
           top_provider: {
             context_length: 32e3,
@@ -6065,11 +6036,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000002"
           },
           top_provider: {
             context_length: 131072,
@@ -6844,7 +6811,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 2e5,
-            max_completion_tokens: null,
+            max_completion_tokens: 32e3,
             is_moderated: true
           },
           per_request_limits: null,
@@ -6888,11 +6855,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000009",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000009"
           },
           top_provider: {
             context_length: 256e3,
@@ -7808,11 +7771,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000002"
           },
           top_provider: {
             context_length: 131072,
@@ -8996,7 +8955,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "DeepSeek: R1 0528",
           created: 1748455170,
           description: "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model.",
-          context_length: 163840,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -9009,16 +8968,18 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "deepseek-r1"
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.00000175",
+            prompt: "0.00000045",
+            completion: "0.00000215",
             request: "0",
             image: "0",
             web_search: "0",
-            internal_reasoning: "0"
+            internal_reasoning: "0",
+            input_cache_read: "0",
+            input_cache_write: "0"
           },
           top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 65536,
+            context_length: 131072,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9420,11 +9381,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000002"
           },
           top_provider: {
             context_length: 131072,
@@ -12206,11 +12163,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000006"
           },
           top_provider: {
             context_length: 32768,
@@ -13837,11 +13790,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000006"
           },
           top_provider: {
             context_length: 131072,
@@ -13887,11 +13836,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000006"
           },
           top_provider: {
             context_length: 131072,
@@ -13938,11 +13883,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006",
-            request: "0",
-            image: "0.002888",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000006"
           },
           top_provider: {
             context_length: 131072,
@@ -14330,11 +14271,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 131072,
@@ -14380,11 +14317,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.00000004",
-            completion: "0.00000004",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000004"
           },
           top_provider: {
             context_length: 131072,
@@ -16675,11 +16608,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000006"
           },
           top_provider: {
             context_length: 65536,
@@ -16872,11 +16801,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000006"
           },
           top_provider: {
             context_length: 128e3,
@@ -17026,11 +16951,7 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.00000025",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000025"
           },
           top_provider: {
             context_length: 32768,
