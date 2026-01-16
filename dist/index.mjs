@@ -29,9 +29,9 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-15T06:43:02.863Z",
-        modelCount: 339,
-        providerCount: 55,
+        fetchedAt: "2026-01-16T06:43:40.267Z",
+        modelCount: 328,
+        providerCount: 56,
         source: "openrouter"
       },
       data: [
@@ -87,7 +87,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/molmo-2-8b:free",
@@ -130,6 +131,7 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
+            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -140,7 +142,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/olmo-3.1-32b-instruct",
@@ -195,7 +198,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "bytedance-seed/seed-1.6-flash",
@@ -248,7 +252,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "bytedance-seed/seed-1.6",
@@ -301,7 +306,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "minimax/minimax-m2.1",
@@ -361,7 +367,8 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.9,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.7",
@@ -422,7 +429,8 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-3-flash-preview",
@@ -480,7 +488,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-small-creative",
@@ -519,7 +528,8 @@ var require_latest = __commonJS({
             temperature: 0.3,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/olmo-3.1-32b-think",
@@ -574,7 +584,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "xiaomi/mimo-v2-flash:free",
@@ -626,7 +637,66 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
+        },
+        {
+          id: "xiaomi/mimo-v2-flash",
+          canonical_slug: "xiaomi/mimo-v2-flash-20251210",
+          hugging_face_id: "XiaomiMiMo/MiMo-V2-Flash",
+          name: "Xiaomi: MiMo-V2-Flash",
+          created: 1765731308,
+          description: "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a hybrid-thinking toggle and a 256K context window, and excels at reasoning, coding, and agent scenarios. On SWE-bench Verified and SWE-bench Multilingual, MiMo-V2-Flash ranks as the top #1 open-source model globally, delivering performance comparable to Claude Sonnet 4.5 while costing only about 3.5% as much.\n\nNote: when integrating with agentic tools such as Claude Code, Cline, or Roo Code, **turn off reasoning mode** for the best and fastest performance\u2014this model is deeply optimized for this scenario.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config).",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000001",
+            completion: "0.0000003",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.00000002"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 32e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: 0.95,
+            frequency_penalty: null
+          },
+          expiration_date: null
         },
         {
           id: "nvidia/nemotron-3-nano-30b-a3b:free",
@@ -675,7 +745,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "nvidia/nemotron-3-nano-30b-a3b",
@@ -732,7 +803,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.2-chat",
@@ -779,7 +851,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.2-pro",
@@ -827,7 +900,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.2",
@@ -876,7 +950,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/devstral-2512:free",
@@ -924,7 +999,8 @@ var require_latest = __commonJS({
             temperature: 0.3,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/devstral-2512",
@@ -978,7 +1054,8 @@ var require_latest = __commonJS({
             temperature: 0.3,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "relace/relace-search",
@@ -1027,7 +1104,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.6v",
@@ -1088,7 +1166,8 @@ var require_latest = __commonJS({
             temperature: 0.8,
             top_p: 0.6,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "nex-agi/deepseek-v3.1-nex-n1",
@@ -1139,7 +1218,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "essentialai/rnj-1-instruct",
@@ -1192,7 +1272,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openrouter/bodybuilder",
@@ -1228,7 +1309,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.1-codex-max",
@@ -1275,7 +1357,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "amazon/nova-2-lite-v1",
@@ -1328,7 +1411,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/ministral-14b-2512",
@@ -1381,7 +1465,8 @@ var require_latest = __commonJS({
             temperature: 0.3,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/ministral-8b-2512",
@@ -1430,7 +1515,8 @@ var require_latest = __commonJS({
             temperature: 0.3,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/ministral-3b-2512",
@@ -1479,7 +1565,8 @@ var require_latest = __commonJS({
             temperature: 0.3,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-large-2512",
@@ -1528,7 +1615,8 @@ var require_latest = __commonJS({
             temperature: 0.0645,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "arcee-ai/trinity-mini:free",
@@ -1579,7 +1667,8 @@ var require_latest = __commonJS({
             temperature: 0.15,
             top_p: 0.75,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "arcee-ai/trinity-mini",
@@ -1637,7 +1726,8 @@ var require_latest = __commonJS({
             temperature: 0.15,
             top_p: 0.75,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-v3.2-speciale",
@@ -1692,7 +1782,8 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-v3.2",
@@ -1752,7 +1843,8 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "prime-intellect/intellect-3",
@@ -1809,7 +1901,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "tngtech/tng-r1t-chimera:free",
@@ -1865,7 +1958,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "tngtech/tng-r1t-chimera",
@@ -1921,7 +2015,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-opus-4.5",
@@ -1977,7 +2072,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/olmo-3-32b-think",
@@ -2032,7 +2128,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/olmo-3-7b-instruct",
@@ -2078,8 +2175,6 @@ var require_latest = __commonJS({
             "stop",
             "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -2087,7 +2182,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/olmo-3-7b-think",
@@ -2142,7 +2238,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-3-pro-image-preview",
@@ -2194,7 +2291,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "x-ai/grok-4.1-fast",
@@ -2249,7 +2347,8 @@ var require_latest = __commonJS({
             temperature: 0.7,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-3-pro-preview",
@@ -2307,7 +2406,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepcogito/cogito-v2.1-671b",
@@ -2362,7 +2462,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.1",
@@ -2411,7 +2512,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.1-chat",
@@ -2458,7 +2560,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.1-codex",
@@ -2505,7 +2608,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5.1-codex-mini",
@@ -2552,7 +2656,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "kwaipilot/kat-coder-pro",
@@ -2607,7 +2712,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "moonshotai/kimi-k2-thinking",
@@ -2667,7 +2773,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "amazon/nova-premier-v1",
@@ -2716,7 +2823,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "perplexity/sonar-pro-search",
@@ -2768,7 +2876,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/voxtral-small-24b-2507",
@@ -2818,7 +2927,8 @@ var require_latest = __commonJS({
             temperature: 0.2,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-oss-safeguard-20b",
@@ -2870,7 +2980,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "nvidia/nemotron-nano-12b-v2-vl:free",
@@ -2921,7 +3032,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "nvidia/nemotron-nano-12b-v2-vl",
@@ -2977,7 +3089,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "minimax/minimax-m2",
@@ -3035,7 +3148,8 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-vl-32b-instruct",
@@ -3089,7 +3203,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "liquid/lfm2-8b-a1b",
@@ -3136,7 +3251,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "liquid/lfm-2.2-6b",
@@ -3187,7 +3303,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "ibm-granite/granite-4.0-h-micro",
@@ -3236,7 +3353,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepcogito/cogito-v2-preview-llama-405b",
@@ -3293,7 +3411,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-image-mini",
@@ -3351,7 +3470,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-haiku-4.5",
@@ -3404,59 +3524,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen3-vl-8b-thinking",
-          canonical_slug: "qwen/qwen3-vl-8b-thinking",
-          hugging_face_id: "Qwen/Qwen3-VL-8B-Thinking",
-          name: "Qwen: Qwen3 VL 8B Thinking",
-          created: 1760463746,
-          description: "Qwen3-VL-8B-Thinking is the reasoning-optimized variant of the Qwen3-VL-8B multimodal model, designed for advanced visual and textual reasoning across complex scenes, documents, and temporal sequences. It integrates enhanced multimodal alignment and long-context processing (native 256K, expandable to 1M tokens) for tasks such as scientific visual analysis, causal inference, and mathematical reasoning over image or video inputs.\n\nCompared to the Instruct edition, the Thinking version introduces deeper visual-language fusion and deliberate reasoning pathways that improve performance on long-chain logic tasks, STEM problem-solving, and multi-step video understanding. It achieves stronger temporal grounding via Interleaved-MRoPE and timestamp-aware embeddings, while maintaining robust OCR, multilingual comprehension, and text generation on par with large text-only LLMs.",
-          context_length: 256e3,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "image",
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
           },
-          pricing: {
-            prompt: "0.00000018",
-            completion: "0.0000021",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 1,
-            top_p: 0.95
-          }
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-vl-8b-instruct",
@@ -3514,7 +3583,8 @@ var require_latest = __commonJS({
             temperature: 0.7,
             top_p: 0.8,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-image",
@@ -3572,7 +3642,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/o3-deep-research",
@@ -3629,7 +3700,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/o4-mini-deep-research",
@@ -3686,7 +3758,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "nvidia/llama-3.3-nemotron-super-49b-v1.5",
@@ -3738,7 +3811,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: null
+          default_parameters: null,
+          expiration_date: null
         },
         {
           id: "baidu/ernie-4.5-21b-a3b-thinking",
@@ -3790,7 +3864,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-2.5-flash-image",
@@ -3839,7 +3914,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-vl-30b-a3b-thinking",
@@ -3896,7 +3972,8 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.8,
             top_p: 0.95
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-vl-30b-a3b-instruct",
@@ -3955,7 +4032,8 @@ var require_latest = __commonJS({
             temperature: 0.7,
             top_p: 0.8,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-pro",
@@ -4003,7 +4081,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.6",
@@ -4064,7 +4143,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.6:exacto",
@@ -4120,7 +4200,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-sonnet-4.5",
@@ -4176,7 +4257,8 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 1,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-v3.2-exp",
@@ -4215,7 +4297,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -4233,7 +4314,8 @@ var require_latest = __commonJS({
             temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "thedrummer/cydonia-24b-v4.1",
@@ -4286,7 +4368,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "relace/relace-apply-3",
@@ -4330,7 +4413,70 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
+        },
+        {
+          id: "google/gemini-2.5-flash-preview-09-2025",
+          canonical_slug: "google/gemini-2.5-flash-preview-09-2025",
+          hugging_face_id: "",
+          name: "Google: Gemini 2.5 Flash Preview 09-2025",
+          created: 1758820178,
+          description: `Gemini 2.5 Flash Preview September 2025 Checkpoint is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in "thinking" capabilities, enabling it to provide responses with greater accuracy and nuanced context handling. 
+
+Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reasoning" parameter, as described in the documentation (https://openrouter.ai/docs/use-cases/reasoning-tokens#max-tokens-for-reasoning).`,
+          context_length: 1048576,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "image",
+              "file",
+              "text",
+              "audio",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Gemini",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000003",
+            completion: "0.0000025",
+            request: "0",
+            image: "0.001238",
+            audio: "0.000001",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.000000075",
+            input_cache_write: "0.0000003833"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 65535,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: "2026-02-17"
         },
         {
           id: "google/gemini-2.5-flash-lite-preview-09-2025",
@@ -4361,7 +4507,9 @@ var require_latest = __commonJS({
             request: "0",
             image: "0",
             web_search: "0",
-            internal_reasoning: "0"
+            internal_reasoning: "0",
+            input_cache_read: "0.00000001",
+            input_cache_write: "0.000001"
           },
           top_provider: {
             context_length: 1048576,
@@ -4386,7 +4534,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-vl-235b-a22b-thinking",
@@ -4443,7 +4592,8 @@ var require_latest = __commonJS({
             temperature: 0.8,
             top_p: 0.95,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-vl-235b-a22b-instruct",
@@ -4502,108 +4652,8 @@ var require_latest = __commonJS({
             temperature: 0.7,
             top_p: 0.8,
             frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen3-max",
-          canonical_slug: "qwen/qwen3-max",
-          hugging_face_id: "",
-          name: "Qwen: Qwen3 Max",
-          created: 1758662808,
-          description: "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It delivers higher accuracy in math, coding, logic, and science tasks, follows complex instructions in Chinese and English more reliably, reduces hallucinations, and produces higher-quality responses for open-ended Q&A, writing, and conversation. The model supports over 100 languages with stronger translation and commonsense reasoning, and is optimized for retrieval-augmented generation (RAG) and tool calling, though it does not include a dedicated \u201Cthinking\u201D mode.",
-          context_length: 256e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
           },
-          pricing: {
-            prompt: "0.0000012",
-            completion: "0.000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000024"
-          },
-          top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 1,
-            top_p: 1,
-            frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen3-coder-plus",
-          canonical_slug: "qwen/qwen3-coder-plus",
-          hugging_face_id: "",
-          name: "Qwen: Qwen3 Coder Plus",
-          created: 1758662707,
-          description: "Qwen3 Coder Plus is Alibaba's proprietary version of the Open Source Qwen3 Coder 480B A35B. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000001",
-            completion: "0.000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.0000001"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-codex",
@@ -4650,7 +4700,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-v3.1-terminus:exacto",
@@ -4708,7 +4759,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-v3.1-terminus",
@@ -4766,7 +4818,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "x-ai/grok-4-fast",
@@ -4821,7 +4874,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "alibaba/tongyi-deepresearch-30b-a3b",
@@ -4878,57 +4932,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen3-coder-flash",
-          canonical_slug: "qwen/qwen3-coder-flash",
-          hugging_face_id: "",
-          name: "Qwen: Qwen3 Coder Flash",
-          created: 1758115536,
-          description: "Qwen3 Coder Flash is Alibaba's fast and cost efficient version of their proprietary Qwen3 Coder Plus. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
           },
-          pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000008"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
+          expiration_date: null
         },
         {
           id: "opengvlab/internvl3-78b",
@@ -4977,7 +4982,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-next-80b-a3b-thinking",
@@ -5035,7 +5041,57 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3-next-80b-a3b-instruct:free",
+          canonical_slug: "qwen/qwen3-next-80b-a3b-instruct-2509",
+          hugging_face_id: "Qwen/Qwen3-Next-80B-A3B-Instruct",
+          name: "Qwen: Qwen3 Next 80B A3B Instruct (free)",
+          created: 1757612213,
+          description: "Qwen3-Next-80B-A3B-Instruct is an instruction-tuned chat model in the Qwen3-Next series optimized for fast, stable responses without \u201Cthinking\u201D traces. It targets complex tasks across reasoning, code generation, knowledge QA, and multilingual use, while remaining robust on alignment and formatting. Compared with prior Qwen3 instruct variants, it focuses on higher throughput and stability on ultra-long inputs and multi-turn dialogues, making it well-suited for RAG, tool use, and agentic workflows that require consistent final answers rather than visible chain-of-thought.\n\nThe model employs scaling-efficient training and decoding to improve parameter efficiency and inference speed, and has been validated on a broad set of public benchmarks where it reaches or approaches larger Qwen3 systems in several categories while outperforming earlier mid-sized baselines. It is best used as a general assistant, code helper, and long-context task solver in production settings where deterministic, instruction-following outputs are preferred.",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-next-80b-a3b-instruct",
@@ -5087,7 +5143,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meituan/longcat-flash-chat",
@@ -5127,109 +5184,8 @@ var require_latest = __commonJS({
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "qwen/qwen-plus-2025-07-28",
-          canonical_slug: "qwen/qwen-plus-2025-07-28",
-          hugging_face_id: "",
-          name: "Qwen: Qwen Plus 0728",
-          created: 1757347599,
-          description: "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
-          context_length: 1e6,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 1e6,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen-plus-2025-07-28:thinking",
-          canonical_slug: "qwen/qwen-plus-2025-07-28",
-          hugging_face_id: "",
-          name: "Qwen: Qwen Plus 0728 (thinking)",
-          created: 1757347599,
-          description: "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
-          context_length: 1e6,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.000004",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 1e6,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nvidia/nemotron-nano-9b-v2:free",
@@ -5276,7 +5232,8 @@ var require_latest = __commonJS({
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nvidia/nemotron-nano-9b-v2",
@@ -5329,7 +5286,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "moonshotai/kimi-k2-0905",
@@ -5383,7 +5341,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "moonshotai/kimi-k2-0905:exacto",
@@ -5431,7 +5390,8 @@ var require_latest = __commonJS({
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepcogito/cogito-v2-preview-llama-70b",
@@ -5488,7 +5448,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepcogito/cogito-v2-preview-llama-109b-moe",
@@ -5540,7 +5501,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "stepfun-ai/step3",
@@ -5588,7 +5550,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-30b-a3b-thinking-2507",
@@ -5639,7 +5602,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "x-ai/grok-code-fast-1",
@@ -5690,7 +5654,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nousresearch/hermes-4-70b",
@@ -5742,7 +5707,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nousresearch/hermes-4-405b",
@@ -5789,56 +5755,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "google/gemini-2.5-flash-image-preview",
-          canonical_slug: "google/gemini-2.5-flash-image-preview",
-          hugging_face_id: "",
-          name: "Google: Gemini 2.5 Flash Image Preview (Nano Banana)",
-          created: 1756218977,
-          description: 'Gemini 2.5 Flash Image Preview, a.k.a. "Nano Banana," is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations.',
-          context_length: 32768,
-          architecture: {
-            modality: "text+image->text+image",
-            input_modalities: [
-              "image",
-              "text"
-            ],
-            output_modalities: [
-              "image",
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000025",
-            request: "0",
-            image: "0.001238",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-chat-v3.1",
@@ -5894,7 +5812,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-audio-preview",
@@ -5943,7 +5862,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-medium-3.1",
@@ -5990,7 +5910,8 @@ var require_latest = __commonJS({
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "baidu/ernie-4.5-21b-a3b",
@@ -6042,7 +5963,8 @@ var require_latest = __commonJS({
             temperature: 0.8,
             top_p: 0.8,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "baidu/ernie-4.5-vl-28b-a3b",
@@ -6093,7 +6015,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.5v",
@@ -6152,7 +6075,8 @@ var require_latest = __commonJS({
             temperature: 0.75,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "ai21/jamba-mini-1.7",
@@ -6196,7 +6120,8 @@ var require_latest = __commonJS({
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "ai21/jamba-large-1.7",
@@ -6240,7 +6165,8 @@ var require_latest = __commonJS({
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-chat",
@@ -6281,7 +6207,8 @@ var require_latest = __commonJS({
             "seed",
             "structured_outputs"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-5",
@@ -6330,7 +6257,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-mini",
@@ -6375,7 +6303,8 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-5-nano",
@@ -6420,7 +6349,8 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-oss-120b:free",
@@ -6469,7 +6399,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-oss-120b",
@@ -6530,7 +6461,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-oss-120b:exacto",
@@ -6587,7 +6519,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-oss-20b:free",
@@ -6636,7 +6569,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-oss-20b",
@@ -6695,7 +6629,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-opus-4.1",
@@ -6751,7 +6686,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/codestral-2508",
@@ -6797,7 +6733,8 @@ var require_latest = __commonJS({
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-coder-30b-a3b-instruct",
@@ -6847,7 +6784,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-30b-a3b-instruct-2507",
@@ -6897,7 +6835,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.5",
@@ -6936,7 +6875,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -6954,7 +6892,8 @@ var require_latest = __commonJS({
             temperature: 0.75,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.5-air:free",
@@ -7002,7 +6941,8 @@ var require_latest = __commonJS({
             temperature: 0.75,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4.5-air",
@@ -7058,7 +6998,8 @@ var require_latest = __commonJS({
             temperature: 0.75,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-235b-a22b-thinking-2507",
@@ -7116,7 +7057,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "z-ai/glm-4-32b",
@@ -7162,7 +7104,8 @@ var require_latest = __commonJS({
             temperature: 0.75,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-coder:free",
@@ -7171,7 +7114,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3 Coder 480B A35B (free)",
           created: 1753230546,
           description: "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over repositories. The model features 480 billion total parameters, with 35 billion active per forward pass (8 out of 160 experts).\n\nPricing for the Alibaba endpoints varies by context length. Once a request is greater than 128k input tokens, the higher pricing is used.",
-          context_length: 262144,
+          context_length: 262e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -7192,18 +7135,25 @@ var require_latest = __commonJS({
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 4e3,
-            is_moderated: true
+            context_length: 262e3,
+            max_completion_tokens: 262e3,
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "max_tokens",
+            "presence_penalty",
             "seed",
             "stop",
-            "temperature"
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-coder",
@@ -7258,7 +7208,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-coder:exacto",
@@ -7309,7 +7260,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "bytedance/ui-tars-1.5-7b",
@@ -7357,7 +7309,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemini-2.5-flash-lite",
@@ -7415,7 +7368,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-235b-a22b-2507",
@@ -7472,7 +7426,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "switchpoint/router",
@@ -7517,7 +7472,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "moonshotai/kimi-k2:free",
@@ -7558,7 +7514,8 @@ var require_latest = __commonJS({
             "stop",
             "temperature"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "moonshotai/kimi-k2",
@@ -7611,7 +7568,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/devstral-medium",
@@ -7657,7 +7615,8 @@ var require_latest = __commonJS({
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/devstral-small",
@@ -7666,7 +7625,7 @@ var require_latest = __commonJS({
           name: "Mistral: Devstral Small 1.1",
           created: 1752160751,
           description: "Devstral Small 1.1 is a 24B parameter open-weight language model for software engineering agents, developed by Mistral AI in collaboration with All Hands AI. Finetuned from Mistral Small 3.1 and released under the Apache 2.0 license, it features a 128k token context window and supports both Mistral-style function calling and XML output formats.\n\nDesigned for agentic coding workflows, Devstral Small 1.1 is optimized for tasks such as codebase exploration, multi-file edits, and integration into autonomous development agents like OpenHands and Cline. It achieves 53.6% on SWE-Bench Verified, surpassing all other open models on this benchmark, while remaining lightweight enough to run on a single 4090 GPU or Apple silicon machine. The model uses a Tekken tokenizer with a 131k vocabulary and is deployable via vLLM, Transformers, Ollama, LM Studio, and other OpenAI-compatible runtimes.\n",
-          context_length: 128e3,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -7679,15 +7638,11 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000007",
-            completion: "0.00000028",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            prompt: "0.0000001",
+            completion: "0.0000003"
           },
           top_provider: {
-            context_length: 128e3,
+            context_length: 131072,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -7695,9 +7650,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "max_tokens",
-            "min_p",
             "presence_penalty",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
@@ -7705,12 +7658,59 @@ var require_latest = __commonJS({
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
+        },
+        {
+          id: "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+          canonical_slug: "venice/uncensored",
+          hugging_face_id: "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
+          name: "Venice: Uncensored (free)",
+          created: 1752094966,
+          description: "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an \u201Cuncensored\u201D instruct-tuned LLM, preserving user control over alignment, system prompts, and behavior. Intended for advanced and unrestricted use cases, Venice Uncensored emphasizes steerability and transparent behavior, removing default safety and alignment layers typically found in mainstream assistant models.",
+          context_length: 32768,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 32768,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "x-ai/grok-4",
@@ -7761,7 +7761,8 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3n-e2b-it:free",
@@ -7806,7 +7807,8 @@ var require_latest = __commonJS({
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "tencent/hunyuan-a13b-instruct",
@@ -7851,7 +7853,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "tngtech/deepseek-r1t2-chimera:free",
@@ -7899,7 +7902,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "tngtech/deepseek-r1t2-chimera",
@@ -7951,7 +7955,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "morph/morph-v3-large",
@@ -7995,7 +8000,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "morph/morph-v3-fast",
@@ -8039,7 +8045,8 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "baidu/ernie-4.5-vl-424b-a47b",
@@ -8088,7 +8095,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "baidu/ernie-4.5-300b-a47b",
@@ -8136,7 +8144,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "inception/mercury",
@@ -8188,7 +8197,8 @@ var require_latest = __commonJS({
             temperature: 0,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-small-3.2-24b-instruct",
@@ -8243,7 +8253,8 @@ var require_latest = __commonJS({
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "minimax/minimax-m1",
@@ -8293,7 +8304,8 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemini-2.5-flash",
@@ -8354,7 +8366,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-2.5-pro",
@@ -8412,7 +8425,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "moonshotai/kimi-dev-72b",
@@ -8457,7 +8471,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o3-pro",
@@ -8505,7 +8520,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "x-ai/grok-3-mini",
@@ -8560,7 +8576,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "x-ai/grok-3",
@@ -8611,7 +8628,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemini-2.5-pro-preview",
@@ -8664,7 +8682,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-r1-0528:free",
@@ -8712,7 +8731,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-r1-0528",
@@ -8774,7 +8794,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-opus-4",
@@ -8828,7 +8849,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-sonnet-4",
@@ -8882,57 +8904,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
-        },
-        {
-          id: "mistralai/devstral-small-2505",
-          canonical_slug: "mistralai/devstral-small-2505",
-          hugging_face_id: "mistralai/Devstral-Small-2505",
-          name: "Mistral: Devstral Small 2505",
-          created: 1747837379,
-          description: "Devstral-Small-2505 is a 24B parameter agentic LLM fine-tuned from Mistral-Small-3.1, jointly developed by Mistral AI and All Hands AI for advanced software engineering tasks. It is optimized for codebase exploration, multi-file editing, and integration into coding agents, achieving state-of-the-art results on SWE-Bench Verified (46.8%).\n\nDevstral supports a 128k context window and uses a custom Tekken tokenizer. It is text-only, with the vision encoder removed, and is suitable for local deployment on high-end consumer hardware (e.g., RTX 4090, 32GB RAM Macs). Devstral is best used in agentic workflows via the OpenHands scaffold and is compatible with inference frameworks like vLLM, Transformers, and Ollama. It is released under the Apache 2.0 license.",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: null
           },
-          pricing: {
-            prompt: "0.00000006",
-            completion: "0.00000012",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          }
+          expiration_date: null
         },
         {
           id: "google/gemma-3n-e4b-it:free",
@@ -8977,7 +8950,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3n-e4b-it",
@@ -9024,50 +8998,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "openai/codex-mini",
-          canonical_slug: "openai/codex-mini",
-          hugging_face_id: "",
-          name: "OpenAI: Codex Mini",
-          created: 1747409761,
-          description: "codex-mini-latest is a fine-tuned version of o4-mini specifically for use in Codex CLI. For direct use in the API, we recommend starting with gpt-4.1.",
-          context_length: 2e5,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "image",
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000015",
-            completion: "0.000006",
-            input_cache_read: "0.000000375"
-          },
-          top_provider: {
-            context_length: 2e5,
-            max_completion_tokens: 1e5,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "structured_outputs",
-            "tool_choice",
-            "tools"
-          ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nousresearch/deephermes-3-mistral-24b-preview",
@@ -9075,7 +9007,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "NousResearch/DeepHermes-3-Mistral-24B-Preview",
           name: "Nous: DeepHermes 3 Mistral 24B Preview",
           created: 1746830904,
-          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \u201Cdeep reasoning\u201D mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
+          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \u201Cdeep reasoning\uFFFD\uFFFD\uFFFD mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
           context_length: 32768,
           architecture: {
             modality: "text->text",
@@ -9119,7 +9051,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-medium-3",
@@ -9166,7 +9099,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-2.5-pro-preview-05-06",
@@ -9224,7 +9158,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "arcee-ai/spotlight",
@@ -9272,7 +9207,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "arcee-ai/maestro-reasoning",
@@ -9319,7 +9255,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "arcee-ai/virtuoso-large",
@@ -9368,7 +9305,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "arcee-ai/coder-large",
@@ -9415,57 +9353,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "microsoft/phi-4-reasoning-plus",
-          canonical_slug: "microsoft/phi-4-reasoning-plus-04-30",
-          hugging_face_id: "microsoft/Phi-4-reasoning-plus",
-          name: "Microsoft: Phi 4 Reasoning Plus",
-          created: 1746130961,
-          description: "Phi-4-reasoning-plus is an enhanced 14B parameter model from Microsoft, fine-tuned from Phi-4 with additional reinforcement learning to boost accuracy on math, science, and code reasoning tasks. It uses the same dense decoder-only transformer architecture as Phi-4, but generates longer, more comprehensive outputs structured into a step-by-step reasoning trace and final answer.\n\nWhile it offers improved benchmark scores over Phi-4-reasoning across tasks like AIME, OmniMath, and HumanEvalPlus, its responses are typically ~50% longer, resulting in higher latency. Designed for English-only applications, it is well-suited for structured reasoning workflows where output quality takes priority over response speed.",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000007",
-            completion: "0.00000035",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "inception/mercury-coder",
@@ -9517,16 +9406,17 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: 0,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
-          id: "deepseek/deepseek-prover-v2",
-          canonical_slug: "deepseek/deepseek-prover-v2",
-          hugging_face_id: "deepseek-ai/DeepSeek-Prover-V2-671B",
-          name: "DeepSeek: DeepSeek Prover V2",
-          created: 1746013094,
-          description: "DeepSeek Prover V2 is a 671B parameter model, speculated to be geared towards logic and mathematics. Likely an upgrade from [DeepSeek-Prover-V1.5](https://huggingface.co/deepseek-ai/DeepSeek-Prover-V1.5-RL) Not much is known about the model yet, as DeepSeek released it on Hugging Face without an announcement or description.",
-          context_length: 163840,
+          id: "qwen/qwen3-4b:free",
+          canonical_slug: "qwen/qwen3-4b-04-28",
+          hugging_face_id: "Qwen/Qwen3-4B",
+          name: "Qwen: Qwen3 4B (free)",
+          created: 1746031104,
+          description: "Qwen3-4B is a 4 billion parameter dense language model from the Qwen3 series, designed to support both general-purpose and reasoning-intensive tasks. It introduces a dual-mode architecture\u2014thinking and non-thinking\u2014allowing dynamic switching between high-precision logical reasoning and efficient dialogue generation. This makes it well-suited for multi-turn chat, instruction following, and complex agent workflows.",
+          context_length: 40960,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -9535,37 +9425,40 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             output_modalities: [
               "text"
             ],
-            tokenizer: "DeepSeek",
-            instruct_type: null
+            tokenizer: "Qwen3",
+            instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.0000005",
-            completion: "0.00000218",
+            prompt: "0",
+            completion: "0",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 163840,
+            context_length: 40960,
             max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
-            "repetition_penalty",
+            "reasoning",
             "response_format",
-            "seed",
             "stop",
+            "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-guard-4-12b",
@@ -9615,7 +9508,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-30b-a3b",
@@ -9653,6 +9547,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -9666,13 +9562,15 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-8b",
@@ -9731,7 +9629,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-14b",
@@ -9784,7 +9683,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-32b",
@@ -9839,7 +9739,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen3-235b-a22b",
@@ -9861,8 +9762,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.00000018",
-            completion: "0.00000054",
+            prompt: "0.0000002",
+            completion: "0.0000006",
             request: "0",
             image: "0",
             web_search: "0",
@@ -9870,7 +9771,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 40960,
-            max_completion_tokens: 40960,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9895,7 +9796,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "tngtech/deepseek-r1t-chimera:free",
@@ -9943,7 +9845,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "tngtech/deepseek-r1t-chimera",
@@ -9993,7 +9896,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o4-mini-high",
@@ -10042,7 +9946,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/o3",
@@ -10087,7 +9992,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o4-mini",
@@ -10132,7 +10038,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen2.5-coder-7b-instruct",
@@ -10178,7 +10085,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4.1",
@@ -10223,7 +10131,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4.1-mini",
@@ -10268,7 +10177,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4.1-nano",
@@ -10313,7 +10223,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "eleutherai/llemma_7b",
@@ -10360,7 +10271,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "alfredpros/codellama-7b-instruct-solidity",
@@ -10407,7 +10319,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "x-ai/grok-3-mini-beta",
@@ -10461,7 +10374,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "x-ai/grok-3-beta",
@@ -10511,7 +10425,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
@@ -10559,7 +10474,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-4-maverick",
@@ -10598,6 +10514,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10610,9 +10527,11 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-4-scout",
@@ -10665,7 +10584,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen2.5-vl-32b-instruct",
@@ -10718,7 +10638,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-chat-v3-0324",
@@ -10773,7 +10694,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o1-pro",
@@ -10814,7 +10736,60 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "seed",
             "structured_outputs"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
+          id: "mistralai/mistral-small-3.1-24b-instruct:free",
+          canonical_slug: "mistralai/mistral-small-3.1-24b-instruct-2503",
+          hugging_face_id: "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+          name: "Mistral: Mistral Small 3.1 24B (free)",
+          created: 1742238937,
+          description: "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments. The updated version is [Mistral Small 3.2](mistralai/mistral-small-3.2-24b-instruct)",
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-small-3.1-24b-instruct",
@@ -10867,7 +10842,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "allenai/olmo-2-0325-32b-instruct",
@@ -10903,7 +10879,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3-4b-it:free",
@@ -10947,7 +10924,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3-4b-it",
@@ -10996,7 +10974,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3-12b-it:free",
@@ -11039,7 +11018,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3-12b-it",
@@ -11090,7 +11070,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "cohere/command-a",
@@ -11137,7 +11118,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-mini-search-preview",
@@ -11175,7 +11157,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-search-preview",
@@ -11213,7 +11196,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-3-27b-it:free",
@@ -11266,7 +11250,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemma-3-27b-it",
@@ -11323,7 +11308,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "thedrummer/skyfall-36b-v2",
@@ -11370,56 +11356,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "microsoft/phi-4-multimodal-instruct",
-          canonical_slug: "microsoft/phi-4-multimodal-instruct",
-          hugging_face_id: "microsoft/Phi-4-multimodal-instruct",
-          name: "Microsoft: Phi 4 Multimodal Instruct",
-          created: 1741396284,
-          description: "Phi-4 Multimodal Instruct is a versatile 5.6B parameter foundation model that combines advanced reasoning and instruction-following capabilities across both text and visual inputs, providing accurate text outputs. The unified architecture enables efficient, low-latency inference, suitable for edge and mobile deployments. Phi-4 Multimodal Instruct supports text inputs in multiple languages including Arabic, Chinese, English, French, German, Japanese, Spanish, and more, with visual input optimized primarily for English. It delivers impressive performance on multimodal tasks involving mathematical, scientific, and document reasoning, providing developers and enterprises a powerful yet compact model for sophisticated interactive applications. For more information, see the [Phi-4 Multimodal blog post](https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/).\n",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000005",
-            completion: "0.0000001",
-            request: "0",
-            image: "0.00017685",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "perplexity/sonar-reasoning-pro",
@@ -11466,7 +11404,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "perplexity/sonar-pro",
@@ -11511,7 +11450,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "perplexity/sonar-deep-research",
@@ -11557,7 +11497,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwq-32b",
@@ -11611,7 +11552,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemini-2.0-flash-lite-001",
@@ -11665,7 +11607,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: "2026-02-06"
         },
         {
           id: "anthropic/claude-3.7-sonnet:thinking",
@@ -11718,7 +11661,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthropic/claude-3.7-sonnet",
@@ -11772,7 +11716,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-saba",
@@ -11818,7 +11763,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-guard-3-8b",
@@ -11856,17 +11802,15 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
-            "stop",
             "temperature",
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o3-mini-high",
@@ -11911,7 +11855,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "google/gemini-2.0-flash-001",
@@ -11968,51 +11913,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen-vl-plus",
-          canonical_slug: "qwen/qwen-vl-plus",
-          hugging_face_id: "",
-          name: "Qwen: Qwen VL Plus",
-          created: 1738731255,
-          description: "Qwen's Enhanced Large Visual Language Model. Significantly upgraded for detailed recognition capabilities and text recognition abilities, supporting ultra-high pixel resolutions up to millions of pixels and extreme aspect ratios for image input. It delivers significant performance across a broad range of visual tasks.\n",
-          context_length: 7500,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
           },
-          pricing: {
-            prompt: "0.00000021",
-            completion: "0.00000063",
-            request: "0",
-            image: "0.0002688",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 7500,
-            max_completion_tokens: 1500,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {}
+          expiration_date: null
         },
         {
           id: "aion-labs/aion-1.0",
@@ -12054,7 +11956,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "aion-labs/aion-1.0-mini",
@@ -12096,7 +11999,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "aion-labs/aion-rp-llama-3.1-8b",
@@ -12136,103 +12040,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "qwen/qwen-vl-max",
-          canonical_slug: "qwen/qwen-vl-max-2025-01-25",
-          hugging_face_id: "",
-          name: "Qwen: Qwen VL Max",
-          created: 1738434304,
-          description: "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000008",
-            completion: "0.0000032",
-            request: "0",
-            image: "0.001024",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          }
-        },
-        {
-          id: "qwen/qwen-turbo",
-          canonical_slug: "qwen/qwen-turbo-2024-11-01",
-          hugging_face_id: "",
-          name: "Qwen: Qwen-Turbo",
-          created: 1738410974,
-          description: "Qwen-Turbo, based on Qwen2.5, is a 1M context model that provides fast speed and low cost, suitable for simple tasks.",
-          context_length: 1e6,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000005",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000002"
-          },
-          top_provider: {
-            context_length: 1e6,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen2.5-vl-72b-instruct",
@@ -12283,99 +12092,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "qwen/qwen-plus",
-          canonical_slug: "qwen/qwen-plus-2025-01-25",
-          hugging_face_id: "",
-          name: "Qwen: Qwen-Plus",
-          created: 1738409840,
-          description: "Qwen-Plus, based on the Qwen2.5 foundation model, is a 131K context model with a balanced performance, speed, and cost combination.",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000016"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {}
-        },
-        {
-          id: "qwen/qwen-max",
-          canonical_slug: "qwen/qwen-max-2025-01-25",
-          hugging_face_id: "",
-          name: "Qwen: Qwen-Max ",
-          created: 1738402289,
-          description: "Qwen-Max, based on Qwen2.5, provides the best inference performance among [Qwen models](/qwen), especially for complex multi-step tasks. It's a large-scale MoE model that has been pretrained on over 20 trillion tokens and further post-trained with curated Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) methodologies. The parameter count is unknown.",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000016",
-            completion: "0.0000064",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000064"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o3-mini",
@@ -12416,7 +12134,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-small-24b-instruct-2501",
@@ -12472,7 +12191,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             temperature: 0.3,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-r1-distill-qwen-32b",
@@ -12481,7 +12201,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "DeepSeek: R1 Distill Qwen 32B",
           created: 1738194830,
           description: "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new state-of-the-art results for dense models.\\n\\nOther benchmark results include:\\n\\n- AIME 2024 pass@1: 72.6\\n- MATH-500 pass@1: 94.3\\n- CodeForces Rating: 1691\\n\\nThe model leverages fine-tuning from DeepSeek R1's outputs, enabling competitive performance comparable to larger frontier models.",
-          context_length: 131072,
+          context_length: 32768,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -12494,15 +12214,15 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "deepseek-r1"
           },
           pricing: {
-            prompt: "0.00000027",
-            completion: "0.00000027",
+            prompt: "0.00000029",
+            completion: "0.00000029",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 131072,
+            context_length: 32768,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -12511,7 +12231,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -12523,7 +12242,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "perplexity/sonar",
@@ -12568,7 +12288,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-r1-distill-llama-70b",
@@ -12622,7 +12343,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-r1",
@@ -12631,7 +12353,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "DeepSeek: R1",
           created: 1737381095,
           description: "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model & [technical report](https://api-docs.deepseek.com/news/news250120).\n\nMIT licensed: Distill & commercialize freely!",
-          context_length: 163840,
+          context_length: 64e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -12645,15 +12367,15 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000007",
-            completion: "0.0000024",
+            completion: "0.0000025",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 163840,
+            context_length: 64e3,
+            max_completion_tokens: 16e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12661,11 +12383,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -12674,7 +12394,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "minimax/minimax-01",
@@ -12715,7 +12436,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "microsoft/phi-4",
@@ -12764,7 +12486,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "sao10k/l3.1-70b-hanami-x1",
@@ -12812,7 +12535,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "deepseek/deepseek-chat",
@@ -12863,7 +12587,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "sao10k/l3.3-euryale-70b",
@@ -12912,7 +12637,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/o1",
@@ -12954,7 +12680,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "cohere/command-r7b-12-2024",
@@ -13001,7 +12728,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemini-2.0-flash-exp:free",
@@ -13047,7 +12775,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: "2026-02-06"
         },
         {
           id: "meta-llama/llama-3.3-70b-instruct:free",
@@ -13091,9 +12820,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "stop",
             "temperature",
             "tool_choice",
-            "tools"
+            "tools",
+            "top_k",
+            "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.3-70b-instruct",
@@ -13147,7 +12879,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "amazon/nova-lite-v1",
@@ -13191,7 +12924,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "amazon/nova-micro-v1",
@@ -13234,7 +12968,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "amazon/nova-pro-v1",
@@ -13278,7 +13013,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-2024-11-20",
@@ -13331,7 +13067,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-large-2411",
@@ -13377,7 +13114,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-large-2407",
@@ -13423,7 +13161,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/pixtral-large-2411",
@@ -13470,7 +13209,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen-2.5-coder-32b-instruct",
@@ -13520,7 +13260,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "raifle/sorcererlm-8x22b",
@@ -13568,7 +13309,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "thedrummer/unslopnemo-12b",
@@ -13615,7 +13357,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "tools",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "anthropic/claude-3.5-haiku",
@@ -13666,7 +13409,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "anthracite-org/magnum-v4-72b",
@@ -13718,7 +13462,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "anthropic/claude-3.5-sonnet",
@@ -13764,7 +13509,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/ministral-8b",
@@ -13810,7 +13556,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/ministral-3b",
@@ -13856,7 +13603,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "qwen/qwen-2.5-7b-instruct",
@@ -13910,7 +13658,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "nvidia/llama-3.1-nemotron-70b-instruct",
@@ -13960,7 +13709,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "inflection/inflection-3-pi",
@@ -14001,7 +13751,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "inflection/inflection-3-productivity",
@@ -14042,7 +13793,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "thedrummer/rocinante-12b",
@@ -14094,7 +13846,53 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
+          id: "meta-llama/llama-3.2-3b-instruct:free",
+          canonical_slug: "meta-llama/llama-3.2-3b-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-3B-Instruct",
+          name: "Meta: Llama 3.2 3B Instruct (free)",
+          created: 1727222400,
+          description: "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.2-3b-instruct",
@@ -14143,7 +13941,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.2-1b-instruct",
@@ -14188,56 +13987,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "meta-llama/llama-3.2-90b-vision-instruct",
-          canonical_slug: "meta-llama/llama-3.2-90b-vision-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-90B-Vision-Instruct",
-          name: "Meta: Llama 3.2 90B Vision Instruct",
-          created: 1727222400,
-          description: "The Llama 90B Vision model is a top-tier, 90-billion-parameter multimodal model designed for the most challenging visual reasoning and language tasks. It offers unparalleled accuracy in image captioning, visual question answering, and advanced image-text comprehension. Pre-trained on vast multimodal datasets and fine-tuned with human feedback, the Llama 90B Vision is engineered to handle the most demanding image-based AI tasks.\n\nThis model is perfect for industries requiring cutting-edge multimodal AI capabilities, particularly those dealing with complex, real-time visual and textual analysis.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD_VISION.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
-          context_length: 32768,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.00000035",
-            completion: "0.0000004",
-            request: "0",
-            image: "0.0005058",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.2-11b-vision-instruct",
@@ -14287,7 +14038,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen-2.5-72b-instruct",
@@ -14339,7 +14091,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "neversleep/llama-3.1-lumimaid-8b",
@@ -14386,7 +14139,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/pixtral-12b",
@@ -14441,7 +14195,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "cohere/command-r-08-2024",
@@ -14490,7 +14245,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "cohere/command-r-plus-08-2024",
@@ -14539,7 +14295,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "sao10k/l3.1-euryale-70b",
@@ -14590,7 +14347,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen-2.5-vl-7b-instruct:free",
@@ -14633,7 +14391,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "repetition_penalty",
             "temperature"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "qwen/qwen-2.5-vl-7b-instruct",
@@ -14682,7 +14441,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nousresearch/hermes-3-llama-3.1-70b",
@@ -14731,7 +14491,53 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
+          id: "nousresearch/hermes-3-llama-3.1-405b:free",
+          canonical_slug: "nousresearch/hermes-3-llama-3.1-405b",
+          hugging_face_id: "NousResearch/Hermes-3-Llama-3.1-405B",
+          name: "Nous: Hermes 3 405B Instruct (free)",
+          created: 1723766400,
+          description: "Hermes 3 is a generalist language model with many improvements over Hermes 2, including advanced agentic capabilities, much better roleplaying, reasoning, multi-turn conversation, long context coherence, and improvements across the board.\n\nHermes 3 405B is a frontier-level, full-parameter finetune of the Llama-3.1 405B foundation model, focused on aligning LLMs to the user, with powerful steering capabilities and control given to the end user.\n\nThe Hermes 3 series builds and expands on the Hermes 2 set of capabilities, including more powerful and reliable function calling and structured output capabilities, generalist assistant capabilities, and improved code generation skills.\n\nHermes 3 is competitive, if not superior, to Llama-3.1 Instruct models at general capabilities, with varying strengths and weaknesses attributable between the two.",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "chatml"
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nousresearch/hermes-3-llama-3.1-405b",
@@ -14779,7 +14585,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/chatgpt-4o-latest",
@@ -14825,7 +14632,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "sao10k/l3-lunaris-8b",
@@ -14874,7 +14682,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-2024-08-06",
@@ -14933,7 +14742,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.1-405b",
@@ -14981,7 +14791,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.1-8b-instruct",
@@ -15035,7 +14846,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.1-405b-instruct:free",
@@ -15077,7 +14889,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "repetition_penalty",
             "temperature"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.1-405b-instruct",
@@ -15129,7 +14942,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.1-70b-instruct",
@@ -15180,7 +14994,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-nemo",
@@ -15211,14 +15026,13 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 16384,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "response_format",
@@ -15233,7 +15047,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-mini-2024-07-18",
@@ -15284,7 +15099,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-mini",
@@ -15335,7 +15151,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-2-27b-it",
@@ -15380,7 +15197,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "temperature",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "google/gemma-2-9b-it",
@@ -15424,7 +15242,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "sao10k/l3-euryale-70b",
@@ -15472,7 +15291,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "nousresearch/hermes-2-pro-llama-3-8b",
@@ -15520,59 +15340,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
-        },
-        {
-          id: "mistralai/mistral-7b-instruct:free",
-          canonical_slug: "mistralai/mistral-7b-instruct",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.3",
-          name: "Mistral: Mistral 7B Instruct (free)",
-          created: 1716768e3,
-          description: "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\n*Mistral 7B Instruct has multiple version variants, and this is intended to be the latest version.*",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          }
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-7b-instruct",
@@ -15594,8 +15363,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             instruct_type: "mistral"
           },
           pricing: {
-            prompt: "0.000000028",
-            completion: "0.000000054",
+            prompt: "0.0000002",
+            completion: "0.0000002",
             request: "0",
             image: "0",
             web_search: "0",
@@ -15603,7 +15372,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: 16384,
+            max_completion_tokens: 4096,
             is_moderated: false
           },
           per_request_limits: null,
@@ -15614,18 +15383,15 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
-            "seed",
             "stop",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-7b-instruct-v0.3",
@@ -15674,7 +15440,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-guard-2-8b",
@@ -15721,7 +15488,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o-2024-05-13",
@@ -15775,7 +15543,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o",
@@ -15830,7 +15599,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4o:extended",
@@ -15884,7 +15654,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p",
             "web_search_options"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3-70b-instruct",
@@ -15906,7 +15677,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.0000003",
+            prompt: "0.0000004",
             completion: "0.0000004",
             request: "0",
             image: "0",
@@ -15915,7 +15686,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           top_provider: {
             context_length: 8192,
-            max_completion_tokens: 16384,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -15931,12 +15702,11 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "stop",
             "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3-8b-instruct",
@@ -15987,7 +15757,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mixtral-8x22b-instruct",
@@ -16033,7 +15804,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "microsoft/wizardlm-2-8x22b",
@@ -16081,7 +15853,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4-turbo",
@@ -16129,7 +15902,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "anthropic/claude-3-haiku",
@@ -16176,7 +15950,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_k",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-large",
@@ -16222,7 +15997,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-3.5-turbo-0613",
@@ -16273,7 +16049,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4-turbo-preview",
@@ -16320,7 +16097,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-tiny",
@@ -16368,7 +16146,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-7b-instruct-v0.2",
@@ -16417,7 +16196,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "mistralai/mixtral-8x7b-instruct",
@@ -16470,7 +16250,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "neversleep/noromaid-20b",
@@ -16523,7 +16304,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "alpindale/goliath-120b",
@@ -16575,7 +16357,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openrouter/auto",
@@ -16611,7 +16394,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             temperature: null,
             top_p: null,
             frequency_penalty: null
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-4-1106-preview",
@@ -16658,7 +16442,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-3.5-turbo-instruct",
@@ -16703,7 +16488,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mistralai/mistral-7b-instruct-v0.1",
@@ -16750,7 +16536,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           ],
           default_parameters: {
             temperature: 0.3
-          }
+          },
+          expiration_date: null
         },
         {
           id: "openai/gpt-3.5-turbo-16k",
@@ -16797,7 +16584,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "mancer/weaver",
@@ -16849,7 +16637,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "undi95/remm-slerp-l2-13b",
@@ -16902,7 +16691,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "gryphe/mythomax-l2-13b",
@@ -16955,7 +16745,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4-0314",
@@ -17002,7 +16793,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-4",
@@ -17049,7 +16841,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         },
         {
           id: "openai/gpt-3.5-turbo",
@@ -17096,7 +16889,8 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {}
+          default_parameters: {},
+          expiration_date: null
         }
       ]
     };
