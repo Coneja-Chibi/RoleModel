@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-16T06:43:40.267Z",
-        modelCount: 328,
+        fetchedAt: "2026-01-17T06:39:26.261Z",
+        modelCount: 339,
         providerCount: 56,
         source: "openrouter"
       },
@@ -597,7 +597,7 @@ var require_latest = __commonJS({
           hugging_face_id: "XiaomiMiMo/MiMo-V2-Flash",
           name: "Xiaomi: MiMo-V2-Flash (free)",
           created: 1765731308,
-          description: "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a hybrid-thinking toggle and a 256K context window, and excels at reasoning, coding, and agent scenarios. On SWE-bench Verified and SWE-bench Multilingual, MiMo-V2-Flash ranks as the top #1 open-source model globally, delivering performance comparable to Claude Sonnet 4.5 while costing only about 3.5% as much.\n\nNote: when integrating with agentic tools such as Claude Code, Cline, or Roo Code, **turn off reasoning mode** for the best and fastest performance\u2014this model is deeply optimized for this scenario.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config).",
+          description: "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a hybrid-thinking toggle and a 256K context window, and excels at reasoning, coding, and agent scenarios. On SWE-bench Verified and SWE-bench Multilingual, MiMo-V2-Flash ranks as the top #1 open-source model globally, delivering performance comparable to Claude Sonnet 4.5 while costing only about 3.5% as much.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config).",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -650,7 +650,7 @@ var require_latest = __commonJS({
           hugging_face_id: "XiaomiMiMo/MiMo-V2-Flash",
           name: "Xiaomi: MiMo-V2-Flash",
           created: 1765731308,
-          description: "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a hybrid-thinking toggle and a 256K context window, and excels at reasoning, coding, and agent scenarios. On SWE-bench Verified and SWE-bench Multilingual, MiMo-V2-Flash ranks as the top #1 open-source model globally, delivering performance comparable to Claude Sonnet 4.5 while costing only about 3.5% as much.\n\nNote: when integrating with agentic tools such as Claude Code, Cline, or Roo Code, **turn off reasoning mode** for the best and fastest performance\u2014this model is deeply optimized for this scenario.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config).",
+          description: "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a hybrid-thinking toggle and a 256K context window, and excels at reasoning, coding, and agent scenarios. On SWE-bench Verified and SWE-bench Multilingual, MiMo-V2-Flash ranks as the top #1 open-source model globally, delivering performance comparable to Claude Sonnet 4.5 while costing only about 3.5% as much.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config).",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -664,17 +664,16 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001",
-            completion: "0.0000003",
+            prompt: "0.00000009",
+            completion: "0.00000029",
             request: "0",
             image: "0",
             web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000002"
+            internal_reasoning: "0"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 32e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3045,7 +3044,7 @@ var require_latest = __commonJS({
           hugging_face_id: "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
           name: "NVIDIA: Nemotron Nano 12B 2 VL",
           created: 1761675565,
-          description: "NVIDIA Nemotron Nano 2 VL is a 12-billion-parameter open multimodal reasoning model designed for video understanding and document intelligence. It introduces a hybrid Transformer-Mamba architecture, combining transformer-level accuracy with Mamba\u2019s memory-efficient sequence modeling for significantly higher throughput and lower latency.\n\nThe model supports inputs of text and multi-image documents, producing natural-language outputs. It is trained on high-quality NVIDIA-curated synthetic datasets optimized for optical-character recognition, chart reasoning, and multimodal comprehension.\n\nNemotron Nano 2 VL achieves leading results on OCRBench v2 and scores \u2248 74 average across MMMU, MathVista, AI2D, OCRBench, OCR-Reasoning, ChartQA, DocVQA, and Video-MME\u2014surpassing prior open VL baselines. With Efficient Video Sampling (EVS), it handles long-form videos while reducing inference cost.\n\nOpen-weights, training data, and fine-tuning recipes are released under a permissive NVIDIA open license, with deployment supported across NeMo, NIM, and major inference runtimes.",
+          description: "NVIDIA Nemotron Nano 2 VL is a 12-billion-parameter open multimodal reasoning model designed for video understanding and document intelligence. It introduces a hybrid Transformer-Mamba architecture, combining transformer-level accuracy with Mamba\u2019s memory-efficient sequence modeling for significantly higher throughput and lower latency.\n\nThe model supports inputs of text and multi-image documents, producing natural-language outputs. It is trained on high-quality NVIDIA-curated synthetic datasets optimized for optical-character recognition, chart reasoning, and multimodal comprehension.\n\nNemotron Nano 2 VL achieves leading results on OCRBench v2 and scores \u2248 74 average across MMMU, MathVista, AI2D, OCRBench, OCR-Reasoning, ChartQA, DocVQA, and Video-MME\uFFFD\uFFFDsurpassing prior open VL baselines. With Efficient Video Sampling (EVS), it handles long-form videos while reducing inference cost.\n\nOpen-weights, training data, and fine-tuning recipes are released under a permissive NVIDIA open license, with deployment supported across NeMo, NIM, and major inference runtimes.",
           context_length: 131072,
           architecture: {
             modality: "text+image->text",
@@ -3528,6 +3527,59 @@ var require_latest = __commonJS({
             temperature: null,
             top_p: null,
             frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3-vl-8b-thinking",
+          canonical_slug: "qwen/qwen3-vl-8b-thinking",
+          hugging_face_id: "Qwen/Qwen3-VL-8B-Thinking",
+          name: "Qwen: Qwen3 VL 8B Thinking",
+          created: 1760463746,
+          description: "Qwen3-VL-8B-Thinking is the reasoning-optimized variant of the Qwen3-VL-8B multimodal model, designed for advanced visual and textual reasoning across complex scenes, documents, and temporal sequences. It integrates enhanced multimodal alignment and long-context processing (native 256K, expandable to 1M tokens) for tasks such as scientific visual analysis, causal inference, and mathematical reasoning over image or video inputs.\n\nCompared to the Instruct edition, the Thinking version introduces deeper visual-language fusion and deliberate reasoning pathways that improve performance on long-chain logic tasks, STEM problem-solving, and multi-step video understanding. It achieves stronger temporal grounding via Interleaved-MRoPE and timestamp-aware embeddings, while maintaining robust OCR, multilingual comprehension, and text generation on par with large text-only LLMs.",
+          context_length: 256e3,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000018",
+            completion: "0.0000021",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 256e3,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95
           },
           expiration_date: null
         },
@@ -4232,7 +4284,7 @@ var require_latest = __commonJS({
             prompt: "0.000003",
             completion: "0.000015",
             request: "0",
-            image: "0",
+            image: "0.0048",
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.0000003",
@@ -4241,7 +4293,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 1e6,
             max_completion_tokens: 64e3,
-            is_moderated: false
+            is_moderated: true
           },
           per_request_limits: null,
           supported_parameters: [
@@ -4548,7 +4600,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen3 VL 235B A22B Thinking",
           created: 1758668690,
           description: "Qwen3-VL-235B-A22B Thinking is a multimodal model that unifies strong text generation with visual understanding across images and video. The Thinking model is optimized for multimodal reasoning in STEM and math. The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows, turning sketches or mockups into code and assisting with UI debugging, while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
-          context_length: 262144,
+          context_length: 131072,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -4562,16 +4614,16 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000045",
-            completion: "0.0000035",
+            prompt: "0.00000098",
+            completion: "0.00000395",
             request: "0",
             image: "0",
             web_search: "0",
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 131072,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -4582,13 +4634,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -4655,6 +4703,109 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {
             temperature: 0.7,
             top_p: 0.8,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3-max",
+          canonical_slug: "qwen/qwen3-max",
+          hugging_face_id: "",
+          name: "Qwen: Qwen3 Max",
+          created: 1758662808,
+          description: "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It delivers higher accuracy in math, coding, logic, and science tasks, follows complex instructions in Chinese and English more reliably, reduces hallucinations, and produces higher-quality responses for open-ended Q&A, writing, and conversation. The model supports over 100 languages with stronger translation and commonsense reasoning, and is optimized for retrieval-augmented generation (RAG) and tool calling, though it does not include a dedicated \u201Cthinking\u201D mode.",
+          context_length: 256e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000012",
+            completion: "0.000006",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.00000024"
+          },
+          top_provider: {
+            context_length: 256e3,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 1,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3-coder-plus",
+          canonical_slug: "qwen/qwen3-coder-plus",
+          hugging_face_id: "",
+          name: "Qwen: Qwen3 Coder Plus",
+          created: 1758662707,
+          description: "Qwen3 Coder Plus is Alibaba's proprietary version of the Open Source Qwen3 Coder 480B A35B. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000001",
+            completion: "0.000005",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.0000001"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
             frequency_penalty: null
           },
           expiration_date: null
@@ -4940,6 +5091,57 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: null
         },
         {
+          id: "qwen/qwen3-coder-flash",
+          canonical_slug: "qwen/qwen3-coder-flash",
+          hugging_face_id: "",
+          name: "Qwen: Qwen3 Coder Flash",
+          created: 1758115536,
+          description: "Qwen3 Coder Flash is Alibaba's fast and cost efficient version of their proprietary Qwen3 Coder Plus. It is a powerful coding agent model specializing in autonomous programming via tool calling and environment interaction, combining coding proficiency with versatile general-purpose abilities.",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000003",
+            completion: "0.0000015",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.00000008"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
           id: "opengvlab/internvl3-78b",
           canonical_slug: "opengvlab/internvl3-78b",
           hugging_face_id: "OpenGVLab/InternVL3-78B",
@@ -4996,7 +5198,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen3 Next 80B A3B Thinking",
           created: 1757612284,
           description: "Qwen3-Next-80B-A3B-Thinking is a reasoning-first chat model in the Qwen3-Next line that outputs structured \u201Cthinking\u201D traces by default. It\u2019s designed for hard multi-step problems; math proofs, code synthesis/debugging, logic, and agentic planning, and reports strong results across knowledge, reasoning, coding, alignment, and multilingual evaluations. Compared with prior Qwen3 variants, it emphasizes stability under long chains of thought and efficient scaling during inference, and it is tuned to follow complex instructions while reducing repetitive or off-task behavior.\n\nThe model is suitable for agent frameworks and tool use (function calling), retrieval-heavy workflows, and standardized benchmarking where step-by-step solutions are required. It supports long, detailed completions and leverages throughput-oriented techniques (e.g., multi-token prediction) for faster generation. Note that it operates in thinking-only mode.",
-          context_length: 262144,
+          context_length: 128e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -5017,8 +5219,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 128e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5189,6 +5391,110 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen-plus-2025-07-28",
+          canonical_slug: "qwen/qwen-plus-2025-07-28",
+          hugging_face_id: "",
+          name: "Qwen: Qwen Plus 0728",
+          created: 1757347599,
+          description: "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000012",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen-plus-2025-07-28:thinking",
+          canonical_slug: "qwen/qwen-plus-2025-07-28",
+          hugging_face_id: "",
+          name: "Qwen: Qwen Plus 0728 (thinking)",
+          created: 1757347599,
+          description: "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.000004",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
           expiration_date: null
         },
         {
@@ -9011,7 +9317,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "NousResearch/DeepHermes-3-Mistral-24B-Preview",
           name: "Nous: DeepHermes 3 Mistral 24B Preview",
           created: 1746830904,
-          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \u201Cdeep reasoning\uFFFD\uFFFD\uFFFD mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
+          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \u201Cdeep reasoning\u201D mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
           context_length: 32768,
           architecture: {
             modality: "text->text",
@@ -11921,6 +12227,51 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: null
         },
         {
+          id: "qwen/qwen-vl-plus",
+          canonical_slug: "qwen/qwen-vl-plus",
+          hugging_face_id: "",
+          name: "Qwen: Qwen VL Plus",
+          created: 1738731255,
+          description: "Qwen's Enhanced Large Visual Language Model. Significantly upgraded for detailed recognition capabilities and text recognition abilities, supporting ultra-high pixel resolutions up to millions of pixels and extreme aspect ratios for image input. It delivers significant performance across a broad range of visual tasks.\n",
+          context_length: 7500,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000021",
+            completion: "0.00000063",
+            request: "0",
+            image: "0.0002688",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 7500,
+            max_completion_tokens: 1500,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
           id: "aion-labs/aion-1.0",
           canonical_slug: "aion-labs/aion-1.0",
           hugging_face_id: "",
@@ -12048,6 +12399,104 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: null
         },
         {
+          id: "qwen/qwen-vl-max",
+          canonical_slug: "qwen/qwen-vl-max-2025-01-25",
+          hugging_face_id: "",
+          name: "Qwen: Qwen VL Max",
+          created: 1738434304,
+          description: "Qwen VL Max is a visual understanding model with 7500 tokens context length. It excels in delivering optimal performance for a broader spectrum of complex tasks.\n",
+          context_length: 131072,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000008",
+            completion: "0.0000032",
+            request: "0",
+            image: "0.001024",
+            web_search: "0",
+            internal_reasoning: "0"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 8192,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen-turbo",
+          canonical_slug: "qwen/qwen-turbo-2024-11-01",
+          hugging_face_id: "",
+          name: "Qwen: Qwen-Turbo",
+          created: 1738410974,
+          description: "Qwen-Turbo, based on Qwen2.5, is a 1M context model that provides fast speed and low cost, suitable for simple tasks.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000005",
+            completion: "0.0000002",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.00000002"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 8192,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
           id: "qwen/qwen2.5-vl-72b-instruct",
           canonical_slug: "qwen/qwen2.5-vl-72b-instruct",
           hugging_face_id: "Qwen/Qwen2.5-VL-72B-Instruct",
@@ -12094,6 +12543,100 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs",
             "temperature",
             "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen-plus",
+          canonical_slug: "qwen/qwen-plus-2025-01-25",
+          hugging_face_id: "",
+          name: "Qwen: Qwen-Plus",
+          created: 1738409840,
+          description: "Qwen-Plus, based on the Qwen2.5 foundation model, is a 131K context model with a balanced performance, speed, and cost combination.",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000012",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.00000016"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 8192,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {},
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen-max",
+          canonical_slug: "qwen/qwen-max-2025-01-25",
+          hugging_face_id: "",
+          name: "Qwen: Qwen-Max ",
+          created: 1738402289,
+          description: "Qwen-Max, based on Qwen2.5, provides the best inference performance among [Qwen models](/qwen), especially for complex multi-step tasks. It's a large-scale MoE model that has been pretrained on over 20 trillion tokens and further post-trained with curated Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF) methodologies. The parameter count is unknown.",
+          context_length: 32768,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000016",
+            completion: "0.0000064",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0",
+            input_cache_read: "0.00000064"
+          },
+          top_provider: {
+            context_length: 32768,
+            max_completion_tokens: 8192,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
             "top_p"
           ],
           default_parameters: {},
