@@ -29,7 +29,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-17T06:39:26.261Z",
+        fetchedAt: "2026-01-18T06:40:03.561Z",
         modelCount: 339,
         providerCount: 56,
         source: "openrouter"
@@ -1334,6 +1334,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
+            web_search: "0.01",
             input_cache_read: "0.000000125"
           },
           top_provider: {
@@ -2380,7 +2381,7 @@ var require_latest = __commonJS({
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.0000002",
-            input_cache_write: "0.000002375"
+            input_cache_write: "0.000000375"
           },
           top_provider: {
             context_length: 1048576,
@@ -3040,7 +3041,7 @@ var require_latest = __commonJS({
           hugging_face_id: "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
           name: "NVIDIA: Nemotron Nano 12B 2 VL",
           created: 1761675565,
-          description: "NVIDIA Nemotron Nano 2 VL is a 12-billion-parameter open multimodal reasoning model designed for video understanding and document intelligence. It introduces a hybrid Transformer-Mamba architecture, combining transformer-level accuracy with Mamba\u2019s memory-efficient sequence modeling for significantly higher throughput and lower latency.\n\nThe model supports inputs of text and multi-image documents, producing natural-language outputs. It is trained on high-quality NVIDIA-curated synthetic datasets optimized for optical-character recognition, chart reasoning, and multimodal comprehension.\n\nNemotron Nano 2 VL achieves leading results on OCRBench v2 and scores \u2248 74 average across MMMU, MathVista, AI2D, OCRBench, OCR-Reasoning, ChartQA, DocVQA, and Video-MME\uFFFD\uFFFDsurpassing prior open VL baselines. With Efficient Video Sampling (EVS), it handles long-form videos while reducing inference cost.\n\nOpen-weights, training data, and fine-tuning recipes are released under a permissive NVIDIA open license, with deployment supported across NeMo, NIM, and major inference runtimes.",
+          description: "NVIDIA Nemotron Nano 2 VL is a 12-billion-parameter open multimodal reasoning model designed for video understanding and document intelligence. It introduces a hybrid Transformer-Mamba architecture, combining transformer-level accuracy with Mamba\u2019s memory-efficient sequence modeling for significantly higher throughput and lower latency.\n\nThe model supports inputs of text and multi-image documents, producing natural-language outputs. It is trained on high-quality NVIDIA-curated synthetic datasets optimized for optical-character recognition, chart reasoning, and multimodal comprehension.\n\nNemotron Nano 2 VL achieves leading results on OCRBench v2 and scores \u2248 74 average across MMMU, MathVista, AI2D, OCRBench, OCR-Reasoning, ChartQA, DocVQA, and Video-MME\u2014surpassing prior open VL baselines. With Efficient Video Sampling (EVS), it handles long-form videos while reducing inference cost.\n\nOpen-weights, training data, and fine-tuning recipes are released under a permissive NVIDIA open license, with deployment supported across NeMo, NIM, and major inference runtimes.",
           context_length: 131072,
           architecture: {
             modality: "text+image->text",
@@ -4502,7 +4503,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.000000075",
-            input_cache_write: "0.0000003833"
+            input_cache_write: "0.0000000833"
           },
           top_provider: {
             context_length: 1048576,
@@ -4561,7 +4562,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.00000001",
-            input_cache_write: "0.000001"
+            input_cache_write: "0.0000000833"
           },
           top_provider: {
             context_length: 1048576,
@@ -7649,7 +7650,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.00000001",
-            input_cache_write: "0.0000001833"
+            input_cache_write: "0.0000000833"
           },
           top_provider: {
             context_length: 1048576,
@@ -8647,7 +8648,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.00000003",
-            input_cache_write: "0.0000003833"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -8706,7 +8707,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.000000125",
-            input_cache_write: "0.000001625"
+            input_cache_write: "0.000000375"
           },
           top_provider: {
             context_length: 1048576,
@@ -8967,7 +8968,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.00000031",
-            input_cache_write: "0.000001625"
+            input_cache_write: "0.000000375"
           },
           top_provider: {
             context_length: 1048576,
@@ -9047,7 +9048,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "DeepSeek: R1 0528",
           created: 1748455170,
           description: "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model.",
-          context_length: 131072,
+          context_length: 163840,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -9060,18 +9061,16 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "deepseek-r1"
           },
           pricing: {
-            prompt: "0.00000045",
-            completion: "0.00000215",
+            prompt: "0.0000004",
+            completion: "0.00000175",
             request: "0",
             image: "0",
             web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0",
-            input_cache_write: "0"
+            internal_reasoning: "0"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 32768,
+            context_length: 163840,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9439,7 +9438,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.00000031",
-            input_cache_write: "0.000001625"
+            input_cache_write: "0.000000375"
           },
           top_provider: {
             context_length: 1048576,
@@ -12196,7 +12195,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             web_search: "0",
             internal_reasoning: "0",
             input_cache_read: "0.000000025",
-            input_cache_write: "0.0000001833"
+            input_cache_write: "0.0000000833"
           },
           top_provider: {
             context_length: 1048576,
