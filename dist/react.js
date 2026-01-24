@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-23T06:45:03.083Z",
+        fetchedAt: "2026-01-24T06:40:36.779Z",
         modelCount: 345,
         providerCount: 57,
         source: "openrouter"
@@ -658,15 +658,17 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000027",
-            completion: "0.00000112",
+            completion: "0.0000011",
             request: "0",
             image: "0",
             web_search: "0",
-            internal_reasoning: "0"
+            internal_reasoning: "0",
+            input_cache_read: "0",
+            input_cache_write: "0"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 196608,
             is_moderated: false
           },
           per_request_limits: null,
@@ -790,7 +792,7 @@ var require_latest = __commonJS({
             audio: "0.000001",
             internal_reasoning: "0.000003",
             input_cache_read: "0.00000005",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -4273,7 +4275,7 @@ var require_latest = __commonJS({
             audio: "0.000001",
             internal_reasoning: "0.0000025",
             input_cache_read: "0.00000003",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 32768,
@@ -4824,7 +4826,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             audio: "0.000001",
             internal_reasoning: "0.0000025",
             input_cache_read: "0.00000003",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -4882,7 +4884,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             audio: "0.0000003",
             internal_reasoning: "0.0000004",
             input_cache_read: "0.00000001",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -5374,7 +5376,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000009",
-            completion: "0.00000045",
+            completion: "0.0000004",
             request: "0",
             image: "0",
             web_search: "0",
@@ -5387,14 +5389,21 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -7971,7 +7980,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             audio: "0.0000003",
             internal_reasoning: "0.0000004",
             input_cache_read: "0.00000001",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -8966,7 +8975,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             audio: "0.000001",
             internal_reasoning: "0.0000025",
             input_cache_read: "0.00000003",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -9786,7 +9795,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "",
           name: "Arcee AI: Spotlight",
           created: 1746481552,
-          description: "Spotlight is a 7\u2011billion\u2011parameter vision\u2011language model derived from Qwen\u202F2.5\u2011VL and fine\u2011tuned by Arcee AI for tight image\u2011text grounding tasks. It offers a 32\u202Fk\u2011token context window, enabling rich multimodal conversations that combine lengthy documents with one or more images. Training emphasized fast inference on consumer GPUs while retaining strong captioning, visual\u2010question\u2011answering, and diagram\u2011analysis accuracy. As a result, Spotlight slots neatly into agent workflows where screenshots, charts or UI mock\u2011ups need to be interpreted on the fly. Early benchmarks show it matching or out\u2011scoring larger VLMs such as LLaVA\u20111.6 13\u202FB on popular VQA and POPE alignment tests. ",
+          description: "Spotlight is a 7\u2011billion\u2011parameter vision\u2011language model derived from Qwen\u202F2.5\u2011VL and fine\u2011tuned by Arcee AI for tight image\u2011text grounding tasks. It offers a 32\u202Fk\u2011token context window, enabling rich multimodal conversations that combine lengthy documents with one or more images. Training emphasized fast inference on consumer GPUs while retaining strong captioning, visual\u2010question\u2011answering, and diagram\u2011analysis accuracy. As a result, Spotlight slots neatly into agent workflows where screenshots, charts or UI mock\u2011ups need to be interpreted on the fly. Early benchmarks show it matching or out\u2011scoring larger VLMs such as LLaVA\uFFFD\uFFFD1.6 13\u202FB on popular VQA and POPE alignment tests. ",
           context_length: 131072,
           architecture: {
             modality: "text+image->text",
@@ -12219,7 +12228,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
-          expiration_date: "2026-02-06"
+          expiration_date: "2026-03-03"
         },
         {
           id: "anthropic/claude-3.7-sonnet:thinking",
@@ -12499,7 +12508,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             audio: "0.0000007",
             internal_reasoning: "0.0000004",
             input_cache_read: "0.000000025",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -13604,7 +13613,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             audio: "0.0000007",
             internal_reasoning: "0.0000004",
             input_cache_read: "0.000000025",
-            input_cache_write: "0.00000008333333333333333"
+            input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
             context_length: 1048576,
@@ -13623,7 +13632,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: "2026-02-06"
+          expiration_date: "2026-03-03"
         },
         {
           id: "meta-llama/llama-3.3-70b-instruct:free",
@@ -15790,7 +15799,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
+          expiration_date: "2026-02-06"
         },
         {
           id: "meta-llama/llama-3.1-70b-instruct",

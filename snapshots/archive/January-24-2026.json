@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "fetchedAt": "2026-01-24T06:40:36.779Z",
+    "fetchedAt": "2026-01-23T06:45:03.083Z",
     "modelCount": 345,
     "providerCount": 57,
     "source": "openrouter"
@@ -625,17 +625,15 @@
       },
       "pricing": {
         "prompt": "0.00000027",
-        "completion": "0.0000011",
+        "completion": "0.00000112",
         "request": "0",
         "image": "0",
         "web_search": "0",
-        "internal_reasoning": "0",
-        "input_cache_read": "0",
-        "input_cache_write": "0"
+        "internal_reasoning": "0"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": 196608,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -759,7 +757,7 @@
         "audio": "0.000001",
         "internal_reasoning": "0.000003",
         "input_cache_read": "0.00000005",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4242,7 +4240,7 @@
         "audio": "0.000001",
         "internal_reasoning": "0.0000025",
         "input_cache_read": "0.00000003",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 32768,
@@ -4791,7 +4789,7 @@
         "audio": "0.000001",
         "internal_reasoning": "0.0000025",
         "input_cache_read": "0.00000003",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4849,7 +4847,7 @@
         "audio": "0.0000003",
         "internal_reasoning": "0.0000004",
         "input_cache_read": "0.00000001",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -5341,7 +5339,7 @@
       },
       "pricing": {
         "prompt": "0.00000009",
-        "completion": "0.0000004",
+        "completion": "0.00000045",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -5354,21 +5352,14 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "min_p",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -7945,7 +7936,7 @@
         "audio": "0.0000003",
         "internal_reasoning": "0.0000004",
         "input_cache_read": "0.00000001",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -8938,7 +8929,7 @@
         "audio": "0.000001",
         "internal_reasoning": "0.0000025",
         "input_cache_read": "0.00000003",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -9758,7 +9749,7 @@
       "hugging_face_id": "",
       "name": "Arcee AI: Spotlight",
       "created": 1746481552,
-      "description": "Spotlight is a 7‑billion‑parameter vision‑language model derived from Qwen 2.5‑VL and fine‑tuned by Arcee AI for tight image‑text grounding tasks. It offers a 32 k‑token context window, enabling rich multimodal conversations that combine lengthy documents with one or more images. Training emphasized fast inference on consumer GPUs while retaining strong captioning, visual‐question‑answering, and diagram‑analysis accuracy. As a result, Spotlight slots neatly into agent workflows where screenshots, charts or UI mock‑ups need to be interpreted on the fly. Early benchmarks show it matching or out‑scoring larger VLMs such as LLaVA��1.6 13 B on popular VQA and POPE alignment tests. ",
+      "description": "Spotlight is a 7‑billion‑parameter vision‑language model derived from Qwen 2.5‑VL and fine‑tuned by Arcee AI for tight image‑text grounding tasks. It offers a 32 k‑token context window, enabling rich multimodal conversations that combine lengthy documents with one or more images. Training emphasized fast inference on consumer GPUs while retaining strong captioning, visual‐question‑answering, and diagram‑analysis accuracy. As a result, Spotlight slots neatly into agent workflows where screenshots, charts or UI mock‑ups need to be interpreted on the fly. Early benchmarks show it matching or out‑scoring larger VLMs such as LLaVA‑1.6 13 B on popular VQA and POPE alignment tests. ",
       "context_length": 131072,
       "architecture": {
         "modality": "text+image->text",
@@ -12191,7 +12182,7 @@
         "top_p": null,
         "frequency_penalty": null
       },
-      "expiration_date": "2026-03-03"
+      "expiration_date": "2026-02-06"
     },
     {
       "id": "anthropic/claude-3.7-sonnet:thinking",
@@ -12471,7 +12462,7 @@
         "audio": "0.0000007",
         "internal_reasoning": "0.0000004",
         "input_cache_read": "0.000000025",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -13576,7 +13567,7 @@
         "audio": "0.0000007",
         "internal_reasoning": "0.0000004",
         "input_cache_read": "0.000000025",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.00000008333333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -13595,7 +13586,7 @@
         "top_p"
       ],
       "default_parameters": {},
-      "expiration_date": "2026-03-03"
+      "expiration_date": "2026-02-06"
     },
     {
       "id": "meta-llama/llama-3.3-70b-instruct:free",
@@ -15754,7 +15745,7 @@
         "top_p"
       ],
       "default_parameters": {},
-      "expiration_date": "2026-02-06"
+      "expiration_date": null
     },
     {
       "id": "meta-llama/llama-3.1-70b-instruct",
