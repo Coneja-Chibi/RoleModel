@@ -31,12 +31,108 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-26T06:49:12.259Z",
-        modelCount: 346,
-        providerCount: 57,
+        fetchedAt: "2026-01-27T06:47:08.334Z",
+        modelCount: 347,
+        providerCount: 58,
         source: "openrouter"
       },
       data: [
+        {
+          id: "moonshotai/kimi-k2.5",
+          canonical_slug: "moonshotai/kimi-k2.5-0127",
+          hugging_face_id: "",
+          name: "MoonshotAI: Kimi K2.5",
+          created: 1769487076,
+          description: "Kimi K2.5 is Moonshot AI''s native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed visual and text tokens, it delivers strong performance in general reasoning, visual coding, and agentic tool-calling.",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000006",
+            completion: "0.000003",
+            input_cache_read: "0.0000001"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "upstage/solar-pro-3:free",
+          canonical_slug: "upstage/solar-pro-3",
+          hugging_face_id: "",
+          name: "Upstage: Solar Pro 3 (free)",
+          created: 1769481200,
+          description: "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining computational efficiency. Optimized for Korean with English and Japanese support.",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: "2026-03-02"
+        },
         {
           id: "minimax/minimax-m2-her",
           canonical_slug: "minimax/minimax-m2-her-20260123",
@@ -100,11 +196,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000006",
-            completion: "0.000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000006"
           },
           top_provider: {
             context_length: 104e4,
@@ -463,11 +555,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0"
           },
           top_provider: {
             context_length: 36864,
@@ -727,11 +815,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.0000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000015"
           },
           top_provider: {
             context_length: 202752,
@@ -887,11 +971,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000005"
           },
           top_provider: {
             context_length: 65536,
@@ -923,55 +1003,6 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
-          id: "xiaomi/mimo-v2-flash:free",
-          canonical_slug: "xiaomi/mimo-v2-flash-20251210",
-          hugging_face_id: "XiaomiMiMo/MiMo-V2-Flash",
-          name: "Xiaomi: MiMo-V2-Flash (free)",
-          created: 1765731308,
-          description: "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a hybrid-thinking toggle and a 256K context window, and excels at reasoning, coding, and agent scenarios. On SWE-bench Verified and SWE-bench Multilingual, MiMo-V2-Flash ranks as the top #1 open-source model globally, delivering performance comparable to Claude Sonnet 4.5 while costing only about 3.5% as much.\n\nUsers can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config).",
-          context_length: 262144,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: 0.95,
-            frequency_penalty: null
-          },
-          expiration_date: "2026-01-26"
-        },
-        {
           id: "xiaomi/mimo-v2-flash",
           canonical_slug: "xiaomi/mimo-v2-flash-20251210",
           hugging_face_id: "XiaomiMiMo/MiMo-V2-Flash",
@@ -992,11 +1023,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000009",
-            completion: "0.00000029",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000029"
           },
           top_provider: {
             context_length: 262144,
@@ -1095,11 +1122,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000006",
-            completion: "0.00000024",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000024"
           },
           top_provider: {
             context_length: 262144,
@@ -1349,11 +1372,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000022",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000022"
           },
           top_provider: {
             context_length: 262144,
@@ -1451,12 +1470,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000009",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0"
+            completion: "0.0000009"
           },
           top_provider: {
             context_length: 131072,
@@ -1511,13 +1525,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000027",
-            completion: "0.000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0",
-            input_cache_write: "0"
+            completion: "0.000001"
           },
           top_provider: {
             context_length: 131072,
@@ -1702,11 +1710,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000025",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000025"
           },
           top_provider: {
             context_length: 1e6,
@@ -2059,11 +2063,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000027",
-            completion: "0.00000041",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000041"
           },
           top_provider: {
             context_length: 163840,
@@ -2115,11 +2115,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.00000038",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000038"
           },
           top_provider: {
             context_length: 163840,
@@ -2230,11 +2226,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0"
           },
           top_provider: {
             context_length: 163840,
@@ -2287,11 +2279,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.00000085",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000085"
           },
           top_provider: {
             context_length: 163840,
@@ -2398,11 +2386,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000005"
           },
           top_provider: {
             context_length: 65536,
@@ -2454,11 +2438,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 65536,
@@ -2508,11 +2488,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000012",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 65536,
@@ -2620,10 +2596,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000002",
             completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.00000005"
           },
           top_provider: {
@@ -2979,10 +2952,6 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.000000207",
             completion: "0.000000828",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
             input_cache_read: "0.0000000414"
           },
           top_provider: {
@@ -3034,11 +3003,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.00000175",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000175"
           },
           top_provider: {
             context_length: 262144,
@@ -3097,10 +3062,6 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000025",
             completion: "0.0000125",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
             input_cache_read: "0.000000625"
           },
           top_provider: {
@@ -3400,10 +3361,6 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000002",
             completion: "0.000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
             input_cache_read: "0.00000003"
           },
           top_provider: {
@@ -3773,7 +3730,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 2e5,
             max_completion_tokens: 64e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -3869,12 +3826,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000008",
-            completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0"
+            completion: "0.0000005"
           },
           top_provider: {
             context_length: 131072,
@@ -4151,11 +4103,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000007",
-            completion: "0.00000028",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000028"
           },
           top_provider: {
             context_length: 131072,
@@ -4256,12 +4204,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0"
+            completion: "0.000001"
           },
           top_provider: {
             context_length: 131072,
@@ -4419,11 +4362,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000035",
-            completion: "0.0000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000015"
           },
           top_provider: {
             context_length: 202752,
@@ -4482,10 +4421,6 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000044",
             completion: "0.00000176",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
             input_cache_read: "0.00000011"
           },
           top_provider: {
@@ -4549,7 +4484,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 1e6,
             max_completion_tokens: 64e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -4593,11 +4528,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000021",
-            completion: "0.00000032",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000032"
           },
           top_provider: {
             context_length: 163840,
@@ -4650,11 +4581,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000005"
           },
           top_provider: {
             context_length: 131072,
@@ -4864,11 +4791,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000045",
-            completion: "0.0000035",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000035"
           },
           top_provider: {
             context_length: 262144,
@@ -5240,10 +5163,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.0000002",
             completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.00000005"
           },
           top_provider: {
@@ -5400,11 +5320,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.00000039",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000039"
           },
           top_provider: {
             context_length: 32768,
@@ -5598,15 +5514,11 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000008",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000008"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5837,11 +5749,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000039",
-            completion: "0.0000019",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000019"
           },
           top_provider: {
             context_length: 262144,
@@ -6041,11 +5949,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000057",
-            completion: "0.00000142",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000142"
           },
           top_provider: {
             context_length: 65536,
@@ -6138,10 +6042,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.0000002",
             completion: "0.0000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.00000002"
           },
           top_provider: {
@@ -6189,11 +6090,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000011",
-            completion: "0.00000038",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000038"
           },
           top_provider: {
             context_length: 131072,
@@ -6442,11 +6339,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000007",
-            completion: "0.00000028",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000028"
           },
           top_provider: {
             context_length: 12e4,
@@ -6496,11 +6389,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000014",
-            completion: "0.00000056",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000056"
           },
           top_provider: {
             context_length: 3e4,
@@ -6549,12 +6438,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.0000006",
             completion: "0.0000018",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000011",
-            input_cache_write: "0"
+            input_cache_read: "0.00000011"
           },
           top_provider: {
             context_length: 65536,
@@ -7077,11 +6961,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.0000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 131072,
@@ -7140,10 +7020,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000015",
             completion: "0.000075",
-            request: "0",
-            image: "0.024",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.01",
             input_cache_read: "0.0000015",
             input_cache_write: "0.00001875"
           },
@@ -7241,11 +7118,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000007",
-            completion: "0.00000027",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000027"
           },
           top_provider: {
             context_length: 16e4,
@@ -7292,11 +7165,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000008",
-            completion: "0.00000033",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000033"
           },
           top_provider: {
             context_length: 262144,
@@ -7343,11 +7212,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000035",
-            completion: "0.00000155",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000155"
           },
           top_provider: {
             context_length: 131072,
@@ -7445,11 +7310,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000022",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000022"
           },
           top_provider: {
             context_length: 131072,
@@ -7502,11 +7363,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000011",
-            completion: "0.0000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000006"
           },
           top_provider: {
             context_length: 262144,
@@ -7648,11 +7505,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000022",
-            completion: "0.00000095",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000095"
           },
           top_provider: {
             context_length: 262144,
@@ -7754,11 +7607,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 128e3,
@@ -8183,10 +8032,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000003",
             completion: "0.000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.00000075"
           },
           top_provider: {
@@ -8275,11 +8121,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000014",
-            completion: "0.00000057",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000057"
           },
           top_provider: {
             context_length: 131072,
@@ -8321,11 +8163,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0"
           },
           top_provider: {
             context_length: 163840,
@@ -8370,11 +8208,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.00000085",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000085"
           },
           top_provider: {
             context_length: 163840,
@@ -8423,11 +8257,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000009",
-            completion: "0.0000019",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000019"
           },
           top_provider: {
             context_length: 262144,
@@ -8468,11 +8298,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000008",
-            completion: "0.0000012",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000012"
           },
           top_provider: {
             context_length: 81920,
@@ -8514,11 +8340,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000042",
-            completion: "0.00000125",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000125"
           },
           top_provider: {
             context_length: 123e3,
@@ -8563,11 +8385,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000028",
-            completion: "0.0000011",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000011"
           },
           top_provider: {
             context_length: 123e3,
@@ -8662,11 +8480,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000006",
-            completion: "0.00000018",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000018"
           },
           top_provider: {
             context_length: 131072,
@@ -8882,11 +8696,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000029",
-            completion: "0.00000115",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000115"
           },
           top_provider: {
             context_length: 131072,
@@ -8978,10 +8788,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.0000003",
             completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.000000075"
           },
           top_provider: {
@@ -9034,10 +8841,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000003",
             completion: "0.000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.00000075"
           },
           top_provider: {
@@ -9183,11 +8987,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.00000175",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000175"
           },
           top_provider: {
             context_length: 163840,
@@ -9247,10 +9047,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000015",
             completion: "0.000075",
-            request: "0",
-            image: "0.024",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.01",
             input_cache_read: "0.0000015",
             input_cache_write: "0.00001875"
           },
@@ -9302,10 +9099,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000003",
             completion: "0.000015",
-            request: "0",
-            image: "0.0048",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.01",
             input_cache_read: "0.0000003",
             input_cache_write: "0.00000375"
           },
@@ -9440,11 +9234,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.0000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 32768,
@@ -9921,11 +9711,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000006",
-            completion: "0.00000022",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000022"
           },
           top_provider: {
             context_length: 40960,
@@ -9979,12 +9765,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000025",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0"
+            completion: "0.00000025"
           },
           top_provider: {
             context_length: 32e3,
@@ -10039,11 +9820,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000022",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000022"
           },
           top_provider: {
             context_length: 40960,
@@ -10093,11 +9870,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000008",
-            completion: "0.00000024",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000024"
           },
           top_provider: {
             context_length: 40960,
@@ -10202,11 +9975,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0"
           },
           top_provider: {
             context_length: 163840,
@@ -10251,11 +10020,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000012",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000012"
           },
           top_provider: {
             context_length: 163840,
@@ -10714,10 +10479,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.0000003",
             completion: "0.0000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.000000075"
           },
           top_provider: {
@@ -10769,10 +10531,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000003",
             completion: "0.000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.005",
             input_cache_read: "0.00000075"
           },
           top_provider: {
@@ -10965,11 +10724,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000022",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000022"
           },
           top_provider: {
             context_length: 16384,
@@ -11018,11 +10773,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000019",
-            completion: "0.00000087",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000087"
           },
           top_provider: {
             context_length: 163840,
@@ -11165,11 +10916,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000003",
-            completion: "0.00000011",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000011"
           },
           top_provider: {
             context_length: 131072,
@@ -11293,11 +11040,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000001703012",
-            completion: "0.0000000681536",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000000681536"
           },
           top_provider: {
             context_length: 96e3,
@@ -11383,11 +11126,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000003",
-            completion: "0.0000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 131072,
@@ -11607,11 +11346,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000004",
-            completion: "0.00000015",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000015"
           },
           top_provider: {
             context_length: 96e3,
@@ -11664,11 +11399,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000055",
-            completion: "0.0000008",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000008"
           },
           top_provider: {
             context_length: 32768,
@@ -11961,10 +11692,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000003",
             completion: "0.000015",
-            request: "0",
-            image: "0.0048",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.01",
             input_cache_read: "0.0000003",
             input_cache_write: "0.00000375"
           },
@@ -12015,10 +11743,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.000003",
             completion: "0.000015",
-            request: "0",
-            image: "0.0048",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.01",
             input_cache_read: "0.0000003",
             input_cache_write: "0.00000375"
           },
@@ -12517,11 +12242,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.0000006",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000006"
           },
           top_provider: {
             context_length: 32768,
@@ -12704,11 +12425,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000003",
-            completion: "0.00000011",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000011"
           },
           top_provider: {
             context_length: 32768,
@@ -12854,11 +12571,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000003",
-            completion: "0.00000011",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000011"
           },
           top_provider: {
             context_length: 131072,
@@ -12909,11 +12622,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000007",
-            completion: "0.0000025",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000025"
           },
           top_provider: {
             context_length: 64e3,
@@ -13089,11 +12798,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000012",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000012"
           },
           top_provider: {
             context_length: 163840,
@@ -13414,11 +13119,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000006",
-            completion: "0.00000024",
-            request: "0",
-            image: "0.00009",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000024"
           },
           top_provider: {
             context_length: 3e5,
@@ -13458,11 +13159,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.000000035",
-            completion: "0.00000014",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000014"
           },
           top_provider: {
             context_length: 128e3,
@@ -13503,11 +13200,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000008",
-            completion: "0.0000032",
-            request: "0",
-            image: "0.0012",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000032"
           },
           top_provider: {
             context_length: 3e5,
@@ -13743,11 +13436,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.00000003",
-            completion: "0.00000011",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000011"
           },
           top_provider: {
             context_length: 32768,
@@ -13885,10 +13574,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           pricing: {
             prompt: "0.0000008",
             completion: "0.000004",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
+            web_search: "0.01",
             input_cache_read: "0.00000008",
             input_cache_write: "0.000001"
           },
@@ -13935,11 +13621,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000003",
-            completion: "0.000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000005"
           },
           top_provider: {
             context_length: 16384,
@@ -13990,11 +13672,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000006",
-            completion: "0.00003",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00003"
           },
           top_provider: {
             context_length: 2e5,
@@ -15139,10 +14817,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           pricing: {
             prompt: "0.0000025",
             completion: "0.00001",
-            request: "0",
-            image: "0.003613",
-            web_search: "0",
-            internal_reasoning: "0",
             input_cache_read: "0.00000125"
           },
           top_provider: {
@@ -15237,11 +14911,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.00000005",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000005"
           },
           top_provider: {
             context_length: 16384,
@@ -15665,11 +15335,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.00000148",
-            completion: "0.00000148",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000148"
           },
           top_provider: {
             context_length: 8192,
@@ -15714,11 +15380,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.00000014",
-            completion: "0.00000014",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00000014"
           },
           top_provider: {
             context_length: 8192,
@@ -16392,11 +16054,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.000001",
-            completion: "0.000002",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000002"
           },
           top_provider: {
             context_length: 4095,
@@ -16687,11 +16345,7 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           },
           pricing: {
             prompt: "0.00000375",
-            completion: "0.0000075",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.0000075"
           },
           top_provider: {
             context_length: 6144,
@@ -16963,11 +16617,7 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           },
           pricing: {
             prompt: "0.00000075",
-            completion: "0.000001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.000001"
           },
           top_provider: {
             context_length: 8e3,
