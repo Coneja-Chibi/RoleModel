@@ -31,19 +31,64 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-01-27T06:47:08.334Z",
+        fetchedAt: "2026-01-28T06:47:16.908Z",
         modelCount: 347,
         providerCount: 58,
         source: "openrouter"
       },
       data: [
         {
+          id: "arcee-ai/trinity-large-preview:free",
+          canonical_slug: "arcee-ai/trinity-large-preview",
+          hugging_face_id: "arcee-ai/Trinity-Large-Preview",
+          name: "Arcee AI: Trinity Large Preview (free)",
+          created: 1769552670,
+          description: "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. \n\nIt excels in creative writing, storytelling, role-play, chat scenarios, and real-time voice assistance, better than your average reasoning model usually can. But we\u2019re also introducing some of our newer agentic performance. It was trained to navigate well in agent harnesses like OpenCode, Cline, and Kilo Code, and to handle complex toolchains and long, constraint-filled prompts. \n\nThe architecture natively supports very long context windows up to 512k tokens, with the Preview API currently served at 128k context using 8-bit quantization for practical deployment. Trinity-Large-Preview reflects Arcee\u2019s efficiency-first design philosophy, offering a production-oriented frontier model with open weights and permissive licensing suitable for real-world applications and experimentation.",
+          context_length: 131e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 131e3,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.8,
+            top_p: 0.8,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
           id: "moonshotai/kimi-k2.5",
           canonical_slug: "moonshotai/kimi-k2.5-0127",
-          hugging_face_id: "",
+          hugging_face_id: "moonshotai/Kimi-K2.5",
           name: "MoonshotAI: Kimi K2.5",
           created: 1769487076,
-          description: "Kimi K2.5 is Moonshot AI''s native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed visual and text tokens, it delivers strong performance in general reasoning, visual coding, and agentic tool-calling.",
+          description: "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed visual and text tokens, it delivers strong performance in general reasoning, visual coding, and agentic tool-calling.",
           context_length: 262144,
           architecture: {
             modality: "text+image->text",
@@ -59,26 +104,33 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000006",
-            completion: "0.000003",
-            input_cache_read: "0.0000001"
+            completion: "0.000003"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
+            "temperature",
             "tool_choice",
-            "tools"
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
           ],
           default_parameters: {
             temperature: null,
@@ -140,7 +192,7 @@ var require_latest = __commonJS({
           name: "MiniMax: MiniMax M2-her",
           created: 1769177239,
           description: "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message roles (user_system, group, sample_message_user, sample_message_ai) and can learn from example dialogue to better match the style and pacing of your scenario, making it a strong choice for storytelling, companions, and conversational experiences where natural flow and vivid interaction matter most.",
-          context_length: 32768,
+          context_length: 65536,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -158,7 +210,7 @@ var require_latest = __commonJS({
             input_cache_read: "0.00000003"
           },
           top_provider: {
-            context_length: 32768,
+            context_length: 65536,
             max_completion_tokens: 2048,
             is_moderated: false
           },
@@ -1301,55 +1353,6 @@ var require_latest = __commonJS({
             frequency_penalty: null
           },
           expiration_date: null
-        },
-        {
-          id: "mistralai/devstral-2512:free",
-          canonical_slug: "mistralai/devstral-2512",
-          hugging_face_id: "mistralai/Devstral-2-123B-Instruct-2512",
-          name: "Mistral: Devstral 2 2512 (free)",
-          created: 1765285419,
-          description: "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window.\n\nDevstral 2 supports exploring codebases and orchestrating changes across multiple files while maintaining architecture-level context. It tracks framework dependencies, detects failures, and retries with corrections\u2014solving challenges like bug fixing and modernizing legacy systems. The model can be fine-tuned to prioritize specific languages or optimize for large enterprise codebases. It is available under a modified MIT license.",
-          context_length: 262144,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 262144,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: "2026-01-27"
         },
         {
           id: "mistralai/devstral-2512",
@@ -3373,7 +3376,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -4528,7 +4530,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000021",
-            completion: "0.00000032"
+            completion: "0.00000032",
+            input_cache_read: "0.00000021"
           },
           top_provider: {
             context_length: 163840,
@@ -4687,7 +4690,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 65535,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5514,7 +5517,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000008"
+            completion: "0.0000008",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 131072,
@@ -9765,7 +9769,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000025"
+            completion: "0.00000025",
+            input_cache_read: "0.00000005"
           },
           top_provider: {
             context_length: 32e3,
@@ -13905,11 +13910,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.0000025",
-            completion: "0.00001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00001"
           },
           top_provider: {
             context_length: 8e3,
@@ -13947,11 +13948,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.0000025",
-            completion: "0.00001",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0.00001"
           },
           top_provider: {
             context_length: 8e3,
@@ -15726,20 +15723,18 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000004"
+            prompt: "0.00000051",
+            completion: "0.00000074"
           },
           top_provider: {
             context_length: 8192,
-            max_completion_tokens: null,
+            max_completion_tokens: 8e3,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "response_format",
@@ -16305,20 +16300,12 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
-            "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
-            "repetition_penalty",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
-            "top_a",
-            "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
