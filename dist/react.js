@@ -33,12 +33,96 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-01T06:58:57.485Z",
-        modelCount: 346,
-        providerCount: 58,
+        fetchedAt: "2026-02-02T07:11:38.233Z",
+        modelCount: 347,
+        providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "openrouter/free",
+          canonical_slug: "openrouter/free",
+          hugging_face_id: "",
+          name: "Free Router",
+          created: 1769917427,
+          description: "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that support features needed for your request such as image understanding, tool calling, structured outputs and more. ",
+          context_length: 2e5,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "-1",
+            completion: "-1"
+          },
+          top_provider: {
+            context_length: null,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "stepfun/step-3.5-flash:free",
+          canonical_slug: "stepfun/step-3.5-flash",
+          hugging_face_id: "stepfun-ai/Step-3.5-Flash",
+          name: "StepFun: Step 3.5 Flash (free)",
+          created: 1769728337,
+          description: "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. It is a reasoning model that is incredibly speed efficient even at long contexts.",
+          context_length: 256e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 256e3,
+            max_completion_tokens: 256e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "stop",
+            "temperature",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
         {
           id: "arcee-ai/trinity-large-preview:free",
           canonical_slug: "arcee-ai/trinity-large-preview",
@@ -3365,7 +3449,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002",
+            prompt: "0.000000255",
             completion: "0.000001",
             input_cache_read: "0.00000003"
           },
@@ -4532,9 +4616,8 @@ var require_latest = __commonJS({
             instruct_type: "deepseek-v3.1"
           },
           pricing: {
-            prompt: "0.00000021",
-            completion: "0.00000032",
-            input_cache_read: "0.00000021"
+            prompt: "0.00000027",
+            completion: "0.00000041"
           },
           top_provider: {
             context_length: 163840,
@@ -6768,7 +6851,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: true
           },
           per_request_limits: null,
@@ -6926,7 +7009,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: true
           },
           per_request_limits: null,
@@ -7480,7 +7563,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "frequency_penalty",
             "max_tokens",
             "presence_penalty",
-            "seed",
             "stop",
             "temperature",
             "tool_choice",
@@ -7787,44 +7869,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_k",
             "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "moonshotai/kimi-k2:free",
-          canonical_slug: "moonshotai/kimi-k2",
-          hugging_face_id: "moonshotai/Kimi-K2-Instruct",
-          name: "MoonshotAI: Kimi K2 0711 (free)",
-          created: 1752263252,
-          description: "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. Kimi K2 excels across a broad range of benchmarks, particularly in coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) tasks. It supports long-context inference up to 128K tokens and is designed with a novel training stack that includes the MuonClip optimizer for stable large-scale MoE training.",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "seed",
-            "stop",
-            "temperature"
           ],
           default_parameters: {},
           expiration_date: null
@@ -11596,7 +11640,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12490,7 +12534,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12601,8 +12645,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "stop",
             "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -12719,7 +12761,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           top_provider: {
             context_length: 16384,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13497,7 +13539,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13950,7 +13992,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -14226,7 +14268,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 4096,
             is_moderated: false
           },
           per_request_limits: null,
@@ -14412,7 +14454,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -14546,7 +14588,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           },
           top_provider: {
             context_length: 65536,
-            max_completion_tokens: null,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -15213,7 +15255,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           top_provider: {
             context_length: 8192,
-            max_completion_tokens: null,
+            max_completion_tokens: 2048,
             is_moderated: false
           },
           per_request_limits: null,
@@ -16254,7 +16296,7 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           },
           top_provider: {
             context_length: 4096,
-            max_completion_tokens: null,
+            max_completion_tokens: 2048,
             is_moderated: false
           },
           per_request_limits: null,
@@ -16622,7 +16664,7 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           },
           top_provider: {
             context_length: 6144,
-            max_completion_tokens: null,
+            max_completion_tokens: 4096,
             is_moderated: false
           },
           per_request_limits: null,
@@ -16672,7 +16714,7 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
           },
           top_provider: {
             context_length: 4096,
-            max_completion_tokens: null,
+            max_completion_tokens: 4096,
             is_moderated: false
           },
           per_request_limits: null,
