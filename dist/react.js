@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-02T07:11:38.233Z",
+        fetchedAt: "2026-02-03T07:01:13.427Z",
         modelCount: 347,
         providerCount: 59,
         source: "openrouter"
@@ -43,7 +43,7 @@ var require_latest = __commonJS({
           id: "openrouter/free",
           canonical_slug: "openrouter/free",
           hugging_face_id: "",
-          name: "Free Router",
+          name: "Free Models Router",
           created: 1769917427,
           description: "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that support features needed for your request such as image understanding, tool calling, structured outputs and more. ",
           context_length: 2e5,
@@ -60,8 +60,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "-1",
-            completion: "-1"
+            prompt: "0",
+            completion: "0"
           },
           top_provider: {
             context_length: null,
@@ -69,7 +69,25 @@ var require_latest = __commonJS({
             is_moderated: false
           },
           per_request_limits: null,
-          supported_parameters: [],
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
           default_parameters: {
             temperature: null,
             top_p: null,
@@ -363,7 +381,7 @@ var require_latest = __commonJS({
           hugging_face_id: "LiquidAI/LFM2.5-1.2B-Thinking",
           name: "LiquidAI: LFM2.5-1.2B-Thinking (free)",
           created: 1768927527,
-          description: "LFM2.5-1.2B-Thinking is a lightweight reasoning-focused model optimized for agentic tasks, data extraction, and RAG\u2014while still running comfortably on edge devices. It supports long context (up to 32K tokens) and is designed to provide higher-quality \u201Cthinking\u201D responses in a small 1.2B model.",
+          description: "LFM2.5-1.2B-Thinking is a lightweight reasoning-focused model optimized for agentic tasks, data extraction, and RAG\u2014while still running comfortably on edge devices. It supports long context (up to 32K tokens) and is designed to provide higher-quality \uFFFD\uFFFD\uFFFDthinking\u201D responses in a small 1.2B model.",
           context_length: 32768,
           architecture: {
             modality: "text->text",
@@ -969,8 +987,10 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
+            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -9816,7 +9836,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000005",
-            completion: "0.00000025",
+            completion: "0.0000004",
             input_cache_read: "0.00000005"
           },
           top_provider: {
@@ -16396,7 +16416,29 @@ This model is currently powered by Mistral-7B-v0.2, and incorporates a "better" 
             is_moderated: false
           },
           per_request_limits: null,
-          supported_parameters: [],
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p",
+            "web_search_options"
+          ],
           default_parameters: {
             temperature: null,
             top_p: null,
