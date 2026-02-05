@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-04T07:02:13.583Z",
-        modelCount: 346,
+        fetchedAt: "2026-02-05T07:08:15.162Z",
+        modelCount: 343,
         providerCount: 59,
         source: "openrouter"
       },
@@ -59,8 +59,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000015"
+            prompt: "0.00000007",
+            completion: "0.0000003"
           },
           top_provider: {
             context_length: 262144,
@@ -125,7 +125,6 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -743,10 +742,10 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
-          id: "allenai/molmo-2-8b:free",
+          id: "allenai/molmo-2-8b",
           canonical_slug: "allenai/molmo-2-8b-20260109",
           hugging_face_id: "allenai/Molmo2-8B",
-          name: "AllenAI: Molmo2 8B (free)",
+          name: "AllenAI: Molmo2 8B",
           created: 1767996672,
           description: "Molmo2-8B is an open vision-language model developed by the Allen Institute for AI (Ai2) as part of the Molmo2 family, supporting image, video, and multi-image understanding and grounding. It is based on Qwen3-8B and uses SigLIP 2 as its vision backbone, outperforming other open-weight, open-data models on short videos, counting, and captioning, while remaining competitive on long-video tasks.",
           context_length: 36864,
@@ -764,8 +763,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0"
+            prompt: "0.0000002",
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 36864,
@@ -779,7 +778,6 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -799,7 +797,7 @@ var require_latest = __commonJS({
           hugging_face_id: "allenai/Olmo-3.1-32B-Instruct",
           name: "AllenAI: Olmo 3.1 32B Instruct",
           created: 1767728554,
-          description: "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this variant emphasizes responsiveness to complex user directions and robust chat interactions while retaining strong capabilities on reasoning and coding benchmarks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Instruct reflects the Olmo initiative\u2019s commitment to openness and transparency.",
+          description: "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this variant emphasizes responsiveness to complex user directions and robust chat interactions while retaining strong capabilities on reasoning and coding benchmarks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Instruct reflects the Olmo initiative\uFFFD\uFFFD\uFFFDs commitment to openness and transparency.",
           context_length: 65536,
           architecture: {
             modality: "text->text",
@@ -968,11 +966,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000027",
-            completion: "0.0000011"
+            completion: "0.00000095",
+            input_cache_read: "0.0000000299999997"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 196608,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3750,60 +3749,6 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
-          id: "deepcogito/cogito-v2-preview-llama-405b",
-          canonical_slug: "deepcogito/cogito-v2-preview-llama-405b",
-          hugging_face_id: "deepcogito/cogito-v2-preview-llama-405B",
-          name: "Deep Cogito: Cogito V2 Preview Llama 405B",
-          created: 1760709933,
-          description: "Cogito v2 405B is a dense hybrid reasoning model that combines direct answering capabilities with advanced self-reflection. It represents a significant step toward frontier intelligence with dense architecture delivering performance competitive with leading closed models. This advanced reasoning system combines policy improvement with massive scale for exceptional capabilities.\n",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000035",
-            completion: "0.0000035"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: "2026-02-04"
-        },
-        {
           id: "openai/gpt-5-image-mini",
           canonical_slug: "openai/gpt-5-image-mini",
           hugging_face_id: "",
@@ -5007,7 +4952,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000012"
+            completion: "0.00000088",
+            input_cache_read: "0.00000011"
           },
           top_provider: {
             context_length: 262144,
@@ -5269,7 +5215,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           pricing: {
             prompt: "0.00000021",
             completion: "0.00000079",
-            input_cache_read: "0.000000168"
+            input_cache_read: "0.0000001300000002"
           },
           top_provider: {
             context_length: 163840,
@@ -5986,109 +5932,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           ],
           default_parameters: {},
           expiration_date: null
-        },
-        {
-          id: "deepcogito/cogito-v2-preview-llama-70b",
-          canonical_slug: "deepcogito/cogito-v2-preview-llama-70b",
-          hugging_face_id: "deepcogito/cogito-v2-preview-llama-70B",
-          name: "Deep Cogito: Cogito V2 Preview Llama 70B",
-          created: 1756831784,
-          description: "Cogito v2 70B is a dense hybrid reasoning model that combines direct answering capabilities with advanced self-reflection. Built with iterative policy improvement, it delivers strong performance across reasoning tasks while maintaining efficiency through shorter reasoning chains and improved intuition.",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000088",
-            completion: "0.00000088"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: "2026-02-04"
-        },
-        {
-          id: "deepcogito/cogito-v2-preview-llama-109b-moe",
-          canonical_slug: "deepcogito/cogito-v2-preview-llama-109b-moe",
-          hugging_face_id: "deepcogito/cogito-v2-preview-llama-109B-MoE",
-          name: "Cogito V2 Preview Llama 109B",
-          created: 1756831568,
-          description: "An instruction-tuned, hybrid-reasoning Mixture-of-Experts model built on Llama-4-Scout-17B-16E. Cogito v2 can answer directly or engage an extended \u201Cthinking\u201D phase, with alignment guided by Iterated Distillation & Amplification (IDA). It targets coding, STEM, instruction following, and general helpfulness, with stronger multilingual, tool-calling, and reasoning performance than size-equivalent baselines. The model supports long-context use (up to 10M tokens) and standard Transformers workflows. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)",
-          context_length: 32767,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "image",
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama4",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000018",
-            completion: "0.00000059"
-          },
-          top_provider: {
-            context_length: 32767,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: "2026-02-04"
         },
         {
           id: "stepfun-ai/step3",
@@ -7871,7 +7714,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.000000071",
-            completion: "0.000000463"
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 262144,
@@ -11453,7 +11296,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Google: Gemma 3 27B",
           created: 1741756359,
           description: "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to [Gemma 2](google/gemma-2-27b-it)",
-          context_length: 96e3,
+          context_length: 128e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -11471,8 +11314,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             completion: "0.00000015"
           },
           top_provider: {
-            context_length: 96e3,
-            max_completion_tokens: 96e3,
+            context_length: 128e3,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -14769,7 +14612,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
+          expiration_date: "2026-02-17"
         },
         {
           id: "sao10k/l3-lunaris-8b",
