@@ -33,12 +33,66 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-05T07:08:15.162Z",
-        modelCount: 343,
+        fetchedAt: "2026-02-06T07:03:32.168Z",
+        modelCount: 344,
         providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "anthropic/claude-opus-4.6",
+          canonical_slug: "anthropic/claude-4.6-opus-20260205",
+          hugging_face_id: "",
+          name: "Anthropic: Claude Opus 4.6",
+          created: 1770219050,
+          description: "Opus 4.6 is Anthropic\u2019s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective for large codebases, complex refactors, and multi-step debugging that unfolds over time. The model shows deeper contextual understanding, stronger problem decomposition, and greater reliability on hard engineering tasks than prior generations.\n\nBeyond coding, Opus 4.6 excels at sustained knowledge work. It produces near-production-ready documents, plans, and analyses in a single pass, and maintains coherence across very long outputs and extended sessions. This makes it a strong default for tasks that require persistence, judgment, and follow-through, such as technical design, migration planning, and end-to-end project execution.\n\nFor users upgrading from earlier Opus versions, see our [official migration guide here](https://openrouter.ai/docs/guides/guides/model-migrations/claude-4-6-opus)\n",
+          context_length: 1e6,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Claude",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000005",
+            completion: "0.000025",
+            web_search: "0.01",
+            input_cache_read: "0.0000005",
+            input_cache_write: "0.00000625"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p",
+            "verbosity"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
         {
           id: "qwen/qwen3-coder-next",
           canonical_slug: "qwen/qwen3-coder-next-2025-02-03",
@@ -797,7 +851,7 @@ var require_latest = __commonJS({
           hugging_face_id: "allenai/Olmo-3.1-32B-Instruct",
           name: "AllenAI: Olmo 3.1 32B Instruct",
           created: 1767728554,
-          description: "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this variant emphasizes responsiveness to complex user directions and robust chat interactions while retaining strong capabilities on reasoning and coding benchmarks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Instruct reflects the Olmo initiative\uFFFD\uFFFD\uFFFDs commitment to openness and transparency.",
+          description: "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this variant emphasizes responsiveness to complex user directions and robust chat interactions while retaining strong capabilities on reasoning and coding benchmarks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Instruct reflects the Olmo initiative\u2019s commitment to openness and transparency.",
           context_length: 65536,
           architecture: {
             modality: "text->text",
@@ -5322,7 +5376,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000009",
-            completion: "0.0000004"
+            completion: "0.00000045",
+            input_cache_read: "0.00000009"
           },
           top_provider: {
             context_length: 131072,
@@ -5331,21 +5386,14 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
-            "seed",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -7575,7 +7623,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "frequency_penalty",
             "max_tokens",
             "presence_penalty",
-            "reasoning",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -9742,22 +9789,14 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -10652,7 +10691,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -14819,7 +14857,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           name: "Meta: Llama 3.1 405B Instruct",
           created: 1721692800,
           description: "The highly anticipated 400B class of Llama3 is here! Clocking in at 128k context with impressive eval scores, the Meta AI team continues to push the frontier of open-source LLMs.\n\nMeta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 405B instruct-tuned version is optimized for high quality dialogue usecases.\n\nIt has demonstrated strong performance compared to leading closed-source models including GPT-4o and Claude 3.5 Sonnet in evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-          context_length: 1e4,
+          context_length: 131e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -14832,11 +14870,11 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.0000035",
-            completion: "0.0000035"
+            prompt: "0.000004",
+            completion: "0.000004"
           },
           top_provider: {
-            context_length: 1e4,
+            context_length: 131e3,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -14859,7 +14897,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: "2026-02-06"
+          expiration_date: null
         },
         {
           id: "meta-llama/llama-3.1-70b-instruct",
