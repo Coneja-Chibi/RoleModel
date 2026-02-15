@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-14T06:55:54.291Z",
+        fetchedAt: "2026-02-15T06:59:11.624Z",
         modelCount: 340,
         providerCount: 58,
         source: "openrouter"
@@ -97,7 +97,7 @@ var require_latest = __commonJS({
           name: "Z.ai: GLM 5",
           created: 1770829182,
           description: "GLM-5 is Z.ai\u2019s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-          context_length: 202752,
+          context_length: 204800,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -110,12 +110,11 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000008",
-            completion: "0.00000256",
-            input_cache_read: "0.00000016"
+            prompt: "0.00000075",
+            completion: "0.00000255"
           },
           top_provider: {
-            context_length: 202752,
+            context_length: 204800,
             max_completion_tokens: 131072,
             is_moderated: false
           },
@@ -525,7 +524,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0",
-            completion: "0"
+            completion: "0",
+            request: "0",
+            image: "0",
+            web_search: "0",
+            internal_reasoning: "0"
           },
           top_provider: {
             context_length: 131e3,
@@ -571,12 +574,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000045",
-            completion: "0.00000225",
-            input_cache_read: "0.000000070000002"
+            completion: "0.00000044",
+            input_cache_read: "0.0000001125"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 65535,
             is_moderated: false
           },
           per_request_limits: null,
