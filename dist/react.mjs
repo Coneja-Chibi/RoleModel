@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-15T06:59:11.624Z",
+        fetchedAt: "2026-02-16T07:13:42.876Z",
         modelCount: 340,
         providerCount: 58,
         source: "openrouter"
@@ -44,7 +44,7 @@ var require_latest = __commonJS({
           name: "MiniMax: MiniMax M2.5",
           created: 1770908502,
           description: "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
-          context_length: 204800,
+          context_length: 196608,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -57,12 +57,11 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000012",
-            input_cache_read: "0.00000003"
+            prompt: "0.0000002",
+            completion: "0.000001"
           },
           top_provider: {
-            context_length: 204800,
+            context_length: 196608,
             max_completion_tokens: 131072,
             is_moderated: false
           },
@@ -70,6 +69,8 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -77,10 +78,12 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -574,8 +577,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000045",
-            completion: "0.00000044",
-            input_cache_read: "0.0000001125"
+            completion: "0.0000022",
+            input_cache_read: "0.000000225"
           },
           top_provider: {
             context_length: 262144,
@@ -1956,7 +1959,6 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -2544,7 +2546,6 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -6073,7 +6074,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "MoonshotAI: Kimi K2 0905",
           created: 1757021147,
           description: "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It supports long-context inference up to 256k tokens, extended from the previous 128k.\n\nThis update improves agentic coding with higher accuracy and better generalization across scaffolds, and enhances frontend coding with more aesthetic and functional outputs for web, 3D, and related tasks. Kimi K2 is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. It excels across coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) benchmarks. The model is trained with a novel stack incorporating the MuonClip optimizer for stable large-scale MoE training.",
-          context_length: 262144,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -6086,13 +6087,13 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000039",
-            completion: "0.0000019",
-            input_cache_read: "0.000000195"
+            prompt: "0.0000004",
+            completion: "0.000002",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -8627,7 +8628,11 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_k",
             "top_p"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
           expiration_date: null
         },
         {
@@ -9960,7 +9965,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -9974,7 +9978,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -11691,57 +11694,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: "2026-03-03"
         },
         {
-          id: "anthropic/claude-3.7-sonnet:thinking",
-          canonical_slug: "anthropic/claude-3-7-sonnet-20250219",
-          hugging_face_id: "",
-          name: "Anthropic: Claude 3.7 Sonnet (thinking)",
-          created: 1740422110,
-          description: "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
-          context_length: 2e5,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Claude",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000003",
-            completion: "0.000015",
-            web_search: "0.01",
-            input_cache_read: "0.0000003",
-            input_cache_write: "0.00000375"
-          },
-          top_provider: {
-            context_length: 2e5,
-            max_completion_tokens: 64e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: null
-        },
-        {
           id: "anthropic/claude-3.7-sonnet",
           canonical_slug: "anthropic/claude-3-7-sonnet-20250219",
           hugging_face_id: "",
@@ -11791,7 +11743,58 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
-          expiration_date: null
+          expiration_date: "2026-05-05"
+        },
+        {
+          id: "anthropic/claude-3.7-sonnet:thinking",
+          canonical_slug: "anthropic/claude-3-7-sonnet-20250219",
+          hugging_face_id: "",
+          name: "Anthropic: Claude 3.7 Sonnet (thinking)",
+          created: 1740422110,
+          description: "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
+          context_length: 2e5,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Claude",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000003",
+            completion: "0.000015",
+            web_search: "0.01",
+            input_cache_read: "0.0000003",
+            input_cache_write: "0.00000375"
+          },
+          top_provider: {
+            context_length: 2e5,
+            max_completion_tokens: 64e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: "2026-05-05"
         },
         {
           id: "mistralai/mistral-saba",
@@ -12682,7 +12685,11 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "top_p"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
           expiration_date: null
         },
         {
