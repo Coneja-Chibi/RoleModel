@@ -33,12 +33,66 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-17T07:08:00.331Z",
-        modelCount: 342,
+        fetchedAt: "2026-02-18T07:09:36.973Z",
+        modelCount: 339,
         providerCount: 58,
         source: "openrouter"
       },
       data: [
+        {
+          id: "anthropic/claude-sonnet-4.6",
+          canonical_slug: "anthropic/claude-4.6-sonnet-20260217",
+          hugging_face_id: "",
+          name: "Anthropic: Claude Sonnet 4.6",
+          created: 1771342990,
+          description: "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with memory, polished document creation, and confident computer use for web QA and workflow automation.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Claude",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000003",
+            completion: "0.000015",
+            web_search: "0.01",
+            input_cache_read: "0.0000003",
+            input_cache_write: "0.00000375"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p",
+            "verbosity"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
         {
           id: "qwen/qwen3.5-plus-02-15",
           canonical_slug: "qwen/qwen3.5-plus-20260216",
@@ -112,8 +166,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000006",
-            completion: "0.0000036"
+            prompt: "0.00000015",
+            completion: "0.000001",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 262144,
@@ -122,15 +177,22 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -161,12 +223,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000012",
-            input_cache_read: "0.000000029"
+            completion: "0.0000011",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: null,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -176,8 +238,11 @@ var require_latest = __commonJS({
             "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
+            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -428,9 +493,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000007",
-            completion: "0.0000003",
-            input_cache_read: "0.000000035"
+            prompt: "0.00000012",
+            completion: "0.00000075",
+            input_cache_read: "0.00000006"
           },
           top_provider: {
             context_length: 262144,
@@ -1440,9 +1505,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000015",
-            input_cache_read: "0.0000002"
+            prompt: "0.00000038",
+            completion: "0.0000017",
+            input_cache_read: "0.00000019"
           },
           top_provider: {
             context_length: 202752,
@@ -1770,7 +1835,6 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -1951,13 +2015,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000005",
-            completion: "0.00000022",
-            input_cache_read: "0.000000025"
+            prompt: "0.0000004",
+            completion: "0.000002"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1965,7 +2028,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "max_tokens",
             "presence_penalty",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
@@ -1973,7 +2035,6 @@ var require_latest = __commonJS({
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -2636,9 +2697,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000027",
-            completion: "0.00000041",
-            input_cache_read: "0.000000135"
+            prompt: "0.0000004",
+            completion: "0.0000012",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 163840,
@@ -2647,18 +2708,10 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -2775,60 +2828,6 @@ var require_latest = __commonJS({
           ],
           default_parameters: {
             temperature: 0.6,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: null
-        },
-        {
-          id: "tngtech/tng-r1t-chimera",
-          canonical_slug: "tngtech/tng-r1t-chimera",
-          hugging_face_id: null,
-          name: "TNG: R1T Chimera",
-          created: 1764184161,
-          description: 'TNG-R1T-Chimera is an experimental LLM with a faible for creative storytelling and character interaction. It is a derivate of the original TNG/DeepSeek-R1T-Chimera released in April 2025 and is available exclusively via Chutes and OpenRouter.\n\nCharacteristics and improvements include:\n\nWe think that it has a creative and pleasant personality.\nIt has a preliminary EQ-Bench3 value of about 1305.\nIt is quite a bit more intelligent than the original, albeit a slightly slower.\nIt is much more think-token consistent, i.e. reasoning and answer blocks are properly delineated.\nTool calling is much improved.\n\nTNG Tech, the model authors, ask that users follow the careful guidelines that Microsoft has created for their "MAI-DS-R1" DeepSeek-based model. These guidelines are available on Hugging Face (https://huggingface.co/microsoft/MAI-DS-R1).',
-          context_length: 163840,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000025",
-            completion: "0.00000085",
-            input_cache_read: "0.000000125"
-          },
-          top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
             top_p: null,
             frequency_penalty: null
           },
@@ -4827,12 +4826,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000035",
-            completion: "0.0000015",
-            input_cache_read: "0.000000175"
+            completion: "0.00000171"
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5113,66 +5111,6 @@ var require_latest = __commonJS({
             frequency_penalty: null
           },
           expiration_date: null
-        },
-        {
-          id: "google/gemini-2.5-flash-preview-09-2025",
-          canonical_slug: "google/gemini-2.5-flash-preview-09-2025",
-          hugging_face_id: "",
-          name: "Google: Gemini 2.5 Flash Preview 09-2025",
-          created: 1758820178,
-          description: `Gemini 2.5 Flash Preview September 2025 Checkpoint is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in "thinking" capabilities, enabling it to provide responses with greater accuracy and nuanced context handling. 
-
-Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reasoning" parameter, as described in the documentation (https://openrouter.ai/docs/use-cases/reasoning-tokens#max-tokens-for-reasoning).`,
-          context_length: 1048576,
-          architecture: {
-            modality: "text+image+file+audio+video->text",
-            input_modalities: [
-              "image",
-              "file",
-              "text",
-              "audio",
-              "video"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000025",
-            image: "0.0000003",
-            audio: "0.000001",
-            internal_reasoning: "0.0000025",
-            input_cache_read: "0.00000003",
-            input_cache_write: "0.00000008333333333333334"
-          },
-          top_provider: {
-            context_length: 1048576,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: "2026-02-17"
         },
         {
           id: "google/gemini-2.5-flash-lite-preview-09-2025",
@@ -6384,13 +6322,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000011",
-            completion: "0.00000038",
-            input_cache_read: "0.000000055"
+            prompt: "0.00000013",
+            completion: "0.0000004"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -6402,12 +6339,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "reasoning",
             "repetition_penalty",
             "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -7419,9 +7351,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000008",
-            completion: "0.00000033",
-            input_cache_read: "0.00000004"
+            prompt: "0.00000009",
+            completion: "0.0000003"
           },
           top_provider: {
             context_length: 262144,
@@ -7436,7 +7367,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "repetition_penalty",
             "response_format",
             "seed",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -7454,7 +7384,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Z.ai: GLM 4.5",
           created: 1753471347,
           description: 'GLM-4.5 is our latest flagship foundation model, purpose-built for agent-based applications. It leverages a Mixture-of-Experts (MoE) architecture and supports a context length of up to 128k tokens. GLM-4.5 delivers significantly enhanced capabilities in reasoning, code generation, and agent alignment. It supports a hybrid inference mode with two options, a "thinking mode" designed for complex reasoning and tool use, and a "non-thinking mode" optimized for instant responses. Users can control the reasoning behaviour with the `reasoning` `enabled` boolean. [Learn more in our docs](https://openrouter.ai/docs/use-cases/reasoning-tokens#enable-reasoning-with-default-config)',
-          context_length: 131072,
+          context_length: 131e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -7467,13 +7397,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000035",
-            completion: "0.00000155",
-            input_cache_read: "0.000000175"
+            prompt: "0.00000055",
+            completion: "0.000002"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 65536,
+            context_length: 131e3,
+            max_completion_tokens: 131e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9358,56 +9287,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: null
         },
         {
-          id: "nousresearch/deephermes-3-mistral-24b-preview",
-          canonical_slug: "nousresearch/deephermes-3-mistral-24b-preview",
-          hugging_face_id: "NousResearch/DeepHermes-3-Mistral-24B-Preview",
-          name: "Nous: DeepHermes 3 Mistral 24B Preview",
-          created: 1746830904,
-          description: 'DeepHermes 3 (Mistral 24B Preview) is an instruction-tuned language model by Nous Research based on Mistral-Small-24B, designed for chat, function calling, and advanced multi-turn reasoning. It introduces a dual-mode system that toggles between intuitive chat responses and structured \u201Cdeep reasoning\u201D mode using special system prompts. Fine-tuned via distillation from R1, it supports structured output (JSON mode) and function call syntax for agent-based applications.\n\nDeepHermes 3 supports a **reasoning toggle via system prompt**, allowing users to switch between fast, intuitive responses and deliberate, multi-step reasoning. When activated with the following specific system instruction, the model enters a *"deep thinking"* mode\u2014generating extended chains of thought wrapped in `<think></think>` tags before delivering a final answer. \n\nSystem Prompt: You are a deep thinking AI, you may use extremely long chains of thought to deeply consider the problem and deliberate with yourself via systematic reasoning processes to help come to a correct solution prior to answering. You should enclose your thoughts and internal monologue inside <think> </think> tags, and then provide your solution or response to the problem.\n',
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000002",
-            completion: "0.0000001",
-            input_cache_read: "0.00000001"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
           id: "mistralai/mistral-medium-3",
           canonical_slug: "mistralai/mistral-medium-3",
           hugging_face_id: "",
@@ -9899,9 +9778,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.00000006",
-            completion: "0.00000022",
-            input_cache_read: "0.00000003"
+            prompt: "0.00000008",
+            completion: "0.00000028"
           },
           top_provider: {
             context_length: 40960,
@@ -10004,9 +9882,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.00000005",
-            completion: "0.00000022",
-            input_cache_read: "0.000000025"
+            prompt: "0.00000006",
+            completion: "0.00000024"
           },
           top_provider: {
             context_length: 40960,
@@ -10093,7 +9970,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen3 235B A22B",
           created: 1745875757,
           description: 'Qwen3-235B-A22B is a 235B parameter mixture-of-experts (MoE) model developed by Qwen, activating 22B parameters per forward pass. It supports seamless switching between a "thinking" mode for complex reasoning, math, and code tasks, and a "non-thinking" mode for general conversational efficiency. The model demonstrates strong reasoning ability, multilingual support (100+ languages and dialects), advanced instruction-following, and agent tool-calling capabilities. It natively handles a 32K token context window and extends up to 131K tokens using YaRN-based scaling.',
-          context_length: 40960,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -10106,31 +9983,25 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000012",
-            input_cache_read: "0.00000015"
+            prompt: "0.000000455",
+            completion: "0.00000182"
           },
           top_provider: {
-            context_length: 40960,
-            max_completion_tokens: 40960,
+            context_length: 131072,
+            max_completion_tokens: 8192,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
             "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
             "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {},
@@ -10846,7 +10717,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen2.5 VL 32B Instruct",
           created: 1742839838,
           description: "Qwen2.5-VL-32B is a multimodal vision-language model fine-tuned through reinforcement learning for enhanced mathematical reasoning, structured outputs, and visual problem-solving capabilities. It excels at visual analysis tasks, including object recognition, textual interpretation within images, and precise event localization in extended videos. Qwen2.5-VL-32B demonstrates state-of-the-art performance across multimodal benchmarks such as MMMU, MathVista, and VideoMME, while maintaining strong reasoning and clarity in text-based tasks like MMLU, mathematical problem-solving, and code generation.",
-          context_length: 16384,
+          context_length: 128e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -10860,13 +10731,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000005",
-            completion: "0.00000022",
-            input_cache_read: "0.000000025"
+            prompt: "0.0000002",
+            completion: "0.0000006"
           },
           top_provider: {
-            context_length: 16384,
-            max_completion_tokens: 16384,
+            context_length: 128e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10879,7 +10749,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -11037,7 +10906,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Mistral: Mistral Small 3.1 24B",
           created: 1742238937,
           description: "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments. The updated version is [Mistral Small 3.2](mistralai/mistral-small-3.2-24b-instruct)",
-          context_length: 131072,
+          context_length: 128e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -11051,13 +10920,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000003",
-            completion: "0.00000011",
-            input_cache_read: "0.000000015"
+            prompt: "0.00000035",
+            completion: "0.00000056"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 131072,
+            context_length: 128e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -11066,13 +10934,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -11262,13 +11125,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "gemma"
           },
           pricing: {
-            prompt: "0.00000003",
-            completion: "0.0000001",
-            input_cache_read: "0.000000015"
+            prompt: "0.00000004",
+            completion: "0.00000013"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12552,7 +12414,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -12676,13 +12537,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "deepseek-r1"
           },
           pricing: {
-            prompt: "0.00000003",
-            completion: "0.00000011",
-            input_cache_read: "0.000000015"
+            prompt: "0.0000007",
+            completion: "0.0000008"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13501,13 +13361,12 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             instruct_type: "chatml"
           },
           pricing: {
-            prompt: "0.00000003",
-            completion: "0.00000011",
-            input_cache_read: "0.000000015"
+            prompt: "0.0000002",
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: 32768,
+            max_completion_tokens: 8192,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13518,10 +13377,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -14568,53 +14425,6 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           ],
           default_parameters: {},
           expiration_date: null
-        },
-        {
-          id: "openai/chatgpt-4o-latest",
-          canonical_slug: "openai/chatgpt-4o-latest",
-          hugging_face_id: null,
-          name: "OpenAI: ChatGPT-4o",
-          created: 1723593600,
-          description: "OpenAI ChatGPT 4o is continually updated by OpenAI to point to the current version of GPT-4o used by ChatGPT. It therefore differs slightly from the API version of [GPT-4o](/models/openai/gpt-4o) in that it has additional RLHF. It is intended for research and evaluation.\n\nOpenAI notes that this model is not suited for production use-cases as it may be removed or redirected to another model in the future.",
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000005",
-            completion: "0.000015"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 16384,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: "2026-02-17"
         },
         {
           id: "sao10k/l3-lunaris-8b",
