@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-18T07:09:36.973Z",
-        modelCount: 339,
+        fetchedAt: "2026-02-19T07:09:17.376Z",
+        modelCount: 337,
         providerCount: 58,
         source: "openrouter"
       },
@@ -1519,13 +1519,10 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -1535,7 +1532,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -3511,7 +3507,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI: Kimi K2 Thinking",
           created: 1762440622,
           description: "Kimi K2 Thinking is Moonshot AI\u2019s most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in Kimi K2, it activates 32 billion parameters per forward pass and supports 256 k-token context windows. The model is optimized for persistent step-by-step thought, dynamic tool invocation, and complex reasoning workflows that span hundreds of turns. It interleaves step-by-step reasoning with tool use, enabling autonomous research, coding, and writing that can persist for hundreds of sequential actions without drift.\n\nIt sets new open-source benchmarks on HLE, BrowseComp, SWE-Multilingual, and LiveCodeBench, while maintaining stable multi-agent behavior through 200\u2013300 tool calls. Built on a large-scale MoE architecture with MuonClip optimization, it combines strong reasoning depth with high inference efficiency for demanding agentic and analytical tasks.",
-          context_length: 262144,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -3524,13 +3520,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.00000175",
-            input_cache_read: "0.0000002"
+            prompt: "0.00000047",
+            completion: "0.000002",
+            input_cache_read: "0.000000141"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 65535,
+            context_length: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3826,8 +3822,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000006"
+            prompt: "0.00000007",
+            completion: "0.0000002"
           },
           top_provider: {
             context_length: 131072,
@@ -4196,7 +4192,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 2e5,
             max_completion_tokens: 64e3,
-            is_moderated: false
+            is_moderated: true
           },
           per_request_limits: null,
           supported_parameters: [
@@ -9668,50 +9664,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: null
         },
         {
-          id: "qwen/qwen3-4b",
-          canonical_slug: "qwen/qwen3-4b-04-28",
-          hugging_face_id: "Qwen/Qwen3-4B",
-          name: "Qwen: Qwen3 4B",
-          created: 1746031104,
-          description: "Qwen3-4B is a 4 billion parameter dense language model from the Qwen3 series, designed to support both general-purpose and reasoning-intensive tasks. It introduces a dual-mode architecture\u2014thinking and non-thinking\u2014allowing dynamic switching between high-precision logical reasoning and efficient dialogue generation. This makes it well-suited for multi-turn chat, instruction following, and complex agent workflows.",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: "qwen3"
-          },
-          pricing: {
-            prompt: "0.0000000715",
-            completion: "0.000000273"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "seed",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
           id: "meta-llama/llama-guard-4-12b",
           canonical_slug: "meta-llama/llama-guard-4-12b",
           hugging_face_id: "meta-llama/Llama-Guard-4-12B",
@@ -10002,54 +9954,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "temperature",
             "tool_choice",
             "tools",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "tngtech/deepseek-r1t-chimera",
-          canonical_slug: "tngtech/deepseek-r1t-chimera",
-          hugging_face_id: "tngtech/DeepSeek-R1T-Chimera",
-          name: "TNG: DeepSeek R1T Chimera",
-          created: 1745760875,
-          description: "DeepSeek-R1T-Chimera is created by merging DeepSeek-R1 and DeepSeek-V3 (0324), combining the reasoning capabilities of R1 with the token efficiency improvements of V3. It is based on a DeepSeek-MoE Transformer architecture and is optimized for general text generation tasks.\n\nThe model merges pretrained weights from both source models to balance performance across reasoning, efficiency, and instruction-following tasks. It is released under the MIT license and intended for research and commercial use.",
-          context_length: 163840,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "DeepSeek",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000012",
-            input_cache_read: "0.00000015"
-          },
-          top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 163840,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
             "top_p"
           ],
           default_parameters: {},
@@ -11025,7 +10929,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Google: Gemma 3 4B",
           created: 1741905510,
           description: "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling.",
-          context_length: 96e3,
+          context_length: 131072,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -11039,11 +10943,11 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "gemma"
           },
           pricing: {
-            prompt: "0.00000001703012",
-            completion: "0.0000000681536"
+            prompt: "0.00000004",
+            completion: "0.00000008"
           },
           top_provider: {
-            context_length: 96e3,
+            context_length: 131072,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -12206,7 +12110,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen2.5 VL 72B Instruct",
           created: 1738410311,
           description: "Qwen2.5-VL is proficient in recognizing common objects such as flowers, birds, fish, and insects. It is also highly capable of analyzing texts, charts, icons, graphics, and layouts within images.",
-          context_length: 32768,
+          context_length: 32e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -12220,13 +12124,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000006",
-            input_cache_read: "0.000000075"
+            prompt: "0.00000025",
+            completion: "0.00000075"
           },
           top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 32768,
+            context_length: 32e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12245,7 +12148,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: "2026-02-16"
+          expiration_date: null
         },
         {
           id: "qwen/qwen-plus",
@@ -12766,9 +12669,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000012",
-            input_cache_read: "0.00000015"
+            prompt: "0.00000032",
+            completion: "0.00000089"
           },
           top_provider: {
             context_length: 163840,
@@ -12785,7 +12687,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -13596,7 +13497,9 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000006",
-            completion: "0.00003"
+            completion: "0.00003",
+            input_cache_read: "0.0000006",
+            input_cache_write: "0.0000075"
           },
           top_provider: {
             context_length: 2e5,
