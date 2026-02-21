@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-20T07:05:08.176Z",
+        fetchedAt: "2026-02-21T06:53:20.080Z",
         modelCount: 337,
         providerCount: 58,
         source: "openrouter"
@@ -402,7 +402,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -768,10 +768,8 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -5312,7 +5310,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
