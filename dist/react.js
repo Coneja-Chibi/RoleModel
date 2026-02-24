@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-23T07:14:47.759Z",
+        fetchedAt: "2026-02-24T07:09:16.917Z",
         modelCount: 337,
         providerCount: 58,
         source: "openrouter"
@@ -224,9 +224,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000015",
-            completion: "0.000001",
-            input_cache_read: "0.00000015"
+            prompt: "0.00000055",
+            completion: "0.0000035",
+            input_cache_read: "0.00000055"
           },
           top_provider: {
             context_length: 262144,
@@ -341,7 +341,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000095",
-            completion: "0.00000255"
+            completion: "0.00000255",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 204800,
@@ -7430,7 +7431,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
-          expiration_date: null
+          expiration_date: "2026-02-12"
         },
         {
           id: "z-ai/glm-4.5-air:free",
@@ -9038,7 +9039,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
-          expiration_date: null
+          expiration_date: "2026-02-24"
         },
         {
           id: "deepseek/deepseek-r1-0528",
@@ -12116,7 +12117,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen2.5 VL 72B Instruct",
           created: 1738410311,
           description: "Qwen2.5-VL is proficient in recognizing common objects such as flowers, birds, fish, and insects. It is also highly capable of analyzing texts, charts, icons, graphics, and layouts within images.",
-          context_length: 32e3,
+          context_length: 32768,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -12130,12 +12131,12 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000025",
-            completion: "0.00000075"
+            prompt: "0.0000008",
+            completion: "0.0000008"
           },
           top_provider: {
-            context_length: 32e3,
-            max_completion_tokens: null,
+            context_length: 32768,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13955,7 +13956,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
