@@ -31,12 +31,328 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-25T07:10:59.680Z",
-        modelCount: 338,
+        fetchedAt: "2026-02-26T07:08:59.468Z",
+        modelCount: 342,
         providerCount: 58,
         source: "openrouter"
       },
       data: [
+        {
+          id: "qwen/qwen3.5-35b-a3b",
+          canonical_slug: "qwen/qwen3.5-35b-a3b-20260224",
+          hugging_face_id: "Qwen/Qwen3.5-35B-A3B",
+          name: "Qwen: Qwen3.5-35B-A3B",
+          created: 1772053822,
+          description: "The Qwen3.5 Series 35B-A3B is a native vision-language model designed with a hybrid architecture that integrates linear attention mechanisms and a sparse mixture-of-experts model, achieving higher inference efficiency. Its overall performance is comparable to that of the Qwen3.5-27B.",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image+video->text",
+            input_modalities: [
+              "text",
+              "image",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000025",
+            completion: "0.000002"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3.5-27b",
+          canonical_slug: "qwen/qwen3.5-27b-20260224",
+          hugging_face_id: "Qwen/Qwen3.5-27B",
+          name: "Qwen: Qwen3.5-27B",
+          created: 1772053810,
+          description: "The Qwen3.5 27B native vision-language Dense model incorporates a linear attention mechanism, delivering fast response times while balancing inference speed and performance. Its overall capabilities are comparable to those of the Qwen3.5-122B-A10B.",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image+video->text",
+            input_modalities: [
+              "text",
+              "image",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000003",
+            completion: "0.0000024"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.6,
+            top_p: 0.95,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3.5-122b-a10b",
+          canonical_slug: "qwen/qwen3.5-122b-a10b-20260224",
+          hugging_face_id: "Qwen/Qwen3.5-122B-A10B",
+          name: "Qwen: Qwen3.5-122B-A10B",
+          created: 1772053789,
+          description: "The Qwen3.5 122B-A10B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. In terms of overall performance, this model is second only to Qwen3.5-397B-A17B. Its text capabilities significantly outperform those of Qwen3-235B-2507, and its visual capabilities surpass those of Qwen3-VL-235B.",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image+video->text",
+            input_modalities: [
+              "text",
+              "image",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000032"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.6,
+            top_p: 0.95,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen3.5-flash-02-23",
+          canonical_slug: "qwen/qwen3.5-flash-20260224",
+          hugging_face_id: null,
+          name: "Qwen: Qwen3.5-Flash",
+          created: 1772053776,
+          description: "The Qwen3.5 native vision-language Flash models are built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. Compared to the 3 series, these models deliver a leap forward in performance for both pure text and multimodal tasks, offering fast response times while balancing inference speed and overall performance.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text+image+video->text",
+            input_modalities: [
+              "text",
+              "image",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000001",
+            completion: "0.0000004"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "liquid/lfm-2-24b-a2b",
+          canonical_slug: "liquid/lfm-2-24b-a2b-20260224",
+          hugging_face_id: "LiquidAI/LFM2-24B-A2B",
+          name: "LiquidAI: LFM2-24B-A2B",
+          created: 1772048711,
+          description: "LFM2-24B-A2B is the largest model in the LFM2 family of hybrid architectures designed for efficient on-device deployment. Built as a 24B parameter Mixture-of-Experts model with only 2B active parameters per token, it delivers high-quality generation while maintaining low inference costs. The model fits within 32 GB of RAM, making it practical to run on consumer laptops and desktops without sacrificing capability.",
+          context_length: 32768,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000003",
+            completion: "0.00000012"
+          },
+          top_provider: {
+            context_length: 32768,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.1,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "google/gemini-3.1-pro-preview-customtools",
+          canonical_slug: "google/gemini-3.1-pro-preview-customtools-20260219",
+          hugging_face_id: null,
+          name: "Google: Gemini 3.1 Pro Preview Custom Tools",
+          created: 1772045923,
+          description: "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party or user-defined functions are available. This specialized preview endpoint significantly increases function calling reliability and ensures the model selects the most appropriate tool in coding agents and complex, multi-tool workflows.\n\nIt retains the core strengths of Gemini 3.1 Pro, including multimodal reasoning across text, image, video, audio, and code, a 1M-token context window, and strong software engineering performance.",
+          context_length: 1048576,
+          architecture: {
+            modality: "text+image+file+audio+video->text",
+            input_modalities: [
+              "text",
+              "audio",
+              "image",
+              "video",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Gemini",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000002",
+            completion: "0.000012",
+            image: "0.000002",
+            audio: "0.000002",
+            internal_reasoning: "0.000012",
+            input_cache_read: "0.0000002",
+            input_cache_write: "0.000000375"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
         {
           id: "openai/gpt-5.3-codex",
           canonical_slug: "openai/gpt-5.3-codex-20260224",
@@ -860,8 +1176,10 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
+            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -1604,12 +1922,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000003",
             completion: "0.0000014",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0",
-            input_cache_read: "0.00000015",
-            input_cache_write: "0.0000006"
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 202752,
@@ -2507,11 +2820,8 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
@@ -2519,7 +2829,6 @@ var require_latest = __commonJS({
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -4732,6 +5041,7 @@ var require_latest = __commonJS({
             "max_tokens",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "top_p"
@@ -6009,57 +6319,14 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "max_tokens",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "qwen/qwen-plus-2025-07-28",
-          canonical_slug: "qwen/qwen-plus-2025-07-28",
-          hugging_face_id: "",
-          name: "Qwen: Qwen Plus 0728",
-          created: 1757347599,
-          description: "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
-          context_length: 1e6,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012"
-          },
-          top_provider: {
-            context_length: 1e6,
-            max_completion_tokens: 32768,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "presence_penalty",
             "response_format",
-            "seed",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_p"
           ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
+          default_parameters: {},
           expiration_date: null
         },
         {
@@ -6096,6 +6363,53 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "qwen/qwen-plus-2025-07-28",
+          canonical_slug: "qwen/qwen-plus-2025-07-28",
+          hugging_face_id: "",
+          name: "Qwen: Qwen Plus 0728",
+          created: 1757347599,
+          description: "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000012"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "presence_penalty",
             "response_format",
             "seed",
             "structured_outputs",
@@ -10523,51 +10837,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           expiration_date: null
         },
         {
-          id: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-          canonical_slug: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-          hugging_face_id: "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
-          name: "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
-          created: 1744115059,
-          description: "Llama-3.1-Nemotron-Ultra-253B-v1 is a large language model (LLM) optimized for advanced reasoning, human-interactive chat, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta\u2019s Llama-3.1-405B-Instruct, it has been significantly customized using Neural Architecture Search (NAS), resulting in enhanced efficiency, reduced memory usage, and improved inference latency. The model supports a context length of up to 128K tokens and can operate efficiently on an 8x NVIDIA H100 node.\n\nNote: you must include `detailed thinking on` in the system prompt to enable reasoning. Please see [Usage Recommendations](https://huggingface.co/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1#quick-start-and-usage-recommendations) for more.",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000006",
-            completion: "0.0000018"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
           id: "meta-llama/llama-4-maverick",
           canonical_slug: "meta-llama/llama-4-maverick-17b-128e-instruct",
           hugging_face_id: "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
@@ -13310,8 +13579,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             instruct_type: "chatml"
           },
           pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002"
+            prompt: "0.00000020000000000000002",
+            completion: "0.00000020000000000000002"
           },
           top_provider: {
             context_length: 32768,
@@ -13603,6 +13872,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "min_p",
             "presence_penalty",
             "repetition_penalty",
+            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -13951,7 +14221,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -14219,8 +14488,8 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002"
+            prompt: "0.00000020000000000000002",
+            completion: "0.00000020000000000000002"
           },
           top_provider: {
             context_length: 32768,
@@ -15717,52 +15986,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "mistralai/mistral-7b-instruct-v0.2",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.2",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.2",
-          name: "Mistral: Mistral 7B Instruct v0.2",
-          created: 1703721600,
-          description: "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct](/modelsmistralai/mistral-7b-instruct-v0.1), with the following changes:\n\n- 32k context window (vs 8k context in v0.1)\n- Rope-theta = 1e6\n- No Sliding-Window Attention",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
           expiration_date: null
         },
         {
