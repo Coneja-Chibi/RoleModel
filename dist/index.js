@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-27T07:03:14.272Z",
-        modelCount: 344,
+        fetchedAt: "2026-02-28T06:49:36.193Z",
+        modelCount: 343,
         providerCount: 58,
         source: "openrouter"
       },
@@ -391,7 +391,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.1,
             top_p: null,
-            frequency_penalty: null
+            top_k: 50,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: 1.05
           },
           expiration_date: null
         },
@@ -523,7 +526,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000008",
-            completion: "0.0000016"
+            completion: "0.0000016",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 131072,
@@ -786,13 +790,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000011",
-            input_cache_read: "0.00000015"
+            prompt: "0.000000295",
+            completion: "0.0000012",
+            input_cache_read: "0.00000003"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 196608,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2155,58 +2159,6 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
-          id: "allenai/olmo-3.1-32b-think",
-          canonical_slug: "allenai/olmo-3.1-32b-think-20251215",
-          hugging_face_id: "allenai/Olmo-3.1-32B-Think",
-          name: "AllenAI: Olmo 3.1 32B Think",
-          created: 1765907719,
-          description: "Olmo 3.1 32B Think is a large-scale, 32-billion-parameter model designed for deep reasoning, complex multi-step logic, and advanced instruction following. Building on the Olmo 3 series, version 3.1 delivers refined reasoning behavior and stronger performance across demanding evaluations and nuanced conversational tasks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Think continues the Olmo initiative\u2019s commitment to openness, providing full transparency across model weights, code, and training methodology.",
-          context_length: 65536,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000005"
-          },
-          top_provider: {
-            context_length: 65536,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.6,
-            top_p: 0.95,
-            frequency_penalty: null
-          },
-          expiration_date: null
-        },
-        {
           id: "xiaomi/mimo-v2-flash",
           canonical_slug: "xiaomi/mimo-v2-flash-20251210",
           hugging_face_id: "XiaomiMiMo/MiMo-V2-Flash",
@@ -2266,7 +2218,7 @@ var require_latest = __commonJS({
           hugging_face_id: "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
           name: "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
           created: 1765731275,
-          description: "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.\n\nNote: For the free endpoint, all prompts and output are logged to improve the provider's model and its product and services. Please do not upload any personal, confidential, or otherwise sensitive information. This is a trial use only. Do not use for production or business-critical systems.",
+          description: "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.",
           context_length: 256e3,
           architecture: {
             modality: "text->text",
@@ -2312,7 +2264,7 @@ var require_latest = __commonJS({
           hugging_face_id: "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
           name: "NVIDIA: Nemotron 3 Nano 30B A3B",
           created: 1765731275,
-          description: "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.\n\nNote: For the free endpoint, all prompts and output are logged to improve the provider's model and its product and services. Please do not upload any personal, confidential, or otherwise sensitive information. This is a trial use only. Do not use for production or business-critical systems.",
+          description: "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems.\n\nThe model is fully open with open-weights, datasets and recipes so developers can easily\ncustomize, optimize, and deploy the model on their infrastructure for maximum privacy and\nsecurity.",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -5745,7 +5697,7 @@ var require_latest = __commonJS({
           hugging_face_id: "Qwen/Qwen3-VL-235B-A22B-Instruct",
           name: "Qwen: Qwen3 VL 235B A22B Instruct",
           created: 1758668687,
-          description: "Qwen3-VL-235B-A22B Instruct is an open-weight multimodal model that unifies strong text generation with visual understanding across images and video. The Instruct model targets general vision-language use (VQA, document parsing, chart/table extraction, multilingual OCR). The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows\u2014turning sketches or mockups into code and assisting with UI debugging\u2014while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
+          description: "Qwen3-VL-235B-A22B Instruct is an open-weight multimodal model that unifies strong text generation with visual understanding across images and video. The Instruct model targets general vision-language use (VQA, document parsing, chart/table extraction, multilingual OCR). The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows\u2014turning sketches or mockups into code and assisting with UI debugging\uFFFD\uFFFDwhile maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
           context_length: 262144,
           architecture: {
             modality: "text+image->text",
@@ -6570,7 +6522,11 @@ var require_latest = __commonJS({
             "tools",
             "top_p"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
           expiration_date: null
         },
         {
@@ -6620,7 +6576,11 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
           expiration_date: null
         },
         {
@@ -9524,9 +9484,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "deepseek-r1"
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.00000175",
-            input_cache_read: "0.0000002"
+            prompt: "0.00000045",
+            completion: "0.00000215",
+            input_cache_read: "0.000000225"
           },
           top_provider: {
             context_length: 163840,
@@ -10241,7 +10201,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           name: "Qwen: Qwen3 8B",
           created: 1745876632,
           description: 'Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between "thinking" mode for math, coding, and logical inference, and "non-thinking" mode for general conversation. The model is fine-tuned for instruction-following, agent integration, creative writing, and multilingual use across 100+ languages and dialects. It natively supports a 32K token context window and can extend to 131K tokens with YaRN scaling.',
-          context_length: 32e3,
+          context_length: 40960,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -10259,7 +10219,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             input_cache_read: "0.00000005"
           },
           top_provider: {
-            context_length: 32e3,
+            context_length: 40960,
             max_completion_tokens: 8192,
             is_moderated: false
           },
@@ -11105,13 +11065,13 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000019",
-            completion: "0.00000087",
-            input_cache_read: "0.000000095"
+            prompt: "0.0000002",
+            completion: "0.00000077",
+            input_cache_read: "0.000000135"
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: 65536,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -11914,6 +11874,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -11924,6 +11885,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -12783,6 +12745,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -12793,6 +12756,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs",
             "temperature",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -13148,6 +13112,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -13158,6 +13123,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs",
             "temperature",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -13784,6 +13750,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "response_format",
@@ -13792,6 +13759,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "temperature",
             "tool_choice",
             "tools",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -14147,6 +14115,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -14159,6 +14128,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
