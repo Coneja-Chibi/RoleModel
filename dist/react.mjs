@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-02-28T06:49:36.193Z",
+        fetchedAt: "2026-03-01T06:55:34.882Z",
         modelCount: 343,
         providerCount: 58,
         source: "openrouter"
