@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-02T07:07:33.487Z",
+        fetchedAt: "2026-03-03T07:02:16.194Z",
         modelCount: 342,
         providerCount: 57,
         source: "openrouter"
@@ -135,7 +135,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           expiration_date: null
         },
@@ -162,26 +165,31 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.000002"
+            completion: "0.000001"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -224,17 +232,21 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
             "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -277,17 +289,21 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
             "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -839,7 +855,7 @@ var require_latest = __commonJS({
           name: "Z.ai: GLM 5",
           created: 1770829182,
           description: "GLM-5 is Z.ai\u2019s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-          context_length: 204800,
+          context_length: 202752,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -852,13 +868,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000095",
-            completion: "0.00000255",
-            input_cache_read: "0.0000002"
+            prompt: "0.0000008",
+            completion: "0.00000256",
+            input_cache_read: "0.00000016"
           },
           top_provider: {
-            context_length: 204800,
-            max_completion_tokens: 131072,
+            context_length: 202752,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1306,10 +1322,10 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
-          id: "upstage/solar-pro-3:free",
+          id: "upstage/solar-pro-3",
           canonical_slug: "upstage/solar-pro-3",
           hugging_face_id: "",
-          name: "Upstage: Solar Pro 3 (free)",
+          name: "Upstage: Solar Pro 3",
           created: 1769481200,
           description: "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining computational efficiency. Optimized for Korean with English and Japanese support.",
           context_length: 128e3,
@@ -1325,8 +1341,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0"
+            prompt: "0.00000015",
+            completion: "0.0000006",
+            input_cache_read: "0.000000015"
           },
           top_provider: {
             context_length: 128e3,
@@ -1347,9 +1364,12 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
-          expiration_date: "2026-03-22"
+          expiration_date: null
         },
         {
           id: "minimax/minimax-m2-her",
@@ -2096,7 +2116,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 65535,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2155,6 +2175,58 @@ var require_latest = __commonJS({
           ],
           default_parameters: {
             temperature: 0.3,
+            top_p: 0.95,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "allenai/olmo-3.1-32b-think",
+          canonical_slug: "allenai/olmo-3.1-32b-think-20251215",
+          hugging_face_id: "allenai/Olmo-3.1-32B-Think",
+          name: "AllenAI: Olmo 3.1 32B Think",
+          created: 1765907719,
+          description: "Olmo 3.1 32B Think is a large-scale, 32-billion-parameter model designed for deep reasoning, complex multi-step logic, and advanced instruction following. Building on the Olmo 3 series, version 3.1 delivers refined reasoning behavior and stronger performance across demanding evaluations and nuanced conversational tasks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Think continues the Olmo initiative\u2019s commitment to openness, providing full transparency across model weights, code, and training methodology.",
+          context_length: 65536,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000015",
+            completion: "0.0000005"
+          },
+          top_provider: {
+            context_length: 65536,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.6,
             top_p: 0.95,
             frequency_penalty: null
           },
@@ -2696,6 +2768,8 @@ var require_latest = __commonJS({
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ],
@@ -3091,54 +3165,6 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
-          id: "arcee-ai/trinity-mini",
-          canonical_slug: "arcee-ai/trinity-mini-20251201",
-          hugging_face_id: "arcee-ai/Trinity-Mini",
-          name: "Arcee AI: Trinity Mini",
-          created: 1764601720,
-          description: "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function calling and multi-step agent workflows.",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000000045",
-            completion: "0.00000015"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 131072,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.15,
-            top_p: 0.75,
-            frequency_penalty: null
-          },
-          expiration_date: null
-        },
-        {
           id: "deepseek/deepseek-v3.2-speciale",
           canonical_slug: "deepseek/deepseek-v3.2-speciale-20251201",
           hugging_face_id: "deepseek-ai/DeepSeek-V3.2-Speciale",
@@ -3164,17 +3190,25 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 163840,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "structured_outputs",
             "temperature",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -3209,7 +3243,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: 163840,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3946,7 +3980,9 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "response_format",
@@ -4345,14 +4381,16 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 196608,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -5611,7 +5649,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 65535,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5699,7 +5737,7 @@ var require_latest = __commonJS({
           hugging_face_id: "Qwen/Qwen3-VL-235B-A22B-Instruct",
           name: "Qwen: Qwen3 VL 235B A22B Instruct",
           created: 1758668687,
-          description: "Qwen3-VL-235B-A22B Instruct is an open-weight multimodal model that unifies strong text generation with visual understanding across images and video. The Instruct model targets general vision-language use (VQA, document parsing, chart/table extraction, multilingual OCR). The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows\u2014turning sketches or mockups into code and assisting with UI debugging\uFFFD\uFFFDwhile maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
+          description: "Qwen3-VL-235B-A22B Instruct is an open-weight multimodal model that unifies strong text generation with visual understanding across images and video. The Instruct model targets general vision-language use (VQA, document parsing, chart/table extraction, multilingual OCR). The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows\u2014turning sketches or mockups into code and assisting with UI debugging\u2014while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
           context_length: 262144,
           architecture: {
             modality: "text+image->text",
@@ -5979,6 +6017,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -6085,14 +6124,22 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -6324,17 +6371,25 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 32768,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {},
@@ -6667,12 +6722,15 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -7792,11 +7850,14 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -8185,13 +8246,10 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "max_tokens",
-            "presence_penalty",
             "repetition_penalty",
             "response_format",
             "seed",
-            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
@@ -8667,12 +8725,9 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "max_tokens",
-            "presence_penalty",
             "response_format",
             "seed",
-            "stop",
             "temperature",
             "top_p"
           ],
@@ -9611,12 +9666,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "max_tokens",
-            "presence_penalty",
             "response_format",
             "seed",
-            "stop",
             "temperature",
             "top_p"
           ],
@@ -10180,16 +10232,22 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "seed",
+            "stop",
             "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -14137,7 +14195,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           name: "Meta: Llama 3.2 3B Instruct",
           created: 1727222400,
           description: "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
-          context_length: 131072,
+          context_length: 8e4,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -14150,12 +14208,12 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.00000002",
-            completion: "0.00000002"
+            prompt: "0.000000051",
+            completion: "0.00000034"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
+            context_length: 8e4,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -14166,7 +14224,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -16164,7 +16221,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           hugging_face_id: null,
           name: "Auto Router",
           created: 1699401600,
-          description: "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)",
+          description: "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\n\nTo see which model was used, visit [Activity](/activity), or read the `model` attribute of the response. Your response will be priced at the same rate as the routed model.\n\nLearn more, including how to customize the models for routing, in our [docs](/docs/guides/routing/routers/auto-router).\n\nRequests will be routed to the following models:\n- [anthropic/claude-haiku-4.5](/anthropic/claude-haiku-4.5)\n- [anthropic/claude-opus-4.6](/anthropic/claude-opus-4.6)\n- [anthropic/claude-sonnet-4.5](/anthropic/claude-sonnet-4.5)\n- [anthropic/claude-sonnet-4.6](/anthropic/claude-sonnet-4.6)\n- [deepseek/deepseek-r1](/deepseek/deepseek-r1)\n- [google/gemini-2.5-flash-lite](/google/gemini-2.5-flash-lite)\n- [google/gemini-3-flash-preview](/google/gemini-3-flash-preview)\n- [google/gemini-3-pro-preview](/google/gemini-3-pro-preview)\n- [google/gemini-3.1-pro-preview](/google/gemini-3.1-pro-preview)\n- [meta-llama/llama-3.3-70b-instruct](/meta-llama/llama-3.3-70b-instruct)\n- [minimax/minimax-m2.5](/minimax/minimax-m2.5)\n- [mistralai/codestral-2508](/mistralai/codestral-2508)\n- [mistralai/mistral-large](/mistralai/mistral-large)\n- [mistralai/mistral-medium-3.1](/mistralai/mistral-medium-3.1)\n- [mistralai/mistral-small-3.2-24b-instruct-2506](/mistralai/mistral-small-3.2-24b-instruct-2506)\n- [moonshotai/kimi-k2-thinking](/moonshotai/kimi-k2-thinking)\n- [moonshotai/kimi-k2.5](/moonshotai/kimi-k2.5)\n- [openai/gpt-5](/openai/gpt-5)\n- [openai/gpt-5-mini](/openai/gpt-5-mini)\n- [openai/gpt-5-nano](/openai/gpt-5-nano)\n- [openai/gpt-5.1](/openai/gpt-5.1)\n- [openai/gpt-5.2](/openai/gpt-5.2)\n- [openai/gpt-5.2-pro](/openai/gpt-5.2-pro)\n- [openai/gpt-oss-120b](/openai/gpt-oss-120b)\n- [perplexity/sonar](/perplexity/sonar)\n- [qwen/qwen3-235b-a22b](/qwen/qwen3-235b-a22b)\n- [x-ai/grok-3](/x-ai/grok-3)\n- [x-ai/grok-3-mini](/x-ai/grok-3-mini)\n- [x-ai/grok-4](/x-ai/grok-4)\n- [z-ai/glm-5](/z-ai/glm-5)",
           context_length: 2e6,
           architecture: {
             modality: "text+image+file+audio+video->text+image",
