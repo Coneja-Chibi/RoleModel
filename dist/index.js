@@ -31,12 +31,130 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-03T07:02:16.194Z",
-        modelCount: 342,
+        fetchedAt: "2026-03-04T06:58:25.543Z",
+        modelCount: 343,
         providerCount: 57,
         source: "openrouter"
       },
       data: [
+        {
+          id: "openai/gpt-5.3-chat",
+          canonical_slug: "openai/gpt-5.3-chat-20260303",
+          hugging_face_id: "",
+          name: "OpenAI: GPT-5.3 Chat",
+          created: 1772564061,
+          description: "GPT-5.3 Chat is an update to ChatGPT's most-used model that makes everyday conversations smoother, more useful, and more directly helpful. It delivers more accurate answers with better contextualization and significantly reduces unnecessary refusals, caveats, and overly cautious phrasing that can interrupt conversational flow.",
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000175",
+            completion: "0.000014",
+            web_search: "0.1",
+            input_cache_read: "0.000000175"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 16384,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "top_logprobs"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "google/gemini-3.1-flash-lite-preview",
+          canonical_slug: "google/gemini-3.1-flash-lite-preview-20260303",
+          hugging_face_id: "",
+          name: "Google: Gemini 3.1 Flash Lite Preview",
+          created: 1772512673,
+          description: "Gemini 3.1 Flash Lite Preview is Google's high-efficiency model optimized for high-volume use cases. It outperforms Gemini 2.5 Flash Lite on overall quality and approaches Gemini 2.5 Flash performance across key capabilities. Improvements span audio input/ASR, RAG snippet ranking, translation, data extraction, and code completion. Supports full thinking levels (minimal, low, medium, high) for fine-grained cost/performance trade-offs. Priced at half the cost of Gemini 3 Flash.",
+          context_length: 1048576,
+          architecture: {
+            modality: "text+image+file+audio+video->text",
+            input_modalities: [
+              "text",
+              "image",
+              "video",
+              "file",
+              "audio"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Gemini",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000025",
+            completion: "0.0000015",
+            image: "0.00000025",
+            audio: "0.0000005",
+            internal_reasoning: "0.0000015",
+            input_cache_read: "0.000000025",
+            input_cache_write: "0.00000008333333333333334"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          expiration_date: null
+        },
         {
           id: "bytedance-seed/seed-2.0-mini",
           canonical_slug: "bytedance-seed/seed-2.0-mini-20260224",
@@ -110,8 +228,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000025",
-            completion: "0.0000015"
+            prompt: "0.0000005",
+            completion: "0.000003"
           },
           top_provider: {
             context_length: 65536,
@@ -162,12 +280,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000025",
-            completion: "0.000001"
+            prompt: "0.0000001625",
+            completion: "0.0000013"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -177,6 +295,7 @@ var require_latest = __commonJS({
             "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -220,8 +339,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000024"
+            prompt: "0.000000195",
+            completion: "0.00000156"
           },
           top_provider: {
             context_length: 262144,
@@ -232,8 +351,10 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -277,8 +398,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000032"
+            prompt: "0.00000026",
+            completion: "0.00000208"
           },
           top_provider: {
             context_length: 262144,
@@ -289,8 +410,10 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -699,8 +822,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000024"
+            prompt: "0.00000026",
+            completion: "0.00000156"
           },
           top_provider: {
             context_length: 1e6,
@@ -750,9 +873,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000055",
-            completion: "0.0000035",
-            input_cache_read: "0.00000055"
+            prompt: "0.00000039",
+            completion: "0.00000234"
           },
           top_provider: {
             context_length: 262144,
@@ -924,8 +1046,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000012",
-            completion: "0.000006"
+            prompt: "0.00000078",
+            completion: "0.0000039"
           },
           top_provider: {
             context_length: 262144,
@@ -1810,7 +1932,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
-          expiration_date: null
+          expiration_date: "2026-03-23"
         },
         {
           id: "allenai/olmo-3.1-32b-instruct",
@@ -3163,6 +3285,54 @@ var require_latest = __commonJS({
           expiration_date: null
         },
         {
+          id: "arcee-ai/trinity-mini",
+          canonical_slug: "arcee-ai/trinity-mini-20251201",
+          hugging_face_id: "arcee-ai/Trinity-Mini",
+          name: "Arcee AI: Trinity Mini",
+          created: 1764601720,
+          description: "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function calling and multi-step agent workflows.",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000000045",
+            completion: "0.00000015"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 131072,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.15,
+            top_p: 0.75,
+            frequency_penalty: null
+          },
+          expiration_date: null
+        },
+        {
           id: "deepseek/deepseek-v3.2-speciale",
           canonical_slug: "deepseek/deepseek-v3.2-speciale-20251201",
           hugging_face_id: "deepseek-ai/DeepSeek-V3.2-Speciale",
@@ -3269,7 +3439,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 1,
             top_p: 0.95,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           expiration_date: null
         },
@@ -3481,7 +3654,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
-          expiration_date: null
+          expiration_date: "2026-03-23"
         },
         {
           id: "allenai/olmo-3-7b-think",
@@ -3533,7 +3706,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
-          expiration_date: null
+          expiration_date: "2026-03-23"
         },
         {
           id: "google/gemini-3-pro-image-preview",
@@ -5851,9 +6024,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000001",
-            completion: "0.000005",
-            input_cache_read: "0.0000002"
+            prompt: "0.00000065",
+            completion: "0.00000325",
+            input_cache_read: "0.00000013"
           },
           top_provider: {
             context_length: 1e6,
@@ -6167,9 +6340,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000015",
-            input_cache_read: "0.00000006"
+            prompt: "0.000000195",
+            completion: "0.000000975",
+            input_cache_read: "0.000000039"
           },
           top_provider: {
             context_length: 1e6,
@@ -6413,8 +6586,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012"
+            prompt: "0.00000026",
+            completion: "0.00000078"
           },
           top_provider: {
             context_length: 1e6,
@@ -6462,8 +6635,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012"
+            prompt: "0.00000026",
+            completion: "0.00000078"
           },
           top_provider: {
             context_length: 1e6,
@@ -9018,7 +9191,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.000001"
+            completion: "0.00000075",
+            input_cache_read: "0.000000025"
           },
           top_provider: {
             context_length: 128e3,
@@ -10023,7 +10197,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.00000025",
-            completion: "0.000001"
+            completion: "0.00000075",
+            input_cache_read: "0.000000025"
           },
           top_provider: {
             context_length: 128e3,
@@ -10287,6 +10462,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10300,6 +10476,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -12271,9 +12448,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000021",
-            completion: "0.00000063",
-            input_cache_read: "0.000000042"
+            prompt: "0.0000001365",
+            completion: "0.0000004095",
+            input_cache_read: "0.0000000273"
           },
           top_provider: {
             context_length: 131072,
@@ -12474,9 +12651,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000005",
-            completion: "0.0000002",
-            input_cache_read: "0.00000001"
+            prompt: "0.0000000325",
+            completion: "0.00000013",
+            input_cache_read: "0.0000000065"
           },
           top_provider: {
             context_length: 131072,
@@ -12607,9 +12784,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000016",
-            completion: "0.0000064",
-            input_cache_read: "0.00000032"
+            prompt: "0.00000104",
+            completion: "0.00000416",
+            input_cache_read: "0.000000208"
           },
           top_provider: {
             context_length: 32768,
@@ -12985,6 +13162,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -12995,6 +13173,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs",
             "temperature",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -13764,7 +13943,9 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "logprobs",
             "max_tokens",
             "presence_penalty",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
@@ -14400,12 +14581,14 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "response_format",
             "stop",
             "structured_outputs",
             "temperature",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -14534,6 +14717,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -14546,6 +14730,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -14628,6 +14813,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -14638,6 +14824,7 @@ Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.m
             "structured_outputs",
             "temperature",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -15349,98 +15536,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "mistralai/mistral-7b-instruct",
-          canonical_slug: "mistralai/mistral-7b-instruct",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.3",
-          name: "Mistral: Mistral 7B Instruct",
-          created: 1716768e3,
-          description: "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\n*Mistral 7B Instruct has multiple version variants, and this is intended to be the latest version.*",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 4096,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
-          expiration_date: null
-        },
-        {
-          id: "mistralai/mistral-7b-instruct-v0.3",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.3",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.3",
-          name: "Mistral: Mistral 7B Instruct v0.3",
-          created: 1716768e3,
-          description: "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct v0.2](/models/mistralai/mistral-7b-instruct-v0.2), with the following changes:\n\n- Extended vocabulary to 32768\n- Supports v3 Tokenizer\n- Supports function calling\n\nNOTE: Support for function calling depends on the provider.",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 4096,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
           expiration_date: null
         },
         {
