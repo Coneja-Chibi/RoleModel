@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-06T07:00:27.590Z",
+        fetchedAt: "2026-03-07T06:52:19.722Z",
         modelCount: 346,
         providerCount: 57,
         source: "openrouter"
@@ -2278,7 +2278,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000027",
             completion: "0.00000095",
-            input_cache_read: "0.0000000299999997"
+            input_cache_read: "0.0000000290000007"
           },
           top_provider: {
             context_length: 196608,
@@ -2334,9 +2334,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000014",
-            input_cache_read: "0.00000015"
+            prompt: "0.00000038",
+            completion: "0.00000198",
+            input_cache_read: "0.00000019"
           },
           top_provider: {
             context_length: 202752,
@@ -4781,20 +4781,13 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
-            "repetition_penalty",
             "response_format",
             "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -6910,7 +6903,6 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -8367,7 +8359,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3 235B A22B Thinking 2507",
           created: 1753449557,
           description: 'Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144 tokens of context. This "thinking-only" variant enhances structured logical reasoning, mathematics, science, and long-form generation, showing strong benchmark performance across AIME, SuperGPQA, LiveCodeBench, and MMLU-Redux. It enforces a special reasoning mode (</think>) and is designed for high-token outputs (up to 81,920 tokens) in challenging domains.\n\nThe model is instruction-tuned and excels at step-by-step reasoning, tool use, agentic workflows, and multilingual tasks. This release represents the most capable open-source variant in the Qwen3-235B series, surpassing many closed models in structured reasoning use cases.',
-          context_length: 131072,
+          context_length: 262144,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -8380,16 +8372,13 @@ var require_latest = __commonJS({
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            prompt: "0.00000011",
+            completion: "0.0000006",
+            input_cache_read: "0.000000055"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
+            context_length: 262144,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13183,7 +13172,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15352,7 +15340,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
