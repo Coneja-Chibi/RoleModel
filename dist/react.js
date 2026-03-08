@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-07T06:52:19.722Z",
+        fetchedAt: "2026-03-08T06:53:47.763Z",
         modelCount: 346,
         providerCount: 57,
         source: "openrouter"
@@ -810,7 +810,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           expiration_date: null
         },

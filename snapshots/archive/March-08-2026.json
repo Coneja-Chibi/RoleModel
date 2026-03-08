@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "fetchedAt": "2026-03-08T06:53:47.763Z",
+    "fetchedAt": "2026-03-07T06:52:19.722Z",
     "modelCount": 346,
     "providerCount": 57,
     "source": "openrouter"
@@ -777,10 +777,7 @@
       "default_parameters": {
         "temperature": null,
         "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
+        "frequency_penalty": null
       },
       "expiration_date": null
     },
