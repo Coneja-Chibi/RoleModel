@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-08T06:53:47.763Z",
+        fetchedAt: "2026-03-09T07:11:08.769Z",
         modelCount: 346,
         providerCount: 57,
         source: "openrouter"
@@ -11971,9 +11971,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: "gemma"
           },
           pricing: {
-            prompt: "0.00000004",
-            completion: "0.00000015",
-            input_cache_read: "0.00000002"
+            prompt: "0.00000003",
+            completion: "0.00000011",
+            input_cache_read: "0.000000015"
           },
           top_provider: {
             context_length: 128e3,
