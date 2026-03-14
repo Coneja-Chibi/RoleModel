@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-13T07:03:56.088Z",
+        fetchedAt: "2026-03-14T06:58:03.365Z",
         modelCount: 344,
         providerCount: 55,
         source: "openrouter"
@@ -378,7 +378,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3.5-9B",
           created: 1773152396,
           description: "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design with early fusion of multimodal tokens, allowing the model to process and reason across text and images within the same context.",
-          context_length: 262144,
+          context_length: 256e3,
           architecture: {
             modality: "text+image+video->text",
             input_modalities: [
@@ -393,11 +393,11 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001",
+            prompt: "0.00000005",
             completion: "0.00000015"
           },
           top_provider: {
-            context_length: 262144,
+            context_length: 256e3,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -406,6 +406,7 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -418,6 +419,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -6462,6 +6464,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -6474,6 +6477,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -15380,13 +15384,9 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
