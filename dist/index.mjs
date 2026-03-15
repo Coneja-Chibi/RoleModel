@@ -29,7 +29,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-14T06:58:03.365Z",
+        fetchedAt: "2026-03-15T07:07:52.283Z",
         modelCount: 344,
         providerCount: 55,
         source: "openrouter"
@@ -1495,13 +1495,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000027",
-            completion: "0.00000095",
-            input_cache_read: "0.0000000299999997"
+            prompt: "0.00000025",
+            completion: "0.0000012"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: null,
+            max_completion_tokens: 196608,
             is_moderated: false
           },
           per_request_limits: null,
