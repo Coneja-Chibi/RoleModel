@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-16T07:40:44.451Z",
-        modelCount: 346,
+        fetchedAt: "2026-03-17T07:13:05.632Z",
+        modelCount: 345,
         providerCount: 55,
         source: "openrouter"
       },
@@ -518,20 +518,14 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
             "response_format",
             "seed",
-            "stop",
             "structured_outputs",
             "tool_choice",
-            "tools",
-            "top_logprobs"
+            "tools"
           ],
           default_parameters: {
             temperature: null,
@@ -577,20 +571,14 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "reasoning",
             "response_format",
             "seed",
-            "stop",
             "structured_outputs",
             "tool_choice",
-            "tools",
-            "top_logprobs"
+            "tools"
           ],
           default_parameters: {
             temperature: null,
@@ -687,18 +675,12 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
             "max_tokens",
-            "presence_penalty",
             "response_format",
             "seed",
-            "stop",
             "structured_outputs",
             "tool_choice",
-            "tools",
-            "top_logprobs"
+            "tools"
           ],
           default_parameters: {
             temperature: null,
@@ -1073,8 +1055,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001",
-            completion: "0.0000004"
+            prompt: "0.000000065",
+            completion: "0.00000026"
           },
           top_provider: {
             context_length: 1e6,
@@ -1220,10 +1202,11 @@ var require_latest = __commonJS({
           description: "GPT-5.3-Codex is OpenAI\u2019s most advanced agentic coding model, combining the frontier software engineering performance of GPT-5.2-Codex with the broader reasoning and professional knowledge capabilities of GPT-5.2. It achieves state-of-the-art results on SWE-Bench Pro and strong performance on Terminal-Bench 2.0 and OSWorld-Verified, reflecting improved multi-language coding, terminal proficiency, and real-world computer-use skills. The model is optimized for long-running, tool-using workflows and supports interactive steering during execution, making it suitable for complex development tasks, debugging, deployment, and iterative product work.\n\nBeyond coding, GPT-5.3-Codex performs strongly on structured knowledge-work benchmarks such as GDPval, supporting tasks like document drafting, spreadsheet analysis, slide creation, and operational research across domains. It is trained with enhanced cybersecurity awareness, including vulnerability identification capabilities, and deployed with additional safeguards for high-risk use cases. Compared to prior Codex models, it is more token-efficient and approximately 25% faster, targeting professional end-to-end workflows that span reasoning, execution, and computer interaction.",
           context_length: 4e5,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -2090,7 +2073,6 @@ var require_latest = __commonJS({
             "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -6605,9 +6587,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000012",
-            completion: "0.000006",
-            input_cache_read: "0.00000024"
+            prompt: "0.00000078",
+            completion: "0.0000039",
+            input_cache_read: "0.000000156"
           },
           top_provider: {
             context_length: 262144,
@@ -13037,8 +13019,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000008",
-            completion: "0.0000032"
+            prompt: "0.00000052",
+            completion: "0.00000208"
           },
           top_provider: {
             context_length: 131072,
@@ -13173,9 +13155,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012",
-            input_cache_read: "0.00000008"
+            prompt: "0.00000026",
+            completion: "0.00000078",
+            input_cache_read: "0.000000052"
           },
           top_provider: {
             context_length: 1e6,
@@ -14270,24 +14252,21 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             instruct_type: "chatml"
           },
           pricing: {
-            prompt: "0.00000020000000000000002",
-            completion: "0.00000020000000000000002"
+            prompt: "0.00000066",
+            completion: "0.000001"
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: 8192,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
-            "stop",
             "temperature",
             "top_k",
             "top_p"
@@ -15426,7 +15405,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
@@ -15441,51 +15419,6 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "tools",
             "top_k",
             "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "meta-llama/llama-3.1-405b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-405b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-405B-Instruct",
-          name: "Meta: Llama 3.1 405B Instruct",
-          created: 1721692800,
-          description: "The highly anticipated 400B class of Llama3 is here! Clocking in at 128k context with impressive eval scores, the Meta AI team continues to push the frontier of open-source LLMs.\n\nMeta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 405B instruct-tuned version is optimized for high quality dialogue usecases.\n\nIt has demonstrated strong performance compared to leading closed-source models including GPT-4o and Claude 3.5 Sonnet in evaluations.\n\nTo read more about the model release, [click here](https://ai.meta.com/blog/meta-llama-3-1/). Usage of this model is subject to [Meta's Acceptable Use Policy](https://llama.meta.com/llama3/use-policy/).",
-          context_length: 131e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.000004",
-            completion: "0.000004"
-          },
-          top_provider: {
-            context_length: 131e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
             "top_p"
           ],
           default_parameters: {},
