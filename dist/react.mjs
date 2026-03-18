@@ -31,12 +31,174 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-17T07:13:05.632Z",
-        modelCount: 345,
+        fetchedAt: "2026-03-18T07:11:37.758Z",
+        modelCount: 348,
         providerCount: 55,
         source: "openrouter"
       },
       data: [
+        {
+          id: "openai/gpt-5.4-nano",
+          canonical_slug: "openai/gpt-5.4-nano-20260317",
+          hugging_face_id: "",
+          name: "OpenAI: GPT-5.4 Nano",
+          created: 1773748187,
+          description: "GPT-5.4 nano is the most lightweight and cost-efficient variant of the GPT-5.4 family, optimized for speed-critical and high-volume tasks. It supports text and image inputs and is designed for low-latency use cases such as classification, data extraction, ranking, and sub-agent execution.\n\nThe model prioritizes responsiveness and efficiency over deep reasoning, making it ideal for pipelines that require fast, reliable outputs at scale. GPT-5.4 nano is well suited for background tasks, real-time systems, and distributed agent architectures where minimizing cost and latency is essential.",
+          context_length: 4e5,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "file",
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000002",
+            completion: "0.00000125",
+            web_search: "0.01",
+            input_cache_read: "0.00000002"
+          },
+          top_provider: {
+            context_length: 4e5,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "openai/gpt-5.4-mini",
+          canonical_slug: "openai/gpt-5.4-mini-20260317",
+          hugging_face_id: "",
+          name: "OpenAI: GPT-5.4 Mini",
+          created: 1773748178,
+          description: "GPT-5.4 mini brings the core capabilities of GPT-5.4 to a faster, more efficient model optimized for high-throughput workloads. It supports text and image inputs with strong performance across reasoning, coding, and tool use, while reducing latency and cost for large-scale deployments.\n\nThe model is designed for production environments that require a balance of capability and efficiency, making it well suited for chat applications, coding assistants, and agent workflows that operate at scale. GPT-5.4 mini delivers reliable instruction following, solid multi-step reasoning, and consistent performance across diverse tasks with improved cost efficiency.",
+          context_length: 4e5,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "file",
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000075",
+            completion: "0.0000045",
+            web_search: "0.01",
+            input_cache_read: "0.000000075"
+          },
+          top_provider: {
+            context_length: 4e5,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          expiration_date: null
+        },
+        {
+          id: "mistralai/mistral-small-2603",
+          canonical_slug: "mistralai/mistral-small-2603",
+          hugging_face_id: "mistralai/Mistral-Small-4-119B-2603",
+          name: "Mistral: Mistral Small 4",
+          created: 1773695685,
+          description: "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from Magistral, multimodal understanding from Pixtral, and agentic coding capabilities from Devstral, enabling one model to handle complex analysis, software development, and visual tasks within the same workflow.",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000015",
+            completion: "0.0000006",
+            input_cache_read: "0.000000015"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          expiration_date: null
+        },
         {
           id: "z-ai/glm-5-turbo",
           canonical_slug: "z-ai/glm-5-turbo-20260315",
@@ -1577,7 +1739,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000025",
+            prompt: "0.0000002",
             completion: "0.0000012"
           },
           top_provider: {
@@ -1623,7 +1785,7 @@ var require_latest = __commonJS({
           name: "Z.ai: GLM 5",
           created: 1770829182,
           description: "GLM-5 is Z.ai\u2019s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-          context_length: 202752,
+          context_length: 8e4,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -1640,7 +1802,7 @@ var require_latest = __commonJS({
             completion: "0.0000023"
           },
           top_provider: {
-            context_length: 202752,
+            context_length: 8e4,
             max_completion_tokens: 131072,
             is_moderated: false
           },
@@ -2930,7 +3092,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000003"
+            completion: "0.0000003",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 32768,
@@ -3034,7 +3197,9 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -3325,7 +3490,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002"
+            completion: "0.000002",
+            input_cache_read: "0.00000004"
           },
           top_provider: {
             context_length: 262144,
@@ -3713,7 +3879,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000002"
+            completion: "0.0000002",
+            input_cache_read: "0.00000002"
           },
           top_provider: {
             context_length: 262144,
@@ -3766,7 +3933,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.00000015"
+            completion: "0.00000015",
+            input_cache_read: "0.000000015"
           },
           top_provider: {
             context_length: 262144,
@@ -3819,7 +3987,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000001"
+            completion: "0.0000001",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 131072,
@@ -3872,7 +4041,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000005",
-            completion: "0.0000015"
+            completion: "0.0000015",
+            input_cache_read: "0.00000005"
           },
           top_provider: {
             context_length: 262144,
@@ -4070,13 +4240,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000026",
-            completion: "0.00000038",
-            input_cache_read: "0.00000013"
+            prompt: "0.000000255",
+            completion: "0.0000004"
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 163840,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5022,7 +5191,8 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000001",
             completion: "0.0000003",
-            audio: "0.0001"
+            audio: "0.0001",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 32e3,
@@ -7686,7 +7856,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002"
+            completion: "0.000002",
+            input_cache_read: "0.00000004"
           },
           top_provider: {
             context_length: 131072,
@@ -8289,6 +8460,7 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -8303,6 +8475,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -8387,7 +8560,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000009"
+            completion: "0.0000009",
+            input_cache_read: "0.00000003"
           },
           top_provider: {
             context_length: 256e3,
@@ -9123,7 +9297,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002"
+            completion: "0.000002",
+            input_cache_read: "0.00000004"
           },
           top_provider: {
             context_length: 131072,
@@ -9170,7 +9345,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000003"
+            completion: "0.0000003",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 131072,
@@ -10329,7 +10505,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000004",
-            completion: "0.000002"
+            completion: "0.000002",
+            input_cache_read: "0.00000004"
           },
           top_provider: {
             context_length: 131072,
@@ -10764,6 +10941,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10777,6 +10955,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -12669,7 +12848,8 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           pricing: {
             prompt: "0.0000002",
-            completion: "0.0000006"
+            completion: "0.0000006",
+            input_cache_read: "0.00000002"
           },
           top_provider: {
             context_length: 32768,
@@ -12769,7 +12949,9 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
+            "include_reasoning",
             "max_tokens",
+            "reasoning",
             "response_format",
             "seed",
             "structured_outputs",
@@ -13251,14 +13433,23 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
+            "include_reasoning",
             "max_tokens",
+            "reasoning",
             "response_format",
             "seed",
             "structured_outputs",
             "tool_choice",
             "tools"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
           expiration_date: null
         },
         {
@@ -13562,7 +13753,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000006",
+            prompt: "0.000000065",
             completion: "0.00000014"
           },
           top_provider: {
@@ -13763,14 +13954,23 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           per_request_limits: null,
           supported_parameters: [
+            "include_reasoning",
             "max_tokens",
+            "reasoning",
             "response_format",
             "seed",
             "structured_outputs",
             "tool_choice",
             "tools"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
           expiration_date: null
         },
         {
@@ -14109,7 +14309,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006"
+            completion: "0.000006",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 131072,
@@ -14156,7 +14357,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006"
+            completion: "0.000006",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 131072,
@@ -14204,7 +14406,8 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006"
+            completion: "0.000006",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 131072,
@@ -16076,7 +16279,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006"
+            completion: "0.000006",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 65536,
@@ -16259,7 +16463,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           },
           pricing: {
             prompt: "0.000002",
-            completion: "0.000006"
+            completion: "0.000006",
+            input_cache_read: "0.0000002"
           },
           top_provider: {
             context_length: 128e3,
