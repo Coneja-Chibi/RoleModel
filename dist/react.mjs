@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-19T07:06:24.786Z",
+        fetchedAt: "2026-03-20T07:04:29.138Z",
         modelCount: 350,
         providerCount: 55,
         source: "openrouter"
@@ -40,7 +40,7 @@ var require_latest = __commonJS({
         {
           id: "xiaomi/mimo-v2-omni",
           canonical_slug: "xiaomi/mimo-v2-omni-20260318",
-          hugging_face_id: "XiaomiMiMo/MiMo-V2-Omni",
+          hugging_face_id: "",
           name: "Xiaomi: MiMo-V2-Omni",
           created: 1773863703,
           description: "MiMo-V2-Omni is a frontier omni-modal model that natively processes image, video, and audio inputs within a unified architecture. It combines strong multimodal perception with agentic capability - visual grounding, multi-step planning, tool use, and code execution - making it well-suited for complex real-world tasks that span modalities. 256K context window.",
@@ -96,7 +96,7 @@ var require_latest = __commonJS({
         {
           id: "xiaomi/mimo-v2-pro",
           canonical_slug: "xiaomi/mimo-v2-pro-20260318",
-          hugging_face_id: "XiaomiMiMo/MiMo-V2-Pro",
+          hugging_face_id: "",
           name: "Xiaomi: MiMo-V2-Pro",
           created: 1773863643,
           description: "MiMo-V2-Pro is Xiaomi's flagship foundation model, featuring over 1T total parameters and a 1M context length, deeply optimized for agentic scenarios. It is highly adaptable to general agent frameworks like OpenClaw. It ranks among the global top tier in the standard PinchBench and ClawBench benchmarks, with perceived performance approaching that of Opus 4.6. MiMo-V2-Pro is designed to serve as the brain of agent systems, orchestrating complex workflows, driving production engineering tasks, and delivering results reliably.",
@@ -177,13 +177,19 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
             "max_tokens",
+            "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -2036,7 +2042,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           expiration_date: null
         },
@@ -3079,13 +3088,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
+            prompt: "0.00000039",
             completion: "0.00000175",
-            input_cache_read: "0.00000008"
+            input_cache_read: "0.000000195"
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: null,
+            max_completion_tokens: 65535,
             is_moderated: false
           },
           per_request_limits: null,
@@ -7002,12 +7011,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000021",
-            completion: "0.00000079",
-            input_cache_read: "0.0000001300000002"
+            completion: "0.00000078",
+            input_cache_read: "0.000000105"
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
