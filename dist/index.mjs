@@ -29,7 +29,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-23T07:20:58.973Z",
+        fetchedAt: "2026-03-24T07:13:15.394Z",
         modelCount: 349,
         providerCount: 55,
         source: "openrouter"
@@ -177,7 +177,9 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -382,9 +384,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000096",
-            completion: "0.0000032",
-            input_cache_read: "0.000000192"
+            prompt: "0.0000012",
+            completion: "0.000004",
+            input_cache_read: "0.00000024"
           },
           top_provider: {
             context_length: 202752,
@@ -595,7 +597,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000001",
             completion: "0.0000005",
-            input_cache_read: "0.00000004"
+            input_cache_read: "0.0000001"
           },
           top_provider: {
             context_length: 262144,
@@ -711,7 +713,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 256e3,
-            max_completion_tokens: null,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -11705,6 +11707,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
+            "response_format",
             "structured_outputs",
             "temperature",
             "top_k",
@@ -14729,7 +14732,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
