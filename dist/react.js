@@ -33,12 +33,67 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-25T07:11:28.719Z",
+        fetchedAt: "2026-03-26T07:19:23.859Z",
         modelCount: 346,
-        providerCount: 55,
+        providerCount: 56,
         source: "openrouter"
       },
       data: [
+        {
+          id: "reka/reka-edge",
+          canonical_slug: "rekaai/reka-edge-2603",
+          hugging_face_id: "RekaAI/reka-edge-2603",
+          name: "Reka Edge",
+          created: 1774026965,
+          description: "Reka Edge is an extremely efficient 7B multimodal vision-language model that accepts image/video+text inputs and generates text outputs. This model is optimized specifically to deliver industry-leading performance in image understanding, video analysis, object detection, and agentic tool-use.",
+          context_length: 16384,
+          architecture: {
+            modality: "text+image+video->text",
+            input_modalities: [
+              "image",
+              "text",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000002",
+            completion: "0.0000002"
+          },
+          top_provider: {
+            context_length: 16384,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null
+        },
         {
           id: "xiaomi/mimo-v2-omni",
           canonical_slug: "xiaomi/mimo-v2-omni-20260318",
@@ -93,6 +148,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -146,6 +202,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -204,6 +261,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -257,6 +315,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2025-08-31",
           expiration_date: null
         },
         {
@@ -310,6 +369,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2025-08-31",
           expiration_date: null
         },
         {
@@ -366,6 +426,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -399,13 +460,21 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
+            "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
+            "stop",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -416,6 +485,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -424,7 +494,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "xAI: Grok 4.20 Multi-Agent Beta",
           created: 1773325367,
-          description: "Grok 4.20 Multi-Agent Beta is a variant of xAI\u2019s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
+          description: "Grok 4.20 Multi-Agent Beta is a variant of xAI\uFFFD\uFFFD\uFFFDs Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
           context_length: 2e6,
           architecture: {
             modality: "text+image->text",
@@ -470,6 +540,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -526,6 +597,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -577,6 +649,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -634,6 +707,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -688,6 +762,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -749,6 +824,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -801,6 +877,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -854,6 +931,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -905,6 +983,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -956,6 +1035,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1017,6 +1097,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1068,6 +1149,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1120,6 +1202,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1182,6 +1265,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1244,6 +1328,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1306,6 +1391,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1357,6 +1443,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1408,6 +1495,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1.05
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1466,6 +1554,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1519,6 +1608,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1563,6 +1653,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1621,6 +1712,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1678,6 +1770,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1729,6 +1822,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1789,6 +1883,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1838,6 +1933,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1901,6 +1997,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -1958,6 +2055,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2007,6 +2105,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2064,6 +2163,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2118,6 +2218,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2173,6 +2274,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2219,6 +2321,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2266,6 +2369,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2318,7 +2422,8 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
-          expiration_date: null
+          knowledge_cutoff: null,
+          expiration_date: "2026-03-31"
         },
         {
           id: "moonshotai/kimi-k2.5",
@@ -2378,6 +2483,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2428,6 +2534,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2470,6 +2577,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2513,6 +2621,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2563,6 +2672,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2611,6 +2721,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2664,6 +2775,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2717,6 +2829,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2772,6 +2885,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2821,6 +2935,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2873,6 +2988,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2924,6 +3040,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -2975,6 +3092,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3033,6 +3151,7 @@ var require_latest = __commonJS({
             top_p: 0.9,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3089,6 +3208,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3147,6 +3267,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3188,6 +3309,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: "2026-04-30"
         },
         {
@@ -3240,6 +3362,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: "2026-04-06"
         },
         {
@@ -3296,6 +3419,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3342,6 +3466,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3395,6 +3520,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3443,6 +3569,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3492,6 +3619,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3545,6 +3673,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3595,6 +3724,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3640,6 +3770,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3696,6 +3827,7 @@ var require_latest = __commonJS({
             top_p: 0.6,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3742,6 +3874,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3794,6 +3927,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3831,6 +3965,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3883,6 +4018,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3933,6 +4069,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -3987,6 +4124,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4041,6 +4179,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4095,6 +4234,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4146,6 +4286,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4194,6 +4335,7 @@ var require_latest = __commonJS({
             top_p: 0.75,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4242,6 +4384,7 @@ var require_latest = __commonJS({
             top_p: 0.75,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4296,6 +4439,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4357,6 +4501,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4408,6 +4553,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4462,6 +4608,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4514,6 +4661,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4568,6 +4716,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4621,65 +4770,8 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
-        },
-        {
-          id: "google/gemini-3-pro-preview",
-          canonical_slug: "google/gemini-3-pro-preview-20251117",
-          hugging_face_id: "",
-          name: "Google: Gemini 3 Pro Preview",
-          created: 1763474668,
-          description: "Gemini 3 Pro is Google\u2019s flagship frontier model for high-precision multimodal reasoning, combining strong performance across text, image, video, audio, and code with a 1M-token context window. Reasoning Details must be preserved when using multi-turn tool calling, see our docs here: https://openrouter.ai/docs/use-cases/reasoning-tokens#preserving-reasoning-blocks. It delivers state-of-the-art benchmark results in general reasoning, STEM problem solving, factual QA, and multimodal understanding, including leading scores on LMArena, GPQA Diamond, MathArena Apex, MMMU-Pro, and Video-MMMU. Interactions emphasize depth and interpretability: the model is designed to infer intent with minimal prompting and produce direct, insight-focused responses.\n\nBuilt for advanced development and agentic workflows, Gemini 3 Pro provides robust tool-calling, long-horizon planning stability, and strong zero-shot generation for complex UI, visualization, and coding tasks. It excels at agentic coding (SWE-Bench Verified, Terminal-Bench 2.0), multimodal analysis, and structured long-form tasks such as research synthesis, planning, and interactive learning experiences. Suitable applications include autonomous agents, coding assistants, multimodal analytics, scientific reasoning, and high-context information processing.",
-          context_length: 1048576,
-          architecture: {
-            modality: "text+image+file+audio+video->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000002",
-            completion: "0.000012",
-            image: "0.000002",
-            audio: "0.000002",
-            internal_reasoning: "0.000012",
-            input_cache_read: "0.0000002",
-            input_cache_write: "0.000000375"
-          },
-          top_provider: {
-            context_length: 1048576,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          expiration_date: "2026-03-26"
         },
         {
           id: "deepcogito/cogito-v2.1-671b",
@@ -4731,6 +4823,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4784,6 +4877,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4832,6 +4926,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4883,6 +4978,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4934,6 +5030,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -4988,6 +5085,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5044,6 +5142,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5090,6 +5189,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5140,6 +5240,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5192,6 +5293,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5241,6 +5343,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5289,6 +5392,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5342,6 +5446,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5398,6 +5503,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5448,6 +5554,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5496,6 +5603,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5544,6 +5652,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5590,6 +5699,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5649,6 +5759,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5702,6 +5813,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5751,6 +5863,7 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.95
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5805,6 +5918,7 @@ var require_latest = __commonJS({
             top_p: 0.8,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5864,6 +5978,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5922,6 +6037,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -5980,6 +6096,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -6029,6 +6146,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: null,
+          knowledge_cutoff: "2024-03-31",
           expiration_date: null
         },
         {
@@ -6078,6 +6196,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6130,6 +6249,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -6187,6 +6307,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6243,6 +6364,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6292,6 +6414,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-09-30",
           expiration_date: null
         },
         {
@@ -6350,6 +6473,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6407,6 +6531,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -6462,6 +6587,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-07-31",
           expiration_date: null
         },
         {
@@ -6510,6 +6636,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -6551,6 +6678,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -6609,6 +6737,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -6666,6 +6795,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6702,7 +6832,6 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -6715,7 +6844,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -6723,6 +6851,7 @@ var require_latest = __commonJS({
             top_p: 0.8,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6770,6 +6899,7 @@ var require_latest = __commonJS({
             top_p: 1,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -6818,6 +6948,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -6866,6 +6997,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-09-30",
           expiration_date: null
         },
         {
@@ -6922,6 +7054,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -6975,6 +7108,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-09-30",
           expiration_date: null
         },
         {
@@ -7031,6 +7165,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7078,6 +7213,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -7112,7 +7248,9 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -7131,6 +7269,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-09-30",
           expiration_date: null
         },
         {
@@ -7176,6 +7315,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-09-30",
           expiration_date: null
         },
         {
@@ -7225,6 +7365,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-09-30",
           expiration_date: null
         },
         {
@@ -7275,6 +7416,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7324,6 +7466,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7371,6 +7514,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7419,6 +7563,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7472,6 +7617,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7524,6 +7670,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-12-31",
           expiration_date: null
         },
         {
@@ -7576,6 +7723,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -7625,6 +7773,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-09-30",
           expiration_date: null
         },
         {
@@ -7669,6 +7818,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -7713,6 +7863,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -7766,6 +7917,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7821,6 +7973,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -7870,6 +8023,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -7919,6 +8073,7 @@ var require_latest = __commonJS({
             top_p: 0.8,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -7967,6 +8122,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -8022,6 +8178,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-12-31",
           expiration_date: null
         },
         {
@@ -8063,6 +8220,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -8105,6 +8263,7 @@ var require_latest = __commonJS({
             "structured_outputs"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-09-30",
           expiration_date: null
         },
         {
@@ -8158,6 +8317,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2024-09-30",
           expiration_date: null
         },
         {
@@ -8211,6 +8371,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2024-05-31",
           expiration_date: null
         },
         {
@@ -8264,6 +8425,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2024-05-31",
           expiration_date: null
         },
         {
@@ -8310,6 +8472,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -8368,6 +8531,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -8414,6 +8578,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -8473,6 +8638,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -8527,6 +8693,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -8575,6 +8742,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -8622,6 +8790,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -8671,6 +8840,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -8725,6 +8895,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-12-31",
           expiration_date: null
         },
         {
@@ -8770,6 +8941,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-12-31",
           expiration_date: null
         },
         {
@@ -8824,6 +8996,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-12-31",
           expiration_date: null
         },
         {
@@ -8879,6 +9052,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -8922,6 +9096,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -8965,6 +9140,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -9015,6 +9191,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -9060,6 +9237,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -9118,6 +9296,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -9171,6 +9350,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -9213,6 +9393,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -9262,6 +9443,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-12-31",
           expiration_date: null
         },
         {
@@ -9310,6 +9492,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2025-06-30",
           expiration_date: null
         },
         {
@@ -9358,6 +9541,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -9401,6 +9585,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -9450,6 +9635,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-07-31",
           expiration_date: null
         },
         {
@@ -9489,6 +9675,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -9531,6 +9718,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -9581,6 +9769,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -9622,6 +9811,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -9663,6 +9853,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -9709,6 +9900,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -9754,6 +9946,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -9800,6 +9993,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: "2026-04-15"
         },
         {
@@ -9852,6 +10046,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -9903,6 +10098,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -9963,6 +10159,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10021,6 +10218,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10070,6 +10268,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -10123,6 +10322,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-02-28",
           expiration_date: null
         },
         {
@@ -10172,6 +10372,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-02-28",
           expiration_date: null
         },
         {
@@ -10225,6 +10426,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10281,6 +10483,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -10333,6 +10536,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10385,6 +10589,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10424,6 +10629,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -10468,6 +10674,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -10517,6 +10724,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -10575,6 +10783,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10620,6 +10829,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -10664,6 +10874,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -10710,6 +10921,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -10754,6 +10966,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -10800,6 +11013,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-01-31",
           expiration_date: null
         },
         {
@@ -10847,6 +11061,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: "2026-03-29"
         },
         {
@@ -10894,6 +11109,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -10950,6 +11166,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -11009,6 +11226,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -11061,6 +11279,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -11096,6 +11315,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -11112,6 +11332,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -11156,6 +11377,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -11206,6 +11428,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11252,6 +11475,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11298,6 +11522,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "tools"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11341,6 +11566,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11387,6 +11613,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11433,6 +11660,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11479,6 +11707,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11523,6 +11752,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-04-30",
           expiration_date: null
         },
         {
@@ -11567,6 +11797,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-06-30",
           expiration_date: null
         },
         {
@@ -11619,6 +11850,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-02-28",
           expiration_date: null
         },
         {
@@ -11667,6 +11899,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-02-28",
           expiration_date: null
         },
         {
@@ -11719,6 +11952,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2024-03-31",
           expiration_date: null
         },
         {
@@ -11769,6 +12003,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -11818,6 +12053,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -11864,6 +12100,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -11917,6 +12154,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -11959,6 +12197,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "structured_outputs"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -12007,6 +12246,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: "2026-03-29"
         },
         {
@@ -12056,6 +12296,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -12089,6 +12330,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           per_request_limits: null,
           supported_parameters: [],
           default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
           expiration_date: null
         },
         {
@@ -12130,6 +12372,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12176,6 +12419,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12216,6 +12460,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12264,6 +12509,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12308,6 +12554,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12347,6 +12594,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -12386,6 +12634,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -12431,6 +12680,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12483,6 +12733,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -12527,6 +12778,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -12572,6 +12824,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -12615,6 +12868,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -12660,6 +12914,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -12702,6 +12957,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -12756,6 +13012,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-08-31",
           expiration_date: "2026-06-01"
         },
         {
@@ -12808,6 +13065,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-10-31",
           expiration_date: "2026-05-05"
         },
         {
@@ -12859,6 +13117,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-10-31",
           expiration_date: "2026-05-05"
         },
         {
@@ -12907,6 +13166,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2024-09-30",
           expiration_date: null
         },
         {
@@ -12949,6 +13209,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -12997,6 +13258,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -13053,6 +13315,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-08-31",
           expiration_date: "2026-06-01"
         },
         {
@@ -13095,6 +13358,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -13134,6 +13398,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -13173,6 +13438,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -13210,6 +13476,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -13257,6 +13524,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -13300,6 +13568,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -13347,6 +13616,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -13390,6 +13660,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -13433,6 +13704,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2025-03-31",
           expiration_date: null
         },
         {
@@ -13484,6 +13756,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -13536,6 +13809,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -13582,6 +13856,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -13625,6 +13900,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -13673,6 +13949,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -13727,6 +14004,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -13769,6 +14047,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-03-31",
           expiration_date: null
         },
         {
@@ -13817,6 +14096,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -13862,6 +14142,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -13909,6 +14190,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -13957,6 +14239,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -14009,6 +14292,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             presence_penalty: null,
             repetition_penalty: null
           },
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -14053,6 +14337,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-08-31",
           expiration_date: null
         },
         {
@@ -14096,6 +14381,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -14147,6 +14433,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -14188,6 +14475,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
           expiration_date: null
         },
         {
@@ -14228,6 +14516,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
           expiration_date: null
         },
         {
@@ -14269,6 +14558,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
           expiration_date: null
         },
         {
@@ -14323,6 +14613,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -14371,6 +14662,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -14419,6 +14711,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2024-03-31",
           expiration_date: null
         },
         {
@@ -14468,6 +14761,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -14510,6 +14804,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -14558,6 +14853,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -14607,6 +14903,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-07-31",
           expiration_date: null
         },
         {
@@ -14652,6 +14949,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -14701,6 +14999,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -14753,6 +15052,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -14800,6 +15100,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -14838,6 +15139,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
           expiration_date: null
         },
         {
@@ -14876,6 +15178,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
           expiration_date: null
         },
         {
@@ -14927,89 +15230,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "meta-llama/llama-3.2-3b-instruct:free",
-          canonical_slug: "meta-llama/llama-3.2-3b-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-3B-Instruct",
-          name: "Meta: Llama 3.2 3B Instruct (free)",
-          created: 1727222400,
-          description: "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "meta-llama/llama-3.2-3b-instruct",
-          canonical_slug: "meta-llama/llama-3.2-3b-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-3B-Instruct",
-          name: "Meta: Llama 3.2 3B Instruct",
-          created: 1727222400,
-          description: "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
-          context_length: 8e4,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.000000051",
-            completion: "0.00000034"
-          },
-          top_provider: {
-            context_length: 8e4,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -15052,6 +15273,92 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null
+        },
+        {
+          id: "meta-llama/llama-3.2-3b-instruct:free",
+          canonical_slug: "meta-llama/llama-3.2-3b-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-3B-Instruct",
+          name: "Meta: Llama 3.2 3B Instruct (free)",
+          created: 1727222400,
+          description: "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null
+        },
+        {
+          id: "meta-llama/llama-3.2-3b-instruct",
+          canonical_slug: "meta-llama/llama-3.2-3b-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-3B-Instruct",
+          name: "Meta: Llama 3.2 3B Instruct",
+          created: 1727222400,
+          description: "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it supports eight languages, including English, Spanish, and Hindi, and is adaptable for additional languages.\n\nTrained on 9 trillion tokens, the Llama 3.2 3B model excels in instruction-following, complex reasoning, and tool use. Its balanced performance makes it ideal for applications needing accuracy and efficiency in text generation across multilingual settings.\n\nClick here for the [original model card](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md).\n\nUsage of this model is subject to [Meta's Acceptable Use Policy](https://www.llama.com/llama3/use-policy/).",
+          context_length: 8e4,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.000000051",
+            completion: "0.00000034"
+          },
+          top_provider: {
+            context_length: 8e4,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15098,6 +15405,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15146,52 +15454,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "cohere/command-r-plus-08-2024",
-          canonical_slug: "cohere/command-r-plus-08-2024",
-          hugging_face_id: null,
-          name: "Cohere: Command R+ (08-2024)",
-          created: 1724976e3,
-          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint the same.\n\nRead the launch post [here](https://docs.cohere.com/changelog/command-gets-refreshed).\n\nUse of this model is subject to Cohere's [Usage Policy](https://docs.cohere.com/docs/usage-policy) and [SaaS Agreement](https://cohere.com/saas-agreement).",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Cohere",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -15238,6 +15501,54 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-03-31",
+          expiration_date: null
+        },
+        {
+          id: "cohere/command-r-plus-08-2024",
+          canonical_slug: "cohere/command-r-plus-08-2024",
+          hugging_face_id: null,
+          name: "Cohere: Command R+ (08-2024)",
+          created: 1724976e3,
+          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint the same.\n\nRead the launch post [here](https://docs.cohere.com/changelog/command-gets-refreshed).\n\nUse of this model is subject to Cohere's [Usage Policy](https://docs.cohere.com/docs/usage-policy) and [SaaS Agreement](https://cohere.com/saas-agreement).",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Cohere",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2024-03-31",
           expiration_date: null
         },
         {
@@ -15286,6 +15597,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15331,6 +15643,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15372,6 +15685,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15417,6 +15731,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15463,6 +15778,7 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15519,6 +15835,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -15569,6 +15886,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15616,6 +15934,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15666,58 +15985,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {
             temperature: 0.3
           },
-          expiration_date: null
-        },
-        {
-          id: "openai/gpt-4o-mini-2024-07-18",
-          canonical_slug: "openai/gpt-4o-mini-2024-07-18",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4o-mini (2024-07-18)",
-          created: 1721260800,
-          description: "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/models/openai/gpt-3.5-turbo). It maintains SOTA intelligence, while being significantly more cost-effective.\n\nGPT-4o mini achieves an 82% score on MMLU and presently ranks higher than GPT-4 on chat preferences [common leaderboards](https://arena.lmsys.org/).\n\nCheck out the [launch announcement](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) to learn more.\n\n#multimodal",
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000006",
-            input_cache_read: "0.000000075"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 16384,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {},
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -15770,6 +16038,60 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
+          expiration_date: null
+        },
+        {
+          id: "openai/gpt-4o-mini-2024-07-18",
+          canonical_slug: "openai/gpt-4o-mini-2024-07-18",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4o-mini (2024-07-18)",
+          created: 1721260800,
+          description: "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs.\n\nAs their most advanced small model, it is many multiples more affordable than other recent frontier models, and more than 60% cheaper than [GPT-3.5 Turbo](/models/openai/gpt-3.5-turbo). It maintains SOTA intelligence, while being significantly more cost-effective.\n\nGPT-4o mini achieves an 82% score on MMLU and presently ranks higher than GPT-4 on chat preferences [common leaderboards](https://arena.lmsys.org/).\n\nCheck out the [launch announcement](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) to learn more.\n\n#multimodal",
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000015",
+            completion: "0.0000006",
+            input_cache_read: "0.000000075"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 16384,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p",
+            "web_search_options"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -15812,6 +16134,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -15853,6 +16176,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null
         },
         {
@@ -15898,6 +16222,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -15943,61 +16268,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "openai/gpt-4o-2024-05-13",
-          canonical_slug: "openai/gpt-4o-2024-05-13",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4o (2024-05-13)",
-          created: 1715558400,
-          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as fast and 50% more cost-effective. GPT-4o also offers improved performance in processing non-English languages and enhanced visual capabilities.
-
-For benchmarking against other models, it was briefly called ["im-also-a-good-gpt2-chatbot"](https://twitter.com/LiamFedus/status/1790064963966370209)
-
-#multimodal`,
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000005",
-            completion: "0.000015"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16054,6 +16325,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -16109,6 +16381,63 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "web_search_options"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
+          expiration_date: null
+        },
+        {
+          id: "openai/gpt-4o-2024-05-13",
+          canonical_slug: "openai/gpt-4o-2024-05-13",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4o (2024-05-13)",
+          created: 1715558400,
+          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as fast and 50% more cost-effective. GPT-4o also offers improved performance in processing non-English languages and enhanced visual capabilities.
+
+For benchmarking against other models, it was briefly called ["im-also-a-good-gpt2-chatbot"](https://twitter.com/LiamFedus/status/1790064963966370209)
+
+#multimodal`,
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000005",
+            completion: "0.000015"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p",
+            "web_search_options"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
           expiration_date: null
         },
         {
@@ -16157,6 +16486,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16202,6 +16532,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16250,6 +16581,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2024-01-31",
           expiration_date: null
         },
         {
@@ -16293,6 +16625,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2024-04-30",
           expiration_date: null
         },
         {
@@ -16342,6 +16675,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16386,6 +16720,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-08-31",
           expiration_date: null
         },
         {
@@ -16434,54 +16769,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {
             temperature: 0.3
           },
-          expiration_date: null
-        },
-        {
-          id: "openai/gpt-4-turbo-preview",
-          canonical_slug: "openai/gpt-4-turbo-preview",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 Turbo Preview",
-          created: 1706140800,
-          description: "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023.\n\n**Note:** heavily rate limited by OpenAI while in preview.",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00001",
-            completion: "0.00003"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
+          knowledge_cutoff: "2024-11-30",
           expiration_date: null
         },
         {
@@ -16530,6 +16818,56 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null
+        },
+        {
+          id: "openai/gpt-4-turbo-preview",
+          canonical_slug: "openai/gpt-4-turbo-preview",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4 Turbo Preview",
+          created: 1706140800,
+          description: "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023.\n\n**Note:** heavily rate limited by OpenAI while in preview.",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00001",
+            completion: "0.00003"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16580,6 +16918,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
           default_parameters: {
             temperature: 0.3
           },
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16629,6 +16968,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
           expiration_date: null
         },
         {
@@ -16693,6 +17033,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             top_p: null,
             frequency_penalty: null
           },
+          knowledge_cutoff: null,
           expiration_date: null
         },
         {
@@ -16741,6 +17082,52 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-04-30",
+          expiration_date: null
+        },
+        {
+          id: "mistralai/mistral-7b-instruct-v0.1",
+          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
+          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
+          name: "Mistral: Mistral 7B Instruct v0.1",
+          created: 1695859200,
+          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
+          context_length: 2824,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: "mistral"
+          },
+          pricing: {
+            prompt: "0.00000011",
+            completion: "0.00000019"
+          },
+          top_provider: {
+            context_length: 2824,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3
+          },
+          knowledge_cutoff: "2023-09-30",
           expiration_date: null
         },
         {
@@ -16787,50 +17174,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "mistralai/mistral-7b-instruct-v0.1",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
-          name: "Mistral: Mistral 7B Instruct v0.1",
-          created: 1695859200,
-          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
-          context_length: 2824,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.00000011",
-            completion: "0.00000019"
-          },
-          top_provider: {
-            context_length: 2824,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
+          knowledge_cutoff: "2021-09-30",
           expiration_date: null
         },
         {
@@ -16879,6 +17223,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
           expiration_date: null
         },
         {
@@ -16928,6 +17273,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-06-30",
           expiration_date: null
         },
         {
@@ -16978,6 +17324,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2023-06-30",
           expiration_date: null
         },
         {
@@ -17028,102 +17375,7 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "openai/gpt-4-0314",
-          canonical_slug: "openai/gpt-4-0314",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 (older v0314)",
-          created: 1685232e3,
-          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
-          context_length: 8191,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00003",
-            completion: "0.00006"
-          },
-          top_provider: {
-            context_length: 8191,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          expiration_date: null
-        },
-        {
-          id: "openai/gpt-4",
-          canonical_slug: "openai/gpt-4",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4",
-          created: 1685232e3,
-          description: "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
-          context_length: 8191,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00003",
-            completion: "0.00006"
-          },
-          top_provider: {
-            context_length: 8191,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
+          knowledge_cutoff: "2023-06-30",
           expiration_date: null
         },
         {
@@ -17172,6 +17424,105 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "top_p"
           ],
           default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null
+        },
+        {
+          id: "openai/gpt-4",
+          canonical_slug: "openai/gpt-4",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4",
+          created: 1685232e3,
+          description: "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning capabilities. Training data: up to Sep 2021.",
+          context_length: 8191,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00003",
+            completion: "0.00006"
+          },
+          top_provider: {
+            context_length: 8191,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null
+        },
+        {
+          id: "openai/gpt-4-0314",
+          canonical_slug: "openai/gpt-4-0314",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4 (older v0314)",
+          created: 1685232e3,
+          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
+          context_length: 8191,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00003",
+            completion: "0.00006"
+          },
+          top_provider: {
+            context_length: 8191,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
           expiration_date: null
         }
       ]
