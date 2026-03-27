@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "fetchedAt": "2026-03-27T07:18:34.068Z",
+    "fetchedAt": "2026-03-26T07:19:23.859Z",
     "modelCount": 346,
     "providerCount": 56,
     "source": "openrouter"
@@ -28,8 +28,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.0000001"
+        "prompt": "0.0000002",
+        "completion": "0.0000002"
       },
       "top_provider": {
         "context_length": 16384,
@@ -461,7 +461,7 @@
       "hugging_face_id": "",
       "name": "xAI: Grok 4.20 Multi-Agent Beta",
       "created": 1773325367,
-      "description": "Grok 4.20 Multi-Agent Beta is a variant of xAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
+      "description": "Grok 4.20 Multi-Agent Beta is a variant of xAI���s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
       "context_length": 2000000,
       "architecture": {
         "modality": "text+image->text",
@@ -2298,7 +2298,7 @@
       "name": "StepFun: Step 3.5 Flash",
       "created": 1769728337,
       "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. It is a reasoning model that is incredibly speed efficient even at long contexts.",
-      "context_length": 262144,
+      "context_length": 256000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -2316,8 +2316,8 @@
         "input_cache_read": "0.00000002"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": null,
+        "context_length": 256000,
+        "max_completion_tokens": 256000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -2325,16 +2325,10 @@
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "min_p",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
         "stop",
         "temperature",
         "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -8481,6 +8475,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -8495,6 +8490,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {

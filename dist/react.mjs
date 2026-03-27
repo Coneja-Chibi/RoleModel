@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-26T07:19:23.859Z",
+        fetchedAt: "2026-03-27T07:18:34.068Z",
         modelCount: 346,
         providerCount: 56,
         source: "openrouter"
@@ -59,8 +59,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000002"
+            prompt: "0.0000001",
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 16384,
@@ -492,7 +492,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "xAI: Grok 4.20 Multi-Agent Beta",
           created: 1773325367,
-          description: "Grok 4.20 Multi-Agent Beta is a variant of xAI\uFFFD\uFFFD\uFFFDs Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
+          description: "Grok 4.20 Multi-Agent Beta is a variant of xAI\u2019s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information across complex tasks.\n\nReasoning effort behavior:\n- low / medium: 4 agents\n- high / xhigh: 16 agents",
           context_length: 2e6,
           architecture: {
             modality: "text+image->text",
@@ -2329,7 +2329,7 @@ var require_latest = __commonJS({
           name: "StepFun: Step 3.5 Flash",
           created: 1769728337,
           description: "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. It is a reasoning model that is incredibly speed efficient even at long contexts.",
-          context_length: 256e3,
+          context_length: 262144,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -2347,8 +2347,8 @@ var require_latest = __commonJS({
             input_cache_read: "0.00000002"
           },
           top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 256e3,
+            context_length: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2356,10 +2356,16 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
+            "min_p",
+            "presence_penalty",
             "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
             "stop",
             "temperature",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -8506,7 +8512,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -8521,7 +8526,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
