@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-28T07:06:44.244Z",
-        modelCount: 347,
+        fetchedAt: "2026-03-29T07:13:43.502Z",
+        modelCount: 345,
         providerCount: 56,
         source: "openrouter"
       },
@@ -2014,9 +2014,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002",
-            completion: "0.00000117",
-            input_cache_read: "0.0000001"
+            prompt: "0.00000019",
+            completion: "0.00000115",
+            input_cache_read: "0.000000095"
           },
           top_provider: {
             context_length: 196608,
@@ -2510,13 +2510,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000445",
-            completion: "0.00000222",
-            input_cache_read: "0.000000225"
+            prompt: "0.00000042",
+            completion: "0.0000022",
+            input_cache_read: "0.00000021"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: 65535,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10900,7 +10900,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "",
           name: "Arcee AI: Maestro Reasoning",
           created: 1746481269,
-          description: `Maestro Reasoning is Arcee's flagship analysis model: a 32\u202FB\u2011parameter derivative of Qwen\u202F2.5\u201132\u202FB tuned with DPO and chain\u2011of\u2011thought RL for step\u2011by\u2011step logic. Compared to the earlier 7\u202FB preview, the production 32\u202FB release widens the context window to 128\u202Fk tokens and doubles pass\u2011rate on MATH and GSM\u20118K, while also lifting code completion accuracy. Its instruction style encourages structured "thought \u2192 answer" traces that can be parsed or hidden according to user preference. That transparency pairs well with audit\u2011focused industries like finance or healthcare where seeing the reasoning path matters. In Arcee Conductor, Maestro is automatically selected for complex, multi\u2011constraint queries that smaller SLMs bounce. `,
+          description: `Maestro Reasoning is Arcee's flagship analysis model: a 32\u202FB\u2011parameter derivative of Qwen\u202F2.5\u201132\u202FB tuned with DPO and chain\u2011of\u2011thought RL for step\uFFFD\uFFFD\uFFFDby\u2011step logic. Compared to the earlier 7\u202FB preview, the production 32\u202FB release widens the context window to 128\u202Fk tokens and doubles pass\u2011rate on MATH and GSM\u20118K, while also lifting code completion accuracy. Its instruction style encourages structured "thought \u2192 answer" traces that can be parsed or hidden according to user preference. That transparency pairs well with audit\u2011focused industries like finance or healthcare where seeing the reasoning path matters. In Arcee Conductor, Maestro is automatically selected for complex, multi\u2011constraint queries that smaller SLMs bounce. `,
           context_length: 131072,
           architecture: {
             modality: "text->text",
@@ -11077,54 +11077,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           },
           knowledge_cutoff: "2025-01-31",
           expiration_date: null
-        },
-        {
-          id: "qwen/qwen3-4b:free",
-          canonical_slug: "qwen/qwen3-4b-04-28",
-          hugging_face_id: "Qwen/Qwen3-4B",
-          name: "Qwen: Qwen3 4B (free)",
-          created: 1746031104,
-          description: "Qwen3-4B is a 4 billion parameter dense language model from the Qwen3 series, designed to support both general-purpose and reasoning-intensive tasks. It introduces a dual-mode architecture\u2014thinking and non-thinking\u2014allowing dynamic switching between high-precision logical reasoning and efficient dialogue generation. This makes it well-suited for multi-turn chat, instruction following, and complex agent workflows.",
-          context_length: 40960,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen3",
-            instruct_type: "qwen3"
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 40960,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: "2026-03-29"
         },
         {
           id: "meta-llama/llama-guard-4-12b",
@@ -12261,55 +12213,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           default_parameters: {},
           knowledge_cutoff: "2023-10-31",
           expiration_date: null
-        },
-        {
-          id: "mistralai/mistral-small-3.1-24b-instruct:free",
-          canonical_slug: "mistralai/mistral-small-3.1-24b-instruct-2503",
-          hugging_face_id: "mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-          name: "Mistral: Mistral Small 3.1 24B (free)",
-          created: 1742238937,
-          description: "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and vision tasks, including image analysis, programming, mathematical reasoning, and multilingual support across dozens of languages. Equipped with an extensive 128k token context window and optimized for efficient local inference, it supports use cases such as conversational agents, function calling, long-document comprehension, and privacy-sensitive deployments. The updated version is [Mistral Small 3.2](mistralai/mistral-small-3.2-24b-instruct)",
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
-          knowledge_cutoff: "2023-10-31",
-          expiration_date: "2026-03-29"
         },
         {
           id: "mistralai/mistral-small-3.1-24b-instruct",
