@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-03-29T07:13:43.502Z",
+        fetchedAt: "2026-03-30T07:53:10.958Z",
         modelCount: 345,
         providerCount: 56,
         source: "openrouter"
@@ -292,21 +292,13 @@ var require_latest = __commonJS({
           },
           per_request_limits: null,
           supported_parameters: [
-            "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
-            "min_p",
-            "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
-            "seed",
-            "stop",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -2455,11 +2447,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0",
-            completion: "0",
-            request: "0",
-            image: "0",
-            web_search: "0",
-            internal_reasoning: "0"
+            completion: "0"
           },
           top_provider: {
             context_length: 131e3,
@@ -10898,7 +10886,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "",
           name: "Arcee AI: Maestro Reasoning",
           created: 1746481269,
-          description: `Maestro Reasoning is Arcee's flagship analysis model: a 32\u202FB\u2011parameter derivative of Qwen\u202F2.5\u201132\u202FB tuned with DPO and chain\u2011of\u2011thought RL for step\uFFFD\uFFFD\uFFFDby\u2011step logic. Compared to the earlier 7\u202FB preview, the production 32\u202FB release widens the context window to 128\u202Fk tokens and doubles pass\u2011rate on MATH and GSM\u20118K, while also lifting code completion accuracy. Its instruction style encourages structured "thought \u2192 answer" traces that can be parsed or hidden according to user preference. That transparency pairs well with audit\u2011focused industries like finance or healthcare where seeing the reasoning path matters. In Arcee Conductor, Maestro is automatically selected for complex, multi\u2011constraint queries that smaller SLMs bounce. `,
+          description: `Maestro Reasoning is Arcee's flagship analysis model: a 32\u202FB\u2011parameter derivative of Qwen\u202F2.5\u201132\u202FB tuned with DPO and chain\u2011of\u2011thought RL for step\u2011by\u2011step logic. Compared to the earlier 7\u202FB preview, the production 32\u202FB release widens the context window to 128\u202Fk tokens and doubles pass\u2011rate on MATH and GSM\u20118K, while also lifting code completion accuracy. Its instruction style encourages structured "thought \u2192 answer" traces that can be parsed or hidden according to user preference. That transparency pairs well with audit\u2011focused industries like finance or healthcare where seeing the reasoning path matters. In Arcee Conductor, Maestro is automatically selected for complex, multi\u2011constraint queries that smaller SLMs bounce. `,
           context_length: 131072,
           architecture: {
             modality: "text->text",
