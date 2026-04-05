@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-04T07:09:58.425Z",
-        modelCount: 350,
+        fetchedAt: "2026-04-05T07:16:37.142Z",
+        modelCount: 349,
         providerCount: 56,
         source: "openrouter"
       },
@@ -8459,10 +8459,8 @@ var require_latest = __commonJS({
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -14196,7 +14194,6 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -15210,52 +15207,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
           expiration_date: null
         },
         {
-          id: "anthropic/claude-3.5-sonnet",
-          canonical_slug: "anthropic/claude-3.5-sonnet",
-          hugging_face_id: null,
-          name: "Anthropic: Claude 3.5 Sonnet",
-          created: 1729555200,
-          description: "New Claude 3.5 Sonnet delivers better-than-Opus capabilities, faster-than-Sonnet speeds, at the same Sonnet prices. Sonnet is particularly good at:\n\n- Coding: Scores ~49% on SWE-Bench Verified, higher than the last best score, and without any fancy prompt scaffolding\n- Data science: Augments human data science expertise; navigates unstructured data while using multiple tools for insights\n- Visual processing: excelling at interpreting charts, graphs, and images, accurately transcribing text to derive insights beyond just the text alone\n- Agentic tasks: exceptional tool use, making it great at agentic tasks (i.e. complex, multi-step problem solving tasks that require engaging with other systems)\n\n#multimodal",
-          context_length: 2e5,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Claude",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000006",
-            completion: "0.00003",
-            input_cache_read: "0.0000006",
-            input_cache_write: "0.0000075"
-          },
-          top_provider: {
-            context_length: 2e5,
-            max_completion_tokens: 8192,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-04-30",
-          expiration_date: null
-        },
-        {
           id: "qwen/qwen-2.5-7b-instruct",
           canonical_slug: "qwen/qwen-2.5-7b-instruct",
           hugging_face_id: "Qwen/Qwen2.5-7B-Instruct",
@@ -15699,7 +15650,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -15842,7 +15792,6 @@ GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and im
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -16776,10 +16725,8 @@ For benchmarking against other models, it was briefly called ["im-also-a-good-gp
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
