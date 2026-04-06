@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-05T07:16:37.142Z",
-        modelCount: 349,
+        fetchedAt: "2026-04-06T07:54:43.161Z",
+        modelCount: 348,
         providerCount: 56,
         source: "openrouter"
       },
@@ -72,6 +72,7 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -84,6 +85,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -160,7 +162,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "Qwen: Qwen3.6 Plus (free)",
           created: 1775133557,
-          description: "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to the 3.5 series, it delivers major gains in agentic coding, front-end development, and overall reasoning, with a significantly improved \u201Cvibe coding\u201D experience. The model excels at complex tasks such as 3D scenes, games, and repository-level problem solving, achieving a 78.8 score on SWE-bench Verified. It represents a substantial leap in both pure-text and multimodal capabilities, performing at the level of leading state-of-the-art models.",
+          description: "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to the 3.5 series, it delivers major gains in agentic coding, front-end development, and overall reasoning, with a significantly improved \u201Cvibe coding\u201D experience. The model excels at complex tasks such as 3D scenes, games, and repository-level problem solving, achieving a 78.8 score on SWE-bench Verified. It represents a substantial leap in both pure-text and multimodal capabilities, performing at the level of leading state-of-the-art models.\n\nNote: The model collects prompt and completion data that can be used to improve the model. ",
           context_length: 1e6,
           architecture: {
             modality: "text+image+video->text",
@@ -3749,59 +3751,6 @@ var require_latest = __commonJS({
           },
           knowledge_cutoff: null,
           expiration_date: "2026-04-30"
-        },
-        {
-          id: "allenai/olmo-3.1-32b-think",
-          canonical_slug: "allenai/olmo-3.1-32b-think-20251215",
-          hugging_face_id: "allenai/Olmo-3.1-32B-Think",
-          name: "AllenAI: Olmo 3.1 32B Think",
-          created: 1765907719,
-          description: "Olmo 3.1 32B Think is a large-scale, 32-billion-parameter model designed for deep reasoning, complex multi-step logic, and advanced instruction following. Building on the Olmo 3 series, version 3.1 delivers refined reasoning behavior and stronger performance across demanding evaluations and nuanced conversational tasks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Think continues the Olmo initiative\u2019s commitment to openness, providing full transparency across model weights, code, and training methodology.",
-          context_length: 65536,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000005"
-          },
-          top_provider: {
-            context_length: 65536,
-            max_completion_tokens: 65536,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.6,
-            top_p: 0.95,
-            frequency_penalty: null
-          },
-          knowledge_cutoff: null,
-          expiration_date: "2026-04-06"
         },
         {
           id: "xiaomi/mimo-v2-flash",
@@ -11227,7 +11176,7 @@ Additionally, Gemini 2.5 Flash is configurable through the "max tokens for reaso
           hugging_face_id: "",
           name: "Arcee AI: Coder Large",
           created: 1746478663,
-          description: "Coder\u2011Large is a 32\u202FB\u2011parameter offspring of Qwen\u202F2.5\u2011Instruct that has been further trained on permissively\u2011licensed GitHub, CodeSearchNet and synthetic bug\u2011fix corpora. It supports a 32k context window, enabling multi\u2011file refactoring or long diff review in a single call, and understands 30\u2011plus programming languages with special attention to TypeScript, Go and Terraform. Internal benchmarks show 5\u20138\u202Fpt gains over CodeLlama\u201134\u202FB\u2011Python on HumanEval and competitive BugFix scores thanks to a reinforcement pass that rewards compilable output. The model emits structured explanations alongside code blocks by default, making it suitable for educational tooling as well as production copilot scenarios. Cost\u2011wise, Together AI prices it well below proprietary incumbents, so teams can scale interactive coding without runaway spend. ",
+          description: "Coder\u2011Large is a 32\u202FB\u2011parameter offspring of Qwen\u202F2.5\u2011Instruct that has been further trained on permissively\u2011licensed GitHub, CodeSearchNet and synthetic bug\u2011fix corpora. It supports a 32k context window, enabling multi\uFFFD\uFFFDfile refactoring or long diff review in a single call, and understands 30\u2011plus programming languages with special attention to TypeScript, Go and Terraform. Internal benchmarks show 5\u20138\u202Fpt gains over CodeLlama\u201134\u202FB\u2011Python on HumanEval and competitive BugFix scores thanks to a reinforcement pass that rewards compilable output. The model emits structured explanations alongside code blocks by default, making it suitable for educational tooling as well as production copilot scenarios. Cost\u2011wise, Together AI prices it well below proprietary incumbents, so teams can scale interactive coding without runaway spend. ",
           context_length: 32768,
           architecture: {
             modality: "text->text",
