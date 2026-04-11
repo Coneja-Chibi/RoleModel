@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-10T07:51:30.027Z",
+        fetchedAt: "2026-04-11T07:09:32.276Z",
         modelCount: 350,
         providerCount: 56,
         source: "openrouter"
@@ -119,12 +119,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000126",
-            completion: "0.00000396"
+            prompt: "0.00000095",
+            completion: "0.00000315",
+            input_cache_read: "0.000000475"
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: null,
+            max_completion_tokens: 65535,
             is_moderated: false
           },
           per_request_limits: null,
@@ -238,7 +239,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000013",
+            prompt: "0.00000012",
             completion: "0.0000004"
           },
           top_provider: {
@@ -1118,7 +1119,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 4e5,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -1176,7 +1177,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 4e5,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -1595,7 +1596,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 105e4,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -1653,7 +1654,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 105e4,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -3726,13 +3727,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000175",
             completion: "0.000014",
-            web_search: "0.01",
             input_cache_read: "0.000000175"
           },
           top_provider: {
             context_length: 4e5,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -4345,13 +4345,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000175",
             completion: "0.000014",
-            web_search: "0.01",
             input_cache_read: "0.000000175"
           },
           top_provider: {
             context_length: 128e3,
-            max_completion_tokens: 16384,
-            is_moderated: true
+            max_completion_tokens: 32e3,
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -4451,13 +4450,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000175",
             completion: "0.000014",
-            web_search: "0.01",
             input_cache_read: "0.000000175"
           },
           top_provider: {
             context_length: 4e5,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -5678,13 +5676,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
-            web_search: "0.01",
-            input_cache_read: "0.000000125"
+            input_cache_read: "0.00000013"
           },
           top_provider: {
             context_length: 4e5,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -5844,12 +5841,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000025",
             completion: "0.000002",
-            input_cache_read: "0.000000025"
+            input_cache_read: "0.00000003"
           },
           top_provider: {
             context_length: 4e5,
-            max_completion_tokens: 1e5,
-            is_moderated: true
+            max_completion_tokens: 128e3,
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -9159,13 +9156,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
-            web_search: "0.01",
             input_cache_read: "0.000000125"
           },
           top_provider: {
             context_length: 4e5,
             max_completion_tokens: 128e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -9275,13 +9271,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000005",
             completion: "0.0000004",
-            web_search: "0.01",
-            input_cache_read: "0.000000005"
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 4e5,
-            max_completion_tokens: 128e3,
-            is_moderated: true
+            max_completion_tokens: null,
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -9492,12 +9487,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000003",
-            completion: "0.00000011",
-            input_cache_read: "0.000000015"
+            completion: "0.00000014"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9565,7 +9559,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 2e5,
             max_completion_tokens: 32e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -9584,7 +9578,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
@@ -11524,7 +11521,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 2e5,
             max_completion_tokens: 32e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -11541,7 +11538,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
@@ -11556,7 +11556,7 @@ var require_latest = __commonJS({
           name: "Anthropic: Claude Sonnet 4",
           created: 1747930371,
           description: "Claude Sonnet 4 significantly enhances the capabilities of its predecessor, Sonnet 3.7, excelling in both coding and reasoning tasks with improved precision and controllability. Achieving state-of-the-art performance on SWE-bench (72.7%),...",
-          context_length: 2e5,
+          context_length: 1e6,
           architecture: {
             modality: "text+image+file->text",
             input_modalities: [
@@ -11578,9 +11578,9 @@ var require_latest = __commonJS({
             input_cache_write: "0.00000375"
           },
           top_provider: {
-            context_length: 2e5,
+            context_length: 1e6,
             max_completion_tokens: 64e3,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -11597,7 +11597,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
@@ -12615,13 +12618,12 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.000002",
             completion: "0.000008",
-            web_search: "0.01",
             input_cache_read: "0.0000005"
           },
           top_provider: {
             context_length: 1047576,
-            max_completion_tokens: 32768,
-            is_moderated: true
+            max_completion_tokens: null,
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -14166,8 +14168,8 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 2e5,
-            max_completion_tokens: 64e3,
-            is_moderated: false
+            max_completion_tokens: 128e3,
+            is_moderated: true
           },
           per_request_limits: null,
           supported_parameters: [
@@ -14184,7 +14186,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: "2024-10-31",
           expiration_date: "2026-05-05",
@@ -14239,7 +14244,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: "2024-10-31",
           expiration_date: "2026-05-05",
@@ -16599,8 +16607,8 @@ var require_latest = __commonJS({
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.000000049",
-            completion: "0.000000049"
+            prompt: "0.000000245",
+            completion: "0.000000245"
           },
           top_provider: {
             context_length: 131072,
@@ -16680,56 +16688,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "cohere/command-r-08-2024",
-          canonical_slug: "cohere/command-r-08-2024",
-          hugging_face_id: null,
-          name: "Cohere: Command R (08-2024)",
-          created: 1724976e3,
-          description: "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Cohere",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000006"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/cohere/command-r-08-2024/endpoints"
-          }
-        },
-        {
           id: "cohere/command-r-plus-08-2024",
           canonical_slug: "cohere/command-r-plus-08-2024",
           hugging_face_id: null,
@@ -16777,6 +16735,56 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
+          }
+        },
+        {
+          id: "cohere/command-r-08-2024",
+          canonical_slug: "cohere/command-r-08-2024",
+          hugging_face_id: null,
+          name: "Cohere: Command R (08-2024)",
+          created: 1724976e3,
+          description: "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Cohere",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000015",
+            completion: "0.0000006"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2024-03-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/cohere/command-r-08-2024/endpoints"
           }
         },
         {
@@ -17324,7 +17332,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 128e3,
             max_completion_tokens: 16384,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -17542,6 +17550,62 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "openai/gpt-4o-2024-05-13",
+          canonical_slug: "openai/gpt-4o-2024-05-13",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4o (2024-05-13)",
+          created: 1715558400,
+          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...`,
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000005",
+            completion: "0.000015"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4096,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p",
+            "web_search_options"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-4o-2024-05-13/endpoints"
+          }
+        },
+        {
           id: "openai/gpt-4o",
           canonical_slug: "openai/gpt-4o",
           hugging_face_id: null,
@@ -17564,13 +17628,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000025",
-            completion: "0.00001",
-            input_cache_read: "0.00000125"
+            completion: "0.00001"
           },
           top_provider: {
             context_length: 128e3,
             max_completion_tokens: 16384,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -17651,62 +17714,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o/endpoints"
-          }
-        },
-        {
-          id: "openai/gpt-4o-2024-05-13",
-          canonical_slug: "openai/gpt-4o-2024-05-13",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4o (2024-05-13)",
-          created: 1715558400,
-          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...`,
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000005",
-            completion: "0.000015"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_completion_tokens",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4o-2024-05-13/endpoints"
           }
         },
         {
