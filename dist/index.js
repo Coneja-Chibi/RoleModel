@@ -31,7 +31,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-11T07:09:32.276Z",
+        fetchedAt: "2026-04-12T07:23:43.787Z",
         modelCount: 350,
         providerCount: 56,
         source: "openrouter"
@@ -250,7 +250,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -263,7 +262,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -368,7 +366,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -381,7 +378,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -7375,7 +7371,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000005"
+            completion: "0.0000005",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 131072,
@@ -8482,7 +8479,6 @@ var require_latest = __commonJS({
             "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "response_format",
@@ -13271,7 +13267,7 @@ var require_latest = __commonJS({
           name: "Mistral: Mistral Small 3.1 24B",
           created: 1742238937,
           description: "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and...",
-          context_length: 131072,
+          context_length: 128e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -13285,13 +13281,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000003",
-            completion: "0.00000011",
-            input_cache_read: "0.000000015"
+            prompt: "0.00000035",
+            completion: "0.00000056"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 131072,
+            context_length: 128e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13300,10 +13295,7 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
-            "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"

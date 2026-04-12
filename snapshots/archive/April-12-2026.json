@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "fetchedAt": "2026-04-12T07:23:43.787Z",
+    "fetchedAt": "2026-04-11T07:09:32.276Z",
     "modelCount": 350,
     "providerCount": 56,
     "source": "openrouter"
@@ -219,6 +219,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -231,6 +232,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -335,6 +337,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -347,6 +350,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -7340,8 +7344,7 @@
       },
       "pricing": {
         "prompt": "0.0000003",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000015"
+        "completion": "0.0000005"
       },
       "top_provider": {
         "context_length": 131072,
@@ -8448,6 +8451,7 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -13236,7 +13240,7 @@
       "name": "Mistral: Mistral Small 3.1 24B",
       "created": 1742238937,
       "description": "Mistral Small 3.1 24B Instruct is an upgraded variant of Mistral Small 3 (2501), featuring 24 billion parameters with advanced multimodal capabilities. It provides state-of-the-art performance in text-based reasoning and...",
-      "context_length": 128000,
+      "context_length": 131072,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -13250,12 +13254,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000035",
-        "completion": "0.00000056"
+        "prompt": "0.00000003",
+        "completion": "0.00000011",
+        "input_cache_read": "0.000000015"
       },
       "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": null,
+        "context_length": 131072,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -13264,7 +13269,10 @@
         "max_tokens",
         "presence_penalty",
         "repetition_penalty",
+        "response_format",
         "seed",
+        "stop",
+        "structured_outputs",
         "temperature",
         "top_k",
         "top_p"
