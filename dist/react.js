@@ -33,12 +33,64 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-13T08:14:02.441Z",
+        fetchedAt: "2026-04-14T07:57:15.538Z",
         modelCount: 349,
-        providerCount: 55,
+        providerCount: 54,
         source: "openrouter"
       },
       data: [
+        {
+          id: "openrouter/elephant-alpha",
+          canonical_slug: "openrouter/elephant-alpha",
+          hugging_face_id: null,
+          name: "Elephant",
+          created: 1776052598,
+          description: "Elephant Alpha is a 100B-parameter text model focused on intelligence efficiency, delivering strong reasoning performance while minimizing token usage. It supports a 256K context window with up to 32K output...",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "response_format",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openrouter/elephant-alpha/endpoints"
+          }
+        },
         {
           id: "anthropic/claude-opus-4.6-fast",
           canonical_slug: "anthropic/claude-4.6-opus-fast-20260407",
@@ -136,8 +188,10 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
+            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -239,12 +293,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000012",
-            completion: "0.0000004"
+            prompt: "0.00000008",
+            completion: "0.00000035",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -252,7 +307,9 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -264,6 +321,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -355,12 +413,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000014",
-            completion: "0.0000004"
+            prompt: "0.00000013",
+            completion: "0.00000038",
+            input_cache_read: "0.0000000199999995"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -369,6 +428,7 @@ var require_latest = __commonJS({
             "include_reasoning",
             "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -531,7 +591,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000022",
-            completion: "0.00000085"
+            completion: "0.00000085",
+            input_cache_read: "0.00000006"
           },
           top_provider: {
             context_length: 262144,
@@ -1072,7 +1133,6 @@ var require_latest = __commonJS({
             "reasoning",
             "repetition_penalty",
             "response_format",
-            "seed",
             "stop",
             "structured_outputs",
             "temperature",
@@ -3144,6 +3204,7 @@ var require_latest = __commonJS({
             "min_p",
             "presence_penalty",
             "reasoning",
+            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -5420,7 +5481,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: null,
           expiration_date: null,
@@ -8192,60 +8256,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "meituan/longcat-flash-chat",
-          canonical_slug: "meituan/longcat-flash-chat",
-          hugging_face_id: "meituan-longcat/LongCat-Flash-Chat",
-          name: "Meituan: LongCat Flash Chat",
-          created: 1757427658,
-          description: "LongCat-Flash-Chat is a large-scale Mixture-of-Experts (MoE) model with 560B total parameters, of which 18.6B\u201331.3B (\u224827B on average) are dynamically activated per input. It introduces a shortcut-connected MoE design to reduce...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000008",
-            input_cache_read: "0.0000002"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 131072,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meituan/longcat-flash-chat/endpoints"
-          }
-        },
-        {
           id: "qwen/qwen-plus-2025-07-28:thinking",
           canonical_slug: "qwen/qwen-plus-2025-07-28",
           hugging_face_id: "",
@@ -10145,7 +10155,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000001",
-            completion: "0.0000002"
+            completion: "0.0000002",
+            input_cache_read: "0.0000001"
           },
           top_provider: {
             context_length: 128e3,
@@ -13816,7 +13827,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000055",
-            completion: "0.0000008"
+            completion: "0.0000008",
+            input_cache_read: "0.00000025"
           },
           top_provider: {
             context_length: 32768,
@@ -18156,7 +18168,6 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
