@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-14T07:57:15.538Z",
-        modelCount: 349,
+        fetchedAt: "2026-04-15T07:58:26.778Z",
+        modelCount: 344,
         providerCount: 54,
         source: "openrouter"
       },
@@ -45,7 +45,7 @@ var require_latest = __commonJS({
           hugging_face_id: null,
           name: "Elephant",
           created: 1776052598,
-          description: "Elephant Alpha is a 100B-parameter text model focused on intelligence efficiency, delivering strong reasoning performance while minimizing token usage. It supports a 256K context window with up to 32K output...",
+          description: "Elephant Alpha is a 100B-parameter text model focused on intelligence efficiency, delivering strong performance while minimizing token usage. It supports a 256K context window with up to 32K output tokens,...",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -5966,11 +5966,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000006",
-            completion: "0.0000025"
+            completion: "0.0000025",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9905,10 +9906,8 @@ var require_latest = __commonJS({
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -10940,56 +10939,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/baidu/ernie-4.5-300b-a47b/endpoints"
-          }
-        },
-        {
-          id: "inception/mercury",
-          canonical_slug: "inception/mercury",
-          hugging_face_id: "",
-          name: "Inception: Mercury",
-          created: 1750973026,
-          description: "Mercury is the first diffusion large language model (dLLM). Applying a breakthrough discrete diffusion approach, the model runs 5-10x faster than even speed optimized models like GPT-4.1 Nano and Claude...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000025",
-            completion: "0.00000075",
-            input_cache_read: "0.000000025"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 32e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          default_parameters: {
-            temperature: 0,
-            top_p: null,
-            frequency_penalty: null
-          },
-          knowledge_cutoff: "2025-01-31",
-          expiration_date: "2026-04-15",
-          links: {
-            details: "/api/v1/models/inception/mercury/endpoints"
           }
         },
         {
@@ -12027,56 +11976,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "inception/mercury-coder",
-          canonical_slug: "inception/mercury-coder-small-beta",
-          hugging_face_id: "",
-          name: "Inception: Mercury Coder",
-          created: 1746033880,
-          description: "Mercury Coder is the first diffusion large language model (dLLM). Applying a breakthrough discrete diffusion approach, the model runs 5-10x faster than even speed optimized models like Claude 3.5 Haiku...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000025",
-            completion: "0.00000075",
-            input_cache_read: "0.000000025"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 32e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools"
-          ],
-          default_parameters: {
-            temperature: 0,
-            top_p: null,
-            frequency_penalty: null
-          },
-          knowledge_cutoff: "2025-01-31",
-          expiration_date: "2026-04-15",
-          links: {
-            details: "/api/v1/models/inception/mercury-coder-small-beta/endpoints"
-          }
-        },
-        {
           id: "meta-llama/llama-guard-4-12b",
           canonical_slug: "meta-llama/llama-guard-4-12b",
           hugging_face_id: "meta-llama/Llama-Guard-4-12B",
@@ -12565,53 +12464,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "qwen/qwen2.5-coder-7b-instruct",
-          canonical_slug: "qwen/qwen2.5-coder-7b-instruct",
-          hugging_face_id: "Qwen/Qwen2.5-Coder-7B-Instruct",
-          name: "Qwen: Qwen2.5 Coder 7B Instruct",
-          created: 1744734887,
-          description: "Qwen2.5-Coder-7B-Instruct is a 7B parameter instruction-tuned language model optimized for code-related tasks such as code generation, reasoning, and bug fixing. Based on the Qwen2.5 architecture, it incorporates enhancements like RoPE,...",
-          context_length: 32768,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000003",
-            completion: "0.00000009"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-06-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/qwen/qwen2.5-coder-7b-instruct/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4.1",
           canonical_slug: "openai/gpt-4.1-2025-04-14",
           hugging_face_id: "",
@@ -12917,62 +12769,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/x-ai/grok-3-beta/endpoints"
-          }
-        },
-        {
-          id: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-          canonical_slug: "nvidia/llama-3.1-nemotron-ultra-253b-v1",
-          hugging_face_id: "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
-          name: "NVIDIA: Llama 3.1 Nemotron Ultra 253B v1",
-          created: 1744115059,
-          description: "Llama-3.1-Nemotron-Ultra-253B-v1 is a large language model (LLM) optimized for advanced reasoning, human-interactive chat, retrieval-augmented generation (RAG), and tool-calling tasks. Derived from Meta\u2019s Llama-3.1-405B-Instruct, it has been significantly customized using Neural...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000006",
-            completion: "0.0000018"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            top_k: null,
-            frequency_penalty: null,
-            presence_penalty: null,
-            repetition_penalty: null
-          },
-          knowledge_cutoff: "2024-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/nvidia/llama-3.1-nemotron-ultra-253b-v1/endpoints"
           }
         },
         {
@@ -14293,8 +14089,8 @@ var require_latest = __commonJS({
             instruct_type: "none"
           },
           pricing: {
-            prompt: "0.00000002",
-            completion: "0.00000006"
+            prompt: "0.00000048",
+            completion: "0.00000003"
           },
           top_provider: {
             context_length: 131072,
@@ -17370,51 +17166,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-2-27b-it/endpoints"
-          }
-        },
-        {
-          id: "google/gemma-2-9b-it",
-          canonical_slug: "google/gemma-2-9b-it",
-          hugging_face_id: "google/gemma-2-9b-it",
-          name: "Google: Gemma 2 9B",
-          created: 1719532800,
-          description: "Gemma 2 9B by Google is an advanced, open-source language model that sets a new standard for efficiency and performance in its size class. Designed for a wide variety of...",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: "gemma"
-          },
-          pricing: {
-            prompt: "0.00000003",
-            completion: "0.00000009"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-06-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/google/gemma-2-9b-it/endpoints"
           }
         },
         {
