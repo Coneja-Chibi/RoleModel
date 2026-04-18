@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-17T07:58:42.394Z",
-        modelCount: 345,
+        fetchedAt: "2026-04-18T07:18:59.397Z",
+        modelCount: 343,
         providerCount: 54,
         source: "openrouter"
       },
@@ -349,13 +349,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000007",
-            completion: "0.0000004",
-            input_cache_read: "0.00000004"
+            prompt: "0.00000008",
+            completion: "0.00000035",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1633,7 +1633,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3.5-9B",
           created: 1773152396,
           description: "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design...",
-          context_length: 256e3,
+          context_length: 262144,
           architecture: {
             modality: "text+image+video->text",
             input_modalities: [
@@ -1648,12 +1648,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000005",
+            prompt: "0.0000001",
             completion: "0.00000015"
           },
           top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 32768,
+            context_length: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3347,7 +3347,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI: Kimi K2.5",
           created: 1769487076,
           description: "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-          context_length: 262144,
+          context_length: 256e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -3361,13 +3361,15 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003827",
-            completion: "0.00000172",
-            input_cache_read: "0.00000019135"
+            prompt: "0",
+            completion: "0",
+            audio: "0",
+            web_search: "0",
+            input_cache_read: "0"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 65535,
+            context_length: 256e3,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5391,13 +5393,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000026",
-            completion: "0.00000038",
-            input_cache_read: "0.00000013"
+            prompt: "0.000000259",
+            completion: "0.00000042",
+            input_cache_read: "0.000000135"
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 163840,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9474,7 +9476,6 @@ var require_latest = __commonJS({
             "min_p",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -10443,19 +10444,15 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -12044,49 +12041,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "meta-llama/llama-guard-4-12b:free",
-          canonical_slug: "meta-llama/llama-guard-4-12b",
-          hugging_face_id: "meta-llama/Llama-Guard-4-12B",
-          name: "Meta: Llama Guard 4 12B (free)",
-          created: 1745975193,
-          description: "Llama Guard 4 is a Llama 4 Scout-derived multimodal pretrained model, fine-tuned for content safety classification. Similar to previous versions, it can be used to classify content in both LLM...",
-          context_length: 163840,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "image",
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 65e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "seed",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-guard-4-12b/endpoints"
-          }
-        },
-        {
           id: "meta-llama/llama-guard-4-12b",
           canonical_slug: "meta-llama/llama-guard-4-12b",
           hugging_face_id: "meta-llama/Llama-Guard-4-12B",
@@ -12990,56 +12944,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "qwen/qwen2.5-vl-32b-instruct",
-          canonical_slug: "qwen/qwen2.5-vl-32b-instruct",
-          hugging_face_id: "Qwen/Qwen2.5-VL-32B-Instruct",
-          name: "Qwen: Qwen2.5 VL 32B Instruct",
-          created: 1742839838,
-          description: "Qwen2.5-VL-32B is a multimodal vision-language model fine-tuned through reinforcement learning for enhanced mathematical reasoning, structured outputs, and visual problem-solving capabilities. It excels at visual analysis tasks, including object recognition, textual...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Qwen",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000006"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-06-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/qwen/qwen2.5-vl-32b-instruct/endpoints"
-          }
-        },
-        {
           id: "deepseek/deepseek-chat-v3-0324",
           canonical_slug: "deepseek/deepseek-chat-v3-0324",
           hugging_face_id: "deepseek-ai/DeepSeek-V3-0324",
@@ -13076,7 +12980,6 @@ var require_latest = __commonJS({
             "max_tokens",
             "min_p",
             "presence_penalty",
-            "reasoning",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -18113,7 +18016,6 @@ var require_latest = __commonJS({
             "min_p",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
