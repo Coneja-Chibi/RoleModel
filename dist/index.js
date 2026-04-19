@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-18T07:18:59.397Z",
-        modelCount: 343,
+        fetchedAt: "2026-04-19T07:39:43.180Z",
+        modelCount: 342,
         providerCount: 54,
         source: "openrouter"
       },
@@ -3347,7 +3347,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI: Kimi K2.5",
           created: 1769487076,
           description: "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-          context_length: 256e3,
+          context_length: 262144,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -3361,15 +3361,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0",
-            audio: "0",
-            web_search: "0",
-            input_cache_read: "0"
+            prompt: "0.0000003827",
+            completion: "0.00000172",
+            input_cache_read: "0.00000019135"
           },
           top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: null,
+            context_length: 262144,
+            max_completion_tokens: 65535,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10340,14 +10338,11 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "include_reasoning",
             "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
-            "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -12878,8 +12873,6 @@ var require_latest = __commonJS({
             "stop",
             "structured_outputs",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
@@ -12976,7 +12969,6 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -12989,7 +12981,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -13265,7 +13256,6 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
-            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -13273,7 +13263,6 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -15357,19 +15346,18 @@ var require_latest = __commonJS({
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.0000001",
-            completion: "0.00000032"
+            prompt: "0.00000012",
+            completion: "0.00000038"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 16384,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15382,7 +15370,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -16920,6 +16907,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -17280,61 +17268,6 @@ var require_latest = __commonJS({
             "logit_bias",
             "logprobs",
             "max_completion_tokens",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4o/endpoints"
-          }
-        },
-        {
-          id: "openai/gpt-4o:extended",
-          canonical_slug: "openai/gpt-4o",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4o (extended)",
-          created: 1715558400,
-          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...`,
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000006",
-            completion: "0.000018"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 64e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
             "max_tokens",
             "presence_penalty",
             "response_format",
