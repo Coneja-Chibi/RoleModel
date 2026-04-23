@@ -33,12 +33,184 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-22T07:59:42.498Z",
-        modelCount: 346,
-        providerCount: 56,
+        fetchedAt: "2026-04-23T08:05:06.418Z",
+        modelCount: 349,
+        providerCount: 55,
         source: "openrouter"
       },
       data: [
+        {
+          id: "tencent/hy3-preview:free",
+          canonical_slug: "tencent/hy3-preview-20260421",
+          hugging_face_id: null,
+          name: "Tencent: Hy3 preview (free)",
+          created: 1776878150,
+          description: "Hy3 Preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 262144,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "presence_penalty",
+            "reasoning",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.9,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
+          }
+        },
+        {
+          id: "xiaomi/mimo-v2.5-pro",
+          canonical_slug: "xiaomi/mimo-v2.5-pro-20260422",
+          hugging_face_id: null,
+          name: "Xiaomi: MiMo-V2.5-Pro",
+          created: 1776874273,
+          description: "MiMo-V2.5-Pro is Xiaomi\u2019s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
+          context_length: 1048576,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000001",
+            completion: "0.000003",
+            input_cache_read: "0.0000002"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 131072,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/xiaomi/mimo-v2.5-pro-20260422/endpoints"
+          }
+        },
+        {
+          id: "xiaomi/mimo-v2.5",
+          canonical_slug: "xiaomi/mimo-v2.5-20260422",
+          hugging_face_id: null,
+          name: "Xiaomi: MiMo-V2.5",
+          created: 1776874269,
+          description: "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
+          context_length: 1048576,
+          architecture: {
+            modality: "text+image+audio+video->text",
+            input_modalities: [
+              "text",
+              "audio",
+              "image",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.000002",
+            input_cache_read: "0.00000008"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 131072,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/xiaomi/mimo-v2.5-20260422/endpoints"
+          }
+        },
         {
           id: "openai/gpt-5.4-image-2",
           canonical_slug: "openai/gpt-5.4-image-2-20260421",
@@ -154,7 +326,7 @@ var require_latest = __commonJS({
             repetition_penalty: null
           },
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-04-29",
           links: {
             details: "/api/v1/models/inclusionai/ling-2.6-flash-20260421/endpoints"
           }
@@ -262,6 +434,62 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "baidu/qianfan-ocr-fast:free",
+          canonical_slug: "baidu/qianfan-ocr-fast-20260420",
+          hugging_face_id: "",
+          name: "Baidu: Qianfan-OCR-Fast (free)",
+          created: 1776707472,
+          description: "Qianfan-OCR-Fast is a domain-specific multimodal large model purpose-built for OCR. By leveraging specialized OCR training data while preserving versatile multimodal intelligence, it provides a powerful performance upgrade over Qianfan-OCR.",
+          context_length: 65536,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 65536,
+            max_completion_tokens: 28672,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/baidu/qianfan-ocr-fast-20260420/endpoints"
+          }
+        },
+        {
           id: "moonshotai/kimi-k2.6",
           canonical_slug: "moonshotai/kimi-k2.6-20260420",
           hugging_face_id: "moonshotai/Kimi-K2.6",
@@ -282,13 +510,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000008",
+            prompt: "0.00000075",
             completion: "0.0000035",
-            input_cache_read: "0.0000002"
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -296,9 +524,13 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
+            "min_p",
+            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
+            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -308,6 +540,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -585,12 +818,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000007",
-            completion: "0.00000035",
-            input_cache_read: "0.00000004"
+            completion: "0.00000034"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -705,8 +937,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000013",
-            completion: "0.00000038",
-            input_cache_read: "0.0000000199999995"
+            completion: "0.00000038"
           },
           top_provider: {
             context_length: 262144,
@@ -3213,7 +3444,6 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -3507,7 +3737,6 @@ var require_latest = __commonJS({
             "min_p",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -3530,10 +3759,10 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "arcee-ai/trinity-large-preview:free",
+          id: "arcee-ai/trinity-large-preview",
           canonical_slug: "arcee-ai/trinity-large-preview",
           hugging_face_id: "arcee-ai/Trinity-Large-Preview",
-          name: "Arcee AI: Trinity Large Preview (free)",
+          name: "Arcee AI: Trinity Large Preview",
           created: 1769552670,
           description: "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. It excels in creative writing,...",
           context_length: 131e3,
@@ -3549,8 +3778,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0"
+            prompt: "0.00000015",
+            completion: "0.00000045"
           },
           top_provider: {
             context_length: 131e3,
@@ -3576,7 +3805,7 @@ var require_latest = __commonJS({
             repetition_penalty: null
           },
           knowledge_cutoff: null,
-          expiration_date: "2026-04-22",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
           }
@@ -4559,9 +4788,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -5536,6 +5763,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "include_reasoning",
+            "max_completion_tokens",
             "max_tokens",
             "reasoning",
             "response_format",
@@ -5641,7 +5869,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 32768,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5652,7 +5880,6 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -5971,62 +6198,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/x-ai/grok-4.1-fast/endpoints"
-          }
-        },
-        {
-          id: "deepcogito/cogito-v2.1-671b",
-          canonical_slug: "deepcogito/cogito-v2.1-671b-20251118",
-          hugging_face_id: "",
-          name: "Deep Cogito: Cogito v2.1 671B",
-          created: 1763071233,
-          description: "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000125",
-            completion: "0.00000125"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          knowledge_cutoff: null,
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/deepcogito/cogito-v2.1-671b-20251118/endpoints"
           }
         },
         {
@@ -7932,7 +8103,6 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -10239,7 +10409,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3 235B A22B Thinking 2507",
           created: 1753449557,
           description: "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144...",
-          context_length: 262144,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -10252,12 +10422,12 @@ var require_latest = __commonJS({
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.00000013",
-            completion: "0.0000006"
+            prompt: "0.0000001495",
+            completion: "0.000001495"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10286,7 +10456,7 @@ var require_latest = __commonJS({
             frequency_penalty: null
           },
           knowledge_cutoff: "2025-06-30",
-          expiration_date: "2026-04-22",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-235b-a22b-thinking-2507/endpoints"
           }
@@ -11231,10 +11401,8 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -15005,7 +15173,9 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
@@ -17372,7 +17542,9 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "max_tokens",
             "presence_penalty",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
