@@ -31,19 +31,195 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-23T08:05:06.418Z",
-        modelCount: 349,
-        providerCount: 55,
+        fetchedAt: "2026-04-24T08:13:39.666Z",
+        modelCount: 353,
+        providerCount: 56,
         source: "openrouter"
       },
       data: [
         {
+          id: "deepseek/deepseek-v4-pro",
+          canonical_slug: "deepseek/deepseek-v4-pro-20260423",
+          hugging_face_id: "deepseek-ai/DeepSeek-V4-Pro",
+          name: "DeepSeek: DeepSeek V4 Pro",
+          created: 1777000679,
+          description: "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
+          context_length: 1048576,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "DeepSeek",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000174",
+            completion: "0.00000348",
+            input_cache_read: "0.000000145"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 384e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 1,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/deepseek/deepseek-v4-pro-20260423/endpoints"
+          }
+        },
+        {
+          id: "deepseek/deepseek-v4-flash",
+          canonical_slug: "deepseek/deepseek-v4-flash-20260423",
+          hugging_face_id: "deepseek-ai/DeepSeek-V4-Flash",
+          name: "DeepSeek: DeepSeek V4 Flash",
+          created: 1777000666,
+          description: "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+          context_length: 1048576,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "DeepSeek",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000014",
+            completion: "0.00000028",
+            input_cache_read: "0.000000028"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 384e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+          }
+        },
+        {
+          id: "inclusionai/ling-2.6-1t:free",
+          canonical_slug: "inclusionai/ling-2.6-1t-20260423",
+          hugging_face_id: null,
+          name: "inclusionAI: Ling-2.6-1T (free)",
+          created: 1776948238,
+          description: "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company\u2019s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a \u201Cfast...",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 32768,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: "2026-04-30",
+          links: {
+            details: "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
+          }
+        },
+        {
           id: "tencent/hy3-preview:free",
           canonical_slug: "tencent/hy3-preview-20260421",
-          hugging_face_id: null,
+          hugging_face_id: "tencent/Hy3-preview",
           name: "Tencent: Hy3 preview (free)",
           created: 1776878150,
-          description: "Hy3 Preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
+          description: "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -78,14 +254,7 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: {
-            temperature: 0.9,
-            top_p: null,
-            top_k: null,
-            frequency_penalty: null,
-            presence_penalty: null,
-            repetition_penalty: null
-          },
+          default_parameters: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -494,7 +663,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI: Kimi K2.6",
           created: 1776699402,
           description: "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-          context_length: 262144,
+          context_length: 256e3,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -508,13 +677,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000075",
-            completion: "0.0000035",
-            input_cache_read: "0.00000015"
+            prompt: "0.0000007448",
+            completion: "0.000004655",
+            input_cache_read: "0.0000001463"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: null,
+            context_length: 256e3,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -815,8 +984,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000007",
-            completion: "0.00000034"
+            prompt: "0.00000006",
+            completion: "0.00000033"
           },
           top_provider: {
             context_length: 262144,
@@ -947,6 +1116,7 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -960,6 +1130,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -3359,12 +3530,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.0000012",
-            input_cache_read: "0.000000075"
+            completion: "0.00000115",
+            input_cache_read: "0.00000003"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 65536,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3425,9 +3596,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000065",
+            prompt: "0.0000006",
             completion: "0.00000208",
-            input_cache_read: "0.00000013"
+            input_cache_read: "0.00000012"
           },
           top_provider: {
             context_length: 202752,
@@ -5218,14 +5389,11 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -5875,7 +6043,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -5889,7 +6056,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -6196,6 +6362,62 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/x-ai/grok-4.1-fast/endpoints"
+          }
+        },
+        {
+          id: "deepcogito/cogito-v2.1-671b",
+          canonical_slug: "deepcogito/cogito-v2.1-671b-20251118",
+          hugging_face_id: "",
+          name: "Deep Cogito: Cogito v2.1 671B",
+          created: 1763071233,
+          description: "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000125",
+            completion: "0.00000125"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            frequency_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/deepcogito/cogito-v2.1-671b-20251118/endpoints"
           }
         },
         {
@@ -17360,17 +17582,19 @@ var require_latest = __commonJS({
             instruct_type: "mistral"
           },
           pricing: {
-            prompt: "0.00000002",
-            completion: "0.00000004"
+            prompt: "0.00000001",
+            completion: "0.00000003"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 16384,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -17383,6 +17607,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
