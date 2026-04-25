@@ -31,12 +31,125 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-24T08:13:39.666Z",
-        modelCount: 353,
+        fetchedAt: "2026-04-25T07:38:48.531Z",
+        modelCount: 355,
         providerCount: 56,
         source: "openrouter"
       },
       data: [
+        {
+          id: "openai/gpt-5.5-pro",
+          canonical_slug: "openai/gpt-5.5-pro-20260423",
+          hugging_face_id: "",
+          name: "OpenAI: GPT-5.5 Pro",
+          created: 1777051896,
+          description: "GPT-5.5 Pro is OpenAI\u2019s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for...",
+          context_length: 105e4,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "file",
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00003",
+            completion: "0.00018",
+            web_search: "0.01"
+          },
+          top_provider: {
+            context_length: 105e4,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-5.5-pro-20260423/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-5.5",
+          canonical_slug: "openai/gpt-5.5-20260423",
+          hugging_face_id: "",
+          name: "OpenAI: GPT-5.5",
+          created: 1777051893,
+          description: "GPT-5.5 is OpenAI\u2019s frontier model designed for complex professional workloads, building on GPT-5.4 with stronger reasoning, higher reliability, and improved token efficiency on hard tasks. It features a 1M+ token...",
+          context_length: 105e4,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "file",
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000005",
+            completion: "0.00003",
+            web_search: "0.01",
+            input_cache_read: "0.0000005"
+          },
+          top_provider: {
+            context_length: 105e4,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-5.5-20260423/endpoints"
+          }
+        },
         {
           id: "deepseek/deepseek-v4-pro",
           canonical_slug: "deepseek/deepseek-v4-pro-20260423",
@@ -70,15 +183,20 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -129,15 +247,21 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_logprobs",
             "top_p"
           ],
@@ -161,7 +285,7 @@ var require_latest = __commonJS({
           hugging_face_id: null,
           name: "inclusionAI: Ling-2.6-1T (free)",
           created: 1776948238,
-          description: "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company\u2019s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a \u201Cfast...",
+          description: "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company\u2019s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a \uFFFD\uFFFDfast...",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -245,6 +369,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "max_tokens",
             "presence_penalty",
             "reasoning",
             "stop",
@@ -254,9 +379,16 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: null,
+          default_parameters: {
+            temperature: 0.9,
+            top_p: 1,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-05-08",
           links: {
             details: "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
           }
@@ -1108,7 +1240,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3535,7 +3667,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3602,7 +3734,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3773,9 +3905,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000015",
+            prompt: "0.00000014",
             completion: "0.0000008",
-            input_cache_read: "0.00000011"
+            input_cache_read: "0.00000009"
           },
           top_provider: {
             context_length: 262144,
@@ -3902,6 +4034,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -4439,17 +4572,18 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000006",
             completion: "0.0000004",
-            input_cache_read: "0.0000000100000002"
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -4554,12 +4688,13 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 65536,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -5057,13 +5192,14 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 228e3,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -5377,11 +5513,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000009"
+            completion: "0.0000009",
+            input_cache_read: "0.00000005"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 24e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5442,6 +5579,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "max_tokens",
             "response_format",
             "structured_outputs",
             "temperature",
@@ -6994,13 +7132,14 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -7627,13 +7766,14 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -7648,7 +7788,14 @@ var require_latest = __commonJS({
             "top_k",
             "top_p"
           ],
-          default_parameters: null,
+          default_parameters: {
+            temperature: 0.6,
+            top_p: 0.95,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
           knowledge_cutoff: "2024-03-31",
           expiration_date: null,
           links: {
@@ -8370,7 +8517,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -8581,11 +8728,11 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000021",
             completion: "0.00000079",
-            input_cache_read: "0.0000001300000002"
+            input_cache_read: "0.00000013"
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -8925,7 +9072,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9136,13 +9283,14 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -10095,7 +10243,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10206,7 +10354,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10801,7 +10949,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -10967,7 +11115,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -11379,6 +11527,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "max_tokens",
             "reasoning",
             "response_format",
             "structured_outputs",
@@ -11660,7 +11809,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 128e3,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12118,7 +12267,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12698,7 +12847,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12748,13 +12897,14 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 40960,
-            max_completion_tokens: 40960,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
@@ -12878,6 +13028,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
@@ -13552,6 +13703,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -13599,7 +13751,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13793,12 +13945,13 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -13806,6 +13959,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -13887,12 +14041,13 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -13900,7 +14055,10 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ],
@@ -14191,6 +14349,8 @@ var require_latest = __commonJS({
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ],
@@ -14431,6 +14591,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "max_tokens",
             "reasoning",
             "temperature",
             "tool_choice",
@@ -15335,6 +15496,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15342,6 +15504,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -15488,6 +15651,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15643,6 +15807,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
@@ -15738,12 +15903,13 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: 163840,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -15795,6 +15961,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
@@ -16658,6 +16825,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -16676,48 +16844,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/llama-3.1-nemotron-70b-instruct/endpoints"
-          }
-        },
-        {
-          id: "inflection/inflection-3-productivity",
-          canonical_slug: "inflection/inflection-3-productivity",
-          hugging_face_id: null,
-          name: "Inflection: Inflection 3 Productivity",
-          created: 1728604800,
-          description: "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional...",
-          context_length: 8e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 8e3,
-            max_completion_tokens: 1024,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
           }
         },
         {
@@ -16760,6 +16886,48 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inflection/inflection-3-pi/endpoints"
+          }
+        },
+        {
+          id: "inflection/inflection-3-productivity",
+          canonical_slug: "inflection/inflection-3-productivity",
+          hugging_face_id: null,
+          name: "Inflection: Inflection 3 Productivity",
+          created: 1728604800,
+          description: "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional...",
+          context_length: 8e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 8e3,
+            max_completion_tokens: 1024,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "stop",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2024-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
           }
         },
         {
@@ -16815,6 +16983,103 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/thedrummer/rocinante-12b/endpoints"
+          }
+        },
+        {
+          id: "meta-llama/llama-3.2-1b-instruct",
+          canonical_slug: "meta-llama/llama-3.2-1b-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-1B-Instruct",
+          name: "Meta: Llama 3.2 1B Instruct",
+          created: 1727222400,
+          description: "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
+          context_length: 6e4,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.000000027",
+            completion: "0.0000002"
+          },
+          top_provider: {
+            context_length: 6e4,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
+          }
+        },
+        {
+          id: "meta-llama/llama-3.2-11b-vision-instruct",
+          canonical_slug: "meta-llama/llama-3.2-11b-vision-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-11B-Vision-Instruct",
+          name: "Meta: Llama 3.2 11B Vision Instruct",
+          created: 1727222400,
+          description: "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and...",
+          context_length: 131072,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.000000245",
+            completion: "0.000000245"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.2-11b-vision-instruct/endpoints"
           }
         },
         {
@@ -16909,102 +17174,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "meta-llama/llama-3.2-1b-instruct",
-          canonical_slug: "meta-llama/llama-3.2-1b-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-1B-Instruct",
-          name: "Meta: Llama 3.2 1B Instruct",
-          created: 1727222400,
-          description: "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
-          context_length: 6e4,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.000000027",
-            completion: "0.0000002"
-          },
-          top_provider: {
-            context_length: 6e4,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3.2-11b-vision-instruct",
-          canonical_slug: "meta-llama/llama-3.2-11b-vision-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-11B-Vision-Instruct",
-          name: "Meta: Llama 3.2 11B Vision Instruct",
-          created: 1727222400,
-          description: "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and...",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.000000245",
-            completion: "0.000000245"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.2-11b-vision-instruct/endpoints"
-          }
-        },
-        {
           id: "qwen/qwen-2.5-72b-instruct",
           canonical_slug: "qwen/qwen-2.5-72b-instruct",
           hugging_face_id: "Qwen/Qwen2.5-72B-Instruct",
@@ -17035,59 +17204,11 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2024-06-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/qwen/qwen-2.5-72b-instruct/endpoints"
-          }
-        },
-        {
-          id: "cohere/command-r-plus-08-2024",
-          canonical_slug: "cohere/command-r-plus-08-2024",
-          hugging_face_id: null,
-          name: "Cohere: Command R+ (08-2024)",
-          created: 1724976e3,
-          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Cohere",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
             "response_format",
             "seed",
             "stop",
@@ -17099,10 +17220,10 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
-          knowledge_cutoff: "2024-03-31",
+          knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
-            details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
+            details: "/api/v1/models/qwen/qwen-2.5-72b-instruct/endpoints"
           }
         },
         {
@@ -17156,6 +17277,56 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "cohere/command-r-plus-08-2024",
+          canonical_slug: "cohere/command-r-plus-08-2024",
+          hugging_face_id: null,
+          name: "Cohere: Command R+ (08-2024)",
+          created: 1724976e3,
+          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Cohere",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2024-03-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
+          }
+        },
+        {
           id: "sao10k/l3.1-euryale-70b",
           canonical_slug: "sao10k/l3.1-euryale-70b",
           hugging_face_id: "Sao10K/L3.1-70B-Euryale-v2.2",
@@ -17186,6 +17357,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -17193,6 +17365,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -17231,12 +17404,13 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -17244,6 +17418,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -17331,6 +17506,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -17338,6 +17514,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "top_k",
             "top_p"
@@ -17374,12 +17551,13 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 8192,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -17457,6 +17635,59 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "meta-llama/llama-3.1-70b-instruct",
+          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          name: "Meta: Llama 3.1 70B Instruct",
+          created: 1721692800,
+          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000004"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
+          }
+        },
+        {
           id: "meta-llama/llama-3.1-8b-instruct",
           canonical_slug: "meta-llama/llama-3.1-8b-instruct",
           hugging_face_id: "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -17487,6 +17718,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "min_p",
@@ -17508,58 +17740,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3.1-70b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
-          name: "Meta: Llama 3.1 70B Instruct",
-          created: 1721692800,
-          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000004"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
           }
         },
         {
@@ -17991,6 +18171,53 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "meta-llama/llama-3-70b-instruct",
+          canonical_slug: "meta-llama/llama-3-70b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3-70B-Instruct",
+          name: "Meta: Llama 3 70B Instruct",
+          created: 1713398400,
+          description: "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
+          context_length: 8192,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.00000051",
+            completion: "0.00000074"
+          },
+          top_provider: {
+            context_length: 8192,
+            max_completion_tokens: 8e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3-70b-instruct/endpoints"
+          }
+        },
+        {
           id: "meta-llama/llama-3-8b-instruct",
           canonical_slug: "meta-llama/llama-3-8b-instruct",
           hugging_face_id: "meta-llama/Meta-Llama-3-8B-Instruct",
@@ -18040,53 +18267,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3-70b-instruct",
-          canonical_slug: "meta-llama/llama-3-70b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3-70B-Instruct",
-          name: "Meta: Llama 3 70B Instruct",
-          created: 1713398400,
-          description: "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.00000051",
-            completion: "0.00000074"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: 8e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3-70b-instruct/endpoints"
           }
         },
         {
@@ -18342,58 +18522,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-4-turbo-preview",
-          canonical_slug: "openai/gpt-4-turbo-preview",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 Turbo Preview",
-          created: 1706140800,
-          description: "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023. **Note:** heavily rate limited by OpenAI while...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00001",
-            completion: "0.00003"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4-turbo-preview/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-3.5-turbo-0613",
           canonical_slug: "openai/gpt-3.5-turbo-0613",
           hugging_face_id: null,
@@ -18446,6 +18574,58 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "openai/gpt-4-turbo-preview",
+          canonical_slug: "openai/gpt-4-turbo-preview",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4 Turbo Preview",
+          created: 1706140800,
+          description: "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023. **Note:** heavily rate limited by OpenAI while...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00001",
+            completion: "0.00003"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-4-turbo-preview/endpoints"
+          }
+        },
+        {
           id: "mistralai/mixtral-8x7b-instruct",
           canonical_slug: "mistralai/mixtral-8x7b-instruct",
           hugging_face_id: "mistralai/Mixtral-8x7B-Instruct-v0.1",
@@ -18476,6 +18656,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -18483,6 +18664,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -18675,6 +18857,54 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "mistralai/mistral-7b-instruct-v0.1",
+          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
+          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
+          name: "Mistral: Mistral 7B Instruct v0.1",
+          created: 1695859200,
+          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
+          context_length: 2824,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: "mistral"
+          },
+          pricing: {
+            prompt: "0.00000011",
+            completion: "0.00000019"
+          },
+          top_provider: {
+            context_length: 2824,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3
+          },
+          knowledge_cutoff: "2023-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
+          }
+        },
+        {
           id: "openai/gpt-3.5-turbo-instruct",
           canonical_slug: "openai/gpt-3.5-turbo-instruct",
           hugging_face_id: null,
@@ -18722,54 +18952,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-3.5-turbo-instruct/endpoints"
-          }
-        },
-        {
-          id: "mistralai/mistral-7b-instruct-v0.1",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
-          name: "Mistral: Mistral 7B Instruct v0.1",
-          created: 1695859200,
-          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
-          context_length: 2824,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.00000011",
-            completion: "0.00000019"
-          },
-          top_provider: {
-            context_length: 2824,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
-          knowledge_cutoff: "2023-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
           }
         },
         {
@@ -18987,6 +19169,58 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "openai/gpt-3.5-turbo",
+          canonical_slug: "openai/gpt-3.5-turbo",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-3.5 Turbo",
+          created: 1685232e3,
+          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+          context_length: 16385,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000005",
+            completion: "0.0000015"
+          },
+          top_provider: {
+            context_length: 16385,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
+          }
+        },
+        {
           id: "openai/gpt-4-0314",
           canonical_slug: "openai/gpt-4-0314",
           hugging_face_id: null,
@@ -19089,58 +19323,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4/endpoints"
-          }
-        },
-        {
-          id: "openai/gpt-3.5-turbo",
-          canonical_slug: "openai/gpt-3.5-turbo",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-3.5 Turbo",
-          created: 1685232e3,
-          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-          context_length: 16385,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000005",
-            completion: "0.0000015"
-          },
-          top_provider: {
-            context_length: 16385,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2021-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
           }
         }
       ]
