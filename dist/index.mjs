@@ -29,7 +29,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-25T07:38:48.531Z",
+        fetchedAt: "2026-04-26T07:48:02.633Z",
         modelCount: 355,
         providerCount: 56,
         source: "openrouter"
@@ -168,9 +168,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000174",
-            completion: "0.00000348",
-            input_cache_read: "0.000000145"
+            prompt: "0.000000435",
+            completion: "0.00000087",
+            input_cache_read: "0.00000003625"
           },
           top_provider: {
             context_length: 1048576,
@@ -181,16 +181,13 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -283,7 +280,7 @@ var require_latest = __commonJS({
           hugging_face_id: null,
           name: "inclusionAI: Ling-2.6-1T (free)",
           created: 1776948238,
-          description: "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company\u2019s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a \uFFFD\uFFFDfast...",
+          description: "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company\u2019s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a \u201Cfast...",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -10942,8 +10939,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000022",
-            completion: "0.000001",
-            input_cache_read: "0.000000022"
+            completion: "0.0000018"
           },
           top_provider: {
             context_length: 262144,
