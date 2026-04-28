@@ -29,12 +29,450 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-04-27T08:35:56.916Z",
-        modelCount: 360,
-        providerCount: 56,
+        fetchedAt: "2026-04-28T08:34:09.965Z",
+        modelCount: 367,
+        providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "~anthropic/claude-haiku-latest",
+          canonical_slug: "~anthropic/claude-haiku-latest",
+          hugging_face_id: null,
+          name: "Anthropic Claude Haiku Latest",
+          created: 1777318492,
+          description: "This model always redirects to the latest model in the Anthropic Claude Haiku family.",
+          context_length: 2e5,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000001",
+            completion: "0.000005",
+            web_search: "0.01",
+            input_cache_read: "0.0000001",
+            input_cache_write: "0.00000125"
+          },
+          top_provider: {
+            context_length: 2e5,
+            max_completion_tokens: 64e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~anthropic/claude-haiku-latest/endpoints"
+          }
+        },
+        {
+          id: "~openai/gpt-mini-latest",
+          canonical_slug: "~openai/gpt-mini-latest",
+          hugging_face_id: null,
+          name: "OpenAI GPT Mini Latest",
+          created: 1777318471,
+          description: "This model always redirects to the latest model in the OpenAI GPT Mini family.",
+          context_length: 4e5,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "file",
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000075",
+            completion: "0.0000045",
+            web_search: "0.01",
+            input_cache_read: "0.000000075"
+          },
+          top_provider: {
+            context_length: 4e5,
+            max_completion_tokens: 128e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: "2025-08-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~openai/gpt-mini-latest/endpoints"
+          }
+        },
+        {
+          id: "~google/gemini-pro-latest",
+          canonical_slug: "~google/gemini-pro-latest",
+          hugging_face_id: null,
+          name: "Google Gemini Pro Latest",
+          created: 1777318451,
+          description: "This model always redirects to the latest model in the Google Gemini Pro family.",
+          context_length: 1048576,
+          architecture: {
+            modality: "text+image+file+audio+video->text",
+            input_modalities: [
+              "audio",
+              "file",
+              "image",
+              "text",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000002",
+            completion: "0.000012",
+            image: "0.000002",
+            audio: "0.000002",
+            web_search: "0.014",
+            internal_reasoning: "0.000012",
+            input_cache_read: "0.0000002",
+            input_cache_write: "0.000000375"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~google/gemini-pro-latest/endpoints"
+          }
+        },
+        {
+          id: "~moonshotai/kimi-latest",
+          canonical_slug: "~moonshotai/kimi-latest",
+          hugging_face_id: null,
+          name: "MoonshotAI Kimi Latest",
+          created: 1777318428,
+          description: "This model always redirects to the latest model in the MoonshotAI Kimi family.",
+          context_length: 256e3,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000007448",
+            completion: "0.000004655",
+            input_cache_read: "0.0000001463"
+          },
+          top_provider: {
+            context_length: 256e3,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "min_p",
+            "parallel_tool_calls",
+            "presence_penalty",
+            "reasoning",
+            "reasoning_effort",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~moonshotai/kimi-latest/endpoints"
+          }
+        },
+        {
+          id: "~google/gemini-flash-latest",
+          canonical_slug: "~google/gemini-flash-latest",
+          hugging_face_id: null,
+          name: "Google Gemini Flash Latest",
+          created: 1777318398,
+          description: "This model always redirects to the latest model in the Google Gemini Flash family.",
+          context_length: 1048576,
+          architecture: {
+            modality: "text+image+file+audio+video->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file",
+              "audio",
+              "video"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000005",
+            completion: "0.000003",
+            image: "0.0000005",
+            audio: "0.000001",
+            web_search: "0.014",
+            internal_reasoning: "0.000003",
+            input_cache_read: "0.00000005",
+            input_cache_write: "0.00000008333333333333334"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~google/gemini-flash-latest/endpoints"
+          }
+        },
+        {
+          id: "~anthropic/claude-sonnet-latest",
+          canonical_slug: "~anthropic/claude-sonnet-latest",
+          hugging_face_id: null,
+          name: "Anthropic Claude Sonnet Latest",
+          created: 1777318368,
+          description: "This model always redirects to the latest model in the Anthropic Claude Sonnet family.",
+          context_length: 1e6,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000003",
+            completion: "0.000015",
+            web_search: "0.01",
+            input_cache_read: "0.0000003",
+            input_cache_write: "0.00000375"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p",
+            "verbosity"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~anthropic/claude-sonnet-latest/endpoints"
+          }
+        },
+        {
+          id: "~openai/gpt-latest",
+          canonical_slug: "~openai/gpt-latest",
+          hugging_face_id: null,
+          name: "OpenAI GPT Latest",
+          created: 1777318334,
+          description: "This model always redirects to the latest model in the OpenAI GPT family.",
+          context_length: 105e4,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "file",
+              "image",
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000005",
+            completion: "0.00003",
+            web_search: "0.01",
+            input_cache_read: "0.0000005"
+          },
+          top_provider: {
+            context_length: 105e4,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_completion_tokens",
+            "max_tokens",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/~openai/gpt-latest/endpoints"
+          }
+        },
         {
           id: "qwen/qwen3.5-plus-20260420",
           canonical_slug: "qwen/qwen3.5-plus-20260420",
@@ -218,9 +656,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000013",
-            completion: "0.0000078",
-            input_cache_write: "0.000001625"
+            prompt: "0.00000104",
+            completion: "0.00000624",
+            input_cache_write: "0.0000013"
           },
           top_provider: {
             context_length: 262144,
@@ -256,8 +694,8 @@ var require_latest = __commonJS({
           hugging_face_id: "Qwen/Qwen3.6-27B",
           name: "Qwen: Qwen3.6 27B",
           created: 1777255064,
-          description: "Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. It features hybrid multimodal capabilities \uFFFD\uFFFD\uFFFD accepting text, image, and video inputs...",
-          context_length: 262144,
+          description: "Qwen3.6 27B is a dense 27-billion-parameter language model from the Qwen Team at Alibaba, released in April 2026. It features hybrid multimodal capabilities \u2014 accepting text, image, and video inputs...",
+          context_length: 256e3,
           architecture: {
             modality: "text+image+video->text",
             input_modalities: [
@@ -272,12 +710,11 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000195",
-            completion: "0.00000156",
-            input_cache_read: "0.0000000975"
+            prompt: "0.000000325",
+            completion: "0.00000325"
           },
           top_provider: {
-            context_length: 262144,
+            context_length: 256e3,
             max_completion_tokens: 65536,
             is_moderated: false
           },
@@ -408,6 +845,7 @@ var require_latest = __commonJS({
           per_request_limits: null,
           supported_parameters: [
             "include_reasoning",
+            "max_completion_tokens",
             "max_tokens",
             "reasoning",
             "response_format",
@@ -463,13 +901,17 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -3672,7 +4114,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: null,
           expiration_date: null,
@@ -5283,7 +5728,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: null,
           expiration_date: null,
@@ -7714,7 +8162,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           knowledge_cutoff: null,
           expiration_date: null,
@@ -17911,6 +18362,59 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "meta-llama/llama-3.1-70b-instruct",
+          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          name: "Meta: Llama 3.1 70B Instruct",
+          created: 1721692800,
+          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000004"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
+          }
+        },
+        {
           id: "meta-llama/llama-3.1-8b-instruct",
           canonical_slug: "meta-llama/llama-3.1-8b-instruct",
           hugging_face_id: "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -17963,59 +18467,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3.1-70b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
-          name: "Meta: Llama 3.1 70B Instruct",
-          created: 1721692800,
-          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000004"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
           }
         },
         {
@@ -19133,6 +19584,54 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "mistralai/mistral-7b-instruct-v0.1",
+          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
+          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
+          name: "Mistral: Mistral 7B Instruct v0.1",
+          created: 1695859200,
+          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
+          context_length: 2824,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: "mistral"
+          },
+          pricing: {
+            prompt: "0.00000011",
+            completion: "0.00000019"
+          },
+          top_provider: {
+            context_length: 2824,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3
+          },
+          knowledge_cutoff: "2023-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
+          }
+        },
+        {
           id: "openai/gpt-3.5-turbo-instruct",
           canonical_slug: "openai/gpt-3.5-turbo-instruct",
           hugging_face_id: null,
@@ -19180,54 +19679,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-3.5-turbo-instruct/endpoints"
-          }
-        },
-        {
-          id: "mistralai/mistral-7b-instruct-v0.1",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
-          name: "Mistral: Mistral 7B Instruct v0.1",
-          created: 1695859200,
-          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
-          context_length: 2824,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.00000011",
-            completion: "0.00000019"
-          },
-          top_provider: {
-            context_length: 2824,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
-          knowledge_cutoff: "2023-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
           }
         },
         {
@@ -19445,58 +19896,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-4-0314",
-          canonical_slug: "openai/gpt-4-0314",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 (older v0314)",
-          created: 1685232e3,
-          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
-          context_length: 8191,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00003",
-            completion: "0.00006"
-          },
-          top_provider: {
-            context_length: 8191,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          knowledge_cutoff: "2021-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4-0314/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4",
           canonical_slug: "openai/gpt-4",
           hugging_face_id: null,
@@ -19547,6 +19946,58 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-4-0314",
+          canonical_slug: "openai/gpt-4-0314",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4 (older v0314)",
+          created: 1685232e3,
+          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
+          context_length: 8191,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00003",
+            completion: "0.00006"
+          },
+          top_provider: {
+            context_length: 8191,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-4-0314/endpoints"
           }
         },
         {
