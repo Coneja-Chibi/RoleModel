@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "fetchedAt": "2026-05-04T08:37:50.149Z",
+    "fetchedAt": "2026-05-03T08:08:12.584Z",
     "modelCount": 371,
     "providerCount": 60,
     "source": "openrouter"
@@ -907,13 +907,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.000001",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000001612",
+        "completion": "0.00000096525",
+        "input_cache_read": "0.0000001612"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3913,13 +3913,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.000001",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000001625",
+        "completion": "0.0000013"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -9720,8 +9719,8 @@
         "instruct_type": "deepseek-v3.1"
       },
       "pricing": {
-        "prompt": "0.00000027",
-        "completion": "0.00000095",
+        "prompt": "0.00000021",
+        "completion": "0.00000079",
         "input_cache_read": "0.00000013"
       },
       "top_provider": {
@@ -13884,12 +13883,12 @@
         "instruct_type": "qwen3"
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.00000045"
+        "prompt": "0.00000008",
+        "completion": "0.00000028"
       },
       "top_provider": {
         "context_length": 40960,
-        "max_completion_tokens": 20000,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -15884,7 +15883,7 @@
       "name": "Google: Gemini 2.0 Flash",
       "created": 1738769413,
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "architecture": {
         "modality": "text+image+file+audio+video->text",
         "input_modalities": [
@@ -15911,7 +15910,7 @@
         "input_cache_write": "0.00000008333333333333334"
       },
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1000000,
         "max_completion_tokens": 8192,
         "is_moderated": false
       },
