@@ -29,8 +29,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-04T08:37:50.149Z",
-        modelCount: 371,
+        fetchedAt: "2026-05-05T08:20:08.559Z",
+        modelCount: 372,
         providerCount: 60,
         source: "openrouter"
       },
@@ -92,6 +92,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -151,10 +152,71 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
             details: "/api/v1/models/ibm-granite/granite-4.1-8b-20260429/endpoints"
+          }
+        },
+        {
+          id: "mistralai/mistral-medium-3-5",
+          canonical_slug: "mistralai/mistral-medium-3.5-20260430",
+          hugging_face_id: null,
+          name: "Mistral: Mistral Medium 3.5",
+          created: 1777570439,
+          description: "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex...",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000015",
+            completion: "0.0000075"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/mistralai/mistral-medium-3.5-20260430/endpoints"
           }
         },
         {
@@ -209,6 +271,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -265,6 +328,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -316,6 +380,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -367,6 +432,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -427,6 +493,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -485,6 +552,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-08-31",
           expiration_date: null,
           links: {
@@ -551,6 +619,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -619,6 +688,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -685,6 +755,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -747,6 +818,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -805,6 +877,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -856,6 +929,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -908,6 +982,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -960,6 +1035,8 @@ var require_latest = __commonJS({
             "stop",
             "structured_outputs",
             "temperature",
+            "tool_choice",
+            "tools",
             "top_k",
             "top_p"
           ],
@@ -968,6 +1045,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             top_k: 20
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1020,6 +1098,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1086,6 +1165,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1142,6 +1222,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1200,6 +1281,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1265,6 +1347,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1330,6 +1413,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1388,6 +1472,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: "2026-05-07",
           links: {
@@ -1444,6 +1529,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: "2026-05-08",
           links: {
@@ -1501,6 +1587,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1561,6 +1648,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1623,6 +1711,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1682,6 +1771,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1740,6 +1830,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1784,6 +1875,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1840,6 +1932,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1908,6 +2001,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -1966,6 +2060,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2026,6 +2121,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2093,6 +2189,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2146,6 +2243,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             top_k: 64
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2209,6 +2307,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             top_k: 64
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2265,6 +2364,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2331,6 +2431,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2390,6 +2491,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2446,6 +2548,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2508,6 +2611,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2567,6 +2671,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-09-01",
           expiration_date: null,
           links: {
@@ -2628,6 +2733,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-09-01",
           expiration_date: null,
           links: {
@@ -2680,6 +2786,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2732,6 +2839,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2793,6 +2901,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2851,6 +2960,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2911,6 +3021,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -2968,6 +3079,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3032,6 +3144,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3090,6 +3203,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-08-31",
           expiration_date: null,
           links: {
@@ -3148,6 +3262,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-08-31",
           expiration_date: null,
           links: {
@@ -3209,6 +3324,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3271,6 +3387,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3326,6 +3443,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3365,6 +3483,7 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -3377,6 +3496,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -3387,6 +3507,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3445,6 +3566,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3510,6 +3632,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3567,6 +3690,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3625,6 +3749,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3680,6 +3805,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3736,6 +3862,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3802,6 +3929,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3857,6 +3985,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3914,6 +4043,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -3981,6 +4111,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4047,6 +4178,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4113,6 +4245,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4169,6 +4302,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4224,6 +4358,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1.05
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4287,6 +4422,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4345,6 +4481,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4393,6 +4530,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4459,6 +4597,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4521,6 +4660,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4577,6 +4717,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4644,6 +4785,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4697,6 +4839,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4764,6 +4907,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4826,6 +4970,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4879,6 +5024,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4941,6 +5087,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -4999,6 +5146,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5058,6 +5206,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5116,6 +5265,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5168,6 +5318,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5235,6 +5386,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5289,6 +5441,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5335,6 +5488,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5382,6 +5536,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5436,6 +5591,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5488,6 +5644,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5547,6 +5704,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5606,6 +5764,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5666,6 +5825,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5719,6 +5879,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5776,6 +5937,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: "2026-05-07",
           links: {
@@ -5831,6 +5993,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5886,6 +6049,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -5946,6 +6110,7 @@ var require_latest = __commonJS({
             top_p: 0.9,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6007,6 +6172,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6073,6 +6239,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6131,6 +6298,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6181,6 +6349,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6239,6 +6408,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6291,6 +6461,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6344,6 +6515,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6401,6 +6573,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6455,6 +6628,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6504,6 +6678,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6562,6 +6737,7 @@ var require_latest = __commonJS({
             top_p: 0.6,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6613,6 +6789,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6669,6 +6846,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6710,6 +6888,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6767,6 +6946,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6821,6 +7001,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6879,6 +7060,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6937,6 +7119,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -6995,6 +7178,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7050,6 +7234,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7103,6 +7288,7 @@ var require_latest = __commonJS({
             top_p: 0.75,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7161,6 +7347,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7224,6 +7411,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7279,6 +7467,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7291,7 +7480,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "Anthropic: Claude Opus 4.5",
           created: 1764010580,
-          description: "Claude Opus 4.5 is Anthropic\u2019s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
+          description: "Claude Opus 4.5 is Anthropic\uFFFD\uFFFD\uFFFDs frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
           context_length: 2e5,
           architecture: {
             modality: "text+image+file->text",
@@ -7340,6 +7529,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7396,6 +7586,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7455,6 +7646,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7516,8 +7708,9 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-4.1-fast/endpoints"
           }
@@ -7572,6 +7765,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7629,6 +7823,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7682,6 +7877,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7738,6 +7934,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7794,6 +7991,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7854,6 +8052,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7904,6 +8103,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -7958,6 +8158,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8014,6 +8215,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8067,6 +8269,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8119,6 +8322,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8177,6 +8381,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: "2026-05-07",
           links: {
@@ -8237,6 +8442,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8291,6 +8497,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8341,6 +8548,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8402,6 +8610,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8462,6 +8671,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8515,6 +8725,7 @@ var require_latest = __commonJS({
             temperature: 1,
             top_p: 0.95
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8573,6 +8784,7 @@ var require_latest = __commonJS({
             top_p: 0.8,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8634,6 +8846,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8696,6 +8909,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8758,6 +8972,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -8819,6 +9034,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-03-31",
           expiration_date: null,
           links: {
@@ -8872,6 +9088,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -8929,6 +9146,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -8990,6 +9208,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9051,6 +9270,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9104,6 +9324,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-09-30",
           expiration_date: null,
           links: {
@@ -9166,6 +9387,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9227,6 +9449,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -9286,6 +9509,7 @@ var require_latest = __commonJS({
             top_p: 0.95,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-07-31",
           expiration_date: null,
           links: {
@@ -9339,6 +9563,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-04-30",
           expiration_date: null,
           links: {
@@ -9384,6 +9609,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -9447,6 +9673,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -9507,6 +9734,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: 1
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9566,6 +9794,7 @@ var require_latest = __commonJS({
             top_p: 0.8,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9618,6 +9847,7 @@ var require_latest = __commonJS({
             top_p: 1,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -9671,6 +9901,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -9723,6 +9954,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-09-30",
           expiration_date: null,
           links: {
@@ -9783,6 +10015,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9844,8 +10077,9 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-09-30",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-4-fast/endpoints"
           }
@@ -9904,6 +10138,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -9956,6 +10191,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -10015,6 +10251,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-09-30",
           expiration_date: null,
           links: {
@@ -10064,6 +10301,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-09-30",
           expiration_date: null,
           links: {
@@ -10117,6 +10355,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-09-30",
           expiration_date: null,
           links: {
@@ -10171,6 +10410,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10223,6 +10463,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10275,6 +10516,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10333,6 +10575,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10386,6 +10629,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-12-31",
           expiration_date: null,
           links: {
@@ -10442,6 +10686,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -10495,8 +10740,9 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-09-30",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-code-fast-1/endpoints"
           }
@@ -10543,6 +10789,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -10591,6 +10838,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -10648,6 +10896,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10707,6 +10956,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -10760,6 +11010,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -10813,6 +11064,7 @@ var require_latest = __commonJS({
             top_p: 0.8,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10865,6 +11117,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -10922,6 +11175,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-12-31",
           expiration_date: null,
           links: {
@@ -10967,6 +11221,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -11013,6 +11268,7 @@ var require_latest = __commonJS({
             "structured_outputs"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-09-30",
           expiration_date: null,
           links: {
@@ -11070,6 +11326,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-09-30",
           expiration_date: null,
           links: {
@@ -11128,6 +11385,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-05-31",
           expiration_date: null,
           links: {
@@ -11185,6 +11443,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-05-31",
           expiration_date: null,
           links: {
@@ -11235,6 +11494,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -11296,6 +11556,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -11346,6 +11607,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -11407,6 +11669,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -11468,6 +11731,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -11520,6 +11784,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -11571,6 +11836,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -11624,6 +11890,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -11681,6 +11948,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-12-31",
           expiration_date: null,
           links: {
@@ -11730,6 +11998,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-12-31",
           expiration_date: null,
           links: {
@@ -11786,6 +12055,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-12-31",
           expiration_date: null,
           links: {
@@ -11845,6 +12115,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -11892,6 +12163,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -11939,6 +12211,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -11992,6 +12265,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -12042,6 +12316,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -12105,6 +12380,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -12160,6 +12436,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -12206,6 +12483,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -12255,6 +12533,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-12-31",
           expiration_date: null,
           links: {
@@ -12307,6 +12586,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-06-30",
           expiration_date: null,
           links: {
@@ -12359,6 +12639,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -12406,6 +12687,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-04-30",
           expiration_date: null,
           links: {
@@ -12467,8 +12749,9 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-07-31",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-4-07-09/endpoints"
           }
@@ -12510,6 +12793,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -12557,6 +12841,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -12611,6 +12896,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -12656,6 +12942,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -12701,6 +12988,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -12751,6 +13039,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -12798,6 +13087,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -12854,6 +13144,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -12909,6 +13200,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -12972,6 +13264,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -13035,6 +13328,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -13088,6 +13382,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -13145,8 +13440,9 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-3-mini/endpoints"
           }
@@ -13198,8 +13494,9 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-3/endpoints"
           }
@@ -13256,6 +13553,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -13316,6 +13614,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -13375,6 +13674,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -13434,6 +13734,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -13477,6 +13778,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -13525,6 +13827,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -13578,6 +13881,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -13641,6 +13945,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -13690,6 +13995,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -13738,6 +14044,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -13788,6 +14095,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -13836,6 +14144,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -13887,6 +14196,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -13948,6 +14258,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -14011,6 +14322,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -14068,6 +14380,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -14124,6 +14437,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -14172,6 +14486,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -14226,6 +14541,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -14276,6 +14592,7 @@ var require_latest = __commonJS({
             "tools"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -14326,6 +14643,7 @@ var require_latest = __commonJS({
             "tools"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -14376,6 +14694,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -14427,6 +14746,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -14478,6 +14798,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -14526,6 +14847,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-06-30",
           expiration_date: null,
           links: {
@@ -14582,8 +14904,9 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-3-mini-beta/endpoints"
           }
@@ -14634,8 +14957,9 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: null,
+          expiration_date: "2026-06-01",
           links: {
             details: "/api/v1/models/x-ai/grok-3-beta/endpoints"
           }
@@ -14686,6 +15010,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -14740,6 +15065,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -14794,6 +15120,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -14840,6 +15167,7 @@ var require_latest = __commonJS({
             "structured_outputs"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -14889,6 +15217,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -14934,6 +15263,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -14986,6 +15316,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -15030,6 +15361,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -15084,6 +15416,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -15132,6 +15465,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -15175,6 +15509,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -15218,6 +15553,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -15273,6 +15609,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-01-31",
           expiration_date: null,
           links: {
@@ -15322,6 +15659,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -15380,6 +15718,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -15429,6 +15768,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -15478,6 +15818,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -15525,6 +15866,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -15574,6 +15916,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -15633,6 +15976,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: "2026-06-01",
           links: {
@@ -15669,8 +16013,8 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 2e5,
-            max_completion_tokens: 128e3,
-            is_moderated: true
+            max_completion_tokens: 64e3,
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -15681,7 +16025,6 @@ var require_latest = __commonJS({
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -15692,8 +16035,9 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
-          expiration_date: "2026-05-05",
+          expiration_date: "2026-05-11",
           links: {
             details: "/api/v1/models/anthropic/claude-3-7-sonnet-20250219/endpoints"
           }
@@ -15750,8 +16094,9 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
-          expiration_date: "2026-05-05",
+          expiration_date: "2026-05-11",
           links: {
             details: "/api/v1/models/anthropic/claude-3-7-sonnet-20250219/endpoints"
           }
@@ -15802,6 +16147,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-09-30",
           expiration_date: null,
           links: {
@@ -15848,6 +16194,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -15900,6 +16247,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -15913,7 +16261,7 @@ var require_latest = __commonJS({
           name: "Google: Gemini 2.0 Flash",
           created: 1738769413,
           description: "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-          context_length: 1048576,
+          context_length: 1e6,
           architecture: {
             modality: "text+image+file+audio+video->text",
             input_modalities: [
@@ -15940,7 +16288,7 @@ var require_latest = __commonJS({
             input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
-            context_length: 1048576,
+            context_length: 1e6,
             max_completion_tokens: 8192,
             is_moderated: false
           },
@@ -15961,6 +16309,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: "2026-06-01",
           links: {
@@ -16007,6 +16356,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -16050,6 +16400,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -16093,6 +16444,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -16134,6 +16486,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -16185,6 +16538,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -16232,6 +16586,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -16283,6 +16638,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -16331,6 +16687,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -16378,6 +16735,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2025-03-31",
           expiration_date: null,
           links: {
@@ -16433,6 +16791,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -16488,6 +16847,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -16540,6 +16900,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -16587,6 +16948,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -16639,6 +17001,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -16698,6 +17061,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -16744,6 +17108,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-03-31",
           expiration_date: null,
           links: {
@@ -16797,6 +17162,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -16846,6 +17212,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -16891,6 +17258,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -16898,6 +17266,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -16951,6 +17320,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -17007,6 +17377,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -17055,6 +17426,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-08-31",
           expiration_date: null,
           links: {
@@ -17102,6 +17474,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -17155,6 +17528,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -17200,6 +17574,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
           expiration_date: null,
           links: {
@@ -17244,6 +17619,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
           expiration_date: null,
           links: {
@@ -17289,6 +17665,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
           expiration_date: null,
           links: {
@@ -17345,6 +17722,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -17397,6 +17775,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -17449,6 +17828,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-03-31",
           expiration_date: null,
           links: {
@@ -17502,6 +17882,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -17548,6 +17929,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -17600,6 +17982,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-04-30",
           expiration_date: null,
           links: {
@@ -17653,6 +18036,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-07-31",
           expiration_date: null,
           links: {
@@ -17706,6 +18090,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -17762,6 +18147,7 @@ var require_latest = __commonJS({
             top_p: null,
             frequency_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -17814,6 +18200,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: "2026-05-08",
           links: {
@@ -17856,6 +18243,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
           expiration_date: null,
           links: {
@@ -17898,6 +18286,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-10-31",
           expiration_date: null,
           links: {
@@ -17953,6 +18342,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-04-30",
           expiration_date: null,
           links: {
@@ -17998,6 +18388,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18044,6 +18435,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18090,6 +18482,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18141,6 +18534,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18194,6 +18588,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -18244,6 +18639,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-03-31",
           expiration_date: null,
           links: {
@@ -18294,6 +18690,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-03-31",
           expiration_date: null,
           links: {
@@ -18347,6 +18744,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18398,6 +18796,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18443,6 +18842,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18494,6 +18894,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18545,6 +18946,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18602,6 +19004,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -18657,6 +19060,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18710,6 +19114,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -18767,6 +19172,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-04-30",
           expiration_date: null,
           links: {
@@ -18823,6 +19229,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -18880,6 +19287,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -18928,6 +19336,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-06-30",
           expiration_date: null,
           links: {
@@ -18977,6 +19386,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -19026,6 +19436,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -19082,6 +19493,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -19138,6 +19550,7 @@ var require_latest = __commonJS({
             "web_search_options"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-10-31",
           expiration_date: null,
           links: {
@@ -19190,6 +19603,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: "2026-05-07",
           links: {
@@ -19237,6 +19651,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -19289,6 +19704,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-01-31",
           expiration_date: null,
           links: {
@@ -19336,6 +19752,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2024-04-30",
           expiration_date: null,
           links: {
@@ -19389,6 +19806,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -19437,6 +19855,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-08-31",
           expiration_date: null,
           links: {
@@ -19489,6 +19908,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2024-11-30",
           expiration_date: null,
           links: {
@@ -19541,6 +19961,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -19593,6 +20014,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2021-09-30",
           expiration_date: null,
           links: {
@@ -19648,6 +20070,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: "2026-05-08",
           links: {
@@ -19701,6 +20124,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
@@ -19772,6 +20196,7 @@ var require_latest = __commonJS({
             presence_penalty: null,
             repetition_penalty: null
           },
+          supported_voices: null,
           knowledge_cutoff: null,
           expiration_date: null,
           links: {
@@ -19824,6 +20249,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-04-30",
           expiration_date: null,
           links: {
@@ -19874,6 +20300,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2021-09-30",
           expiration_date: null,
           links: {
@@ -19922,6 +20349,7 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: 0.3
           },
+          supported_voices: null,
           knowledge_cutoff: "2023-09-30",
           expiration_date: null,
           links: {
@@ -19975,6 +20403,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2021-09-30",
           expiration_date: null,
           links: {
@@ -20028,6 +20457,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-06-30",
           expiration_date: null,
           links: {
@@ -20082,6 +20512,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-06-30",
           expiration_date: null,
           links: {
@@ -20136,6 +20567,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2023-06-30",
           expiration_date: null,
           links: {
@@ -20188,6 +20620,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2021-09-30",
           expiration_date: null,
           links: {
@@ -20241,6 +20674,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2021-09-30",
           expiration_date: null,
           links: {
@@ -20293,6 +20727,7 @@ var require_latest = __commonJS({
             "top_p"
           ],
           default_parameters: {},
+          supported_voices: null,
           knowledge_cutoff: "2021-09-30",
           expiration_date: null,
           links: {
