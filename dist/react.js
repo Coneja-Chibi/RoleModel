@@ -33,12 +33,118 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-05T08:20:08.559Z",
-        modelCount: 372,
+        fetchedAt: "2026-05-07T08:43:12.172Z",
+        modelCount: 368,
         providerCount: 60,
         source: "openrouter"
       },
       data: [
+        {
+          id: "baidu/cobuddy:free",
+          canonical_slug: "baidu/cobuddy-20260430",
+          hugging_face_id: null,
+          name: "Baidu Qianfan: CoBuddy (free)",
+          created: 1778035480,
+          description: "CoBuddy is a code generation model from Baidu, optimized for coding tasks and AI Agent workflows. It features high inference throughput and low end-to-end latency, with native support for tool...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "stop",
+            "tools"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/baidu/cobuddy-20260430/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-chat-latest",
+          canonical_slug: "openai/gpt-chat-latest-20260505",
+          hugging_face_id: null,
+          name: "OpenAI: GPT Chat Latest",
+          created: 1778000212,
+          description: "GPT Chat Latest points to OpenAI's stable API alias `chat-latest` that always resolves to the latest Instant chat model used in ChatGPT. As OpenAI rolls out new Instant model updates...",
+          context_length: 4e5,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000005",
+            completion: "0.00003",
+            web_search: "0.01",
+            input_cache_read: "0.0000005"
+          },
+          top_provider: {
+            context_length: 4e5,
+            max_completion_tokens: 128e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "tool_choice",
+            "tools",
+            "top_logprobs"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-chat-latest-20260505/endpoints"
+          }
+        },
         {
           id: "x-ai/grok-4.3",
           canonical_slug: "x-ai/grok-4.3-20260430",
@@ -637,7 +743,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI Kimi Latest",
           created: 1777318428,
           description: "This model always redirects to the latest model in the MoonshotAI Kimi family.",
-          context_length: 262142,
+          context_length: 262144,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -651,13 +757,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000074",
-            completion: "0.00000349",
-            input_cache_read: "0.00000014"
+            prompt: "0.00000075",
+            completion: "0.0000035",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
-            context_length: 262142,
-            max_completion_tokens: 262142,
+            context_length: 262144,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -882,7 +988,7 @@ var require_latest = __commonJS({
             repetition_penalty: null
           },
           supported_voices: null,
-          knowledge_cutoff: null,
+          knowledge_cutoff: "2025-12-01",
           expiration_date: null,
           links: {
             details: "/api/v1/models/~openai/gpt-latest/endpoints"
@@ -1227,7 +1333,7 @@ var require_latest = __commonJS({
             repetition_penalty: null
           },
           supported_voices: null,
-          knowledge_cutoff: null,
+          knowledge_cutoff: "2025-12-01",
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.5-pro-20260423/endpoints"
@@ -1286,7 +1392,7 @@ var require_latest = __commonJS({
             repetition_penalty: null
           },
           supported_voices: null,
-          knowledge_cutoff: null,
+          knowledge_cutoff: "2025-12-01",
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.5-20260423/endpoints"
@@ -1535,7 +1641,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: "2026-05-08",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
           }
@@ -1950,7 +2056,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI: Kimi K2.6",
           created: 1776699402,
           description: "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-          context_length: 262142,
+          context_length: 262144,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -1964,13 +2070,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000074",
-            completion: "0.00000349",
-            input_cache_read: "0.00000014"
+            prompt: "0.00000075",
+            completion: "0.0000035",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
-            context_length: 262142,
-            max_completion_tokens: 262142,
+            context_length: 262144,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3131,6 +3237,7 @@ var require_latest = __commonJS({
             "reasoning",
             "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
             "structured_outputs",
             "temperature",
@@ -4939,12 +5046,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000006",
-            completion: "0.00000208",
+            completion: "0.00000192",
             input_cache_read: "0.00000012"
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: 16384,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5041,7 +5148,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "Anthropic: Claude Opus 4.6",
           created: 1770219050,
-          description: "Opus 4.6 is Anthropic\u2019s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
+          description: "Opus 4.6 is Anthropic\uFFFD\uFFFD\uFFFDs strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
           context_length: 1e6,
           architecture: {
             modality: "text+image->text",
@@ -5118,7 +5225,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000012",
+            prompt: "0.00000011",
             completion: "0.0000008",
             input_cache_read: "0.00000007"
           },
@@ -5888,64 +5995,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.2-codex-20260114/endpoints"
-          }
-        },
-        {
-          id: "allenai/olmo-3.1-32b-instruct",
-          canonical_slug: "allenai/olmo-3.1-32b-instruct-20251215",
-          hugging_face_id: "allenai/Olmo-3.1-32B-Instruct",
-          name: "AllenAI: Olmo 3.1 32B Instruct",
-          created: 1767728554,
-          description: "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this...",
-          context_length: 65536,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000006"
-          },
-          top_provider: {
-            context_length: 65536,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.6,
-            top_p: 0.95,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: null,
-          expiration_date: "2026-05-07",
-          links: {
-            details: "/api/v1/models/allenai/olmo-3.1-32b-instruct-20251215/endpoints"
           }
         },
         {
@@ -7319,9 +7368,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000012",
-            input_cache_read: "0.0000002"
+            prompt: "0.000000287",
+            completion: "0.000000431",
+            input_cache_read: "0.000000058"
           },
           top_provider: {
             context_length: 163840,
@@ -7484,7 +7533,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "Anthropic: Claude Opus 4.5",
           created: 1764010580,
-          description: "Claude Opus 4.5 is Anthropic\uFFFD\uFFFD\uFFFDs frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
+          description: "Claude Opus 4.5 is Anthropic\u2019s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
           context_length: 2e5,
           architecture: {
             modality: "text+image+file->text",
@@ -7714,7 +7763,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-4.1-fast/endpoints"
           }
@@ -8334,65 +8383,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "nvidia/nemotron-nano-12b-v2-vl",
-          canonical_slug: "nvidia/nemotron-nano-12b-v2-vl",
-          hugging_face_id: "nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
-          name: "NVIDIA: Nemotron Nano 12B 2 VL",
-          created: 1761675565,
-          description: "NVIDIA Nemotron Nano 2 VL is a 12-billion-parameter open multimodal reasoning model designed for video understanding and document intelligence. It introduces a hybrid Transformer-Mamba architecture, combining transformer-level accuracy with Mamba\u2019s...",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image+video->text",
-            input_modalities: [
-              "image",
-              "text",
-              "video"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000002",
-            completion: "0.0000006"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: null,
-          expiration_date: "2026-05-07",
-          links: {
-            details: "/api/v1/models/nvidia/nemotron-nano-12b-v2-vl/endpoints"
-          }
-        },
-        {
           id: "minimax/minimax-m2",
           canonical_slug: "minimax/minimax-m2",
           hugging_face_id: "MiniMaxAI/MiniMax-M2",
@@ -8557,6 +8547,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/ibm-granite/granite-4.0-h-micro/endpoints"
+          }
+        },
+        {
+          id: "microsoft/phi-4-mini-instruct",
+          canonical_slug: "microsoft/phi-4-mini-instruct",
+          hugging_face_id: "microsoft/Phi-4-mini-instruct",
+          name: "Microsoft: Phi 4 Mini Instruct",
+          created: 1760726049,
+          description: "Phi-4-mini-instruct is a lightweight open model built upon synthetic data and filtered publicly available websites - with a focus on high-quality, reasoning dense data. The model belongs to the Phi-4...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000008",
+            completion: "0.00000035",
+            input_cache_read: "0.00000008"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 128e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/microsoft/phi-4-mini-instruct/endpoints"
           }
         },
         {
@@ -10083,7 +10124,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-09-30",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-4-fast/endpoints"
           }
@@ -10743,10 +10784,17 @@ var require_latest = __commonJS({
             "top_logprobs",
             "top_p"
           ],
-          default_parameters: {},
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
           supported_voices: null,
           knowledge_cutoff: "2025-09-30",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-code-fast-1/endpoints"
           }
@@ -12755,53 +12803,9 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-07-31",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-4-07-09/endpoints"
-          }
-        },
-        {
-          id: "google/gemma-3n-e2b-it:free",
-          canonical_slug: "google/gemma-3n-e2b-it",
-          hugging_face_id: "google/gemma-3n-E2B-it",
-          name: "Google: Gemma 3n 2B (free)",
-          created: 1752074904,
-          description: "Gemma 3n E2B IT is a multimodal, instruction-tuned model developed by Google DeepMind, designed to operate efficiently at an effective parameter size of 2B while leveraging a 6B architecture. Based...",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: 2048,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/google/gemma-3n-e2b-it/endpoints"
           }
         },
         {
@@ -13446,7 +13450,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-3-mini/endpoints"
           }
@@ -13500,7 +13504,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-3/endpoints"
           }
@@ -13743,50 +13747,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4-sonnet-20250522/endpoints"
-          }
-        },
-        {
-          id: "google/gemma-3n-e4b-it:free",
-          canonical_slug: "google/gemma-3n-e4b-it",
-          hugging_face_id: "google/gemma-3n-E4B-it",
-          name: "Google: Gemma 3n 4B (free)",
-          created: 1747776824,
-          description: "Gemma 3n E4B-it is optimized for efficient execution on mobile and low-resource devices, such as phones, laptops, and tablets. It supports multimodal inputs\u2014including text, visual data, and audio\u2014enabling diverse tasks...",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: 2048,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/google/gemma-3n-e4b-it/endpoints"
           }
         },
         {
@@ -14910,7 +14870,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-3-mini-beta/endpoints"
           }
@@ -14963,7 +14923,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2025-02-28",
-          expiration_date: "2026-06-01",
+          expiration_date: "2026-05-15",
           links: {
             details: "/api/v1/models/x-ai/grok-3-beta/endpoints"
           }
@@ -15229,52 +15189,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "google/gemma-3-4b-it:free",
-          canonical_slug: "google/gemma-3-4b-it",
-          hugging_face_id: "google/gemma-3-4b-it",
-          name: "Google: Gemma 3 4B (free)",
-          created: 1741905510,
-          description: "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
-          context_length: 32768,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: "gemma"
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/google/gemma-3-4b-it/endpoints"
-          }
-        },
-        {
           id: "google/gemma-3-4b-it",
           canonical_slug: "google/gemma-3-4b-it",
           hugging_face_id: "google/gemma-3-4b-it",
@@ -15325,51 +15239,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-3-4b-it/endpoints"
-          }
-        },
-        {
-          id: "google/gemma-3-12b-it:free",
-          canonical_slug: "google/gemma-3-12b-it",
-          hugging_face_id: "google/gemma-3-12b-it",
-          name: "Google: Gemma 3 12B (free)",
-          created: 1741902625,
-          description: "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
-          context_length: 32768,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: "gemma"
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "seed",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/google/gemma-3-12b-it/endpoints"
           }
         },
         {
@@ -15618,56 +15487,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/rekaai/reka-flash-3/endpoints"
-          }
-        },
-        {
-          id: "google/gemma-3-27b-it:free",
-          canonical_slug: "google/gemma-3-27b-it",
-          hugging_face_id: "google/gemma-3-27b-it",
-          name: "Google: Gemma 3 27B (free)",
-          created: 1741756359,
-          description: "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities,...",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: "gemma"
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/google/gemma-3-27b-it/endpoints"
           }
         },
         {
@@ -16265,7 +16084,7 @@ var require_latest = __commonJS({
           name: "Google: Gemini 2.0 Flash",
           created: 1738769413,
           description: "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-          context_length: 1e6,
+          context_length: 1048576,
           architecture: {
             modality: "text+image+file+audio+video->text",
             input_modalities: [
@@ -16292,7 +16111,7 @@ var require_latest = __commonJS({
             input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
-            context_length: 1e6,
+            context_length: 1048576,
             max_completion_tokens: 8192,
             is_moderated: false
           },
@@ -18206,7 +18025,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: "2026-05-08",
+          expiration_date: "2026-05-07",
           links: {
             details: "/api/v1/models/nvidia/llama-3.1-nemotron-70b-instruct/endpoints"
           }
@@ -19581,12 +19400,12 @@ var require_latest = __commonJS({
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.00000003",
+            prompt: "0.00000004",
             completion: "0.00000004"
           },
           top_provider: {
             context_length: 8192,
-            max_completion_tokens: 16384,
+            max_completion_tokens: 8192,
             is_moderated: false
           },
           per_request_limits: null,
@@ -19597,19 +19416,16 @@ var require_latest = __commonJS({
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
             "temperature",
-            "tool_choice",
-            "tools",
             "top_k",
             "top_p"
           ],
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: "2026-05-07",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
           }
@@ -20076,7 +19892,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: "2026-05-08",
+          expiration_date: "2026-05-07",
           links: {
             details: "/api/v1/models/mistralai/mixtral-8x7b-instruct/endpoints"
           }
@@ -20355,7 +20171,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2023-09-30",
-          expiration_date: null,
+          expiration_date: "2026-05-30",
           links: {
             details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
           }
