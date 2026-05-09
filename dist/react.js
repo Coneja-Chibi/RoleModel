@@ -33,12 +33,71 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-08T07:49:40.574Z",
+        fetchedAt: "2026-05-09T08:03:34.432Z",
         modelCount: 367,
-        providerCount: 60,
+        providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "inclusionai/ring-2.6-1t:free",
+          canonical_slug: "inclusionai/ring-2.6-1t-20260508",
+          hugging_face_id: null,
+          name: "inclusionAI: Ring-2.6-1T (free)",
+          created: 1778247440,
+          description: "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for coding agents, tool...",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/inclusionai/ring-2.6-1t-20260508/endpoints"
+          }
+        },
         {
           id: "google/gemini-3.1-flash-lite",
           canonical_slug: "google/gemini-3.1-flash-lite-20260507",
@@ -1658,10 +1717,10 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "tencent/hy3-preview:free",
+          id: "tencent/hy3-preview",
           canonical_slug: "tencent/hy3-preview-20260421",
           hugging_face_id: "tencent/Hy3-preview",
-          name: "Tencent: Hy3 preview (free)",
+          name: "Tencent: Hy3 preview",
           created: 1776878150,
           description: "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
           context_length: 262144,
@@ -1677,8 +1736,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0"
+            prompt: "0.000000066",
+            completion: "0.00000026",
+            input_cache_read: "0.000000029"
           },
           top_provider: {
             context_length: 262144,
@@ -1740,21 +1800,27 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "reasoning",
+            "repetition_penalty",
             "response_format",
+            "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
+            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -2021,7 +2087,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "Pareto Code Router",
           created: 1776747900,
-          description: "The Pareto Router is a way to have OpenRouter always pick a strong coding model for your needs without committing to a specific one. You express a single `min_coding_score` preference...",
+          description: "The Pareto Router maintains a tiered shortlist of strong coding models, ranked by [Artificial Analysis](https://artificialanalysis.ai/) coding percentiles. Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...",
           context_length: 2e5,
           architecture: {
             modality: "text->text",
@@ -6387,9 +6453,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000009",
-            completion: "0.00000029",
-            input_cache_read: "0.000000045"
+            prompt: "0.0000001",
+            completion: "0.0000003",
+            input_cache_read: "0.00000001"
           },
           top_provider: {
             context_length: 262144,
@@ -6407,7 +6473,6 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
-            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -9502,7 +9567,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-05-14",
           links: {
             details: "/api/v1/models/z-ai/glm-4.6/endpoints"
           }
@@ -10744,7 +10809,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2024-12-31",
-          expiration_date: null,
+          expiration_date: "2026-05-14",
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2-0905/endpoints"
           }
@@ -12925,61 +12990,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "tngtech/deepseek-r1t2-chimera",
-          canonical_slug: "tngtech/deepseek-r1t2-chimera",
-          hugging_face_id: "tngtech/DeepSeek-TNG-R1T2-Chimera",
-          name: "TNG: DeepSeek R1T2 Chimera",
-          created: 1751986985,
-          description: "DeepSeek-TNG-R1T2-Chimera is the second-generation Chimera model from TNG Tech. It is a 671 B-parameter mixture-of-experts text-generation model assembled from DeepSeek-AI\u2019s R1-0528, R1, and V3-0324 checkpoints with an Assembly-of-Experts merge. The...",
-          context_length: 163840,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "DeepSeek",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000011",
-            input_cache_read: "0.00000015"
-          },
-          top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 163840,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-07-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/tngtech/deepseek-r1t2-chimera/endpoints"
-          }
-        },
-        {
           id: "morph/morph-v3-large",
           canonical_slug: "morph/morph-v3-large",
           hugging_face_id: "",
@@ -14440,12 +14450,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000008",
-            completion: "0.00000024",
-            input_cache_read: "0.00000004"
+            completion: "0.00000028"
           },
           top_provider: {
             context_length: 40960,
-            max_completion_tokens: 40960,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -16152,7 +16161,7 @@ var require_latest = __commonJS({
           name: "Google: Gemini 2.0 Flash",
           created: 1738769413,
           description: "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-          context_length: 1048576,
+          context_length: 1e6,
           architecture: {
             modality: "text+image+file+audio+video->text",
             input_modalities: [
@@ -16179,7 +16188,7 @@ var require_latest = __commonJS({
             input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
-            context_length: 1048576,
+            context_length: 1e6,
             max_completion_tokens: 8192,
             is_moderated: false
           },
@@ -19913,7 +19922,7 @@ var require_latest = __commonJS({
           hugging_face_id: null,
           name: "Auto Router",
           created: 1699401600,
-          description: '"Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used,...',
+          description: '"Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\\n\\nTo see which model was used, visit...',
           context_length: 2e6,
           architecture: {
             modality: "text+image+file+audio+video->text+image",
