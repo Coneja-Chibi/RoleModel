@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-09T08:03:34.432Z",
+        fetchedAt: "2026-05-10T08:17:09.653Z",
         modelCount: 367,
         providerCount: 59,
         source: "openrouter"
@@ -2088,7 +2088,7 @@ var require_latest = __commonJS({
           name: "Pareto Code Router",
           created: 1776747900,
           description: "The Pareto Router maintains a tiered shortlist of strong coding models, ranked by [Artificial Analysis](https://artificialanalysis.ai/) coding percentiles. Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...",
-          context_length: 2e5,
+          context_length: 2e6,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -5112,12 +5112,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000015",
-            completion: "0.00000115",
-            input_cache_read: "0.00000003"
+            completion: "0.00000115"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 196608,
             is_moderated: false
           },
           per_request_limits: null,
@@ -19922,7 +19921,7 @@ var require_latest = __commonJS({
           hugging_face_id: null,
           name: "Auto Router",
           created: 1699401600,
-          description: '"Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output.\\n\\nTo see which model was used, visit...',
+          description: "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used,...",
           context_length: 2e6,
           architecture: {
             modality: "text+image+file+audio+video->text+image",
