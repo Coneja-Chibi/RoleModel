@@ -31,9 +31,9 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-11T09:52:40.950Z",
+        fetchedAt: "2026-05-12T08:48:44.539Z",
         modelCount: 365,
-        providerCount: 59,
+        providerCount: 58,
         source: "openrouter"
       },
       data: [
@@ -682,10 +682,11 @@ var require_latest = __commonJS({
           description: "This model always redirects to the latest model in the Anthropic Claude Haiku family.",
           context_length: 2e5,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
+              "text",
               "image",
-              "text"
+              "file"
             ],
             output_modalities: [
               "text"
@@ -867,7 +868,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI Kimi Latest",
           created: 1777318428,
           description: "This model always redirects to the latest model in the MoonshotAI Kimi family.",
-          context_length: 262144,
+          context_length: 32768,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -881,13 +882,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000075",
+            prompt: "0.00000074",
             completion: "0.0000035",
-            input_cache_read: "0.00000015"
+            input_cache_read: "0.00000025"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 16384,
+            context_length: 32768,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1005,10 +1006,11 @@ var require_latest = __commonJS({
           description: "This model always redirects to the latest model in the Anthropic Claude Sonnet family.",
           context_length: 1e6,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -2029,10 +2031,11 @@ var require_latest = __commonJS({
           description: "This model always redirects to the latest model in the Claude Opus family.",
           context_length: 1e6,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -2188,7 +2191,7 @@ var require_latest = __commonJS({
           name: "MoonshotAI: Kimi K2.6",
           created: 1776699402,
           description: "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-          context_length: 262144,
+          context_length: 32768,
           architecture: {
             modality: "text+image->text",
             input_modalities: [
@@ -2202,13 +2205,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000075",
+            prompt: "0.00000074",
             completion: "0.0000035",
-            input_cache_read: "0.00000015"
+            input_cache_read: "0.00000025"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 16384,
+            context_length: 32768,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2259,10 +2262,11 @@ var require_latest = __commonJS({
           description: "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
           context_length: 1e6,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -2318,10 +2322,11 @@ var require_latest = __commonJS({
           description: "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
           context_length: 1e6,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -2390,13 +2395,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000105",
-            completion: "0.0000035",
-            input_cache_read: "0.000000525"
+            prompt: "0.00000098",
+            completion: "0.00000308",
+            input_cache_read: "0.000000182"
           },
           top_provider: {
             context_length: 202752,
-            max_completion_tokens: 65535,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2635,8 +2640,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000013",
-            completion: "0.00000038"
+            prompt: "0.00000012",
+            completion: "0.00000037"
           },
           top_provider: {
             context_length: 262144,
@@ -2798,12 +2803,66 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "arcee-ai/trinity-large-thinking:free",
+          canonical_slug: "arcee-ai/trinity-large-thinking",
+          hugging_face_id: "arcee-ai/Trinity-Large-Thinking",
+          name: "Arcee AI: Trinity Large Thinking (free)",
+          created: 1775058318,
+          description: "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7...",
+          context_length: 262144,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 8e4,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3,
+            top_p: 0.8,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
+          }
+        },
+        {
           id: "arcee-ai/trinity-large-thinking",
           canonical_slug: "arcee-ai/trinity-large-thinking",
           hugging_face_id: "arcee-ai/Trinity-Large-Thinking",
           name: "Arcee AI: Trinity Large Thinking",
           created: 1775058318,
-          description: "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7",
+          description: "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7...",
           context_length: 262144,
           architecture: {
             modality: "text->text",
@@ -3348,12 +3407,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000299",
+            prompt: "0.0000002",
             completion: "0.0000012"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -4856,10 +4915,11 @@ var require_latest = __commonJS({
           description: "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with...",
           context_length: 1e6,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -4990,8 +5050,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000039",
-            completion: "0.00000234",
-            input_cache_read: "0.000000195"
+            completion: "0.00000234"
           },
           top_provider: {
             context_length: 262144,
@@ -5282,10 +5341,11 @@ var require_latest = __commonJS({
           description: "Opus 4.6 is Anthropic\u2019s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
           context_length: 1e6,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
               "text",
-              "image"
+              "image",
+              "file"
             ],
             output_modalities: [
               "text"
@@ -8801,10 +8861,11 @@ var require_latest = __commonJS({
           description: "Claude Haiku 4.5 is Anthropic\u2019s fastest and most efficient model, delivering near-frontier intelligence at a fraction of the cost and latency of larger Claude models. Matching Claude Sonnet 4\u2019s performance...",
           context_length: 2e5,
           architecture: {
-            modality: "text+image->text",
+            modality: "text+image+file->text",
             input_modalities: [
+              "text",
               "image",
-              "text"
+              "file"
             ],
             output_modalities: [
               "text"
@@ -11034,7 +11095,7 @@ var require_latest = __commonJS({
           name: "DeepSeek: DeepSeek V3.1",
           created: 1755779628,
           description: "DeepSeek-V3.1 is a large hybrid reasoning model (671B parameters, 37B active) that supports both thinking and non-thinking modes via prompt templates. It extends the DeepSeek-V3 base with a two-phase long-context...",
-          context_length: 32768,
+          context_length: 163840,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -11047,12 +11108,13 @@ var require_latest = __commonJS({
             instruct_type: "deepseek-v3.1"
           },
           pricing: {
-            prompt: "0.00000015",
-            completion: "0.00000075"
+            prompt: "0.00000021",
+            completion: "0.00000079",
+            input_cache_read: "0.00000013"
           },
           top_provider: {
-            context_length: 32768,
-            max_completion_tokens: 7168,
+            context_length: 163840,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -16040,7 +16102,7 @@ var require_latest = __commonJS({
           name: "Google: Gemini 2.0 Flash",
           created: 1738769413,
           description: "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-          context_length: 1e6,
+          context_length: 1048576,
           architecture: {
             modality: "text+image+file+audio+video->text",
             input_modalities: [
@@ -16067,7 +16129,7 @@ var require_latest = __commonJS({
             input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
-            context_length: 1e6,
+            context_length: 1048576,
             max_completion_tokens: 8192,
             is_moderated: false
           },
@@ -16137,7 +16199,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-05-13",
           links: {
             details: "/api/v1/models/qwen/qwen-vl-plus/endpoints"
           }
@@ -16319,7 +16381,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-05-13",
           links: {
             details: "/api/v1/models/qwen/qwen-vl-max-2025-01-25/endpoints"
           }
@@ -16367,7 +16429,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-05-13",
           links: {
             details: "/api/v1/models/qwen/qwen-turbo-2024-11-01/endpoints"
           }
@@ -16516,7 +16578,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-05-13",
           links: {
             details: "/api/v1/models/qwen/qwen-max-2025-01-25/endpoints"
           }
@@ -17931,49 +17993,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "inflection/inflection-3-productivity",
-          canonical_slug: "inflection/inflection-3-productivity",
-          hugging_face_id: null,
-          name: "Inflection: Inflection 3 Productivity",
-          created: 1728604800,
-          description: "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional...",
-          context_length: 8e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 8e3,
-            max_completion_tokens: 1024,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
-          }
-        },
-        {
           id: "inflection/inflection-3-pi",
           canonical_slug: "inflection/inflection-3-pi",
           hugging_face_id: null,
@@ -18014,6 +18033,49 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inflection/inflection-3-pi/endpoints"
+          }
+        },
+        {
+          id: "inflection/inflection-3-productivity",
+          canonical_slug: "inflection/inflection-3-productivity",
+          hugging_face_id: null,
+          name: "Inflection: Inflection 3 Productivity",
+          created: 1728604800,
+          description: "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional...",
+          context_length: 8e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 8e3,
+            max_completion_tokens: 1024,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "stop",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2024-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
           }
         },
         {
@@ -18319,57 +18381,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "cohere/command-r-plus-08-2024",
-          canonical_slug: "cohere/command-r-plus-08-2024",
-          hugging_face_id: null,
-          name: "Cohere: Command R+ (08-2024)",
-          created: 1724976e3,
-          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Cohere",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
-          }
-        },
-        {
           id: "cohere/command-r-08-2024",
           canonical_slug: "cohere/command-r-08-2024",
           hugging_face_id: null,
@@ -18418,6 +18429,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/cohere/command-r-08-2024/endpoints"
+          }
+        },
+        {
+          id: "cohere/command-r-plus-08-2024",
+          canonical_slug: "cohere/command-r-plus-08-2024",
+          hugging_face_id: null,
+          name: "Cohere: Command R+ (08-2024)",
+          created: 1724976e3,
+          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Cohere",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2024-03-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
           }
         },
         {
@@ -18735,6 +18797,60 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "meta-llama/llama-3.1-70b-instruct",
+          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          name: "Meta: Llama 3.1 70B Instruct",
+          created: 1721692800,
+          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000004"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
+          }
+        },
+        {
           id: "meta-llama/llama-3.1-8b-instruct",
           canonical_slug: "meta-llama/llama-3.1-8b-instruct",
           hugging_face_id: "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -18788,60 +18904,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3.1-70b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
-          name: "Meta: Llama 3.1 70B Instruct",
-          created: 1721692800,
-          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000004"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
           }
         },
         {
@@ -19636,59 +19698,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-4-turbo-preview",
-          canonical_slug: "openai/gpt-4-turbo-preview",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 Turbo Preview",
-          created: 1706140800,
-          description: "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023. **Note:** heavily rate limited by OpenAI while...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00001",
-            completion: "0.00003"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4-turbo-preview/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-3.5-turbo-0613",
           canonical_slug: "openai/gpt-3.5-turbo-0613",
           hugging_face_id: null,
@@ -19742,13 +19751,13 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "alpindale/goliath-120b",
-          canonical_slug: "alpindale/goliath-120b",
-          hugging_face_id: "alpindale/goliath-120b",
-          name: "Goliath 120B",
-          created: 1699574400,
-          description: "A large LLM created by combining two fine-tuned Llama 70B models into one 120B model. Combines Xwin and Euryale. Credits to - [@chargoddard](https://huggingface.co/chargoddard) for developing the framework used to merge...",
-          context_length: 6144,
+          id: "openai/gpt-4-turbo-preview",
+          canonical_slug: "openai/gpt-4-turbo-preview",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4 Turbo Preview",
+          created: 1706140800,
+          description: "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023. **Note:** heavily rate limited by OpenAI while...",
+          context_length: 128e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -19757,17 +19766,17 @@ var require_latest = __commonJS({
             output_modalities: [
               "text"
             ],
-            tokenizer: "Llama2",
-            instruct_type: "airoboros"
+            tokenizer: "GPT",
+            instruct_type: null
           },
           pricing: {
-            prompt: "0.00000375",
-            completion: "0.0000075"
+            prompt: "0.00001",
+            completion: "0.00003"
           },
           top_provider: {
-            context_length: 6144,
-            max_completion_tokens: 1024,
-            is_moderated: false
+            context_length: 128e3,
+            max_completion_tokens: 4096,
+            is_moderated: true
           },
           per_request_limits: null,
           supported_parameters: [
@@ -19775,15 +19784,14 @@ var require_latest = __commonJS({
             "logit_bias",
             "logprobs",
             "max_tokens",
-            "min_p",
             "presence_penalty",
-            "repetition_penalty",
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
-            "top_a",
-            "top_k",
+            "tool_choice",
+            "tools",
             "top_logprobs",
             "top_p"
           ],
@@ -19792,7 +19800,7 @@ var require_latest = __commonJS({
           knowledge_cutoff: "2023-12-31",
           expiration_date: null,
           links: {
-            details: "/api/v1/models/alpindale/goliath-120b/endpoints"
+            details: "/api/v1/models/openai/gpt-4-turbo-preview/endpoints"
           }
         },
         {
@@ -20239,59 +20247,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-4-0314",
-          canonical_slug: "openai/gpt-4-0314",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 (older v0314)",
-          created: 1685232e3,
-          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
-          context_length: 8191,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00003",
-            completion: "0.00006"
-          },
-          top_provider: {
-            context_length: 8191,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2021-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4-0314/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4",
           canonical_slug: "openai/gpt-4",
           hugging_face_id: null,
@@ -20396,6 +20351,59 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-4-0314",
+          canonical_slug: "openai/gpt-4-0314",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4 (older v0314)",
+          created: 1685232e3,
+          description: "GPT-4-0314 is the first version of GPT-4 released, with a context length of 8,192 tokens, and was supported until June 14. Training data: up to Sep 2021.",
+          context_length: 8191,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00003",
+            completion: "0.00006"
+          },
+          top_provider: {
+            context_length: 8191,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-4-0314/endpoints"
           }
         }
       ]
