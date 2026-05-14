@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-13T08:52:30.932Z",
-        modelCount: 363,
+        fetchedAt: "2026-05-14T08:45:41.883Z",
+        modelCount: 364,
         providerCount: 59,
         source: "openrouter"
       },
@@ -1708,6 +1708,56 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "deepseek/deepseek-v4-flash:free",
+          canonical_slug: "deepseek/deepseek-v4-flash-20260423",
+          hugging_face_id: "deepseek-ai/DeepSeek-V4-Flash",
+          name: "DeepSeek: DeepSeek V4 Flash (free)",
+          created: 1777000666,
+          description: "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+          context_length: 256e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "DeepSeek",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 256e3,
+            max_completion_tokens: 256e3,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "reasoning",
+            "tool_choice",
+            "tools"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+          }
+        },
+        {
           id: "deepseek/deepseek-v4-flash",
           canonical_slug: "deepseek/deepseek-v4-flash-20260423",
           hugging_face_id: "deepseek-ai/DeepSeek-V4-Flash",
@@ -1727,13 +1777,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000014",
-            completion: "0.00000028",
-            input_cache_read: "0.0000000028"
+            prompt: "0.000000126",
+            completion: "0.000000252",
+            input_cache_read: "0.0000000252"
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 384e3,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3524,12 +3574,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000028",
+            prompt: "0.000000279",
             completion: "0.0000012"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -4261,7 +4311,7 @@ var require_latest = __commonJS({
           top_provider: {
             context_length: 128e3,
             max_completion_tokens: 16384,
-            is_moderated: true
+            is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
@@ -9691,7 +9741,7 @@ var require_latest = __commonJS({
           name: "Z.ai: GLM 4.6",
           created: 1759235576,
           description: "Compared with GLM-4.5, this generation brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex...",
-          context_length: 204800,
+          context_length: 202752,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -9704,12 +9754,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000039",
-            completion: "0.0000019"
+            prompt: "0.00000043",
+            completion: "0.00000174",
+            input_cache_read: "0.00000008"
           },
           top_provider: {
-            context_length: 204800,
-            max_completion_tokens: 204800,
+            context_length: 202752,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9742,7 +9793,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: "2026-05-14",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.6/endpoints"
           }
@@ -10955,8 +11006,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.000002"
+            prompt: "0.0000006",
+            completion: "0.0000025"
           },
           top_provider: {
             context_length: 262144,
@@ -10984,7 +11035,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2024-12-31",
-          expiration_date: "2026-05-14",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2-0905/endpoints"
           }
