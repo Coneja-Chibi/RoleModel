@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-16T08:11:39.106Z",
+        fetchedAt: "2026-05-17T08:28:25.183Z",
         modelCount: 356,
         providerCount: 59,
         source: "openrouter"
@@ -2691,12 +2691,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000006",
-            completion: "0.00000033"
+            prompt: "0.00000007",
+            completion: "0.00000034"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3943,12 +3943,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000009",
-            completion: "0.00000045"
+            prompt: "0.0000001",
+            completion: "0.0000005"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3956,7 +3956,6 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -3969,7 +3968,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -11755,11 +11753,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.000000039",
-            completion: "0.00000018"
+            completion: "0.00000019"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -18448,18 +18446,17 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.00000003"
+            completion: "0.00000004"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -18472,7 +18469,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
