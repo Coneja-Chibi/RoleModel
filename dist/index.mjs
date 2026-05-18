@@ -29,7 +29,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-17T08:28:25.183Z",
+        fetchedAt: "2026-05-18T10:17:25.113Z",
         modelCount: 356,
         providerCount: 59,
         source: "openrouter"
@@ -2687,12 +2687,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000007",
-            completion: "0.00000034"
+            prompt: "0.00000006",
+            completion: "0.00000033"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 16384,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3939,12 +3939,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001",
-            completion: "0.0000005"
+            prompt: "0.00000009",
+            completion: "0.00000045"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 16384,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3952,6 +3952,7 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -3964,6 +3965,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -11749,11 +11751,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.000000039",
-            completion: "0.00000019"
+            completion: "0.00000018"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 131072,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -15807,7 +15809,7 @@ var require_latest = __commonJS({
           name: "Google: Gemini 2.0 Flash",
           created: 1738769413,
           description: "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-          context_length: 1048576,
+          context_length: 1e6,
           architecture: {
             modality: "text+image+file+audio+video->text",
             input_modalities: [
@@ -15834,7 +15836,7 @@ var require_latest = __commonJS({
             input_cache_write: "0.00000008333333333333334"
           },
           top_provider: {
-            context_length: 1048576,
+            context_length: 1e6,
             max_completion_tokens: 8192,
             is_moderated: false
           },
@@ -18442,11 +18444,11 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.00000004"
+            completion: "0.00000003"
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: 16384,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
