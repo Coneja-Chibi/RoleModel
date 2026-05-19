@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-18T10:17:25.113Z",
+        fetchedAt: "2026-05-19T09:57:39.295Z",
         modelCount: 356,
         providerCount: 59,
         source: "openrouter"
@@ -5793,7 +5793,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-05-21",
           links: {
             details: "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
           }
@@ -8824,16 +8824,19 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131e3,
-            max_completion_tokens: null,
+            max_completion_tokens: 131e3,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
+            "stop",
             "temperature",
             "top_k",
             "top_p"
@@ -15010,16 +15013,19 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 128e3,
-            max_completion_tokens: null,
+            max_completion_tokens: 128e3,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
+            "stop",
             "temperature",
             "top_k",
             "top_p"
@@ -15731,16 +15737,19 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 131072,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
+            "stop",
             "temperature",
             "top_k",
             "top_p"
@@ -17273,16 +17282,19 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 32768,
-            max_completion_tokens: null,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
+            "stop",
             "temperature",
             "top_k",
             "top_p"
@@ -17514,49 +17526,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "inflection/inflection-3-productivity",
-          canonical_slug: "inflection/inflection-3-productivity",
-          hugging_face_id: null,
-          name: "Inflection: Inflection 3 Productivity",
-          created: 1728604800,
-          description: "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional...",
-          context_length: 8e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 8e3,
-            max_completion_tokens: 1024,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
-          }
-        },
-        {
           id: "inflection/inflection-3-pi",
           canonical_slug: "inflection/inflection-3-pi",
           hugging_face_id: null,
@@ -17597,6 +17566,49 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inflection/inflection-3-pi/endpoints"
+          }
+        },
+        {
+          id: "inflection/inflection-3-productivity",
+          canonical_slug: "inflection/inflection-3-productivity",
+          hugging_face_id: null,
+          name: "Inflection: Inflection 3 Productivity",
+          created: 1728604800,
+          description: "Inflection 3 Productivity is optimized for following instructions. It is better for tasks requiring JSON output or precise adherence to provided guidelines. It has access to recent news. For emotional...",
+          context_length: 8e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 8e3,
+            max_completion_tokens: 1024,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "stop",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2024-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
           }
         },
         {
@@ -17656,6 +17668,56 @@ var require_latest = __commonJS({
           }
         },
         {
+          id: "meta-llama/llama-3.2-1b-instruct",
+          canonical_slug: "meta-llama/llama-3.2-1b-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-1B-Instruct",
+          name: "Meta: Llama 3.2 1B Instruct",
+          created: 1727222400,
+          description: "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.000000027",
+            completion: "0.000000201"
+          },
+          top_provider: {
+            context_length: 6e4,
+            max_completion_tokens: 6e4,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
+          }
+        },
+        {
           id: "meta-llama/llama-3.2-11b-vision-instruct",
           canonical_slug: "meta-llama/llama-3.2-11b-vision-instruct",
           hugging_face_id: "meta-llama/Llama-3.2-11B-Vision-Instruct",
@@ -17705,53 +17767,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.2-11b-vision-instruct/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3.2-1b-instruct",
-          canonical_slug: "meta-llama/llama-3.2-1b-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-1B-Instruct",
-          name: "Meta: Llama 3.2 1B Instruct",
-          created: 1727222400,
-          description: "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.000000027",
-            completion: "0.000000201"
-          },
-          top_provider: {
-            context_length: 6e4,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
           }
         },
         {
@@ -17825,16 +17840,19 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 8e4,
-            max_completion_tokens: null,
+            max_completion_tokens: 8e4,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
+            "logit_bias",
             "max_tokens",
+            "min_p",
             "presence_penalty",
             "repetition_penalty",
             "seed",
+            "stop",
             "temperature",
             "top_k",
             "top_p"
@@ -17902,57 +17920,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "cohere/command-r-plus-08-2024",
-          canonical_slug: "cohere/command-r-plus-08-2024",
-          hugging_face_id: null,
-          name: "Cohere: Command R+ (08-2024)",
-          created: 1724976e3,
-          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Cohere",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
-          }
-        },
-        {
           id: "cohere/command-r-08-2024",
           canonical_slug: "cohere/command-r-08-2024",
           hugging_face_id: null,
@@ -18001,6 +17968,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/cohere/command-r-08-2024/endpoints"
+          }
+        },
+        {
+          id: "cohere/command-r-plus-08-2024",
+          canonical_slug: "cohere/command-r-plus-08-2024",
+          hugging_face_id: null,
+          name: "Cohere: Command R+ (08-2024)",
+          created: 1724976e3,
+          description: "command-r-plus-08-2024 is an update of the [Command R+](/models/cohere/command-r-plus) with roughly 50% higher throughput and 25% lower latencies as compared to the previous Command R+ version, while keeping the hardware footprint...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Cohere",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2024-03-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
           }
         },
         {
@@ -18318,60 +18336,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "meta-llama/llama-3.1-70b-instruct",
-          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
-          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
-          name: "Meta: Llama 3.1 70B Instruct",
-          created: 1721692800,
-          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000004"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
-          }
-        },
-        {
           id: "meta-llama/llama-3.1-8b-instruct",
           canonical_slug: "meta-llama/llama-3.1-8b-instruct",
           hugging_face_id: "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -18425,6 +18389,60 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
+          }
+        },
+        {
+          id: "meta-llama/llama-3.1-70b-instruct",
+          canonical_slug: "meta-llama/llama-3.1-70b-instruct",
+          hugging_face_id: "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          name: "Meta: Llama 3.1 70B Instruct",
+          created: 1721692800,
+          description: "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.0000004",
+            completion: "0.0000004"
+          },
+          top_provider: {
+            context_length: 131072,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
           }
         },
         {
@@ -18484,63 +18502,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-4o-mini-2024-07-18",
-          canonical_slug: "openai/gpt-4o-mini-2024-07-18",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4o-mini (2024-07-18)",
-          created: 1721260800,
-          description: "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more affordable...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000006",
-            input_cache_read: "0.000000075"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 16384,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4o-mini-2024-07-18/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4o-mini",
           canonical_slug: "openai/gpt-4o-mini",
           hugging_face_id: null,
@@ -18596,6 +18557,63 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o-mini/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-4o-mini-2024-07-18",
+          canonical_slug: "openai/gpt-4o-mini-2024-07-18",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4o-mini (2024-07-18)",
+          created: 1721260800,
+          description: "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more affordable...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000015",
+            completion: "0.0000006",
+            input_cache_read: "0.000000075"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 16384,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p",
+            "web_search_options"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2023-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-4o-mini-2024-07-18/endpoints"
           }
         },
         {
@@ -18748,63 +18766,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-4o",
-          canonical_slug: "openai/gpt-4o",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4o",
-          created: 1715558400,
-          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...`,
-          context_length: 128e3,
-          architecture: {
-            modality: "text+image+file->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_completion_tokens",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p",
-            "web_search_options"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4o/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4o-2024-05-13",
           canonical_slug: "openai/gpt-4o-2024-05-13",
           hugging_face_id: null,
@@ -18859,6 +18820,63 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o-2024-05-13/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-4o",
+          canonical_slug: "openai/gpt-4o",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-4o",
+          created: 1715558400,
+          description: `GPT-4o ("o" for "omni") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...`,
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image+file->text",
+            input_modalities: [
+              "text",
+              "image",
+              "file"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_completion_tokens",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p",
+            "web_search_options"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2023-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-4o/endpoints"
           }
         },
         {
@@ -19453,55 +19471,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "mistralai/mistral-7b-instruct-v0.1",
-          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
-          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
-          name: "Mistral: Mistral 7B Instruct v0.1",
-          created: 1695859200,
-          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
-          context_length: 4096,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Mistral",
-            instruct_type: "mistral"
-          },
-          pricing: {
-            prompt: "0.00000011",
-            completion: "0.00000019"
-          },
-          top_provider: {
-            context_length: 2824,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3
-          },
-          supported_voices: null,
-          knowledge_cutoff: "2023-09-30",
-          expiration_date: "2026-05-30",
-          links: {
-            details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-3.5-turbo-instruct",
           canonical_slug: "openai/gpt-3.5-turbo-instruct",
           hugging_face_id: null,
@@ -19550,6 +19519,58 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-3.5-turbo-instruct/endpoints"
+          }
+        },
+        {
+          id: "mistralai/mistral-7b-instruct-v0.1",
+          canonical_slug: "mistralai/mistral-7b-instruct-v0.1",
+          hugging_face_id: "mistralai/Mistral-7B-Instruct-v0.1",
+          name: "Mistral: Mistral 7B Instruct v0.1",
+          created: 1695859200,
+          description: "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
+          context_length: 4096,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Mistral",
+            instruct_type: "mistral"
+          },
+          pricing: {
+            prompt: "0.00000011",
+            completion: "0.00000019"
+          },
+          top_provider: {
+            context_length: 2824,
+            max_completion_tokens: 2824,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.3
+          },
+          supported_voices: null,
+          knowledge_cutoff: "2023-09-30",
+          expiration_date: "2026-05-30",
+          links: {
+            details: "/api/v1/models/mistralai/mistral-7b-instruct-v0.1/endpoints"
           }
         },
         {
