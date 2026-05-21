@@ -31,12 +31,76 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-20T09:47:02.466Z",
-        modelCount: 357,
+        fetchedAt: "2026-05-21T09:54:41.731Z",
+        modelCount: 358,
         providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "x-ai/grok-build-0.1",
+          canonical_slug: "x-ai/grok-build-0.1-20260520",
+          hugging_face_id: null,
+          name: "xAI: Grok Build 0.1",
+          created: 1779298123,
+          description: "Grok Build 0.1 is xAI\u2019s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive coding...",
+          context_length: 256e3,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Grok",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000001",
+            completion: "0.000002",
+            web_search: "0.005",
+            input_cache_read: "0.0000002"
+          },
+          top_provider: {
+            context_length: 256e3,
+            max_completion_tokens: null,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/x-ai/grok-build-0.1-20260520/endpoints"
+          }
+        },
         {
           id: "google/gemini-3.5-flash",
           canonical_slug: "google/gemini-3.5-flash-20260519",
@@ -1907,9 +1971,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000025",
-            input_cache_read: "0.00000006"
+            prompt: "0.000000075",
+            completion: "0.000000625",
+            input_cache_read: "0.000000015"
           },
           top_provider: {
             context_length: 262144,
@@ -5279,8 +5343,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000039",
-            completion: "0.00000234",
-            input_cache_read: "0.000000195"
+            completion: "0.00000234"
           },
           top_provider: {
             context_length: 262144,
@@ -5763,12 +5826,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001",
-            completion: "0.0000003"
+            prompt: "0.00000009",
+            completion: "0.0000003",
+            input_cache_read: "0.00000002"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -6384,6 +6448,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000175",
             completion: "0.000014",
+            web_search: "0.01",
             input_cache_read: "0.000000175"
           },
           top_provider: {
@@ -6910,6 +6975,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000175",
             completion: "0.000014",
+            web_search: "0.01",
             input_cache_read: "0.000000175"
           },
           top_provider: {
@@ -7017,6 +7083,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000175",
             completion: "0.000014",
+            web_search: "0.01",
             input_cache_read: "0.000000175"
           },
           top_provider: {
@@ -8208,6 +8275,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
+            web_search: "0.01",
             input_cache_read: "0.00000013"
           },
           top_provider: {
@@ -8319,6 +8387,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
+            web_search: "0.01",
             input_cache_read: "0.000000125"
           },
           top_provider: {
@@ -8376,6 +8445,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000025",
             completion: "0.000002",
+            web_search: "0.01",
             input_cache_read: "0.00000003"
           },
           top_provider: {
@@ -10340,6 +10410,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
+            web_search: "0.01",
             input_cache_read: "0.000000125"
           },
           top_provider: {
@@ -11593,6 +11664,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000125",
             completion: "0.00001",
+            web_search: "0.01",
             input_cache_read: "0.000000125"
           },
           top_provider: {
@@ -11710,6 +11782,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.00000005",
             completion: "0.0000004",
+            web_search: "0.01",
             input_cache_read: "0.00000001"
           },
           top_provider: {
@@ -14655,6 +14728,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.000002",
             completion: "0.000008",
+            web_search: "0.01",
             input_cache_read: "0.0000005"
           },
           top_provider: {
@@ -15021,7 +15095,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00015",
-            completion: "0.0006"
+            completion: "0.0006",
+            web_search: "0.01"
           },
           top_provider: {
             context_length: 2e5,
@@ -15843,6 +15918,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000011",
             completion: "0.0000044",
+            web_search: "0.01",
             input_cache_read: "0.00000055"
           },
           top_provider: {
@@ -16189,6 +16265,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.0000011",
             completion: "0.0000044",
+            web_search: "0.01",
             input_cache_read: "0.00000055"
           },
           top_provider: {
@@ -16774,6 +16851,7 @@ var require_latest = __commonJS({
           pricing: {
             prompt: "0.000015",
             completion: "0.00006",
+            web_search: "0.01",
             input_cache_read: "0.0000075"
           },
           top_provider: {
@@ -19496,7 +19574,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00001",
-            completion: "0.00003"
+            completion: "0.00003",
+            web_search: "0.01"
           },
           top_provider: {
             context_length: 128e3,
