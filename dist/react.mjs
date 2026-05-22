@@ -31,12 +31,72 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-21T09:54:41.731Z",
+        fetchedAt: "2026-05-22T09:39:41.484Z",
         modelCount: 358,
         providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "qwen/qwen3.7-max",
+          canonical_slug: "qwen/qwen3.7-max-20260520",
+          hugging_face_id: null,
+          name: "Qwen: Qwen3.7 Max",
+          created: 1779376861,
+          description: "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivity tasks,...",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.0000075",
+            input_cache_write: "0.000003125"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "response_format",
+            "seed",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/qwen/qwen3.7-max-20260520/endpoints"
+          }
+        },
         {
           id: "x-ai/grok-build-0.1",
           canonical_slug: "x-ai/grok-build-0.1-20260520",
@@ -1438,9 +1498,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001875",
-            completion: "0.000001125",
-            input_cache_write: "0.000000234375"
+            prompt: "0.00000012375",
+            completion: "0.0000007425",
+            input_cache_write: "0.0000001545"
           },
           top_provider: {
             context_length: 1e6,
@@ -1491,12 +1551,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000149",
-            completion: "0.000001"
+            prompt: "0.00000015",
+            completion: "0.000001",
+            input_cache_read: "0.00000005"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: null,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1608,12 +1669,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000032",
+            prompt: "0.0000003",
             completion: "0.0000032"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 81920,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2474,7 +2535,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-05-28",
           links: {
             details: "/api/v1/models/baidu/qianfan-ocr-fast-20260420/endpoints"
           }
@@ -2677,7 +2738,7 @@ var require_latest = __commonJS({
           name: "Z.ai: GLM 5.1",
           created: 1775578025,
           description: "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
-          context_length: 202800,
+          context_length: 202752,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -2690,12 +2751,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0",
-            completion: "0"
+            prompt: "0.00000098",
+            completion: "0.00000308",
+            input_cache_read: "0.000000182"
           },
           top_provider: {
-            context_length: 202800,
-            max_completion_tokens: 202800,
+            context_length: 202752,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3001,9 +3063,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000325",
-            completion: "0.00000195",
-            input_cache_write: "0.00000040625"
+            prompt: "0.0000001794",
+            completion: "0.00000107315",
+            input_cache_write: "0.0000002236"
           },
           top_provider: {
             context_length: 1e6,
@@ -4807,7 +4869,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5474,13 +5536,10 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -5490,7 +5549,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -5864,59 +5922,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/stepfun/step-3.5-flash/endpoints"
-          }
-        },
-        {
-          id: "arcee-ai/trinity-large-preview",
-          canonical_slug: "arcee-ai/trinity-large-preview",
-          hugging_face_id: "arcee-ai/Trinity-Large-Preview",
-          name: "Arcee AI: Trinity Large Preview",
-          created: 1769552670,
-          description: "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. It excels in creative writing,...",
-          context_length: 131e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.00000045"
-          },
-          top_provider: {
-            context_length: 131e3,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.8,
-            top_p: 0.8,
-            top_k: null,
-            frequency_penalty: null,
-            presence_penalty: null,
-            repetition_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: null,
-          expiration_date: "2026-05-21",
-          links: {
-            details: "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
           }
         },
         {
