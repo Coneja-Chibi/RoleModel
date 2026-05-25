@@ -29,9 +29,9 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-24T08:38:38.720Z",
-        modelCount: 358,
-        providerCount: 59,
+        fetchedAt: "2026-05-25T10:21:34.734Z",
+        modelCount: 357,
+        providerCount: 58,
         source: "openrouter"
       },
       data: [
@@ -10506,67 +10506,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-v3.1-terminus/endpoints"
-          }
-        },
-        {
-          id: "alibaba/tongyi-deepresearch-30b-a3b",
-          canonical_slug: "alibaba/tongyi-deepresearch-30b-a3b",
-          hugging_face_id: "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
-          name: "Tongyi DeepResearch 30B A3B",
-          created: 1758210804,
-          description: "Tongyi DeepResearch is an agentic large language model developed by Tongyi Lab, with 30 billion total parameters activating only 3 billion per token. It's optimized for long-horizon, deep information-seeking tasks...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000009",
-            completion: "0.00000045",
-            input_cache_read: "0.00000009"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 131072,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/alibaba/tongyi-deepresearch-30b-a3b/endpoints"
           }
         },
         {
