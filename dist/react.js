@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-25T10:21:34.734Z",
+        fetchedAt: "2026-05-26T10:09:31.474Z",
         modelCount: 357,
         providerCount: 58,
         source: "openrouter"
@@ -1671,11 +1671,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000032"
+            completion: "0.000002",
+            input_cache_read: "0.00000015"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12359,6 +12360,7 @@ var require_latest = __commonJS({
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
+            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -16678,7 +16680,7 @@ var require_latest = __commonJS({
           name: "DeepSeek: DeepSeek V3",
           created: 1735241320,
           description: "DeepSeek-V3 is the latest model from the DeepSeek team, building upon the instruction following and coding abilities of the previous versions. Pre-trained on nearly 15 trillion tokens, the reported evaluations...",
-          context_length: 163840,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -16691,12 +16693,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000032",
-            completion: "0.00000089"
+            prompt: "0.0000002288",
+            completion: "0.0000009144"
           },
           top_provider: {
-            context_length: 163840,
-            max_completion_tokens: 16384,
+            context_length: 128e3,
+            max_completion_tokens: 16e3,
             is_moderated: false
           },
           per_request_limits: null,
