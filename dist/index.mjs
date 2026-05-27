@@ -29,8 +29,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-05-26T10:09:31.474Z",
-        modelCount: 357,
+        fetchedAt: "2026-05-27T10:07:06.235Z",
+        modelCount: 356,
         providerCount: 58,
         source: "openrouter"
       },
@@ -55,9 +55,10 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000025",
-            completion: "0.0000075",
-            input_cache_write: "0.000003125"
+            prompt: "0.00000125",
+            completion: "0.00000375",
+            input_cache_read: "0.00000025",
+            input_cache_write: "0.0000015625"
           },
           top_provider: {
             context_length: 1e6,
@@ -510,7 +511,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-05-27",
           links: {
             details: "/api/v1/models/baidu/cobuddy-20260430/endpoints"
           }
@@ -878,7 +879,7 @@ var require_latest = __commonJS({
           name: "Poolside: Laguna XS.2 (free)",
           created: 1777389604,
           description: "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai), their efficient coding agent series. It combines tool calling and reasoning capabilities with a compact footprint, offering...",
-          context_length: 131072,
+          context_length: 262144,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -895,8 +896,8 @@ var require_latest = __commonJS({
             completion: "0"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 8192,
+            context_length: 262144,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -930,7 +931,7 @@ var require_latest = __commonJS({
           name: "Poolside: Laguna M.1 (free)",
           created: 1777388504,
           description: "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 128K...",
-          context_length: 131072,
+          context_length: 262144,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -947,8 +948,8 @@ var require_latest = __commonJS({
             completion: "0"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 8192,
+            context_length: 262144,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1445,7 +1446,8 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.0000003",
-            completion: "0.0000018"
+            completion: "0.0000018",
+            input_cache_write: "0.000000375"
           },
           top_provider: {
             context_length: 1e6,
@@ -1549,7 +1551,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000015",
+            prompt: "0.00000014",
             completion: "0.000001"
           },
           top_provider: {
@@ -1666,13 +1668,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.000002",
-            input_cache_read: "0.00000015"
+            prompt: "0.00000029",
+            completion: "0.0000032"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 65536,
+            context_length: 262140,
+            max_completion_tokens: 262140,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2148,13 +2149,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000001",
-            completion: "0.000003",
-            input_cache_read: "0.0000002"
+            prompt: "0.000000435",
+            completion: "0.00000087",
+            input_cache_read: "0.0000000036"
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 16384,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2215,9 +2216,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.000002",
-            input_cache_read: "0.00000008"
+            prompt: "0.00000014",
+            completion: "0.00000028",
+            input_cache_read: "0.0000000028"
           },
           top_provider: {
             context_length: 1048576,
@@ -3154,60 +3155,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-5v-turbo-20260401/endpoints"
-          }
-        },
-        {
-          id: "arcee-ai/trinity-large-thinking:free",
-          canonical_slug: "arcee-ai/trinity-large-thinking",
-          hugging_face_id: "arcee-ai/Trinity-Large-Thinking",
-          name: "Arcee AI: Trinity Large Thinking (free)",
-          created: 1775058318,
-          description: "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7...",
-          context_length: 262144,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 8e4,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "max_tokens",
-            "reasoning",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: 0.3,
-            top_p: 0.8,
-            top_k: null,
-            frequency_penalty: null,
-            presence_penalty: null,
-            repetition_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: null,
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
           }
         },
         {
@@ -4930,8 +4877,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.000000065",
-            completion: "0.00000026",
-            input_cache_write: "0.00000008125"
+            completion: "0.00000026"
           },
           top_provider: {
             context_length: 1e6,
@@ -5346,8 +5292,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000026",
-            completion: "0.00000156",
-            input_cache_write: "0.000000325"
+            completion: "0.00000156"
           },
           top_provider: {
             context_length: 1e6,
@@ -10802,8 +10747,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000026",
-            completion: "0.00000078",
-            input_cache_write: "0.000000325"
+            completion: "0.00000078"
           },
           top_provider: {
             context_length: 1e6,
@@ -12339,13 +12283,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000013",
-            completion: "0.00000085",
-            input_cache_read: "0.000000025"
+            prompt: "0.000000125",
+            completion: "0.00000084"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 98304,
+            context_length: 131070,
+            max_completion_tokens: 131070,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13419,7 +13362,10 @@ var require_latest = __commonJS({
           default_parameters: {
             temperature: null,
             top_p: null,
-            frequency_penalty: null
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
           },
           supported_voices: null,
           knowledge_cutoff: "2025-01-31",
@@ -14262,7 +14208,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-06-05",
           links: {
             details: "/api/v1/models/qwen/qwen3-30b-a3b-04-28/endpoints"
           }
@@ -18793,7 +18739,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
+          expiration_date: "2026-06-05",
           links: {
             details: "/api/v1/models/sao10k/l3-euryale-70b/endpoints"
           }
@@ -18843,7 +18789,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
+          expiration_date: "2026-06-05",
           links: {
             details: "/api/v1/models/nousresearch/hermes-2-pro-llama-3-8b/endpoints"
           }
