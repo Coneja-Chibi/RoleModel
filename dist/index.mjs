@@ -29,8 +29,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-01T11:48:04.127Z",
-        modelCount: 345,
+        fetchedAt: "2026-06-02T10:46:50.947Z",
+        modelCount: 342,
         providerCount: 57,
         source: "openrouter"
       },
@@ -2235,13 +2235,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000066",
-            completion: "0.00000026",
-            input_cache_read: "0.000000029"
+            prompt: "0.000000063",
+            completion: "0.00000021",
+            input_cache_read: "0.000000021"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 262144,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3729,12 +3729,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000026",
+            prompt: "0.000000279",
             completion: "0.0000012"
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: null,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -5447,13 +5447,10 @@ var require_latest = __commonJS({
             "frequency_penalty",
             "include_reasoning",
             "logit_bias",
-            "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
-            "reasoning_effort",
             "repetition_penalty",
             "response_format",
             "seed",
@@ -5463,7 +5460,6 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
-            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -7782,13 +7778,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000252",
-            completion: "0.000000378",
-            input_cache_read: "0.0000000252"
+            prompt: "0.0000002288",
+            completion: "0.0000003432"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 65536,
+            context_length: 128e3,
+            max_completion_tokens: 64e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -11855,7 +11850,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3 30B A3B Instruct 2507",
           created: 1753806965,
           description: "Qwen3-30B-A3B-Instruct-2507 is a 30.5B-parameter mixture-of-experts language model from Qwen, with 3.3B active parameters per inference. It operates in non-thinking mode and is designed for high-quality instruction following, multilingual understanding, and...",
-          context_length: 262144,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -11868,12 +11863,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000009",
-            completion: "0.0000003"
+            prompt: "0.0000000428",
+            completion: "0.0000001716"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 128e3,
+            max_completion_tokens: 32e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12785,55 +12780,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "baidu/ernie-4.5-300b-a47b",
-          canonical_slug: "baidu/ernie-4.5-300b-a47b",
-          hugging_face_id: "baidu/ERNIE-4.5-300B-A47B-PT",
-          name: "Baidu: ERNIE 4.5 300B A47B ",
-          created: 1751300139,
-          description: "ERNIE-4.5-300B-A47B is a 300B parameter Mixture-of-Experts (MoE) language model developed by Baidu as part of the ERNIE 4.5 series. It activates 47B parameters per token and supports text generation in...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000028",
-            completion: "0.0000011"
-          },
-          top_provider: {
-            context_length: 123e3,
-            max_completion_tokens: 12e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/baidu/ernie-4.5-300b-a47b/endpoints"
-          }
-        },
-        {
           id: "mistralai/mistral-small-3.2-24b-instruct",
           canonical_slug: "mistralai/mistral-small-3.2-24b-instruct-2506",
           hugging_face_id: "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
@@ -13257,7 +13203,7 @@ var require_latest = __commonJS({
           hugging_face_id: "",
           name: "Anthropic: Claude Opus 4",
           created: 1747931245,
-          description: "Claude Opus 4 is benchmarked as the world\u2019s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in...",
+          description: "Claude Opus 4 is benchmarked as the world\uFFFD\uFFFDs best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in...",
           context_length: 2e5,
           architecture: {
             modality: "text+image+file->text",
@@ -15217,66 +15163,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "google/gemini-2.0-flash-lite-001",
-          canonical_slug: "google/gemini-2.0-flash-lite-001",
-          hugging_face_id: "",
-          name: "Google: Gemini 2.0 Flash Lite",
-          created: 1740506212,
-          description: "Gemini 2.0 Flash Lite offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5),...",
-          context_length: 1048576,
-          architecture: {
-            modality: "text+image+file+audio+video->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000000075",
-            completion: "0.0000003",
-            image: "0.000000075",
-            audio: "0.000000075",
-            web_search: "0.014",
-            internal_reasoning: "0.0000003"
-          },
-          top_provider: {
-            context_length: 1048576,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: "2026-06-01",
-          links: {
-            details: "/api/v1/models/google/gemini-2.0-flash-lite-001/endpoints"
-          }
-        },
-        {
           id: "mistralai/mistral-saba",
           canonical_slug: "mistralai/mistral-saba-2502",
           hugging_face_id: "",
@@ -15432,68 +15318,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/o3-mini-high-2025-01-31/endpoints"
-          }
-        },
-        {
-          id: "google/gemini-2.0-flash-001",
-          canonical_slug: "google/gemini-2.0-flash-001",
-          hugging_face_id: "",
-          name: "Google: Gemini 2.0 Flash",
-          created: 1738769413,
-          description: "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-          context_length: 1048576,
-          architecture: {
-            modality: "text+image+file+audio+video->text",
-            input_modalities: [
-              "text",
-              "image",
-              "file",
-              "audio",
-              "video"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Gemini",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000001",
-            completion: "0.0000004",
-            image: "0.0000001",
-            audio: "0.0000007",
-            web_search: "0.014",
-            internal_reasoning: "0.0000004",
-            input_cache_read: "0.000000025",
-            input_cache_write: "0.00000008333333333333334"
-          },
-          top_provider: {
-            context_length: 1048576,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: "2026-06-01",
-          links: {
-            details: "/api/v1/models/google/gemini-2.0-flash-001/endpoints"
           }
         },
         {
@@ -16227,8 +16051,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000002288",
-            completion: "0.0000009144"
+            prompt: "0.0000002002",
+            completion: "0.0000008001"
           },
           top_provider: {
             context_length: 128e3,
