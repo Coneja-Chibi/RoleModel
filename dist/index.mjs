@@ -29,12 +29,183 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-04T10:05:37.863Z",
-        modelCount: 343,
+        fetchedAt: "2026-06-05T10:02:51.381Z",
+        modelCount: 346,
         providerCount: 57,
         source: "openrouter"
       },
       data: [
+        {
+          id: "nvidia/nemotron-3.5-content-safety:free",
+          canonical_slug: "nvidia/nemotron-3.5-content-safety-20260604",
+          hugging_face_id: "nvidia/Nemotron-3.5-Content-Safety",
+          name: "NVIDIA: Nemotron 3.5 Content Safety (free)",
+          created: 1780581864,
+          description: "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 8192,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "seed",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: null,
+            top_p: null,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/nvidia/nemotron-3.5-content-safety-20260604/endpoints"
+          }
+        },
+        {
+          id: "nvidia/nemotron-3-ultra-550b-a55b:free",
+          canonical_slug: "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+          hugging_face_id: "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          name: "NVIDIA: Nemotron 3 Ultra (free)",
+          created: 1780551208,
+          description: "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 1e6,
+            max_completion_tokens: 65536,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "seed",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
+          }
+        },
+        {
+          id: "nvidia/nemotron-3-ultra-550b-a55b",
+          canonical_slug: "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+          hugging_face_id: "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+          name: "NVIDIA: Nemotron 3 Ultra",
+          created: 1780551208,
+          description: "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+          context_length: 1e6,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000005",
+            completion: "0.0000025",
+            input_cache_read: "0.00000015"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 16384,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95,
+            top_k: null,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
+          }
+        },
         {
           id: "qwen/qwen3.7-plus",
           canonical_slug: "qwen/qwen3.7-plus-20260602",
@@ -6845,14 +7016,11 @@ var require_latest = __commonJS({
             "max_tokens",
             "presence_penalty",
             "reasoning",
-            "repetition_penalty",
             "response_format",
-            "seed",
             "stop",
             "temperature",
             "tool_choice",
             "tools",
-            "top_k",
             "top_p"
           ],
           default_parameters: {
@@ -10845,7 +11013,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-06-11",
           links: {
             details: "/api/v1/models/nvidia/nemotron-nano-9b-v2/endpoints"
           }
@@ -13864,7 +14032,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 40960,
-            max_completion_tokens: 2e4,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -13896,7 +14064,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: "2026-06-05",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-30b-a3b-04-28/endpoints"
           }
@@ -15916,7 +16084,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2024-07-31",
-          expiration_date: null,
+          expiration_date: "2026-06-11",
           links: {
             details: "/api/v1/models/deepseek/deepseek-r1-distill-llama-70b/endpoints"
           }
@@ -16962,49 +17130,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "inflection/inflection-3-pi",
-          canonical_slug: "inflection/inflection-3-pi",
-          hugging_face_id: null,
-          name: "Inflection: Inflection 3 Pi",
-          created: 1728604800,
-          description: "Inflection 3 Pi powers Inflection's [Pi](https://pi.ai) chatbot, including backstory, emotional intelligence, productivity, and safety. It has access to recent news, and excels in scenarios like customer support and roleplay. Pi...",
-          context_length: 8e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000025",
-            completion: "0.00001"
-          },
-          top_provider: {
-            context_length: 8e3,
-            max_completion_tokens: 1024,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "stop",
-            "temperature",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-10-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/inflection/inflection-3-pi/endpoints"
-          }
-        },
-        {
           id: "inflection/inflection-3-productivity",
           canonical_slug: "inflection/inflection-3-productivity",
           hugging_face_id: null,
@@ -17045,6 +17170,49 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inflection/inflection-3-productivity/endpoints"
+          }
+        },
+        {
+          id: "inflection/inflection-3-pi",
+          canonical_slug: "inflection/inflection-3-pi",
+          hugging_face_id: null,
+          name: "Inflection: Inflection 3 Pi",
+          created: 1728604800,
+          description: "Inflection 3 Pi powers Inflection's [Pi](https://pi.ai) chatbot, including backstory, emotional intelligence, productivity, and safety. It has access to recent news, and excels in scenarios like customer support and roleplay. Pi...",
+          context_length: 8e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Other",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000025",
+            completion: "0.00001"
+          },
+          top_provider: {
+            context_length: 8e3,
+            max_completion_tokens: 1024,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "max_tokens",
+            "stop",
+            "temperature",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2024-10-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/inflection/inflection-3-pi/endpoints"
           }
         },
         {
@@ -17101,56 +17269,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/thedrummer/rocinante-12b/endpoints"
-          }
-        },
-        {
-          id: "meta-llama/llama-3.2-1b-instruct",
-          canonical_slug: "meta-llama/llama-3.2-1b-instruct",
-          hugging_face_id: "meta-llama/Llama-3.2-1B-Instruct",
-          name: "Meta: Llama 3.2 1B Instruct",
-          created: 1727222400,
-          description: "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.000000027",
-            completion: "0.000000201"
-          },
-          top_provider: {
-            context_length: 6e4,
-            max_completion_tokens: 6e4,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
           }
         },
         {
@@ -17247,6 +17365,56 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.2-3b-instruct/endpoints"
+          }
+        },
+        {
+          id: "meta-llama/llama-3.2-1b-instruct",
+          canonical_slug: "meta-llama/llama-3.2-1b-instruct",
+          hugging_face_id: "meta-llama/Llama-3.2-1B-Instruct",
+          name: "Meta: Llama 3.2 1B Instruct",
+          created: 1727222400,
+          description: "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
+          context_length: 131072,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Llama3",
+            instruct_type: "llama3"
+          },
+          pricing: {
+            prompt: "0.000000027",
+            completion: "0.000000201"
+          },
+          top_provider: {
+            context_length: 6e4,
+            max_completion_tokens: 6e4,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "max_tokens",
+            "min_p",
+            "presence_penalty",
+            "repetition_penalty",
+            "seed",
+            "stop",
+            "temperature",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2023-12-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
           }
         },
         {
@@ -17356,57 +17524,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "cohere/command-r-08-2024",
-          canonical_slug: "cohere/command-r-08-2024",
-          hugging_face_id: null,
-          name: "Cohere: Command R (08-2024)",
-          created: 1724976e3,
-          description: "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and...",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Cohere",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000006"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4e3,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/cohere/command-r-08-2024/endpoints"
-          }
-        },
-        {
           id: "cohere/command-r-plus-08-2024",
           canonical_slug: "cohere/command-r-plus-08-2024",
           hugging_face_id: null,
@@ -17455,6 +17572,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
+          }
+        },
+        {
+          id: "cohere/command-r-08-2024",
+          canonical_slug: "cohere/command-r-08-2024",
+          hugging_face_id: null,
+          name: "Cohere: Command R (08-2024)",
+          created: 1724976e3,
+          description: "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and...",
+          context_length: 128e3,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Cohere",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.00000015",
+            completion: "0.0000006"
+          },
+          top_provider: {
+            context_length: 128e3,
+            max_completion_tokens: 4e3,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2024-03-31",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/cohere/command-r-08-2024/endpoints"
           }
         },
         {
@@ -17792,10 +17960,10 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000002",
-            completion: "0.00000005"
+            completion: "0.00000003"
           },
           top_provider: {
-            context_length: 16384,
+            context_length: 131072,
             max_completion_tokens: 16384,
             is_moderated: false
           },
@@ -18674,59 +18842,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-3.5-turbo-0613",
-          canonical_slug: "openai/gpt-3.5-turbo-0613",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-3.5 Turbo (older v0613)",
-          created: 1706140800,
-          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-          context_length: 4095,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000001",
-            completion: "0.000002"
-          },
-          top_provider: {
-            context_length: 4095,
-            max_completion_tokens: 4096,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_completion_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2021-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-3.5-turbo-0613/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4-turbo-preview",
           canonical_slug: "openai/gpt-4-turbo-preview",
           hugging_face_id: null,
@@ -18777,6 +18892,59 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4-turbo-preview/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-3.5-turbo-0613",
+          canonical_slug: "openai/gpt-3.5-turbo-0613",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-3.5 Turbo (older v0613)",
+          created: 1706140800,
+          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+          context_length: 4095,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.000001",
+            completion: "0.000002"
+          },
+          top_provider: {
+            context_length: 4095,
+            max_completion_tokens: 4096,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_completion_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-3.5-turbo-0613/endpoints"
           }
         },
         {
@@ -19175,59 +19343,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "openai/gpt-3.5-turbo",
-          canonical_slug: "openai/gpt-3.5-turbo",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-3.5 Turbo",
-          created: 1685232e3,
-          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-          context_length: 16385,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.0000005",
-            completion: "0.0000015"
-          },
-          top_provider: {
-            context_length: 16385,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2021-09-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4",
           canonical_slug: "openai/gpt-4",
           hugging_face_id: null,
@@ -19279,6 +19394,59 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4/endpoints"
+          }
+        },
+        {
+          id: "openai/gpt-3.5-turbo",
+          canonical_slug: "openai/gpt-3.5-turbo",
+          hugging_face_id: null,
+          name: "OpenAI: GPT-3.5 Turbo",
+          created: 1685232e3,
+          description: "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+          context_length: 16385,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "GPT",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000005",
+            completion: "0.0000015"
+          },
+          top_provider: {
+            context_length: 16385,
+            max_completion_tokens: 4096,
+            is_moderated: true
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "logit_bias",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_logprobs",
+            "top_p"
+          ],
+          default_parameters: {},
+          supported_voices: null,
+          knowledge_cutoff: "2021-09-30",
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
           }
         }
       ]
