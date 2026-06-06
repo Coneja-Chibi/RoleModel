@@ -33,8 +33,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-05T10:02:51.381Z",
-        modelCount: 346,
+        fetchedAt: "2026-06-06T08:41:40.516Z",
+        modelCount: 344,
         providerCount: 57,
         source: "openrouter"
       },
@@ -3411,11 +3411,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000012",
-            completion: "0.00000037"
+            completion: "0.00000036",
+            input_cache_read: "0.00000009"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 16384,
+            context_length: 256e3,
+            max_completion_tokens: 8192,
             is_moderated: false
           },
           per_request_limits: null,
@@ -4009,7 +4010,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 196608,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 196608,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12226,7 +12227,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2024-12-31",
-          expiration_date: null,
+          expiration_date: "2026-06-19",
           links: {
             details: "/api/v1/models/z-ai/glm-4.5/endpoints"
           }
@@ -18272,106 +18273,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "sao10k/l3-euryale-70b",
-          canonical_slug: "sao10k/l3-euryale-70b",
-          hugging_face_id: "Sao10K/L3-70B-Euryale-v2.1",
-          name: "Sao10k: Llama 3 Euryale 70B v2.1",
-          created: 1718668800,
-          description: "Euryale 70B v2.1 is a model focused on creative roleplay from [Sao10k](https://ko-fi.com/sao10k). - Better prompt adherence. - Better anatomy / spatial awareness. - Adapts much better to unique and custom...",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "llama3"
-          },
-          pricing: {
-            prompt: "0.00000148",
-            completion: "0.00000148"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: "2026-06-05",
-          links: {
-            details: "/api/v1/models/sao10k/l3-euryale-70b/endpoints"
-          }
-        },
-        {
-          id: "nousresearch/hermes-2-pro-llama-3-8b",
-          canonical_slug: "nousresearch/hermes-2-pro-llama-3-8b",
-          hugging_face_id: "NousResearch/Hermes-2-Pro-Llama-3-8B",
-          name: "NousResearch: Hermes 2 Pro - Llama-3 8B",
-          created: 1716768e3,
-          description: "Hermes 2 Pro is an upgraded, retrained version of Nous Hermes 2, consisting of an updated and cleaned version of the OpenHermes 2.5 Dataset, as well as a newly introduced...",
-          context_length: 8192,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama3",
-            instruct_type: "chatml"
-          },
-          pricing: {
-            prompt: "0.00000014",
-            completion: "0.00000014"
-          },
-          top_provider: {
-            context_length: 8192,
-            max_completion_tokens: 8192,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-12-31",
-          expiration_date: "2026-06-05",
-          links: {
-            details: "/api/v1/models/nousresearch/hermes-2-pro-llama-3-8b/endpoints"
-          }
-        },
-        {
           id: "openai/gpt-4o-2024-05-13",
           canonical_slug: "openai/gpt-4o-2024-05-13",
           hugging_face_id: null,
@@ -18531,7 +18432,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
+          expiration_date: "2026-06-19",
           links: {
             details: "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
           }
@@ -18580,7 +18481,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: null,
+          expiration_date: "2026-06-19",
           links: {
             details: "/api/v1/models/meta-llama/llama-3-70b-instruct/endpoints"
           }
