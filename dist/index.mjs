@@ -29,8 +29,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-06T08:41:40.516Z",
-        modelCount: 344,
+        fetchedAt: "2026-06-07T09:25:54.906Z",
+        modelCount: 341,
         providerCount: 57,
         source: "openrouter"
       },
@@ -2133,12 +2133,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000029",
-            completion: "0.0000032"
+            prompt: "0.000000289",
+            completion: "0.0000024"
           },
           top_provider: {
-            context_length: 262140,
-            max_completion_tokens: 262140,
+            context_length: 131072,
+            max_completion_tokens: 131072,
             is_moderated: false
           },
           per_request_limits: null,
@@ -11341,59 +11341,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "baidu/ernie-4.5-vl-28b-a3b",
-          canonical_slug: "baidu/ernie-4.5-vl-28b-a3b",
-          hugging_face_id: "baidu/ERNIE-4.5-VL-28B-A3B-PT",
-          name: "Baidu: ERNIE 4.5 VL 28B A3B",
-          created: 1755032836,
-          description: "A powerful multimodal Mixture-of-Experts chat model featuring 28B total parameters with 3B activated per token, delivering exceptional text and vision understanding through its innovative heterogeneous MoE structure with modality-isolated routing....",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000014",
-            completion: "0.00000056"
-          },
-          top_provider: {
-            context_length: 3e4,
-            max_completion_tokens: 8e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "max_tokens",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/baidu/ernie-4.5-vl-28b-a3b/endpoints"
-          }
-        },
-        {
           id: "z-ai/glm-4.5v",
           canonical_slug: "z-ai/glm-4.5v",
           hugging_face_id: "zai-org/GLM-4.5V",
@@ -13755,56 +13702,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-2.5-pro-preview-03-25/endpoints"
-          }
-        },
-        {
-          id: "arcee-ai/spotlight",
-          canonical_slug: "arcee-ai/spotlight",
-          hugging_face_id: "",
-          name: "Arcee AI: Spotlight",
-          created: 1746481552,
-          description: "Spotlight is a 7\u2011billion\u2011parameter vision\u2011language model derived from Qwen 2.5\u2011VL and fine\u2011tuned by Arcee AI for tight image\u2011text grounding tasks. It offers a 32 k\u2011token context window, enabling rich multimodal...",
-          context_length: 131072,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "image",
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00000018",
-            completion: "0.00000018"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 65537,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "stop",
-            "temperature",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/arcee-ai/spotlight/endpoints"
           }
         },
         {
@@ -18402,12 +18299,12 @@ var require_latest = __commonJS({
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.00000004",
-            completion: "0.00000004"
+            prompt: "0.00000014",
+            completion: "0.00000014"
           },
           top_provider: {
             context_length: 8192,
-            max_completion_tokens: 8192,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -18418,8 +18315,6 @@ var require_latest = __commonJS({
             "min_p",
             "presence_penalty",
             "repetition_penalty",
-            "response_format",
-            "seed",
             "stop",
             "temperature",
             "top_k",
@@ -18428,7 +18323,7 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2023-12-31",
-          expiration_date: "2026-06-19",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
           }
@@ -18918,60 +18813,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openrouter/auto/endpoints"
-          }
-        },
-        {
-          id: "openai/gpt-4-1106-preview",
-          canonical_slug: "openai/gpt-4-1106-preview",
-          hugging_face_id: null,
-          name: "OpenAI: GPT-4 Turbo (older v1106)",
-          created: 1699228800,
-          description: "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to April 2023.",
-          context_length: 128e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "GPT",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.00001",
-            completion: "0.00003",
-            web_search: "0.01"
-          },
-          top_provider: {
-            context_length: 128e3,
-            max_completion_tokens: 4096,
-            is_moderated: true
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "presence_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-04-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/openai/gpt-4-1106-preview/endpoints"
           }
         },
         {
