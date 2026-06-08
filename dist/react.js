@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-07T09:25:54.906Z",
+        fetchedAt: "2026-06-08T11:09:27.824Z",
         modelCount: 341,
         providerCount: 57,
         source: "openrouter"
@@ -1654,13 +1654,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000684",
-            completion: "0.00000342",
-            input_cache_read: "0.000000144"
+            prompt: "0.00000068",
+            completion: "0.00000341",
+            input_cache_read: "0.00000034"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 262142,
+            max_completion_tokens: 262142,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2974,13 +2974,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000684",
-            completion: "0.00000342",
-            input_cache_read: "0.000000144"
+            prompt: "0.00000068",
+            completion: "0.00000341",
+            input_cache_read: "0.00000034"
           },
           top_provider: {
-            context_length: 262144,
-            max_completion_tokens: 262144,
+            context_length: 262142,
+            max_completion_tokens: 262142,
             is_moderated: false
           },
           per_request_limits: null,
@@ -4494,12 +4494,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000004",
+            prompt: "0.0000001",
             completion: "0.00000015"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 81920,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -9616,7 +9616,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000001",
+            prompt: "0.0000004",
             completion: "0.0000004"
           },
           top_provider: {
@@ -12633,7 +12633,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000071",
+            prompt: "0.00000009",
             completion: "0.0000001"
           },
           top_provider: {
@@ -13929,8 +13929,8 @@ var require_latest = __commonJS({
             instruct_type: "qwen3"
           },
           pricing: {
-            prompt: "0.00000009",
-            completion: "0.00000045"
+            prompt: "0.00000012",
+            completion: "0.0000005"
           },
           top_provider: {
             context_length: 40960,
@@ -14587,7 +14587,7 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000008",
+            prompt: "0.0000001",
             completion: "0.0000003"
           },
           top_provider: {
@@ -14798,8 +14798,8 @@ var require_latest = __commonJS({
             instruct_type: "gemma"
           },
           pricing: {
-            prompt: "0.00000004",
-            completion: "0.00000008"
+            prompt: "0.00000005",
+            completion: "0.0000001"
           },
           top_provider: {
             context_length: 131072,
@@ -14851,8 +14851,8 @@ var require_latest = __commonJS({
             instruct_type: "gemma"
           },
           pricing: {
-            prompt: "0.00000004",
-            completion: "0.00000013"
+            prompt: "0.00000005",
+            completion: "0.00000015"
           },
           top_provider: {
             context_length: 131072,
@@ -17340,8 +17340,8 @@ var require_latest = __commonJS({
             instruct_type: "llama3"
           },
           pricing: {
-            prompt: "0.000000245",
-            completion: "0.000000245"
+            prompt: "0.000000345",
+            completion: "0.000000345"
           },
           top_provider: {
             context_length: 131072,
@@ -17601,8 +17601,8 @@ var require_latest = __commonJS({
             instruct_type: "chatml"
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.0000003"
+            prompt: "0.0000007",
+            completion: "0.0000007"
           },
           top_provider: {
             context_length: 131072,
