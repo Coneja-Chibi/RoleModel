@@ -31,12 +31,75 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-08T11:09:27.824Z",
+        fetchedAt: "2026-06-09T09:55:54.268Z",
         modelCount: 341,
         providerCount: 57,
         source: "openrouter"
       },
       data: [
+        {
+          id: "nex-agi/nex-n2-pro:free",
+          canonical_slug: "nex-agi/nex-n2-pro",
+          hugging_face_id: "nex-agi/Nex-N2-Pro",
+          name: "Nex AGI: Nex-N2-Pro (free)",
+          created: 1780937140,
+          description: "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
+          context_length: 262144,
+          architecture: {
+            modality: "text+image->text",
+            input_modalities: [
+              "text",
+              "image"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Qwen3",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0",
+            completion: "0"
+          },
+          top_provider: {
+            context_length: 262144,
+            max_completion_tokens: 262144,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "frequency_penalty",
+            "include_reasoning",
+            "logprobs",
+            "max_tokens",
+            "presence_penalty",
+            "reasoning",
+            "repetition_penalty",
+            "response_format",
+            "seed",
+            "stop",
+            "structured_outputs",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 0.7,
+            top_p: 0.95,
+            top_k: 40,
+            frequency_penalty: null,
+            presence_penalty: null,
+            repetition_penalty: null
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: null,
+          links: {
+            details: "/api/v1/models/nex-agi/nex-n2-pro/endpoints"
+          }
+        },
         {
           id: "nvidia/nemotron-3.5-content-safety:free",
           canonical_slug: "nvidia/nemotron-3.5-content-safety-20260604",
@@ -6026,6 +6089,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -7479,58 +7543,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.6-20251208/endpoints"
-          }
-        },
-        {
-          id: "nex-agi/deepseek-v3.1-nex-n1",
-          canonical_slug: "nex-agi/deepseek-v3.1-nex-n1",
-          hugging_face_id: "nex-agi/DeepSeek-V3.1-Nex-N1",
-          name: "Nex AGI: DeepSeek V3.1 Nex N1",
-          created: 1765204393,
-          description: "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series \u2014 a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. Nex-N1 demonstrates competitive performance across...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "DeepSeek",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000000135",
-            completion: "0.0000005"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 163840,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "max_tokens",
-            "response_format",
-            "structured_outputs",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: null,
-          expiration_date: "2026-06-08",
-          links: {
-            details: "/api/v1/models/nex-agi/deepseek-v3.1-nex-n1/endpoints"
           }
         },
         {
