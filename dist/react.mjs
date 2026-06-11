@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-10T10:13:42.100Z",
-        modelCount: 339,
+        fetchedAt: "2026-06-11T10:48:25.423Z",
+        modelCount: 338,
         providerCount: 57,
         source: "openrouter"
       },
@@ -2199,12 +2199,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000014",
-            completion: "0.000001"
+            prompt: "0.00000015",
+            completion: "0.000001",
+            input_cache_read: "0.00000005"
           },
           top_provider: {
-            context_length: 262140,
-            max_completion_tokens: 262140,
+            context_length: 262144,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3079,57 +3080,6 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openrouter/pareto-code/endpoints"
-          }
-        },
-        {
-          id: "moonshotai/kimi-k2.6:free",
-          canonical_slug: "moonshotai/kimi-k2.6-20260420",
-          hugging_face_id: "moonshotai/Kimi-K2.6",
-          name: "MoonshotAI: Kimi K2.6 (free)",
-          created: 1776699402,
-          description: "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-          context_length: 262144,
-          architecture: {
-            modality: "text+image->text",
-            input_modalities: [
-              "text",
-              "image"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0",
-            completion: "0"
-          },
-          top_provider: {
-            context_length: 262144,
-            max_completion_tokens: null,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "include_reasoning",
-            "reasoning",
-            "tool_choice",
-            "tools"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            top_k: null,
-            frequency_penalty: null,
-            presence_penalty: null,
-            repetition_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: null,
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/moonshotai/kimi-k2.6-20260420/endpoints"
           }
         },
         {
@@ -4514,6 +4464,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -12284,6 +12235,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logprobs",
             "max_tokens",
             "presence_penalty",
             "reasoning",
@@ -12295,6 +12247,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {
@@ -14553,7 +14506,7 @@ var require_latest = __commonJS({
           name: "DeepSeek: DeepSeek V3 0324",
           created: 1742824755,
           description: "DeepSeek V3, a 685B-parameter, mixture-of-experts model, is the latest iteration of the flagship chat model family from the DeepSeek team. It succeeds the [DeepSeek V3](/deepseek/deepseek-chat-v3) model and performs really well...",
-          context_length: 163840,
+          context_length: 131072,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -14571,7 +14524,7 @@ var require_latest = __commonJS({
             input_cache_read: "0.000000135"
           },
           top_provider: {
-            context_length: 163840,
+            context_length: 32768,
             max_completion_tokens: 16384,
             is_moderated: false
           },
