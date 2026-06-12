@@ -31,8 +31,8 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-06-11T10:48:25.423Z",
-        modelCount: 338,
+        fetchedAt: "2026-06-12T10:23:41.828Z",
+        modelCount: 337,
         providerCount: 57,
         source: "openrouter"
       },
@@ -157,6 +157,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-5-fable-20260609/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1383,
+                win_rate: 68.6,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1366,
+                win_rate: 66,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1401,
+                win_rate: 72.4,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1382,
+                win_rate: 73.4,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1432,
+                win_rate: 73.8,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1361,
+                win_rate: 65.5,
+                rank: 1
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 64.9,
+              coding_index: 62,
+              agentic_index: 80.6
+            }
           }
         },
         {
@@ -323,6 +374,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 47.7,
+              coding_index: 37.6,
+              agentic_index: 57.1
+            }
           }
         },
         {
@@ -387,6 +445,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-ultra-550b-a55b-20260604/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 47.7,
+              coding_index: 37.6,
+              agentic_index: 57.1
+            }
           }
         },
         {
@@ -410,10 +475,10 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000004",
-            completion: "0.0000016",
-            input_cache_read: "0.00000008",
-            input_cache_write: "0.0000005"
+            prompt: "0.00000032",
+            completion: "0.00000128",
+            input_cache_read: "0.000000064",
+            input_cache_write: "0.0000004"
           },
           top_provider: {
             context_length: 1e6,
@@ -442,6 +507,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.7-plus-20260602/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 53.3,
+              coding_index: 46.5,
+              agentic_index: 65.1
+            }
           }
         },
         {
@@ -499,6 +571,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/minimax/minimax-m3-20260531/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1348,
+                win_rate: 63.7,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1319,
+                win_rate: 59.3,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1291,
+                win_rate: 57.9,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1305,
+                win_rate: 57.4,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1313,
+                win_rate: 58.4,
+                rank: 8
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 54.7,
+              coding_index: 43.4,
+              agentic_index: 68.6
+            }
           }
         },
         {
@@ -560,6 +676,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/stepfun/step-3.7-flash-20260528/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1198,
+                win_rate: 43.2,
+                rank: 43
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1219,
+                win_rate: 47,
+                rank: 43
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1223,
+                win_rate: 49.4,
+                rank: 34
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1118,
+                win_rate: 40.7,
+                rank: 45
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1208,
+                win_rate: 45.5,
+                rank: 44
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1227,
+                win_rate: 48.1,
+                rank: 40
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 42.6,
+              coding_index: 37.1,
+              agentic_index: 59.5
+            }
           }
         },
         {
@@ -680,6 +847,85 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.8-opus-20260528/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1266,
+                win_rate: 63.8,
+                rank: 2
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1344,
+                win_rate: 68.8,
+                rank: 2
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1295,
+                win_rate: 59.9,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1282,
+                win_rate: 56.2,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1314,
+                win_rate: 64.7,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1281,
+                win_rate: 55.3,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1256,
+                win_rate: 53.7,
+                rank: 23
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1221,
+                win_rate: 54.8,
+                rank: 16
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1290,
+                win_rate: 56.8,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1283,
+                win_rate: 55.6,
+                rank: 20
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 61.4,
+              coding_index: 56.7,
+              agentic_index: 77.8
+            }
           }
         },
         {
@@ -741,6 +987,92 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.7-max-20260520/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1127,
+                win_rate: 39.1,
+                rank: 15
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1206,
+                win_rate: 44.3,
+                rank: 11
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1212,
+                win_rate: 46.3,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1315,
+                win_rate: 60,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1270,
+                win_rate: 55.9,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1312,
+                win_rate: 59,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1284,
+                win_rate: 56.6,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1329,
+                win_rate: 61.4,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1280,
+                win_rate: 61.6,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1340,
+                win_rate: 62.8,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1307,
+                win_rate: 58.3,
+                rank: 10
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 56.6,
+              coding_index: 50.1,
+              agentic_index: 66.6
+            }
           }
         },
         {
@@ -872,6 +1204,113 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-3.5-flash-20260519/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1217,
+                win_rate: 55.1,
+                rank: 3
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1253,
+                win_rate: 57.5,
+                rank: 3
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1253,
+                win_rate: 55.8,
+                rank: 4
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1288,
+                win_rate: 59.3,
+                rank: 5
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1265,
+                win_rate: 57,
+                rank: 4
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1285,
+                win_rate: 55,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1315,
+                win_rate: 61.6,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1318,
+                win_rate: 63.5,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1299,
+                win_rate: 58.5,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1269,
+                win_rate: 57.4,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1321,
+                win_rate: 60.2,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1315,
+                win_rate: 65.1,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1304,
+                win_rate: 59.7,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1292,
+                win_rate: 57.2,
+                rank: 16
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 55.3,
+              coding_index: 45,
+              agentic_index: 70.3
+            }
           }
         },
         {
@@ -1095,6 +1534,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inclusionai/ring-2.6-1t-20260508/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 38.5,
+              coding_index: 33.3,
+              agentic_index: 51.5
+            }
           }
         },
         {
@@ -1288,6 +1734,120 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/x-ai/grok-4.3-20260430/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1032,
+                win_rate: 27.5,
+                rank: 10
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1091,
+                win_rate: 32.3,
+                rank: 8
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1032,
+                win_rate: 23.5,
+                rank: 23
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1090,
+                win_rate: 32.9,
+                rank: 24
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1136,
+                win_rate: 38.8,
+                rank: 16
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1148,
+                win_rate: 39.1,
+                rank: 24
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1228,
+                win_rate: 49.2,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1213,
+                win_rate: 45.7,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1186,
+                win_rate: 47.1,
+                rank: 23
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1254,
+                win_rate: 51.1,
+                rank: 28
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1237,
+                win_rate: 48.6,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1262,
+                win_rate: 52.6,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1132,
+                win_rate: 41.8,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1256,
+                win_rate: 49.5,
+                rank: 27
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1253,
+                win_rate: 51.7,
+                rank: 28
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 53.2,
+              coding_index: 41,
+              agentic_index: 65.9
+            }
           }
         },
         {
@@ -1348,6 +1908,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/ibm-granite/granite-4.1-8b-20260429/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 12.4,
+              coding_index: 7.3,
+              agentic_index: 10.7
+            }
           }
         },
         {
@@ -1409,6 +1976,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-medium-3.5-20260430/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 39.2,
+              coding_index: 35.4,
+              agentic_index: 53.2
+            }
           }
         },
         {
@@ -1518,6 +2092,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 21.4,
+              coding_index: 14.8,
+              agentic_index: 23.9
+            }
           }
         },
         {
@@ -1833,13 +2414,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000068",
-            completion: "0.00000341",
-            input_cache_read: "0.00000034"
+            prompt: "0.00000067",
+            completion: "0.00000339",
+            input_cache_read: "0.00000014"
           },
           top_provider: {
-            context_length: 262142,
-            max_completion_tokens: 262142,
+            context_length: 262144,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2240,6 +2821,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.6-35b-a3b-20260415/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 43.5,
+              coding_index: 35.2,
+              agentic_index: 58.3
+            }
           }
         },
         {
@@ -2293,6 +2881,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.6-max-preview-20260420/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 51.8,
+              coding_index: 44.9,
+              agentic_index: 64.8
+            }
           }
         },
         {
@@ -2317,12 +2912,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000289",
-            completion: "0.0000024"
+            prompt: "0.000000287",
+            completion: "0.0000031"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 131072,
+            context_length: 262140,
+            max_completion_tokens: 262140,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2360,6 +2955,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.6-27b-20260422/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 45.8,
+              coding_index: 36.5,
+              agentic_index: 62.9
+            }
           }
         },
         {
@@ -2476,6 +3078,120 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.5-20260423/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1211,
+                win_rate: 53.2,
+                rank: 5
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1154,
+                win_rate: 42.5,
+                rank: 6
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1264,
+                win_rate: 55.4,
+                rank: 3
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1171,
+                win_rate: 46,
+                rank: 13
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1218,
+                win_rate: 53.1,
+                rank: 9
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1238,
+                win_rate: 52.8,
+                rank: 7
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1201,
+                win_rate: 46.1,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1258,
+                win_rate: 53.3,
+                rank: 26
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1308,
+                win_rate: 63.1,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1300,
+                win_rate: 57.7,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1287,
+                win_rate: 58.2,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1355,
+                win_rate: 64.7,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1289,
+                win_rate: 61.5,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1300,
+                win_rate: 58.5,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1297,
+                win_rate: 57.3,
+                rank: 12
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 60.2,
+              coding_index: 59.1,
+              agentic_index: 74.1
+            }
           }
         },
         {
@@ -2542,6 +3258,92 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-v4-pro-20260423/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 948,
+                win_rate: 22.1,
+                rank: 27
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1098,
+                win_rate: 34,
+                rank: 20
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1041,
+                win_rate: 26.6,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1349,
+                win_rate: 64.1,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1198,
+                win_rate: 47.3,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1298,
+                win_rate: 56.5,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1234,
+                win_rate: 51,
+                rank: 33
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1330,
+                win_rate: 61.2,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1210,
+                win_rate: 50.9,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1281,
+                win_rate: 53,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1286,
+                win_rate: 54.8,
+                rank: 19
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 51.5,
+              coding_index: 47.5,
+              agentic_index: 67.2
+            }
           }
         },
         {
@@ -2564,13 +3366,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000000983",
-            completion: "0.0000001966",
-            input_cache_read: "0.0000000197"
+            prompt: "0.000000098",
+            completion: "0.000000196",
+            input_cache_read: "0.00000002"
           },
           top_provider: {
-            context_length: 1048576,
-            max_completion_tokens: 131072,
+            context_length: 1048575,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -2608,6 +3410,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1280,
+                win_rate: 50.4,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1194,
+                win_rate: 48.4,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1266,
+                win_rate: 51.3,
+                rank: 26
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1178,
+                win_rate: 43.8,
+                rank: 54
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1281,
+                win_rate: 52.3,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1209,
+                win_rate: 50.8,
+                rank: 22
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1230,
+                win_rate: 48.5,
+                rank: 34
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1259,
+                win_rate: 52.1,
+                rank: 27
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 46.5,
+              coding_index: 38.7,
+              agentic_index: 61.3
+            }
           }
         },
         {
@@ -2668,6 +3535,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 33.6,
+              coding_index: 33.1,
+              agentic_index: 48.2
+            }
           }
         },
         {
@@ -2727,6 +3601,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/tencent/hy3-preview-20260421/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 41.9,
+              coding_index: 36.5,
+              agentic_index: 55.7
+            }
           }
         },
         {
@@ -2791,6 +3672,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/xiaomi/mimo-v2.5-pro-20260422/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1335,
+                win_rate: 64.1,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1323,
+                win_rate: 61.8,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1311,
+                win_rate: 62.8,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1332,
+                win_rate: 62.8,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1309,
+                win_rate: 60.6,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1310,
+                win_rate: 60.1,
+                rank: 9
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 53.8,
+              coding_index: 45.5,
+              agentic_index: 67.4
+            }
           }
         },
         {
@@ -2852,6 +3784,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/xiaomi/mimo-v2.5-20260422/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1305,
+                win_rate: 53.9,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1173,
+                win_rate: 46.1,
+                rank: 28
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1306,
+                win_rate: 54.9,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1282,
+                win_rate: 53.9,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1306,
+                win_rate: 56.3,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1206,
+                win_rate: 51.3,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1318,
+                win_rate: 56.6,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1306,
+                win_rate: 55,
+                rank: 11
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 49,
+              coding_index: 42.1,
+              agentic_index: 65.5
+            }
           }
         },
         {
@@ -2975,6 +3972,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inclusionai/ling-2.6-flash-20260421/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 26.2,
+              coding_index: 23.2,
+              agentic_index: 38.1
+            }
           }
         },
         {
@@ -3103,13 +4107,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000068",
-            completion: "0.00000341",
-            input_cache_read: "0.00000034"
+            prompt: "0.00000067",
+            completion: "0.00000339",
+            input_cache_read: "0.00000014"
           },
           top_provider: {
-            context_length: 262142,
-            max_completion_tokens: 262142,
+            context_length: 262144,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3149,6 +4153,113 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2.6-20260420/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1184,
+                win_rate: 50.4,
+                rank: 7
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1192,
+                win_rate: 44.6,
+                rank: 4
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1170,
+                win_rate: 46.3,
+                rank: 11
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1239,
+                win_rate: 57.1,
+                rank: 8
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1218,
+                win_rate: 53.4,
+                rank: 10
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1234,
+                win_rate: 53.3,
+                rank: 8
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1282,
+                win_rate: 59.4,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1364,
+                win_rate: 63.4,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1332,
+                win_rate: 58.7,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1306,
+                win_rate: 57.3,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1332,
+                win_rate: 60.2,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1242,
+                win_rate: 53.7,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1326,
+                win_rate: 57.9,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1322,
+                win_rate: 56.8,
+                rank: 6
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 53.9,
+              coding_index: 47.1,
+              agentic_index: 66
+            }
           }
         },
         {
@@ -3209,6 +4320,120 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.7-opus-20260416/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1289,
+                win_rate: 64.1,
+                rank: 1
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1348,
+                win_rate: 65.6,
+                rank: 1
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1319,
+                win_rate: 61.7,
+                rank: 1
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1503,
+                win_rate: 80.1,
+                rank: 1
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1195,
+                win_rate: 48.9,
+                rank: 11
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1206,
+                win_rate: 50.9,
+                rank: 13
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1354,
+                win_rate: 65.6,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1332,
+                win_rate: 63.4,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1284,
+                win_rate: 61.8,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1339,
+                win_rate: 62.9,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1333,
+                win_rate: 64.9,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1349,
+                win_rate: 65.6,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1277,
+                win_rate: 62.2,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1352,
+                win_rate: 66.3,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1337,
+                win_rate: 62.1,
+                rank: 3
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 57.3,
+              coding_index: 52.5,
+              agentic_index: 71.3
+            }
           }
         },
         {
@@ -3339,6 +4564,113 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-5.1-20260406/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1342,
+                win_rate: 66.6,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1333,
+                win_rate: 63.4,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1366,
+                win_rate: 67,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1338,
+                win_rate: 63.3,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1293,
+                win_rate: 64.6,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1340,
+                win_rate: 65.3,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1315,
+                win_rate: 60.9,
+                rank: 7
+              },
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1217,
+                win_rate: 54.4,
+                rank: 4
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1256,
+                win_rate: 54.3,
+                rank: 2
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1220,
+                win_rate: 50.1,
+                rank: 8
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1251,
+                win_rate: 58,
+                rank: 6
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1236,
+                win_rate: 56,
+                rank: 4
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1243,
+                win_rate: 55.5,
+                rank: 6
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1269,
+                win_rate: 56.6,
+                rank: 6
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 51.4,
+              coding_index: 43.4,
+              agentic_index: 67.1
+            }
           }
         },
         {
@@ -3393,6 +4725,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 31.2,
+              coding_index: 22.4,
+              agentic_index: 32.1
+            }
           }
         },
         {
@@ -3457,6 +4796,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 31.2,
+              coding_index: 22.4,
+              agentic_index: 32.1
+            }
           }
         },
         {
@@ -3515,6 +4861,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-4-31b-it-20260402/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 39.2,
+              coding_index: 38.7,
+              agentic_index: 40.9
+            }
           }
         },
         {
@@ -3540,12 +4893,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000012",
-            completion: "0.00000036",
+            completion: "0.00000035",
             input_cache_read: "0.00000009"
           },
           top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 8192,
+            context_length: 262144,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -3583,6 +4936,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-4-31b-it-20260402/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 39.2,
+              coding_index: 38.7,
+              agentic_index: 40.9
+            }
           }
         },
         {
@@ -3643,6 +5003,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.6-plus-04-02/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1280,
+                win_rate: 51.5,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1179,
+                win_rate: 48.3,
+                rank: 26
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1279,
+                win_rate: 52.1,
+                rank: 22
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1266,
+                win_rate: 51.1,
+                rank: 22
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1285,
+                win_rate: 53.6,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1220,
+                win_rate: 52.6,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1288,
+                win_rate: 52.4,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1263,
+                win_rate: 52,
+                rank: 26
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 50,
+              coding_index: 42.9,
+              agentic_index: 61.7
+            }
           }
         },
         {
@@ -3706,6 +5131,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/arcee-ai/trinity-large-thinking/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1160,
+                win_rate: 41,
+                rank: 57
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1087,
+                win_rate: 37.7,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1168,
+                win_rate: 40.2,
+                rank: 59
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1146,
+                win_rate: 39.9,
+                rank: 62
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1149,
+                win_rate: 38.2,
+                rank: 60
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1073,
+                win_rate: 35.2,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1099,
+                win_rate: 32.3,
+                rank: 69
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1181,
+                win_rate: 41.5,
+                rank: 57
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 31.9,
+              coding_index: 27.2,
+              agentic_index: 42.6
+            }
           }
         },
         {
@@ -3828,6 +5318,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/x-ai/grok-4.20-20260309/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 49.3,
+              coding_index: 40.5,
+              agentic_index: 53.9
+            }
           }
         },
         {
@@ -3996,6 +5493,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/kwaipilot/kat-coder-pro-v2-20260327/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 43.8,
+              coding_index: 45.6,
+              agentic_index: 50.7
+            }
           }
         },
         {
@@ -4077,12 +5581,12 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000027",
-            completion: "0.00000108",
-            input_cache_read: "0.000000054"
+            prompt: "0.00000025",
+            completion: "0.000001",
+            input_cache_read: "0.00000005"
           },
           top_provider: {
-            context_length: 204800,
+            context_length: 196608,
             max_completion_tokens: 131072,
             is_moderated: false
           },
@@ -4121,6 +5625,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/minimax/minimax-m2.7-20260318/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1274,
+                win_rate: 51,
+                rank: 24
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1175,
+                win_rate: 47.3,
+                rank: 27
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1283,
+                win_rate: 53.3,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1274,
+                win_rate: 53.3,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1278,
+                win_rate: 53.7,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1195,
+                win_rate: 51.1,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1267,
+                win_rate: 50.4,
+                rank: 24
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1286,
+                win_rate: 54,
+                rank: 18
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 49.6,
+              coding_index: 41.9,
+              agentic_index: 61.5
+            }
           }
         },
         {
@@ -4180,6 +5749,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.4-nano-20260317/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 44,
+              coding_index: 43.9,
+              agentic_index: 47.6
+            }
           }
         },
         {
@@ -4239,6 +5815,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.4-mini-20260317/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 48.9,
+              coding_index: 51.5,
+              agentic_index: 58.9
+            }
           }
         },
         {
@@ -4301,6 +5884,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-small-2603/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 27.8,
+              coding_index: 24.3,
+              agentic_index: 25.9
+            }
           }
         },
         {
@@ -4364,6 +5954,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-5-turbo-20260315/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1338,
+                win_rate: 61.3,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1190,
+                win_rate: 50.2,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1326,
+                win_rate: 58.5,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1309,
+                win_rate: 58.2,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1339,
+                win_rate: 61.8,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1269,
+                win_rate: 59.7,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1320,
+                win_rate: 58.2,
+                rank: 8
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1322,
+                win_rate: 57.5,
+                rank: 5
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 46.8,
+              coding_index: 36.8,
+              agentic_index: 66.1
+            }
           }
         },
         {
@@ -4420,6 +6075,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-super-120b-a12b-20230311/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 36,
+              coding_index: 31.2,
+              agentic_index: 40.2
+            }
           }
         },
         {
@@ -4485,6 +6147,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-super-120b-a12b-20230311/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 36,
+              coding_index: 31.2,
+              agentic_index: 40.2
+            }
           }
         },
         {
@@ -4611,6 +6280,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.5-9b-20260310/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 32.4,
+              coding_index: 25.3,
+              agentic_index: 37.4
+            }
           }
         },
         {
@@ -4728,6 +6404,106 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.4-20260305/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1183,
+                win_rate: 44.5,
+                rank: 46
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1242,
+                win_rate: 56.1,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1267,
+                win_rate: 54.1,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1277,
+                win_rate: 57.4,
+                rank: 16
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1307,
+                win_rate: 59.1,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1257,
+                win_rate: 58.7,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1301,
+                win_rate: 59.5,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1269,
+                win_rate: 54.1,
+                rank: 24
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1052,
+                win_rate: 47.4,
+                rank: 22
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1103,
+                win_rate: 40.9,
+                rank: 22
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1173,
+                win_rate: 46.9,
+                rank: 14
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1160,
+                win_rate: 44.4,
+                rank: 23
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1164,
+                win_rate: 41.7,
+                rank: 16
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 56.8,
+              coding_index: 57.2,
+              agentic_index: 68
+            }
           }
         },
         {
@@ -4784,6 +6560,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/inception/mercury-2-20260304/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 32.8,
+              coding_index: 30.6,
+              agentic_index: 39.7
+            }
           }
         },
         {
@@ -4908,6 +6691,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-3.1-flash-lite-preview-20260303/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1129,
+                win_rate: 39,
+                rank: 68
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1211,
+                win_rate: 50.8,
+                rank: 16
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1124,
+                win_rate: 36.6,
+                rank: 72
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1088,
+                win_rate: 33.3,
+                rank: 74
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1104,
+                win_rate: 34.3,
+                rank: 71
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1108,
+                win_rate: 42.5,
+                rank: 46
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1124,
+                win_rate: 37.4,
+                rank: 65
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1126,
+                win_rate: 36.6,
+                rank: 75
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 33.5,
+              coding_index: 30.1,
+              agentic_index: 25.7
+            }
           }
         },
         {
@@ -5022,6 +6870,31 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-3.1-flash-image-preview-20260226/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "graphicdesign",
+                elo: 1285,
+                win_rate: 66.7,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "image",
+                elo: 1305,
+                win_rate: 65.5,
+                rank: 1
+              },
+              {
+                arena: "models",
+                category: "logo",
+                elo: 1279,
+                win_rate: 63.5,
+                rank: 1
+              }
+            ]
           }
         },
         {
@@ -5090,6 +6963,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.5-35b-a3b-20260224/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 37.1,
+              coding_index: 30.3,
+              agentic_index: 44.1
+            }
           }
         },
         {
@@ -5157,6 +7037,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.5-27b-20260224/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 42.1,
+              coding_index: 34.9,
+              agentic_index: 54.6
+            }
           }
         },
         {
@@ -5224,6 +7111,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.5-122b-a10b-20260224/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 41.6,
+              coding_index: 34.7,
+              agentic_index: 53
+            }
           }
         },
         {
@@ -5336,6 +7230,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/liquid/lfm-2-24b-a2b-20260224/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 10.5,
+              coding_index: 3.6,
+              agentic_index: 3.7
+            }
           }
         },
         {
@@ -5459,6 +7360,106 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.3-codex-20260224/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1084,
+                win_rate: 35.2,
+                rank: 18
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1068,
+                win_rate: 36.4,
+                rank: 26
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1162,
+                win_rate: 44.9,
+                rank: 15
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1141,
+                win_rate: 41.6,
+                rank: 25
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1143,
+                win_rate: 39.1,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1090,
+                win_rate: 35.3,
+                rank: 73
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1194,
+                win_rate: 51.2,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1197,
+                win_rate: 47.2,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1206,
+                win_rate: 50.4,
+                rank: 43
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1233,
+                win_rate: 51.2,
+                rank: 33
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1186,
+                win_rate: 54,
+                rank: 32
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1194,
+                win_rate: 47.3,
+                rank: 48
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1208,
+                win_rate: 48.7,
+                rank: 49
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 53.6,
+              coding_index: 53.1,
+              agentic_index: 60.5
+            }
           }
         },
         {
@@ -5575,6 +7576,120 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-3.1-pro-preview-20260219/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1148,
+                win_rate: 43.6,
+                rank: 8
+              },
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1112,
+                win_rate: 31.8,
+                rank: 7
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1070,
+                win_rate: 40.5,
+                rank: 21
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1158,
+                win_rate: 46.6,
+                rank: 14
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1220,
+                win_rate: 53.6,
+                rank: 6
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1181,
+                win_rate: 46.5,
+                rank: 20
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1223,
+                win_rate: 49.9,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1309,
+                win_rate: 63.1,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1312,
+                win_rate: 64.2,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1293,
+                win_rate: 64.2,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1269,
+                win_rate: 60.6,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1269,
+                win_rate: 56.3,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1352,
+                win_rate: 71.8,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1323,
+                win_rate: 68.1,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1296,
+                win_rate: 64.3,
+                rank: 13
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 57.2,
+              coding_index: 55.5,
+              agentic_index: 59.1
+            }
           }
         },
         {
@@ -5639,6 +7754,113 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.6-sonnet-20260217/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticgamedev",
+                elo: 1200,
+                win_rate: 50.9,
+                rank: 6
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1236,
+                win_rate: 61.8,
+                rank: 5
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1292,
+                win_rate: 63.1,
+                rank: 4
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1277,
+                win_rate: 60.6,
+                rank: 1
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1265,
+                win_rate: 59.2,
+                rank: 3
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1271,
+                win_rate: 55.8,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1321,
+                win_rate: 62.7,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1273,
+                win_rate: 60.7,
+                rank: 7
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1326,
+                win_rate: 62.5,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1324,
+                win_rate: 63.5,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1318,
+                win_rate: 61.5,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1256,
+                win_rate: 60,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1319,
+                win_rate: 62.7,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1327,
+                win_rate: 62.4,
+                rank: 4
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 51.7,
+              coding_index: 50.9,
+              agentic_index: 63
+            }
           }
         },
         {
@@ -5695,6 +7917,66 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.5-plus-20260216/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1202,
+                win_rate: 47.8,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1137,
+                win_rate: 43.2,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1220,
+                win_rate: 48.5,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1179,
+                win_rate: 44.8,
+                rank: 53
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1179,
+                win_rate: 42.7,
+                rank: 49
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1166,
+                win_rate: 48.9,
+                rank: 36
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1234,
+                win_rate: 52.2,
+                rank: 32
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1233,
+                win_rate: 50.1,
+                rank: 37
+              }
+            ]
           }
         },
         {
@@ -5762,6 +8044,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.5-397b-a17b-20260216/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1243,
+                win_rate: 56.7,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1232,
+                win_rate: 52.6,
+                rank: 32
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1219,
+                win_rate: 53.2,
+                rank: 36
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1211,
+                win_rate: 50,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1199,
+                win_rate: 56.1,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1219,
+                win_rate: 51.4,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1235,
+                win_rate: 52.6,
+                rank: 34
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 45,
+              coding_index: 41.3,
+              agentic_index: 55.8
+            }
           }
         },
         {
@@ -5830,6 +8170,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/minimax/minimax-m2.5-20260211/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1252,
+                win_rate: 57.6,
+                rank: 28
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1259,
+                win_rate: 56.8,
+                rank: 27
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1215,
+                win_rate: 51.2,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1248,
+                win_rate: 55.5,
+                rank: 28
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1208,
+                win_rate: 54.5,
+                rank: 23
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1229,
+                win_rate: 53.4,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1267,
+                win_rate: 57.5,
+                rank: 25
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 41.9,
+              coding_index: 37.4,
+              agentic_index: 55.6
+            }
           }
         },
         {
@@ -5891,6 +8289,99 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-5-20260211/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1222,
+                win_rate: 61.9,
+                rank: 7
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1206,
+                win_rate: 53.8,
+                rank: 10
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1238,
+                win_rate: 54.8,
+                rank: 3
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1230,
+                win_rate: 53.5,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1313,
+                win_rate: 56.8,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1186,
+                win_rate: 47.3,
+                rank: 22
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1298,
+                win_rate: 55.7,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1271,
+                win_rate: 52.8,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1307,
+                win_rate: 58.1,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1224,
+                win_rate: 54.5,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1289,
+                win_rate: 54.1,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1292,
+                win_rate: 55.1,
+                rank: 17
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 49.8,
+              coding_index: 44.2,
+              agentic_index: 63.1
+            }
           }
         },
         {
@@ -5945,6 +8436,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-max-thinking-20260123/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 39.8,
+              coding_index: 30.5,
+              agentic_index: 50.1
+            }
           }
         },
         {
@@ -6009,6 +8507,99 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.6-opus-20260205/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1225,
+                win_rate: 68.8,
+                rank: 6
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1305,
+                win_rate: 68.6,
+                rank: 3
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1268,
+                win_rate: 60.5,
+                rank: 2
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1293,
+                win_rate: 60.9,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1356,
+                win_rate: 66.8,
+                rank: 3
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1306,
+                win_rate: 65.6,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1343,
+                win_rate: 64.8,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1324,
+                win_rate: 63.2,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1349,
+                win_rate: 65.1,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1285,
+                win_rate: 63.5,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1354,
+                win_rate: 66.3,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1340,
+                win_rate: 64.4,
+                rank: 2
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 52.9,
+              coding_index: 48.1,
+              agentic_index: 67.6
+            }
           }
         },
         {
@@ -6068,6 +8659,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-coder-next-2025-02-03/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 28.3,
+              coding_index: 22.9,
+              agentic_index: 42.1
+            }
           }
         },
         {
@@ -6192,6 +8790,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/stepfun/step-3.5-flash/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 38.5,
+              coding_index: 34.6,
+              agentic_index: 48.2
+            }
           }
         },
         {
@@ -6258,6 +8863,106 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2.5-0127/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1141,
+                win_rate: 57.7,
+                rank: 13
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1199,
+                win_rate: 54.1,
+                rank: 12
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1257,
+                win_rate: 59.7,
+                rank: 2
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1194,
+                win_rate: 49.3,
+                rank: 18
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1220,
+                win_rate: 50.3,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1293,
+                win_rate: 54.1,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1223,
+                win_rate: 49,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1290,
+                win_rate: 54.9,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1273,
+                win_rate: 52.9,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1281,
+                win_rate: 54.6,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1216,
+                win_rate: 51.5,
+                rank: 19
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1292,
+                win_rate: 54.2,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1294,
+                win_rate: 56.1,
+                rank: 14
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 46.8,
+              coding_index: 39.6,
+              agentic_index: 58.9
+            }
           }
         },
         {
@@ -6313,6 +9018,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/upstage/solar-pro-3/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 25.9,
+              coding_index: 13.3,
+              agentic_index: 34.9
+            }
           }
         },
         {
@@ -6463,6 +9175,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/liquid/lfm-2.5-1.2b-thinking-20260120/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 8.1,
+              coding_index: 1.4,
+              agentic_index: 6.5
+            }
           }
         },
         {
@@ -6516,6 +9235,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/liquid/lfm-2.5-1.2b-instruct-20260120/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 8,
+              coding_index: 0.8,
+              agentic_index: 3.6
+            }
           }
         },
         {
@@ -6700,6 +9426,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.7-flash-20260119/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1203,
+                win_rate: 51.2,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1230,
+                win_rate: 53.1,
+                rank: 33
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1167,
+                win_rate: 45.3,
+                rank: 58
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1207,
+                win_rate: 49.7,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1095,
+                win_rate: 44.2,
+                rank: 48
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1264,
+                win_rate: 57.6,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1239,
+                win_rate: 54,
+                rank: 33
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 30.1,
+              coding_index: 25.9,
+              agentic_index: 46
+            }
           }
         },
         {
@@ -6755,6 +9539,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.2-codex-20260114/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1176,
+                win_rate: 47.5,
+                rank: 10
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1077,
+                win_rate: 37,
+                rank: 25
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1188,
+                win_rate: 48,
+                rank: 12
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1180,
+                win_rate: 47.7,
+                rank: 22
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1151,
+                win_rate: 40.5,
+                rank: 18
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 49,
+              coding_index: 43,
+              agentic_index: 56.5
+            }
           }
         },
         {
@@ -6928,6 +9756,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/minimax/minimax-m2.1/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1247,
+                win_rate: 57.5,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1243,
+                win_rate: 55.3,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1249,
+                win_rate: 57,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1207,
+                win_rate: 50.4,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1189,
+                win_rate: 55.4,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1280,
+                win_rate: 60.9,
+                rank: 22
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1246,
+                win_rate: 55.4,
+                rank: 29
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 39.4,
+              coding_index: 32.8,
+              agentic_index: 47.4
+            }
           }
         },
         {
@@ -6991,6 +9877,99 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.7-20251222/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1136,
+                win_rate: 56,
+                rank: 14
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1135,
+                win_rate: 44.9,
+                rank: 17
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1131,
+                win_rate: 39.1,
+                rank: 18
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1197,
+                win_rate: 49.8,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1275,
+                win_rate: 55,
+                rank: 23
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1213,
+                win_rate: 49,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1270,
+                win_rate: 55.6,
+                rank: 23
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1241,
+                win_rate: 52,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1263,
+                win_rate: 57,
+                rank: 24
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1201,
+                win_rate: 54.7,
+                rank: 26
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1253,
+                win_rate: 51.1,
+                rank: 28
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1272,
+                win_rate: 56,
+                rank: 21
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 42.1,
+              coding_index: 36.3,
+              agentic_index: 55
+            }
           }
         },
         {
@@ -7058,6 +10037,85 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-3-flash-preview-20251217/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "agenticslides",
+                elo: 1078,
+                win_rate: 39.3,
+                rank: 9
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1072,
+                win_rate: 47.9,
+                rank: 20
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1147,
+                win_rate: 47.1,
+                rank: 15
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1220,
+                win_rate: 52.5,
+                rank: 5
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1195,
+                win_rate: 49.8,
+                rank: 15
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1211,
+                win_rate: 49.5,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1266,
+                win_rate: 62.7,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1242,
+                win_rate: 57.6,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1239,
+                win_rate: 58.3,
+                rank: 32
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1241,
+                win_rate: 57,
+                rank: 30
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 46.4,
+              coding_index: 42.6,
+              agentic_index: 49.7
+            }
           }
         },
         {
@@ -7113,6 +10171,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/xiaomi/mimo-v2-flash-20251210/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1196,
+                win_rate: 49.3,
+                rank: 44
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1065,
+                win_rate: 34.6,
+                rank: 40
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1207,
+                win_rate: 49.6,
+                rank: 47
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1176,
+                win_rate: 46,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1204,
+                win_rate: 49.2,
+                rank: 45
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1087,
+                win_rate: 40.6,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1198,
+                win_rate: 48,
+                rank: 47
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1211,
+                win_rate: 50.1,
+                rank: 47
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 41.5,
+              coding_index: 33.5,
+              agentic_index: 48.8
+            }
           }
         },
         {
@@ -7164,6 +10287,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-nano-30b-a3b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 24.3,
+              coding_index: 19,
+              agentic_index: 19.1
+            }
           }
         },
         {
@@ -7223,6 +10353,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-nano-30b-a3b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 24.3,
+              coding_index: 19,
+              agentic_index: 19.1
+            }
           }
         },
         {
@@ -7390,6 +10527,106 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.2-20251211/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "website",
+                elo: 1240,
+                win_rate: 54.5,
+                rank: 31
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1082,
+                win_rate: 49.2,
+                rank: 19
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1127,
+                win_rate: 44,
+                rank: 19
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1183,
+                win_rate: 48.1,
+                rank: 13
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1181,
+                win_rate: 47.4,
+                rank: 21
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1182,
+                win_rate: 45.7,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1160,
+                win_rate: 43.3,
+                rank: 56
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1223,
+                win_rate: 50.7,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1245,
+                win_rate: 56.1,
+                rank: 28
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1267,
+                win_rate: 56,
+                rank: 22
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1244,
+                win_rate: 52.8,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1196,
+                win_rate: 50.7,
+                rank: 18
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1199,
+                win_rate: 54.5,
+                rank: 28
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 51.3,
+              coding_index: 48.7,
+              agentic_index: 60.2
+            }
           }
         },
         {
@@ -7446,6 +10683,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/devstral-2512/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 22,
+              coding_index: 23.7,
+              agentic_index: 21.9
+            }
           }
         },
         {
@@ -7556,6 +10800,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.6-20251208/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 23.4,
+              coding_index: 19.7,
+              agentic_index: 17.5
+            }
           }
         },
         {
@@ -7768,6 +11019,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/amazon/nova-2-lite-v1/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 29.7,
+              coding_index: 23.9,
+              agentic_index: 32.9
+            }
           }
         },
         {
@@ -7827,6 +11085,43 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/ministral-14b-2512/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1072,
+                win_rate: 39.6,
+                rank: 77
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1118,
+                win_rate: 44,
+                rank: 74
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1111,
+                win_rate: 43.6,
+                rank: 69
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1127,
+                win_rate: 44.8,
+                rank: 74
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 16,
+              coding_index: 10.9,
+              agentic_index: 17.4
+            }
           }
         },
         {
@@ -7886,6 +11181,43 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/ministral-8b-2512/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1114,
+                win_rate: 46.2,
+                rank: 70
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1106,
+                win_rate: 42.9,
+                rank: 75
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1063,
+                win_rate: 38.7,
+                rank: 77
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1110,
+                win_rate: 42.9,
+                rank: 77
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 14.8,
+              coding_index: 10,
+              agentic_index: 16.7
+            }
           }
         },
         {
@@ -7945,6 +11277,43 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/ministral-3b-2512/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1045,
+                win_rate: 35.9,
+                rank: 82
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1063,
+                win_rate: 37.3,
+                rank: 84
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1021,
+                win_rate: 33,
+                rank: 87
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1073,
+                win_rate: 38.2,
+                rank: 85
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 11.2,
+              coding_index: 4.8,
+              agentic_index: 11.4
+            }
           }
         },
         {
@@ -8002,6 +11371,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-large-2512/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1181,
+                win_rate: 46.9,
+                rank: 47
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1112,
+                win_rate: 40.3,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1194,
+                win_rate: 47.6,
+                rank: 53
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1180,
+                win_rate: 45.8,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1153,
+                win_rate: 41.5,
+                rank: 57
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1049,
+                win_rate: 38,
+                rank: 59
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1158,
+                win_rate: 43.1,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1207,
+                win_rate: 49.4,
+                rank: 50
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 22.8,
+              coding_index: 22.7,
+              agentic_index: 21.7
+            }
           }
         },
         {
@@ -8119,6 +11553,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-v3.2-20251201/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1217,
+                win_rate: 51.8,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1111,
+                win_rate: 39.6,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1219,
+                win_rate: 51.2,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1204,
+                win_rate: 49.8,
+                rank: 44
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1206,
+                win_rate: 48.7,
+                rank: 43
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1088,
+                win_rate: 41.2,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1211,
+                win_rate: 49.5,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1222,
+                win_rate: 51.9,
+                rank: 43
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 41.7,
+              coding_index: 36.7,
+              agentic_index: 52.9
+            }
           }
         },
         {
@@ -8175,6 +11674,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/prime-intellect/intellect-3-20251126/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1168,
+                win_rate: 45.2,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1003,
+                win_rate: 27,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1159,
+                win_rate: 42.8,
+                rank: 64
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1127,
+                win_rate: 39,
+                rank: 70
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1150,
+                win_rate: 41.4,
+                rank: 59
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1049,
+                win_rate: 34.4,
+                rank: 58
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1133,
+                win_rate: 39.1,
+                rank: 63
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1162,
+                win_rate: 43.1,
+                rank: 64
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 22.2,
+              coding_index: 19.1,
+              agentic_index: 19.8
+            }
           }
         },
         {
@@ -8237,6 +11801,99 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.5-opus-20251124/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1294,
+                win_rate: 61.6,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1218,
+                win_rate: 53.6,
+                rank: 13
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1294,
+                win_rate: 60.8,
+                rank: 16
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1292,
+                win_rate: 60.5,
+                rank: 9
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1300,
+                win_rate: 60.9,
+                rank: 15
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1234,
+                win_rate: 58.7,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1295,
+                win_rate: 60,
+                rank: 16
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1292,
+                win_rate: 60.7,
+                rank: 15
+              },
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1199,
+                win_rate: 65.5,
+                rank: 9
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1241,
+                win_rate: 59.9,
+                rank: 7
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1248,
+                win_rate: 57.4,
+                rank: 5
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1247,
+                win_rate: 54.2,
+                rank: 7
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 49.7,
+              coding_index: 47.8,
+              agentic_index: 59.6
+            }
           }
         },
         {
@@ -8294,6 +11951,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/allenai/olmo-3-32b-think-20251121/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 12.1,
+              coding_index: 10.5,
+              agentic_index: 0
+            }
           }
         },
         {
@@ -8354,6 +12018,38 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-3-pro-image-preview-20251120/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "graphicdesign",
+                elo: 1276,
+                win_rate: 66.3,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "image",
+                elo: 1271,
+                win_rate: 62.3,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "logo",
+                elo: 1256,
+                win_rate: 61.1,
+                rank: 2
+              },
+              {
+                arena: "models",
+                category: "imageediting",
+                elo: 1277,
+                win_rate: 66.4,
+                rank: 1
+              }
+            ]
           }
         },
         {
@@ -8411,6 +12107,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepcogito/cogito-v2.1-671b-20251118/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 24.8,
+              agentic_index: null
+            }
           }
         },
         {
@@ -8470,6 +12173,78 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.1-20251113/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1134,
+                win_rate: 43.8,
+                rank: 27
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1144,
+                win_rate: 43.9,
+                rank: 62
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1162,
+                win_rate: 48.6,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1223,
+                win_rate: 53.1,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1248,
+                win_rate: 58,
+                rank: 26
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1251,
+                win_rate: 55.9,
+                rank: 27
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1207,
+                win_rate: 57.4,
+                rank: 24
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1223,
+                win_rate: 53,
+                rank: 36
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1233,
+                win_rate: 54.1,
+                rank: 36
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 47.7,
+              coding_index: 44.7,
+              agentic_index: 51.3
+            }
           }
         },
         {
@@ -8582,6 +12357,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.1-codex-20251113/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1109,
+                win_rate: 44.5,
+                rank: 21
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1211,
+                win_rate: 54,
+                rank: 12
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1113,
+                win_rate: 44.1,
+                rank: 20
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1203,
+                win_rate: 55.2,
+                rank: 49
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1218,
+                win_rate: 50.7,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1212,
+                win_rate: 52.3,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1206,
+                win_rate: 56,
+                rank: 51
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 43.1,
+              coding_index: 36.6,
+              agentic_index: 50.7
+            }
           }
         },
         {
@@ -8640,6 +12473,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5.1-codex-mini-20251113/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1071,
+                win_rate: 33.1,
+                rank: 78
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1153,
+                win_rate: 44.1,
+                rank: 32
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1146,
+                win_rate: 41.7,
+                rank: 68
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1141,
+                win_rate: 40.7,
+                rank: 66
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1165,
+                win_rate: 43.7,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1035,
+                win_rate: 35.3,
+                rank: 62
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1137,
+                win_rate: 41,
+                rank: 61
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1156,
+                win_rate: 43,
+                rank: 68
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 38.6,
+              coding_index: 36.4,
+              agentic_index: 38.7
+            }
           }
         },
         {
@@ -8700,6 +12598,22 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2-thinking-20251106/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "website",
+                elo: 1158,
+                win_rate: 48.8,
+                rank: 67
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 40.9,
+              coding_index: 34.8,
+              agentic_index: 47.9
+            }
           }
         },
         {
@@ -8751,6 +12665,22 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/amazon/nova-premier-v1/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "website",
+                elo: 881,
+                win_rate: 26.2,
+                rank: 103
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 19,
+              coding_index: 13.8,
+              agentic_index: 16.4
+            }
           }
         },
         {
@@ -8971,6 +12901,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-nano-12b-v2-vl/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 14.9,
+              coding_index: 11.7,
+              agentic_index: 7.1
+            }
           }
         },
         {
@@ -9032,6 +12969,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/minimax/minimax-m2/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1180,
+                win_rate: 48.3,
+                rank: 48
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1187,
+                win_rate: 48.1,
+                rank: 56
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1184,
+                win_rate: 50,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1190,
+                win_rate: 48.1,
+                rank: 47
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1157,
+                win_rate: 55.3,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1193,
+                win_rate: 49.2,
+                rank: 49
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1188,
+                win_rate: 48,
+                rank: 56
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 36.1,
+              coding_index: 29.2,
+              agentic_index: 47.5
+            }
           }
         },
         {
@@ -9087,6 +13082,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-32b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 24.7,
+              coding_index: 14.5,
+              agentic_index: 23.4
+            }
           }
         },
         {
@@ -9141,6 +13143,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/ibm-granite/granite-4.0-h-micro/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 7.7,
+              coding_index: 5,
+              agentic_index: 4.2
+            }
           }
         },
         {
@@ -9192,6 +13201,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/microsoft/phi-4-mini-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 8.4,
+              coding_index: 3.6,
+              agentic_index: 2.7
+            }
           }
         },
         {
@@ -9254,6 +13270,31 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-image-mini/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "graphicdesign",
+                elo: 1194,
+                win_rate: 50.5,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "image",
+                elo: 1211,
+                win_rate: 51.1,
+                rank: 6
+              },
+              {
+                arena: "models",
+                category: "logo",
+                elo: 1225,
+                win_rate: 53.7,
+                rank: 3
+              }
+            ]
           }
         },
         {
@@ -9316,6 +13357,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.5-haiku-20251001/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1156,
+                win_rate: 41.2,
+                rank: 58
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1182,
+                win_rate: 49.3,
+                rank: 25
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1167,
+                win_rate: 44.8,
+                rank: 60
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1169,
+                win_rate: 45.7,
+                rank: 57
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1169,
+                win_rate: 44.6,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1082,
+                win_rate: 39.1,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1156,
+                win_rate: 42.7,
+                rank: 56
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1167,
+                win_rate: 45,
+                rank: 61
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 37.1,
+              coding_index: 32.6,
+              agentic_index: 40.2
+            }
           }
         },
         {
@@ -9370,6 +13476,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-8b-thinking/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 16.7,
+              coding_index: 9.8,
+              agentic_index: 15.6
+            }
           }
         },
         {
@@ -9429,6 +13542,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-8b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 14.3,
+              coding_index: 7.3,
+              agentic_index: 18.4
+            }
           }
         },
         {
@@ -9491,6 +13611,31 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-image/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "graphicdesign",
+                elo: 1201,
+                win_rate: 55.6,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "image",
+                elo: 1220,
+                win_rate: 55,
+                rank: 4
+              },
+              {
+                arena: "models",
+                category: "logo",
+                elo: 1219,
+                win_rate: 55,
+                rank: 4
+              }
+            ]
           }
         },
         {
@@ -9679,6 +13824,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/llama-3.3-nemotron-super-49b-v1.5/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 18.7,
+              coding_index: 15.1,
+              agentic_index: 9.4
+            }
           }
         },
         {
@@ -9737,6 +13889,31 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-2.5-flash-image/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "graphicdesign",
+                elo: 1194,
+                win_rate: 56.9,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "image",
+                elo: 1214,
+                win_rate: 55.6,
+                rank: 5
+              },
+              {
+                arena: "models",
+                category: "logo",
+                elo: 1185,
+                win_rate: 51.5,
+                rank: 6
+              }
+            ]
           }
         },
         {
@@ -9799,6 +13976,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-30b-a3b-thinking/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 19.7,
+              coding_index: 13.1,
+              agentic_index: 14.9
+            }
           }
         },
         {
@@ -9861,6 +14045,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-30b-a3b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 16,
+              coding_index: 14.3,
+              agentic_index: 9.5
+            }
           }
         },
         {
@@ -9979,6 +14170,92 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.6/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "androidnative",
+                elo: 1106,
+                win_rate: 52.4,
+                rank: 17
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1116,
+                win_rate: 42.3,
+                rank: 20
+              },
+              {
+                arena: "agents",
+                category: "godotgamedev",
+                elo: 1218,
+                win_rate: 53,
+                rank: 8
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1194,
+                win_rate: 49.3,
+                rank: 17
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1210,
+                win_rate: 54,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1218,
+                win_rate: 54.3,
+                rank: 45
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1208,
+                win_rate: 52.8,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1222,
+                win_rate: 54.6,
+                rank: 34
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1166,
+                win_rate: 52.1,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1215,
+                win_rate: 54,
+                rank: 40
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1220,
+                win_rate: 54.4,
+                rank: 44
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 32.5,
+              coding_index: 29.5,
+              agentic_index: 41.6
+            }
           }
         },
         {
@@ -10041,6 +14318,92 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.5-sonnet-20250929/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1245,
+                win_rate: 55.8,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1240,
+                win_rate: 55.9,
+                rank: 10
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1235,
+                win_rate: 53.9,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1208,
+                win_rate: 49.8,
+                rank: 40
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1239,
+                win_rate: 54,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1170,
+                win_rate: 53.2,
+                rank: 34
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1231,
+                win_rate: 53.2,
+                rank: 33
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1234,
+                win_rate: 54,
+                rank: 35
+              },
+              {
+                arena: "agents",
+                category: "fullstack",
+                elo: 1137,
+                win_rate: 43.5,
+                rank: 16
+              },
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1192,
+                win_rate: 48.9,
+                rank: 19
+              },
+              {
+                arena: "agents",
+                category: "webapps",
+                elo: 1155,
+                win_rate: 43.1,
+                rank: 17
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 43,
+              coding_index: 38.6,
+              agentic_index: 51.7
+            }
           }
         },
         {
@@ -10101,6 +14464,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-v3.2-exp/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1231,
+                win_rate: 56.4,
+                rank: 33
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1223,
+                win_rate: 54.2,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1195,
+                win_rate: 50.6,
+                rank: 48
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1217,
+                win_rate: 53.1,
+                rank: 36
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1089,
+                win_rate: 42,
+                rank: 49
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1222,
+                win_rate: 53.3,
+                rank: 37
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1224,
+                win_rate: 54.2,
+                rank: 41
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 32.9,
+              coding_index: 33.3,
+              agentic_index: 28.7
+            }
           }
         },
         {
@@ -10265,6 +14686,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-2.5-flash-lite-preview-09-2025/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1049,
+                win_rate: 36.5,
+                rank: 80
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1134,
+                win_rate: 47,
+                rank: 71
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1133,
+                win_rate: 45.5,
+                rank: 67
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1120,
+                win_rate: 45.9,
+                rank: 67
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1078,
+                win_rate: 41.4,
+                rank: 73
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1145,
+                win_rate: 48.1,
+                rank: 72
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 21.6,
+              coding_index: 18.2,
+              agentic_index: 11.7
+            }
           }
         },
         {
@@ -10326,6 +14798,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-235b-a22b-thinking/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 27.6,
+              coding_index: 20.9,
+              agentic_index: 27
+            }
           }
         },
         {
@@ -10386,6 +14865,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-vl-235b-a22b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 20.8,
+              coding_index: 16.5,
+              agentic_index: 19.1
+            }
           }
         },
         {
@@ -10439,6 +14925,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-max/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1156,
+                win_rate: 43.5,
+                rank: 59
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1173,
+                win_rate: 47.4,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1162,
+                win_rate: 44,
+                rank: 62
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1149,
+                win_rate: 41.8,
+                rank: 60
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1168,
+                win_rate: 43.9,
+                rank: 53
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1068,
+                win_rate: 37.3,
+                rank: 56
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1134,
+                win_rate: 40.1,
+                rank: 62
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1164,
+                win_rate: 44.4,
+                rank: 63
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 31.4,
+              coding_index: 26.4,
+              agentic_index: 43
+            }
           }
         },
         {
@@ -10547,6 +15098,22 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-codex/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "agents",
+                category: "mobileapps",
+                elo: 1139,
+                win_rate: 43.2,
+                rank: 26
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 44.6,
+              coding_index: 38.9,
+              agentic_index: 52.7
+            }
           }
         },
         {
@@ -10608,6 +15175,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-v3.1-terminus/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1223,
+                win_rate: 56,
+                rank: 34
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1228,
+                win_rate: 56,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1207,
+                win_rate: 53,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1203,
+                win_rate: 52.5,
+                rank: 46
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1122,
+                win_rate: 50.1,
+                rank: 44
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1238,
+                win_rate: 59.3,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1232,
+                win_rate: 56.4,
+                rank: 38
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 33.9,
+              coding_index: 33.7,
+              agentic_index: 29.8
+            }
           }
         },
         {
@@ -10721,6 +15346,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-next-80b-a3b-thinking-2509/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 26.7,
+              coding_index: 19.5,
+              agentic_index: 23.6
+            }
           }
         },
         {
@@ -10771,6 +15403,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-next-80b-a3b-instruct-2509/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 20.1,
+              coding_index: 15.3,
+              agentic_index: 14.2
+            }
           }
         },
         {
@@ -10825,6 +15464,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-next-80b-a3b-instruct-2509/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 20.1,
+              coding_index: 15.3,
+              agentic_index: 14.2
+            }
           }
         },
         {
@@ -10985,65 +15631,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nvidia/nemotron-nano-9b-v2/endpoints"
-          }
-        },
-        {
-          id: "nvidia/nemotron-nano-9b-v2",
-          canonical_slug: "nvidia/nemotron-nano-9b-v2",
-          hugging_face_id: "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
-          name: "NVIDIA: Nemotron Nano 9B V2",
-          created: 1757106807,
-          description: "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and...",
-          context_length: 131072,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
           },
-          pricing: {
-            prompt: "0.00000004",
-            completion: "0.00000016"
-          },
-          top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "include_reasoning",
-            "logit_bias",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "reasoning",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_k",
-            "top_p"
-          ],
-          default_parameters: {
-            temperature: null,
-            top_p: null,
-            frequency_penalty: null
-          },
-          supported_voices: null,
-          knowledge_cutoff: "2025-03-31",
-          expiration_date: "2026-06-11",
-          links: {
-            details: "/api/v1/models/nvidia/nemotron-nano-9b-v2/endpoints"
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 14.8,
+              coding_index: 8.3,
+              agentic_index: 9.4
+            }
           }
         },
         {
@@ -11098,6 +15692,29 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2-0905/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1150,
+                win_rate: 48.5,
+                rank: 67
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1152,
+                win_rate: 48.3,
+                rank: 69
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 30.9,
+              coding_index: 25.9,
+              agentic_index: 37.7
+            }
           }
         },
         {
@@ -11155,6 +15772,29 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-30b-a3b-thinking-2507/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 968,
+                win_rate: 33.3,
+                rank: 89
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 976,
+                win_rate: 35.5,
+                rank: 97
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 22.4,
+              coding_index: 14.6,
+              agentic_index: 17.7
+            }
           }
         },
         {
@@ -11204,6 +15844,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nousresearch/hermes-4-70b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 16,
+              coding_index: 14.4,
+              agentic_index: 11.7
+            }
           }
         },
         {
@@ -11253,6 +15900,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nousresearch/hermes-4-405b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 18.6,
+              coding_index: 16,
+              agentic_index: 12.6
+            }
           }
         },
         {
@@ -11310,6 +15964,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-chat-v3.1/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1160,
+                win_rate: 48,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1164,
+                win_rate: 47.9,
+                rank: 61
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1143,
+                win_rate: 46.8,
+                rank: 63
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1157,
+                win_rate: 47.2,
+                rank: 56
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1024,
+                win_rate: 38.2,
+                rank: 65
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1140,
+                win_rate: 47.5,
+                rank: 60
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1168,
+                win_rate: 48,
+                rank: 60
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 28.1,
+              coding_index: 28.4,
+              agentic_index: 31.9
+            }
           }
         },
         {
@@ -11365,6 +16077,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-medium-3.1/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1165,
+                win_rate: 44.8,
+                rank: 54
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1042,
+                win_rate: 30.8,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1173,
+                win_rate: 45.1,
+                rank: 57
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1192,
+                win_rate: 47.6,
+                rank: 49
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1146,
+                win_rate: 40.7,
+                rank: 61
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1049,
+                win_rate: 38.2,
+                rank: 60
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1155,
+                win_rate: 43.4,
+                rank: 57
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1178,
+                win_rate: 46,
+                rank: 58
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 21.3,
+              coding_index: 18.3,
+              agentic_index: 25.3
+            }
           }
         },
         {
@@ -11424,6 +16201,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.5v/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 15.1,
+              coding_index: 10.9,
+              agentic_index: 10.9
+            }
           }
         },
         {
@@ -11470,6 +16254,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/ai21/jamba-large-1.7/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 10.9,
+              coding_index: 7.8,
+              agentic_index: 4.5
+            }
           }
         },
         {
@@ -11517,6 +16308,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-chat-2025-08-07/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 21.2,
+              agentic_index: null
+            }
           }
         },
         {
@@ -11576,6 +16374,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-2025-08-07/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1138,
+                win_rate: 41.4,
+                rank: 64
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1185,
+                win_rate: 49,
+                rank: 24
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1221,
+                win_rate: 54.7,
+                rank: 40
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1282,
+                win_rate: 63.3,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1259,
+                win_rate: 59.5,
+                rank: 26
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1246,
+                win_rate: 64.1,
+                rank: 12
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1239,
+                win_rate: 58.3,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1230,
+                win_rate: 53.7,
+                rank: 39
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 44.6,
+              coding_index: 36,
+              agentic_index: 54.7
+            }
           }
         },
         {
@@ -11635,6 +16498,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-mini-2025-08-07/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1109,
+                win_rate: 37.4,
+                rank: 71
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1166,
+                win_rate: 45.2,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1168,
+                win_rate: 44.6,
+                rank: 58
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1167,
+                win_rate: 44.3,
+                rank: 59
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1204,
+                win_rate: 48.5,
+                rank: 44
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1149,
+                win_rate: 46.1,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1165,
+                win_rate: 43.9,
+                rank: 53
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1171,
+                win_rate: 45.3,
+                rank: 59
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 41.2,
+              coding_index: 35.3,
+              agentic_index: 45.5
+            }
           }
         },
         {
@@ -11694,6 +16622,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-5-nano-2025-08-07/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1046,
+                win_rate: 36.1,
+                rank: 81
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1137,
+                win_rate: 48.1,
+                rank: 70
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1103,
+                win_rate: 46.7,
+                rank: 72
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1119,
+                win_rate: 46.6,
+                rank: 68
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1123,
+                win_rate: 52,
+                rank: 66
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1147,
+                win_rate: 48.9,
+                rank: 71
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 26.8,
+              coding_index: 20.3,
+              agentic_index: 23.2
+            }
           }
         },
         {
@@ -11745,6 +16724,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-oss-120b/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 982,
+                win_rate: 29.4,
+                rank: 85
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1016,
+                win_rate: 33.4,
+                rank: 91
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1043,
+                win_rate: 45.1,
+                rank: 82
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1066,
+                win_rate: 40.6,
+                rank: 76
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 981,
+                win_rate: 35.5,
+                rank: 86
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1013,
+                win_rate: 32.5,
+                rank: 94
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 33.3,
+              coding_index: 28.6,
+              agentic_index: 37.9
+            }
           }
         },
         {
@@ -11807,6 +16837,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-oss-120b/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 982,
+                win_rate: 29.4,
+                rank: 85
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1016,
+                win_rate: 33.4,
+                rank: 91
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1043,
+                win_rate: 45.1,
+                rank: 82
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1066,
+                win_rate: 40.6,
+                rank: 76
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 981,
+                win_rate: 35.5,
+                rank: 86
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1013,
+                win_rate: 32.5,
+                rank: 94
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 33.3,
+              coding_index: 28.6,
+              agentic_index: 37.9
+            }
           }
         },
         {
@@ -11858,6 +16939,29 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-oss-20b/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 977,
+                win_rate: 39.7,
+                rank: 87
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 898,
+                win_rate: 27.9,
+                rank: 102
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 24.5,
+              coding_index: 18.5,
+              agentic_index: 27.6
+            }
           }
         },
         {
@@ -11920,6 +17024,29 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-oss-20b/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 977,
+                win_rate: 39.7,
+                rank: 87
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 898,
+                win_rate: 27.9,
+                rank: 102
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 24.5,
+              coding_index: 18.5,
+              agentic_index: 27.6
+            }
           }
         },
         {
@@ -11982,6 +17109,71 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4.1-opus-20250805/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1235,
+                win_rate: 54,
+                rank: 32
+              },
+              {
+                arena: "models",
+                category: "asciiart",
+                elo: 1213,
+                win_rate: 53.2,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1224,
+                win_rate: 55.8,
+                rank: 36
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1209,
+                win_rate: 56.4,
+                rank: 39
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1245,
+                win_rate: 58.5,
+                rank: 29
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1209,
+                win_rate: 60.8,
+                rank: 21
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1220,
+                win_rate: 58,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1222,
+                win_rate: 55.3,
+                rank: 42
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 36.5,
+              agentic_index: null
+            }
           }
         },
         {
@@ -12036,6 +17228,52 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/codestral-2508/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1060,
+                win_rate: 38.5,
+                rank: 85
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1061,
+                win_rate: 41.7,
+                rank: 80
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1039,
+                win_rate: 36.2,
+                rank: 82
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1074,
+                win_rate: 46.9,
+                rank: 74
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1058,
+                win_rate: 37.8,
+                rank: 88
+              },
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1103,
+                win_rate: 45.5,
+                rank: 72
+              }
+            ]
           }
         },
         {
@@ -12088,6 +17326,36 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-coder-30b-a3b-instruct/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1128,
+                win_rate: 54.7,
+                rank: 69
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1103,
+                win_rate: 54.1,
+                rank: 68
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1133,
+                win_rate: 57.1,
+                rank: 73
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 20,
+              coding_index: 19.4,
+              agentic_index: 21.1
+            }
           }
         },
         {
@@ -12142,6 +17410,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-30b-a3b-instruct-2507/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 15,
+              coding_index: 14.2,
+              agentic_index: 7.1
+            }
           }
         },
         {
@@ -12200,6 +17475,64 @@ var require_latest = __commonJS({
           expiration_date: "2026-06-19",
           links: {
             details: "/api/v1/models/z-ai/glm-4.5/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1253,
+                win_rate: 59.7,
+                rank: 27
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1218,
+                win_rate: 54.4,
+                rank: 44
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1203,
+                win_rate: 53.3,
+                rank: 45
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1218,
+                win_rate: 54.4,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1154,
+                win_rate: 50.8,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1201,
+                win_rate: 55.1,
+                rank: 45
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1215,
+                win_rate: 53.8,
+                rank: 45
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 26.4,
+              coding_index: 26.3,
+              agentic_index: 16.2
+            }
           }
         },
         {
@@ -12243,6 +17576,7 @@ var require_latest = __commonJS({
             "response_format",
             "seed",
             "stop",
+            "structured_outputs",
             "temperature",
             "tool_choice",
             "tools",
@@ -12260,6 +17594,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/z-ai/glm-4.5-air/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1205,
+                win_rate: 54.1,
+                rank: 40
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1190,
+                win_rate: 51.5,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1236,
+                win_rate: 59.4,
+                rank: 31
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1167,
+                win_rate: 48.4,
+                rank: 54
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1128,
+                win_rate: 50.8,
+                rank: 43
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1180,
+                win_rate: 54.6,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1192,
+                win_rate: 51.3,
+                rank: 54
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 23.2,
+              coding_index: 23.8,
+              agentic_index: 21
+            }
           }
         },
         {
@@ -12321,6 +17713,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-235b-a22b-thinking-2507/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1081,
+                win_rate: 40.7,
+                rank: 75
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1085,
+                win_rate: 40.9,
+                rank: 79
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 991,
+                win_rate: 32.3,
+                rank: 85
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1030,
+                win_rate: 34.3,
+                rank: 84
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 999,
+                win_rate: 33.9,
+                rank: 85
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1098,
+                win_rate: 42.1,
+                rank: 80
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 29.5,
+              coding_index: 23.2,
+              agentic_index: 29.7
+            }
           }
         },
         {
@@ -12369,6 +17812,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-coder-480b-a35b-07-25/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1196,
+                win_rate: 61.2,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1125,
+                win_rate: 54.9,
+                rank: 71
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1174,
+                win_rate: 59,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1171,
+                win_rate: 61.5,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1204,
+                win_rate: 61.7,
+                rank: 52
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 24.8,
+              coding_index: 24.6,
+              agentic_index: 18.3
+            }
           }
         },
         {
@@ -12423,6 +17910,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-coder-480b-a35b-07-25/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1196,
+                win_rate: 61.2,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1125,
+                win_rate: 54.9,
+                rank: 71
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1174,
+                win_rate: 59,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1171,
+                win_rate: 61.5,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1204,
+                win_rate: 61.7,
+                rank: 52
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 24.8,
+              coding_index: 24.6,
+              agentic_index: 18.3
+            }
           }
         },
         {
@@ -12538,6 +18069,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-2.5-flash-lite/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 17.6,
+              coding_index: 9.5,
+              agentic_index: 6.1
+            }
           }
         },
         {
@@ -12592,6 +18130,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-235b-a22b-07-25/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1076,
+                win_rate: 41.1,
+                rank: 76
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1091,
+                win_rate: 42.7,
+                rank: 77
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1101,
+                win_rate: 47.7,
+                rank: 73
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1025,
+                win_rate: 35.2,
+                rank: 85
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1023,
+                win_rate: 38.8,
+                rank: 81
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1103,
+                win_rate: 43.7,
+                rank: 79
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 25,
+              coding_index: 22.1,
+              agentic_index: 22.8
+            }
           }
         },
         {
@@ -12689,6 +18278,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/moonshotai/kimi-k2/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1086,
+                win_rate: 51.7,
+                rank: 78
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1062,
+                win_rate: 49.4,
+                rank: 79
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1047,
+                win_rate: 46.4,
+                rank: 80
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1088,
+                win_rate: 55.1,
+                rank: 71
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1096,
+                win_rate: 53.1,
+                rank: 81
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 26.3,
+              coding_index: 22.1,
+              agentic_index: 24.3
+            }
           }
         },
         {
@@ -12985,6 +18618,45 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-small-3.2-24b-instruct-2506/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 960,
+                win_rate: 39.8,
+                rank: 96
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 971,
+                win_rate: 43.3,
+                rank: 88
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 961,
+                win_rate: 39.4,
+                rank: 91
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 964,
+                win_rate: 40.5,
+                rank: 88
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 941,
+                win_rate: 38.3,
+                rank: 99
+              }
+            ]
           }
         },
         {
@@ -13041,6 +18713,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/minimax/minimax-m1/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 24.4,
+              coding_index: 14.5,
+              agentic_index: 29.1
+            }
           }
         },
         {
@@ -13108,6 +18787,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-2.5-flash/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1153,
+                win_rate: 47.4,
+                rank: 60
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1157,
+                win_rate: 46.9,
+                rank: 65
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1170,
+                win_rate: 48.4,
+                rank: 56
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1138,
+                win_rate: 44.3,
+                rank: 64
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1149,
+                win_rate: 48.9,
+                rank: 59
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1160,
+                win_rate: 47.1,
+                rank: 65
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1077,
+                win_rate: 43.1,
+                rank: 54
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 27,
+              coding_index: 22.2,
+              agentic_index: 18.8
+            }
           }
         },
         {
@@ -13172,6 +18909,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemini-2.5-pro/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1165,
+                win_rate: 52.2,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1206,
+                win_rate: 58.3,
+                rank: 48
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1289,
+                win_rate: 71.8,
+                rank: 11
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1185,
+                win_rate: 55.1,
+                rank: 48
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1200,
+                win_rate: 60.5,
+                rank: 46
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1212,
+                win_rate: 58.8,
+                rank: 46
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 34.6,
+              coding_index: 32,
+              agentic_index: 32.7
+            }
           }
         },
         {
@@ -13346,6 +19134,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-r1-0528/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1194,
+                win_rate: 53.4,
+                rank: 45
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1191,
+                win_rate: 52.6,
+                rank: 54
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1222,
+                win_rate: 60.7,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1171,
+                win_rate: 49.5,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1096,
+                win_rate: 48.7,
+                rank: 47
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1161,
+                win_rate: 55.1,
+                rank: 54
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1195,
+                win_rate: 52.7,
+                rank: 53
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 27.1,
+              coding_index: 24,
+              agentic_index: 20.8
+            }
           }
         },
         {
@@ -13405,6 +19251,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4-opus-20250522/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1221,
+                win_rate: 57.7,
+                rank: 36
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1213,
+                win_rate: 55.6,
+                rank: 46
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1189,
+                win_rate: 57.9,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1243,
+                win_rate: 59.9,
+                rank: 30
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1184,
+                win_rate: 57.7,
+                rank: 33
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1210,
+                win_rate: 59.2,
+                rank: 42
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1210,
+                win_rate: 54.6,
+                rank: 48
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 34,
+              agentic_index: null
+            }
           }
         },
         {
@@ -13465,6 +19369,64 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-4-sonnet-20250522/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1222,
+                win_rate: 57.8,
+                rank: 35
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1194,
+                win_rate: 53.4,
+                rank: 52
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1195,
+                win_rate: 55.8,
+                rank: 47
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1211,
+                win_rate: 54.9,
+                rank: 38
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1135,
+                win_rate: 51.1,
+                rank: 41
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1186,
+                win_rate: 58,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1191,
+                win_rate: 52.4,
+                rank: 55
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 38.7,
+              coding_index: 34.1,
+              agentic_index: 43
+            }
           }
         },
         {
@@ -13514,6 +19476,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-3n-e4b-it/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 6.4,
+              coding_index: 4.2,
+              agentic_index: 1.7
+            }
           }
         },
         {
@@ -13569,6 +19538,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-medium-3/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1165,
+                win_rate: 54.6,
+                rank: 53
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1122,
+                win_rate: 48.1,
+                rank: 73
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1075,
+                win_rate: 45.7,
+                rank: 77
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1091,
+                win_rate: 45.3,
+                rank: 73
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1083,
+                win_rate: 50,
+                rank: 72
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1124,
+                win_rate: 47.7,
+                rank: 76
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 18.8,
+              coding_index: 13.6,
+              agentic_index: 13.7
+            }
           }
         },
         {
@@ -13847,6 +19867,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-30b-a3b-04-28/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 994,
+                win_rate: 37.5,
+                rank: 93
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1011,
+                win_rate: 39,
+                rank: 84
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 970,
+                win_rate: 33.8,
+                rank: 90
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1003,
+                win_rate: 42.4,
+                rank: 84
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1e3,
+                win_rate: 37.7,
+                rank: 95
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 15.3,
+              coding_index: 11,
+              agentic_index: 12.1
+            }
           }
         },
         {
@@ -13911,6 +19975,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-8b-04-28/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 13.2,
+              coding_index: 9,
+              agentic_index: 12.6
+            }
           }
         },
         {
@@ -13969,6 +20040,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-14b-04-28/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 16.2,
+              coding_index: 13.1,
+              agentic_index: 14.4
+            }
           }
         },
         {
@@ -14025,6 +20103,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-32b-04-28/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 16.5,
+              coding_index: 13.8,
+              agentic_index: 13.5
+            }
           }
         },
         {
@@ -14074,6 +20159,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3-235b-a22b-04-28/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 941,
+                win_rate: 24.5,
+                rank: 88
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1055,
+                win_rate: 38.3,
+                rank: 86
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1044,
+                win_rate: 41,
+                rank: 81
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1001,
+                win_rate: 33.1,
+                rank: 88
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1018,
+                win_rate: 39.1,
+                rank: 83
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1076,
+                win_rate: 40.5,
+                rank: 84
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 19.8,
+              coding_index: 17.4,
+              agentic_index: 18.4
+            }
           }
         },
         {
@@ -14180,6 +20316,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/o3-2025-04-16/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1072,
+                win_rate: 51.9,
+                rank: 81
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1200,
+                win_rate: 48.1,
+                rank: 46
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1107,
+                win_rate: 56.9,
+                rank: 70
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1074,
+                win_rate: 53.3,
+                rank: 75
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1082,
+                win_rate: 53.8,
+                rank: 83
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 38.4,
+              coding_index: 38.4,
+              agentic_index: 36.1
+            }
           }
         },
         {
@@ -14231,6 +20411,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/o4-mini-2025-04-16/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 935,
+                win_rate: 34,
+                rank: 89
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1028,
+                win_rate: 46.4,
+                rank: 89
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1034,
+                win_rate: 50,
+                rank: 83
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1076,
+                win_rate: 50,
+                rank: 74
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1041,
+                win_rate: 46.9,
+                rank: 79
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1031,
+                win_rate: 47.1,
+                rank: 91
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 33.1,
+              coding_index: 25.6,
+              agentic_index: 36.1
+            }
           }
         },
         {
@@ -14283,6 +20514,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4.1-2025-04-14/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 932,
+                win_rate: 30.9,
+                rank: 90
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1078,
+                win_rate: 50.9,
+                rank: 80
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1147,
+                win_rate: 59.5,
+                rank: 61
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1152,
+                win_rate: 59.1,
+                rank: 58
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1057,
+                win_rate: 49.7,
+                rank: 76
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1084,
+                win_rate: 52.3,
+                rank: 82
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 26.3,
+              coding_index: 21.8,
+              agentic_index: 27.3
+            }
           }
         },
         {
@@ -14335,6 +20617,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4.1-mini-2025-04-14/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 919,
+                win_rate: 30.5,
+                rank: 91
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1046,
+                win_rate: 47.5,
+                rank: 88
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1076,
+                win_rate: 49.2,
+                rank: 75
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1143,
+                win_rate: 58.5,
+                rank: 62
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1018,
+                win_rate: 45.4,
+                rank: 82
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1043,
+                win_rate: 47.8,
+                rank: 89
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 22.9,
+              coding_index: 18.5,
+              agentic_index: 25.2
+            }
           }
         },
         {
@@ -14387,6 +20720,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4.1-nano-2025-04-14/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1007,
+                win_rate: 46,
+                rank: 84
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1015,
+                win_rate: 47.3,
+                rank: 92
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 935,
+                win_rate: 41.1,
+                rank: 93
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1043,
+                win_rate: 49.6,
+                rank: 81
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 973,
+                win_rate: 43.9,
+                rank: 87
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1018,
+                win_rate: 48.1,
+                rank: 93
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 13,
+              coding_index: 11.2,
+              agentic_index: 5.8
+            }
           }
         },
         {
@@ -14442,6 +20826,57 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-4-maverick-17b-128e-instruct/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 981,
+                win_rate: 40.2,
+                rank: 86
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 932,
+                win_rate: 35.8,
+                rank: 97
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 926,
+                win_rate: 38.4,
+                rank: 95
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 910,
+                win_rate: 33.7,
+                rank: 94
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 956,
+                win_rate: 40.8,
+                rank: 89
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 916,
+                win_rate: 34.4,
+                rank: 100
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 18.4,
+              coding_index: 15.6,
+              agentic_index: 7.2
+            }
           }
         },
         {
@@ -14497,6 +20932,50 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-4-scout-17b-16e-instruct/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 842,
+                win_rate: 26.6,
+                rank: 101
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 939,
+                win_rate: 39.3,
+                rank: 91
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 845,
+                win_rate: 27.4,
+                rank: 96
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 825,
+                win_rate: 25.5,
+                rank: 95
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 796,
+                win_rate: 22.7,
+                rank: 107
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 13.5,
+              coding_index: 6.7,
+              agentic_index: 5.2
+            }
           }
         },
         {
@@ -14552,6 +21031,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-chat-v3-0324/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 22.3,
+              coding_index: 22,
+              agentic_index: 16.3
+            }
           }
         },
         {
@@ -14706,6 +21192,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-3-4b-it/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 6.3,
+              coding_index: 2.9,
+              agentic_index: 1.7
+            }
           }
         },
         {
@@ -14761,6 +21254,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-3-12b-it/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 8.8,
+              coding_index: 6.3,
+              agentic_index: 3.6
+            }
           }
         },
         {
@@ -14954,6 +21454,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/rekaai/reka-flash-3/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 9.5,
+              coding_index: 8.9,
+              agentic_index: 0
+            }
           }
         },
         {
@@ -15013,6 +21520,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/google/gemma-3-27b-it/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 10.3,
+              coding_index: 9.6,
+              agentic_index: 3.5
+            }
           }
         },
         {
@@ -15369,6 +21883,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/o3-mini-high-2025-01-31/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 25.2,
+              coding_index: 17.3,
+              agentic_index: 20.9
+            }
           }
         },
         {
@@ -15522,12 +22043,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000025",
-            completion: "0.00000075"
+            prompt: "0.0000008",
+            completion: "0.000001",
+            input_cache_read: "0.0000004"
           },
           top_provider: {
-            context_length: 32e3,
-            max_completion_tokens: null,
+            context_length: 128e3,
+            max_completion_tokens: 128e3,
             is_moderated: false
           },
           per_request_limits: null,
@@ -15657,6 +22179,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/o3-mini-2025-01-31/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 17.9,
+              agentic_index: null
+            }
           }
         },
         {
@@ -15823,7 +22352,7 @@ var require_latest = __commonJS({
           name: "DeepSeek: R1 Distill Llama 70B",
           created: 1737663169,
           description: "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across...",
-          context_length: 131072,
+          context_length: 128e3,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -15836,25 +22365,22 @@ var require_latest = __commonJS({
             instruct_type: "deepseek-r1"
           },
           pricing: {
-            prompt: "0.0000007",
+            prompt: "0.0000008",
             completion: "0.0000008"
           },
           top_provider: {
-            context_length: 131072,
-            max_completion_tokens: 16384,
+            context_length: 8192,
+            max_completion_tokens: 8192,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
-            "logit_bias",
             "max_tokens",
-            "min_p",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
-            "response_format",
             "seed",
             "stop",
             "temperature",
@@ -15864,9 +22390,16 @@ var require_latest = __commonJS({
           default_parameters: {},
           supported_voices: null,
           knowledge_cutoff: "2024-07-31",
-          expiration_date: "2026-06-11",
+          expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-r1-distill-llama-70b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 11.4,
+              agentic_index: null
+            }
           }
         },
         {
@@ -15929,6 +22462,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-r1/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 18.8,
+              coding_index: 15.9,
+              agentic_index: 3.8
+            }
           }
         },
         {
@@ -16030,6 +22570,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/microsoft/phi-4/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 10.4,
+              coding_index: 11.2,
+              agentic_index: 0
+            }
           }
         },
         {
@@ -16134,6 +22681,59 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/deepseek/deepseek-chat-v3/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 1169,
+                win_rate: 50.7,
+                rank: 50
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1161,
+                win_rate: 48.5,
+                rank: 63
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1141,
+                win_rate: 51.4,
+                rank: 65
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 1127,
+                win_rate: 43.9,
+                rank: 66
+              },
+              {
+                arena: "models",
+                category: "svg",
+                elo: 1033,
+                win_rate: 38.8,
+                rank: 63
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1151,
+                win_rate: 52.8,
+                rank: 58
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 1165,
+                win_rate: 48.5,
+                rank: 62
+              }
+            ]
           }
         },
         {
@@ -16243,6 +22843,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/o1-2024-12-17/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 30.7,
+              coding_index: 20.5,
+              agentic_index: 31.1
+            }
           }
         },
         {
@@ -16340,6 +22947,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.3-70b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 14.5,
+              coding_index: 10.7,
+              agentic_index: 9.1
+            }
           }
         },
         {
@@ -16394,6 +23008,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.3-70b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 14.5,
+              coding_index: 10.7,
+              agentic_index: 9.1
+            }
           }
         },
         {
@@ -16440,6 +23061,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/amazon/nova-lite-v1/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 12.7,
+              coding_index: 5.1,
+              agentic_index: 5.8
+            }
           }
         },
         {
@@ -16485,6 +23113,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/amazon/nova-micro-v1/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 10.3,
+              coding_index: 4.1,
+              agentic_index: 4.7
+            }
           }
         },
         {
@@ -16531,6 +23166,22 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/amazon/nova-pro-v1/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "website",
+                elo: 841,
+                win_rate: 21.4,
+                rank: 106
+              }
+            ],
+            artificial_analysis: {
+              intelligence_index: 13.5,
+              coding_index: 11,
+              agentic_index: 4.7
+            }
           }
         },
         {
@@ -16588,6 +23239,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o-2024-11-20/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 17.3,
+              coding_index: 16.7,
+              agentic_index: 8.4
+            }
           }
         },
         {
@@ -16642,6 +23300,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/mistralai/mistral-large-2407/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 15.1,
+              coding_index: 13.8,
+              agentic_index: 10.2
+            }
           }
         },
         {
@@ -16799,6 +23464,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-3-5-haiku/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 18.7,
+              coding_index: 10.7,
+              agentic_index: 17.7
+            }
           }
         },
         {
@@ -17195,6 +23867,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 6.3,
+              coding_index: 0.6,
+              agentic_index: 0
+            }
           }
         },
         {
@@ -17247,6 +23926,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.2-11b-vision-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 8.7,
+              coding_index: 4.2,
+              agentic_index: 4.9
+            }
           }
         },
         {
@@ -17301,6 +23987,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen-2.5-72b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 11.9,
+              agentic_index: null
+            }
           }
         },
         {
@@ -17509,6 +24202,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nousresearch/hermes-3-llama-3.1-70b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 12.6,
+              coding_index: 9.2,
+              agentic_index: 10
+            }
           }
         },
         {
@@ -17555,6 +24255,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nousresearch/hermes-3-llama-3.1-405b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 17.6,
+              coding_index: 18.1,
+              agentic_index: 11.8
+            }
           }
         },
         {
@@ -17607,6 +24314,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/nousresearch/hermes-3-llama-3.1-405b/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 17.6,
+              coding_index: 18.1,
+              agentic_index: 11.8
+            }
           }
         },
         {
@@ -17717,6 +24431,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o-2024-08-06/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 18.6,
+              coding_index: 16.6,
+              agentic_index: 9.7
+            }
           }
         },
         {
@@ -17771,6 +24492,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 11.8,
+              coding_index: 4.9,
+              agentic_index: 5.5
+            }
           }
         },
         {
@@ -17825,6 +24553,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 12.5,
+              coding_index: 10.9,
+              agentic_index: 5.1
+            }
           }
         },
         {
@@ -18102,6 +24837,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o-2024-05-13/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 24.2,
+              agentic_index: null
+            }
           }
         },
         {
@@ -18159,6 +24901,52 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4o/endpoints"
+          },
+          benchmarks: {
+            design_arena: [
+              {
+                arena: "models",
+                category: "3d",
+                elo: 950,
+                win_rate: 39.2,
+                rank: 87
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 913,
+                win_rate: 34.8,
+                rank: 99
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 900,
+                win_rate: 36,
+                rank: 96
+              },
+              {
+                arena: "models",
+                category: "gamedev",
+                elo: 979,
+                win_rate: 42.3,
+                rank: 89
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 942,
+                win_rate: 38.1,
+                rank: 91
+              },
+              {
+                arena: "models",
+                category: "website",
+                elo: 876,
+                win_rate: 31.5,
+                rank: 104
+              }
+            ]
           }
         },
         {
@@ -18208,6 +24996,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 6.4,
+              coding_index: 4,
+              agentic_index: 0
+            }
           }
         },
         {
@@ -18257,6 +25052,13 @@ var require_latest = __commonJS({
           expiration_date: "2026-06-19",
           links: {
             details: "/api/v1/models/meta-llama/llama-3-70b-instruct/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 8.9,
+              coding_index: 6.8,
+              agentic_index: 0
+            }
           }
         },
         {
@@ -18414,6 +25216,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4-turbo/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 21.5,
+              agentic_index: null
+            }
           }
         },
         {
@@ -18464,6 +25273,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/anthropic/claude-3-haiku/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: 12.3,
+              coding_index: 6.7,
+              agentic_index: 7
+            }
           }
         },
         {
@@ -19019,6 +25835,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-4/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 13.1,
+              agentic_index: null
+            }
           }
         },
         {
@@ -19072,6 +25895,13 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
+          },
+          benchmarks: {
+            artificial_analysis: {
+              intelligence_index: null,
+              coding_index: 10.7,
+              agentic_index: null
+            }
           }
         }
       ]
