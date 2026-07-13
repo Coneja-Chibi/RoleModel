@@ -33,7 +33,7 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-07-12T08:26:01.625Z",
+        fetchedAt: "2026-07-13T09:38:41.995Z",
         modelCount: 345,
         providerCount: 56,
         source: "openrouter"
@@ -577,21 +577,21 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1270,
-                win_rate: 52.2,
+                elo: 1268,
+                win_rate: 52,
                 rank: 6
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1352,
-                win_rate: 62.5,
-                rank: 3
+                elo: 1338,
+                win_rate: 60.6,
+                rank: 5
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1328,
+                elo: 1327,
                 win_rate: 58.1,
                 rank: 5
               },
@@ -599,14 +599,28 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "dataviz",
                 elo: 1330,
-                win_rate: 61.6,
+                win_rate: 61.4,
                 rank: 3
               },
               {
                 arena: "models",
+                category: "gamedev",
+                elo: 1312,
+                win_rate: 55.8,
+                rank: 14
+              },
+              {
+                arena: "models",
+                category: "uicomponent",
+                elo: 1291,
+                win_rate: 51.5,
+                rank: 16
+              },
+              {
+                arena: "models",
                 category: "website",
-                elo: 1323,
-                win_rate: 57.8,
+                elo: 1325,
+                win_rate: 58.1,
                 rank: 5
               }
             ],
@@ -869,17 +883,38 @@ var require_latest = __commonJS({
             design_arena: [
               {
                 arena: "models",
+                category: "3d",
+                elo: 1187,
+                win_rate: 38,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1191,
+                win_rate: 38.9,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1179,
+                win_rate: 40.7,
+                rank: 57
+              },
+              {
+                arena: "models",
                 category: "gamedev",
-                elo: 1205,
-                win_rate: 41,
-                rank: 44
+                elo: 1194,
+                win_rate: 39.2,
+                rank: 53
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1199,
-                win_rate: 40.1,
-                rank: 55
+                elo: 1189,
+                win_rate: 38.7,
+                rank: 59
               }
             ]
           },
@@ -962,17 +997,38 @@ var require_latest = __commonJS({
             design_arena: [
               {
                 arena: "models",
+                category: "3d",
+                elo: 1187,
+                win_rate: 38,
+                rank: 51
+              },
+              {
+                arena: "models",
+                category: "codecategories",
+                elo: 1191,
+                win_rate: 38.9,
+                rank: 55
+              },
+              {
+                arena: "models",
+                category: "dataviz",
+                elo: 1179,
+                win_rate: 40.7,
+                rank: 57
+              },
+              {
+                arena: "models",
                 category: "gamedev",
-                elo: 1205,
-                win_rate: 41,
-                rank: 44
+                elo: 1194,
+                win_rate: 39.2,
+                rank: 53
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1199,
-                win_rate: 40.1,
-                rank: 55
+                elo: 1189,
+                win_rate: 38.7,
+                rank: 59
               }
             ]
           },
@@ -1167,15 +1223,15 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1314,
-                win_rate: 62.2,
-                rank: 3
+                elo: 1298,
+                win_rate: 60.5,
+                rank: 4
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1351,
-                win_rate: 63,
+                elo: 1346,
+                win_rate: 62.7,
                 rank: 1
               },
               {
@@ -1651,13 +1707,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000042",
-            completion: "0.00000132",
-            input_cache_read: "0.000000078"
+            prompt: "0.00000093",
+            completion: "0.000003",
+            input_cache_read: "0.00000018"
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 131072,
+            max_completion_tokens: 32768,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1703,22 +1759,22 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1250,
-                win_rate: 56.7,
+                elo: 1249,
+                win_rate: 56.5,
                 rank: 5
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1298,
+                elo: 1295,
                 win_rate: 64,
-                rank: 4
+                rank: 5
               },
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1198,
-                win_rate: 51.5,
+                elo: 1197,
+                win_rate: 51.4,
                 rank: 8
               },
               {
@@ -1731,57 +1787,57 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "python-pptxslides",
-                elo: 1209,
-                win_rate: 49.8,
+                elo: 1204,
+                win_rate: 49.6,
                 rank: 5
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1280,
-                win_rate: 57.2,
+                elo: 1278,
+                win_rate: 57.1,
                 rank: 5
               },
               {
                 arena: "models",
                 category: "3d",
                 elo: 1371,
-                win_rate: 62.6,
+                win_rate: 62.5,
                 rank: 1
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1352,
-                win_rate: 61.5,
+                elo: 1351,
+                win_rate: 61.4,
                 rank: 1
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1318,
-                win_rate: 59,
-                rank: 6
+                elo: 1316,
+                win_rate: 58.8,
+                rank: 7
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1354,
-                win_rate: 61.4,
+                elo: 1353,
+                win_rate: 61.3,
                 rank: 2
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1336,
-                win_rate: 60,
+                elo: 1335,
+                win_rate: 59.8,
                 rank: 4
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1346,
-                win_rate: 61.2,
+                win_rate: 61.1,
                 rank: 1
               }
             ],
@@ -1867,9 +1923,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000072",
-            completion: "0.0000035",
-            input_cache_read: "0.00000015"
+            prompt: "0.000000719",
+            completion: "0.00000349",
+            input_cache_read: "0.000000149"
           },
           top_provider: {
             context_length: 262144,
@@ -1925,49 +1981,49 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1214,
-                win_rate: 50.4,
+                elo: 1213,
+                win_rate: 50.5,
                 rank: 10
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1242,
-                win_rate: 55.2,
+                elo: 1240,
+                win_rate: 55.1,
                 rank: 10
               },
               {
                 arena: "agents",
                 category: "htmlslides",
                 elo: 1211,
-                win_rate: 53.1,
+                win_rate: 53.3,
                 rank: 5
               },
               {
                 arena: "agents",
                 category: "mobileapps",
                 elo: 1224,
-                win_rate: 50.5,
+                win_rate: 50.6,
                 rank: 11
               },
               {
                 arena: "agents",
                 category: "python-pptxslides",
-                elo: 1190,
-                win_rate: 46.7,
+                elo: 1184,
+                win_rate: 46.1,
                 rank: 6
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1238,
+                elo: 1237,
                 win_rate: 49.4,
                 rank: 13
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1315,
+                elo: 1316,
                 win_rate: 56.1,
                 rank: 13
               },
@@ -1975,43 +2031,43 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "codecategories",
                 elo: 1300,
-                win_rate: 54.9,
+                win_rate: 54.8,
                 rank: 13
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1255,
+                elo: 1257,
                 win_rate: 51.6,
                 rank: 28
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1278,
-                win_rate: 51.6,
-                rank: 22
+                elo: 1277,
+                win_rate: 51.4,
+                rank: 23
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1237,
-                win_rate: 51.1,
+                elo: 1234,
+                win_rate: 50.7,
                 rank: 15
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1305,
+                elo: 1307,
                 win_rate: 55.8,
                 rank: 13
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1307,
-                win_rate: 56.3,
-                rank: 10
+                elo: 1306,
+                win_rate: 56.1,
+                rank: 11
               }
             ],
             artificial_analysis: {
@@ -2178,85 +2234,85 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1296,
-                win_rate: 62.4,
-                rank: 5
+                elo: 1309,
+                win_rate: 63.5,
+                rank: 3
               },
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1260,
-                win_rate: 60.2,
+                elo: 1261,
+                win_rate: 60.1,
                 rank: 1
               },
               {
                 arena: "agents",
                 category: "mobileapps",
-                elo: 1282,
-                win_rate: 57.9,
+                elo: 1281,
+                win_rate: 58,
                 rank: 2
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1338,
-                win_rate: 62.2,
+                elo: 1333,
+                win_rate: 62,
                 rank: 2
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1361,
-                win_rate: 66.6,
+                elo: 1366,
+                win_rate: 66.9,
                 rank: 2
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1369,
-                win_rate: 70,
+                elo: 1374,
+                win_rate: 70.3,
                 rank: 1
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1344,
+                elo: 1345,
                 win_rate: 63.4,
                 rank: 2
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1372,
-                win_rate: 69.3,
-                rank: 1
+                elo: 1363,
+                win_rate: 68,
+                rank: 2
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1387,
-                win_rate: 66.5,
+                elo: 1383,
+                win_rate: 65.5,
                 rank: 1
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1364,
-                win_rate: 71.4,
+                elo: 1365,
+                win_rate: 71.3,
                 rank: 1
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1406,
-                win_rate: 70.7,
+                elo: 1401,
+                win_rate: 69.8,
                 rank: 1
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1336,
-                win_rate: 62.5,
+                elo: 1338,
+                win_rate: 62.7,
                 rank: 2
               }
             ],
@@ -2341,8 +2397,8 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1303,
-                win_rate: 53.5,
+                elo: 1305,
+                win_rate: 53.6,
                 rank: 17
               },
               {
@@ -2356,29 +2412,29 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "dataviz",
                 elo: 1258,
-                win_rate: 50.3,
-                rank: 26
+                win_rate: 50.1,
+                rank: 27
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1266,
+                elo: 1267,
                 win_rate: 48.9,
-                rank: 25
+                rank: 26
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1260,
-                win_rate: 55.1,
+                elo: 1262,
+                win_rate: 55.5,
                 rank: 10
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1254,
-                win_rate: 47.7,
-                rank: 29
+                elo: 1257,
+                win_rate: 48,
+                rank: 28
               },
               {
                 arena: "models",
@@ -2510,56 +2566,56 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1209,
-                win_rate: 43.7,
+                win_rate: 43.6,
                 rank: 42
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1121,
-                win_rate: 38.6,
+                elo: 1118,
+                win_rate: 38,
                 rank: 44
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1164,
-                win_rate: 36.5,
-                rank: 62
+                win_rate: 36.6,
+                rank: 63
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1154,
-                win_rate: 37,
-                rank: 65
+                elo: 1151,
+                win_rate: 36.6,
+                rank: 66
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1188,
-                win_rate: 39.1,
+                elo: 1191,
+                win_rate: 39.3,
                 rank: 56
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1131,
-                win_rate: 38.1,
-                rank: 47
+                elo: 1128,
+                win_rate: 37.8,
+                rank: 48
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1167,
-                win_rate: 37.3,
-                rank: 56
+                win_rate: 37.4,
+                rank: 57
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1133,
-                win_rate: 32.5,
+                win_rate: 32.6,
                 rank: 80
               }
             ],
@@ -2650,56 +2706,56 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1209,
-                win_rate: 43.7,
+                win_rate: 43.6,
                 rank: 42
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1121,
-                win_rate: 38.6,
+                elo: 1118,
+                win_rate: 38,
                 rank: 44
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1164,
-                win_rate: 36.5,
-                rank: 62
+                win_rate: 36.6,
+                rank: 63
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1154,
-                win_rate: 37,
-                rank: 65
+                elo: 1151,
+                win_rate: 36.6,
+                rank: 66
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1188,
-                win_rate: 39.1,
+                elo: 1191,
+                win_rate: 39.3,
                 rank: 56
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1131,
-                win_rate: 38.1,
-                rank: 47
+                elo: 1128,
+                win_rate: 37.8,
+                rank: 48
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1167,
-                win_rate: 37.3,
-                rank: 56
+                win_rate: 37.4,
+                rank: 57
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1133,
-                win_rate: 32.5,
+                win_rate: 32.6,
                 rank: 80
               }
             ],
@@ -2779,9 +2835,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "website",
-                elo: 1280,
-                win_rate: 50.7,
-                rank: 23
+                elo: 1293,
+                win_rate: 52.8,
+                rank: 16
               }
             ],
             artificial_analysis: {
@@ -2867,37 +2923,37 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1089,
-                win_rate: 30.8,
+                elo: 1087,
+                win_rate: 30.6,
                 rank: 21
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1245,
-                win_rate: 52.6,
+                elo: 1254,
+                win_rate: 54,
                 rank: 9
               },
               {
                 arena: "agents",
                 category: "mobileapps",
-                elo: 1273,
-                win_rate: 57.6,
+                elo: 1271,
+                win_rate: 57,
                 rank: 3
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1298,
-                win_rate: 56.2,
+                elo: 1297,
+                win_rate: 56,
                 rank: 19
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1214,
-                win_rate: 49.4,
-                rank: 16
+                elo: 1210,
+                win_rate: 49.2,
+                rank: 17
               },
               {
                 arena: "models",
@@ -2909,30 +2965,30 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1287,
+                elo: 1286,
                 win_rate: 56.2,
-                rank: 13
+                rank: 14
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1283,
+                elo: 1284,
                 win_rate: 51.6,
                 rank: 21
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1235,
-                win_rate: 53.9,
+                elo: 1233,
+                win_rate: 53.6,
                 rank: 16
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1288,
-                win_rate: 53.8,
-                rank: 18
+                elo: 1286,
+                win_rate: 53.5,
+                rank: 21
               },
               {
                 arena: "models",
@@ -3032,9 +3088,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1212,
-                win_rate: 49.5,
-                rank: 19
+                elo: 1215,
+                win_rate: 49.8,
+                rank: 15
               },
               {
                 arena: "models",
@@ -3046,35 +3102,35 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1205,
-                win_rate: 45.7,
-                rank: 45
-              },
-              {
-                arena: "models",
-                category: "gamedev",
-                elo: 1201,
-                win_rate: 41.3,
+                elo: 1203,
+                win_rate: 45.6,
                 rank: 47
               },
               {
                 arena: "models",
+                category: "gamedev",
+                elo: 1203,
+                win_rate: 41.4,
+                rank: 46
+              },
+              {
+                arena: "models",
                 category: "svg",
-                elo: 1119,
-                win_rate: 39.7,
+                elo: 1120,
+                win_rate: 39.8,
                 rank: 50
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1208,
-                win_rate: 44.2,
-                rank: 44
+                win_rate: 43.9,
+                rank: 45
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1219,
+                elo: 1218,
                 win_rate: 46.8,
                 rank: 46
               }
@@ -3271,14 +3327,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1370,
-                win_rate: 70.4,
+                elo: 1371,
+                win_rate: 70.1,
                 rank: 1
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1322,
+                elo: 1321,
                 win_rate: 64.7,
                 rank: 2
               },
@@ -3293,7 +3349,7 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "mobileapps",
                 elo: 1287,
-                win_rate: 59.3,
+                win_rate: 59.1,
                 rank: 1
               },
               {
@@ -3313,23 +3369,23 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1288,
-                win_rate: 53.8,
+                elo: 1286,
+                win_rate: 53.9,
                 rank: 4
               },
               {
                 arena: "models",
                 category: "3d",
                 elo: 1284,
-                win_rate: 56.1,
+                win_rate: 55.9,
                 rank: 22
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1305,
-                win_rate: 62.5,
-                rank: 6
+                elo: 1308,
+                win_rate: 62.8,
+                rank: 4
               },
               {
                 arena: "models",
@@ -3341,36 +3397,36 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1279,
-                win_rate: 55.6,
-                rank: 18
+                elo: 1278,
+                win_rate: 55.5,
+                rank: 19
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1297,
-                win_rate: 54.8,
-                rank: 15
+                win_rate: 54.6,
+                rank: 16
               },
               {
                 arena: "models",
                 category: "svg",
                 elo: 1226,
                 win_rate: 53.6,
-                rank: 19
+                rank: 18
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1285,
-                win_rate: 55.3,
-                rank: 20
+                elo: 1288,
+                win_rate: 55.5,
+                rank: 18
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1273,
-                win_rate: 54.3,
+                elo: 1274,
+                win_rate: 54.4,
                 rank: 24
               }
             ],
@@ -3458,48 +3514,48 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "agenticgamedev",
                 elo: 1156,
-                win_rate: 47.2,
+                win_rate: 47.4,
                 rank: 9
               },
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1194,
+                elo: 1195,
                 win_rate: 47.5,
                 rank: 13
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1232,
-                win_rate: 49.2,
-                rank: 11
+                elo: 1228,
+                win_rate: 49.1,
+                rank: 12
               },
               {
                 arena: "agents",
                 category: "mobileapps",
                 elo: 1209,
-                win_rate: 47,
+                win_rate: 47.2,
                 rank: 15
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1267,
-                win_rate: 50.4,
+                elo: 1264,
+                win_rate: 50.3,
                 rank: 7
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1323,
-                win_rate: 58.5,
+                elo: 1324,
+                win_rate: 58.6,
                 rank: 9
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1258,
+                elo: 1256,
                 win_rate: 54.6,
                 rank: 9
               },
@@ -3513,37 +3569,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1290,
-                win_rate: 56.4,
+                elo: 1295,
+                win_rate: 57.1,
                 rank: 11
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1319,
-                win_rate: 58.6,
-                rank: 11
+                elo: 1320,
+                win_rate: 58.7,
+                rank: 10
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1271,
-                win_rate: 60.2,
+                elo: 1270,
+                win_rate: 60.1,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1331,
-                win_rate: 60.4,
-                rank: 5
+                elo: 1330,
+                win_rate: 60.3,
+                rank: 6
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1296,
-                win_rate: 56.2,
-                rank: 14
+                elo: 1297,
+                win_rate: 56.3,
+                rank: 13
               }
             ],
             artificial_analysis: {
@@ -3706,7 +3762,7 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "agenticgamedev",
                 elo: 1208,
-                win_rate: 55.1,
+                win_rate: 55,
                 rank: 3
               },
               {
@@ -3741,28 +3797,28 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "androidnative",
                 elo: 1247,
-                win_rate: 53.7,
+                win_rate: 53.5,
                 rank: 6
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1263,
+                elo: 1261,
                 win_rate: 57.5,
                 rank: 8
               },
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1183,
-                win_rate: 48.9,
+                elo: 1184,
+                win_rate: 49,
                 rank: 9
               },
               {
                 arena: "agents",
                 category: "mobileapps",
                 elo: 1259,
-                win_rate: 56.6,
+                win_rate: 56.8,
                 rank: 5
               },
               {
@@ -3782,7 +3838,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1260,
+                elo: 1259,
                 win_rate: 54.1,
                 rank: 9
               },
@@ -3790,35 +3846,35 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1310,
-                win_rate: 58.9,
+                win_rate: 58.8,
                 rank: 14
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1308,
+                elo: 1305,
                 win_rate: 61.5,
-                rank: 4
+                rank: 5
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1297,
-                win_rate: 57.5,
+                win_rate: 57.4,
                 rank: 14
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1262,
+                elo: 1263,
                 win_rate: 54.6,
                 rank: 25
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1322,
-                win_rate: 58.7,
+                elo: 1323,
+                win_rate: 58.8,
                 rank: 9
               },
               {
@@ -3832,15 +3888,15 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "uicomponent",
                 elo: 1307,
-                win_rate: 59,
+                win_rate: 59.1,
                 rank: 12
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1289,
-                win_rate: 56.5,
-                rank: 16
+                win_rate: 56.4,
+                rank: 17
               }
             ],
             artificial_analysis: {
@@ -4319,9 +4375,9 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1077,
-                win_rate: 31.8,
-                rank: 28
+                elo: 1075,
+                win_rate: 31.7,
+                rank: 29
               },
               {
                 arena: "agents",
@@ -4341,7 +4397,7 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "mobileapps",
                 elo: 1140,
-                win_rate: 38.4,
+                win_rate: 38.5,
                 rank: 27
               },
               {
@@ -4361,9 +4417,9 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1190,
-                win_rate: 46.4,
-                rank: 17
+                elo: 1188,
+                win_rate: 46.3,
+                rank: 18
               },
               {
                 arena: "models",
@@ -4375,22 +4431,22 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1192,
-                win_rate: 47,
+                elo: 1188,
+                win_rate: 46.8,
                 rank: 27
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1234,
-                win_rate: 49,
+                elo: 1233,
+                win_rate: 48.9,
                 rank: 33
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1227,
-                win_rate: 47.9,
+                elo: 1226,
+                win_rate: 47.8,
                 rank: 37
               },
               {
@@ -4398,27 +4454,27 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1237,
                 win_rate: 49.5,
-                rank: 35
+                rank: 36
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1134,
-                win_rate: 41.7,
+                elo: 1132,
+                win_rate: 41.5,
                 rank: 46
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1242,
-                win_rate: 48.6,
-                rank: 32
+                win_rate: 48.5,
+                rank: 33
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1234,
-                win_rate: 49.4,
+                elo: 1233,
+                win_rate: 49.2,
                 rank: 36
               }
             ],
@@ -5773,15 +5829,15 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1260,
-                win_rate: 55.8,
+                elo: 1259,
+                win_rate: 55.9,
                 rank: 4
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1151,
-                win_rate: 44.2,
+                elo: 1149,
+                win_rate: 44.1,
                 rank: 18
               },
               {
@@ -5794,14 +5850,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1087,
-                win_rate: 34.8,
+                elo: 1088,
+                win_rate: 34.9,
                 rank: 12
               },
               {
                 arena: "agents",
                 category: "mobileapps",
-                elo: 1220,
+                elo: 1219,
                 win_rate: 50.5,
                 rank: 13
               },
@@ -5822,43 +5878,43 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1179,
+                elo: 1177,
                 win_rate: 44.4,
                 rank: 21
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1260,
-                win_rate: 52.9,
-                rank: 30
+                elo: 1262,
+                win_rate: 53,
+                rank: 29
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1302,
+                elo: 1296,
                 win_rate: 61.2,
                 rank: 7
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1292,
-                win_rate: 56.7,
+                elo: 1291,
+                win_rate: 56.6,
                 rank: 17
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1300,
-                win_rate: 58.5,
+                win_rate: 58.4,
                 rank: 9
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1344,
-                win_rate: 62.7,
+                win_rate: 62.5,
                 rank: 4
               },
               {
@@ -5872,7 +5928,7 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "uicomponent",
                 elo: 1297,
-                win_rate: 57.2,
+                win_rate: 57,
                 rank: 15
               },
               {
@@ -5880,7 +5936,7 @@ var require_latest = __commonJS({
                 category: "website",
                 elo: 1287,
                 win_rate: 56,
-                rank: 17
+                rank: 18
               }
             ],
             artificial_analysis: {
@@ -5987,7 +6043,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1013,
+                elo: 1012,
                 win_rate: 26.6,
                 rank: 28
               },
@@ -5995,13 +6051,13 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1326,
-                win_rate: 59.6,
+                win_rate: 59.5,
                 rank: 7
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1201,
+                elo: 1198,
                 win_rate: 47.3,
                 rank: 21
               },
@@ -6009,28 +6065,28 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "codecategories",
                 elo: 1281,
-                win_rate: 54.6,
+                win_rate: 54.5,
                 rank: 21
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1216,
-                win_rate: 48.1,
+                win_rate: 47.9,
                 rank: 39
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1290,
+                elo: 1292,
                 win_rate: 56,
                 rank: 19
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1184,
-                win_rate: 46.5,
+                elo: 1185,
+                win_rate: 46.6,
                 rank: 35
               },
               {
@@ -6038,13 +6094,13 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1266,
                 win_rate: 51.9,
-                rank: 25
+                rank: 26
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1270,
-                win_rate: 53.4,
+                win_rate: 53.3,
                 rank: 25
               }
             ],
@@ -6141,30 +6197,30 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1168,
-                win_rate: 44.4,
+                elo: 1164,
+                win_rate: 43.7,
                 rank: 35
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1248,
-                win_rate: 49.9,
+                win_rate: 49.8,
                 rank: 32
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1160,
-                win_rate: 40.9,
-                rank: 64
+                elo: 1162,
+                win_rate: 41,
+                rank: 65
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1258,
-                win_rate: 50.7,
-                rank: 28
+                elo: 1259,
+                win_rate: 50.6,
+                rank: 29
               },
               {
                 arena: "models",
@@ -6176,15 +6232,15 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1211,
-                win_rate: 45.6,
-                rank: 42
+                elo: 1212,
+                win_rate: 45.8,
+                rank: 43
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1243,
-                win_rate: 50.5,
+                win_rate: 50.3,
                 rank: 33
               }
             ],
@@ -6406,55 +6462,55 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1319,
-                win_rate: 57.5,
+                win_rate: 57.4,
                 rank: 11
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1196,
-                win_rate: 50,
-                rank: 25
+                elo: 1198,
+                win_rate: 49.4,
+                rank: 22
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1312,
                 win_rate: 57.4,
-                rank: 11
+                rank: 10
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1288,
-                win_rate: 57.6,
+                elo: 1289,
+                win_rate: 57.5,
                 rank: 12
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1334,
-                win_rate: 61.1,
+                win_rate: 61,
                 rank: 7
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1223,
-                win_rate: 53.2,
+                elo: 1220,
+                win_rate: 52.9,
                 rank: 20
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1291,
-                win_rate: 55,
-                rank: 16
+                elo: 1289,
+                win_rate: 54.6,
+                rank: 17
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1303,
+                elo: 1304,
                 win_rate: 56.2,
                 rank: 12
               }
@@ -6497,7 +6553,7 @@ var require_latest = __commonJS({
             input_cache_read: "0.000000028"
           },
           top_provider: {
-            context_length: 32e3,
+            context_length: 262144,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -6549,21 +6605,21 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1184,
-                win_rate: 46.6,
-                rank: 31
+                elo: 1179,
+                win_rate: 46.2,
+                rank: 32
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1295,
-                win_rate: 54.8,
+                win_rate: 54.7,
                 rank: 16
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1282,
+                elo: 1283,
                 win_rate: 54.6,
                 rank: 15
               },
@@ -6571,8 +6627,8 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "gamedev",
                 elo: 1294,
-                win_rate: 55.6,
-                rank: 17
+                win_rate: 55.4,
+                rank: 18
               },
               {
                 arena: "models",
@@ -6584,16 +6640,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1303,
-                win_rate: 55.7,
+                elo: 1302,
+                win_rate: 55.6,
                 rank: 14
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1296,
-                win_rate: 55.1,
-                rank: 13
+                elo: 1295,
+                win_rate: 55,
+                rank: 14
               }
             ],
             artificial_analysis: {
@@ -6944,7 +7000,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "agenticgamedev",
-                elo: 1175,
+                elo: 1176,
                 win_rate: 50,
                 rank: 7
               },
@@ -6980,13 +7036,13 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "androidnative",
                 elo: 1209,
-                win_rate: 50.3,
+                win_rate: 50.2,
                 rank: 12
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1221,
+                elo: 1218,
                 win_rate: 55.9,
                 rank: 14
               },
@@ -7000,7 +7056,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1246,
+                elo: 1247,
                 win_rate: 58.6,
                 rank: 2
               },
@@ -7028,7 +7084,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1253,
+                elo: 1252,
                 win_rate: 57.4,
                 rank: 10
               },
@@ -7036,8 +7092,8 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1348,
-                win_rate: 62.4,
-                rank: 5
+                win_rate: 62.3,
+                rank: 4
               },
               {
                 arena: "models",
@@ -7049,37 +7105,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1298,
+                elo: 1299,
                 win_rate: 56.6,
                 rank: 10
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1312,
+                elo: 1313,
                 win_rate: 58.1,
                 rank: 13
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1228,
-                win_rate: 52.5,
-                rank: 18
+                elo: 1226,
+                win_rate: 52.3,
+                rank: 19
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1314,
-                win_rate: 57.1,
-                rank: 10
+                elo: 1313,
+                win_rate: 57,
+                rank: 11
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1311,
                 win_rate: 56.4,
-                rank: 8
+                rank: 9
               }
             ],
             artificial_analysis: {
@@ -7195,7 +7251,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1290,
+                elo: 1289,
                 win_rate: 56,
                 rank: 2
               },
@@ -7230,7 +7286,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1326,
+                elo: 1325,
                 win_rate: 63.4,
                 rank: 3
               },
@@ -7238,13 +7294,13 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1318,
-                win_rate: 59.2,
+                win_rate: 59.1,
                 rank: 12
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1326,
+                elo: 1324,
                 win_rate: 66.7,
                 rank: 2
               },
@@ -7252,21 +7308,21 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "codecategories",
                 elo: 1330,
-                win_rate: 60.5,
+                win_rate: 60.6,
                 rank: 4
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1320,
-                win_rate: 61.4,
+                elo: 1322,
+                win_rate: 61.5,
                 rank: 5
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1334,
-                win_rate: 60.9,
+                elo: 1336,
+                win_rate: 61.1,
                 rank: 6
               },
               {
@@ -7279,8 +7335,8 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1358,
-                win_rate: 64.2,
+                elo: 1359,
+                win_rate: 64.3,
                 rank: 2
               },
               {
@@ -7386,9 +7442,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1170,
-                win_rate: 47.3,
-                rank: 33
+                elo: 1182,
+                win_rate: 47.1,
+                rank: 31
               },
               {
                 arena: "models",
@@ -7402,35 +7458,35 @@ var require_latest = __commonJS({
                 category: "dataviz",
                 elo: 1366,
                 win_rate: 67,
-                rank: 2
+                rank: 1
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1332,
-                win_rate: 61.7,
+                win_rate: 61.6,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "svg",
                 elo: 1273,
-                win_rate: 61.2,
+                win_rate: 61.1,
                 rank: 7
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1330,
-                win_rate: 61.3,
-                rank: 6
+                elo: 1331,
+                win_rate: 61.4,
+                rank: 5
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1310,
-                win_rate: 57,
-                rank: 9
+                elo: 1312,
+                win_rate: 57.1,
+                rank: 8
               },
               {
                 arena: "agents",
@@ -7471,15 +7527,15 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "androidnative",
                 elo: 1246,
-                win_rate: 54.1,
+                win_rate: 53.8,
                 rank: 7
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1231,
-                win_rate: 56.4,
-                rank: 12
+                elo: 1229,
+                win_rate: 56.3,
+                rank: 11
               },
               {
                 arena: "agents",
@@ -7491,7 +7547,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1205,
+                elo: 1206,
                 win_rate: 52.5,
                 rank: 6
               },
@@ -7519,7 +7575,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1241,
+                elo: 1239,
                 win_rate: 54.5,
                 rank: 12
               }
@@ -7905,15 +7961,15 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1268,
-                win_rate: 51.5,
+                win_rate: 51.4,
                 rank: 25
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1169,
-                win_rate: 45.9,
-                rank: 34
+                elo: 1164,
+                win_rate: 45.4,
+                rank: 36
               },
               {
                 arena: "models",
@@ -7925,35 +7981,35 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1258,
+                elo: 1259,
                 win_rate: 50.7,
-                rank: 27
+                rank: 26
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1264,
                 win_rate: 51.7,
-                rank: 26
+                rank: 27
               },
               {
                 arena: "models",
                 category: "svg",
                 elo: 1211,
-                win_rate: 52,
+                win_rate: 51.9,
                 rank: 24
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1277,
-                win_rate: 52,
-                rank: 23
+                elo: 1276,
+                win_rate: 51.9,
+                rank: 24
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1254,
+                elo: 1255,
                 win_rate: 51.1,
                 rank: 31
               }
@@ -8072,8 +8128,8 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1211,
-                win_rate: 53.9,
+                elo: 1208,
+                win_rate: 53.8,
                 rank: 15
               },
               {
@@ -8107,30 +8163,30 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "python-pptxslides",
-                elo: 1171,
+                elo: 1168,
                 win_rate: 52.1,
                 rank: 8
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1185,
-                win_rate: 46.3,
+                elo: 1184,
+                win_rate: 46.2,
                 rank: 19
               },
               {
                 arena: "models",
                 category: "3d",
                 elo: 1282,
-                win_rate: 55,
+                win_rate: 54.9,
                 rank: 23
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1139,
-                win_rate: 42.6,
-                rank: 42
+                elo: 1137,
+                win_rate: 42.5,
+                rank: 41
               },
               {
                 arena: "models",
@@ -8142,30 +8198,30 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1240,
-                win_rate: 49.2,
+                elo: 1241,
+                win_rate: 49.3,
                 rank: 33
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1283,
-                win_rate: 54.6,
-                rank: 20
+                win_rate: 54.5,
+                rank: 22
               },
               {
                 arena: "models",
                 category: "svg",
                 elo: 1198,
                 win_rate: 51,
-                rank: 30
+                rank: 29
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1262,
-                win_rate: 51.5,
-                rank: 26
+                elo: 1261,
+                win_rate: 51.4,
+                rank: 27
               },
               {
                 arena: "models",
@@ -8240,14 +8296,14 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1153,
+                elo: 1154,
                 win_rate: 41.3,
-                rank: 61
+                rank: 62
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1087,
+                elo: 1084,
                 win_rate: 37.1,
                 rank: 46
               },
@@ -8256,21 +8312,21 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1158,
                 win_rate: 40.1,
-                rank: 64
+                rank: 65
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1138,
                 win_rate: 39.3,
-                rank: 71
+                rank: 72
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1137,
                 win_rate: 38.1,
-                rank: 70
+                rank: 71
               },
               {
                 arena: "models",
@@ -8284,7 +8340,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1093,
                 win_rate: 32.5,
-                rank: 74
+                rank: 75
               },
               {
                 arena: "models",
@@ -8438,13 +8494,13 @@ var require_latest = __commonJS({
                 arena: "agents",
                 category: "androidnative",
                 elo: 1171,
-                win_rate: 43.5,
+                win_rate: 43.6,
                 rank: 16
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1118,
+                elo: 1116,
                 win_rate: 41.1,
                 rank: 21
               },
@@ -8465,7 +8521,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1208,
+                elo: 1207,
                 win_rate: 50,
                 rank: 15
               },
@@ -8473,13 +8529,13 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1262,
-                win_rate: 53.9,
-                rank: 29
+                win_rate: 53.8,
+                rank: 30
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1225,
+                elo: 1222,
                 win_rate: 49.7,
                 rank: 14
               },
@@ -8493,8 +8549,8 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1248,
-                win_rate: 52.7,
+                elo: 1249,
+                win_rate: 52.8,
                 rank: 29
               },
               {
@@ -8502,27 +8558,27 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1257,
                 win_rate: 53.7,
-                rank: 29
+                rank: 30
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1214,
-                win_rate: 54.1,
+                elo: 1213,
+                win_rate: 54,
                 rank: 23
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1249,
-                win_rate: 52.2,
-                rank: 30
+                elo: 1248,
+                win_rate: 52.1,
+                rank: 31
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1263,
-                win_rate: 54.8,
+                elo: 1262,
+                win_rate: 54.7,
                 rank: 27
               }
             ]
@@ -8842,21 +8898,21 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1187,
+                elo: 1183,
                 win_rate: 48.2,
-                rank: 28
+                rank: 30
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1275,
+                elo: 1274,
                 win_rate: 53.3,
                 rank: 24
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1269,
+                elo: 1270,
                 win_rate: 53.4,
                 rank: 21
               },
@@ -8864,29 +8920,29 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "gamedev",
                 elo: 1268,
-                win_rate: 53.3,
-                rank: 23
+                win_rate: 53.1,
+                rank: 24
               },
               {
                 arena: "models",
                 category: "svg",
                 elo: 1188,
                 win_rate: 50.5,
-                rank: 34
+                rank: 33
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1256,
-                win_rate: 49.9,
-                rank: 27
+                win_rate: 50.1,
+                rank: 29
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1280,
                 win_rate: 54.3,
-                rank: 22
+                rank: 23
               }
             ],
             artificial_analysis: {
@@ -9206,42 +9262,42 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1324,
+                elo: 1325,
                 win_rate: 59.6,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1199,
+                elo: 1195,
                 win_rate: 49.8,
-                rank: 22
+                rank: 24
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1312,
-                win_rate: 57.3,
-                rank: 10
+                elo: 1311,
+                win_rate: 57.2,
+                rank: 11
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1305,
-                win_rate: 58.2,
+                elo: 1306,
+                win_rate: 58.3,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1319,
-                win_rate: 59.3,
-                rank: 10
+                win_rate: 59.4,
+                rank: 11
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1264,
+                elo: 1263,
                 win_rate: 59.5,
                 rank: 9
               },
@@ -9249,15 +9305,15 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "uicomponent",
                 elo: 1313,
-                win_rate: 57.8,
-                rank: 11
+                win_rate: 57.9,
+                rank: 10
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1306,
-                win_rate: 56.3,
-                rank: 11
+                win_rate: 56.2,
+                rank: 10
               }
             ]
           },
@@ -9707,27 +9763,27 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1174,
                 win_rate: 42.4,
-                rank: 52
+                rank: 53
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1244,
+                elo: 1241,
                 win_rate: 55.3,
                 rank: 11
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1254,
+                elo: 1253,
                 win_rate: 52.6,
                 rank: 30
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1272,
-                win_rate: 56.5,
+                elo: 1273,
+                win_rate: 56.4,
                 rank: 20
               },
               {
@@ -9735,7 +9791,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1301,
                 win_rate: 57.8,
-                rank: 14
+                rank: 15
               },
               {
                 arena: "models",
@@ -9749,7 +9805,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1288,
                 win_rate: 57.6,
-                rank: 17
+                rank: 19
               },
               {
                 arena: "models",
@@ -9768,7 +9824,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1083,
+                elo: 1080,
                 win_rate: 40.8,
                 rank: 27
               },
@@ -9789,7 +9845,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1134,
+                elo: 1133,
                 win_rate: 41.7,
                 rank: 23
               }
@@ -9874,51 +9930,51 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1054,
-                win_rate: 25.1,
-                rank: 86
+                elo: 1053,
+                win_rate: 24.9,
+                rank: 87
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1032,
-                win_rate: 21.4,
-                rank: 95
+                elo: 1030,
+                win_rate: 21.2,
+                rank: 96
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1004,
+                elo: 1001,
                 win_rate: 20,
-                rank: 91
+                rank: 92
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1039,
-                win_rate: 21.3,
-                rank: 90
+                elo: 1036,
+                win_rate: 21.1,
+                rank: 91
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1024,
-                win_rate: 25.2,
+                elo: 1022,
+                win_rate: 24.8,
                 rank: 71
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1017,
-                win_rate: 20.5,
-                rank: 86
+                elo: 1019,
+                win_rate: 20.4,
+                rank: 87
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1021,
-                win_rate: 20.3,
-                rank: 99
+                elo: 1018,
+                win_rate: 20,
+                rank: 101
               }
             ]
           },
@@ -10063,37 +10119,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1120,
+                elo: 1121,
                 win_rate: 38.8,
-                rank: 74
+                rank: 75
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1214,
+                elo: 1211,
                 win_rate: 50.7,
-                rank: 15
+                rank: 16
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1114,
                 win_rate: 36.4,
-                rank: 78
+                rank: 79
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1084,
+                elo: 1085,
                 win_rate: 33.3,
-                rank: 80
+                rank: 81
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1092,
                 win_rate: 34,
-                rank: 81
+                rank: 82
               },
               {
                 arena: "models",
@@ -10107,12 +10163,12 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1119,
                 win_rate: 37.7,
-                rank: 70
+                rank: 71
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1117,
+                elo: 1116,
                 win_rate: 36.5,
                 rank: 82
               }
@@ -10265,7 +10321,7 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "graphicdesign",
                 elo: 1287,
-                win_rate: 66.5,
+                win_rate: 66.4,
                 rank: 2
               },
               {
@@ -10716,7 +10772,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1048,
+                elo: 1046,
                 win_rate: 36.4,
                 rank: 31
               },
@@ -10737,7 +10793,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1113,
+                elo: 1112,
                 win_rate: 39.1,
                 rank: 26
               },
@@ -10746,21 +10802,21 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1081,
                 win_rate: 35.3,
-                rank: 79
+                rank: 80
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1197,
+                elo: 1194,
                 win_rate: 51.2,
-                rank: 24
+                rank: 25
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1187,
+                elo: 1186,
                 win_rate: 47.3,
-                rank: 55
+                rank: 56
               },
               {
                 arena: "models",
@@ -10774,7 +10830,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1222,
                 win_rate: 51.2,
-                rank: 40
+                rank: 41
               },
               {
                 arena: "models",
@@ -10788,14 +10844,14 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1186,
                 win_rate: 47.3,
-                rank: 52
+                rank: 53
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1198,
                 win_rate: 48.7,
-                rank: 56
+                rank: 55
               }
             ]
           },
@@ -10980,8 +11036,8 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1137,
-                win_rate: 44.5,
+                elo: 1133,
+                win_rate: 44.2,
                 rank: 19
               },
               {
@@ -11001,7 +11057,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "mobileapps",
-                elo: 1175,
+                elo: 1174,
                 win_rate: 46.4,
                 rank: 23
               },
@@ -11022,22 +11078,22 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1191,
+                elo: 1190,
                 win_rate: 48,
                 rank: 16
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1304,
+                elo: 1305,
                 win_rate: 60.7,
                 rank: 16
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1316,
-                win_rate: 63.8,
+                elo: 1313,
+                win_rate: 63.9,
                 rank: 3
               },
               {
@@ -11057,9 +11113,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1259,
+                elo: 1260,
                 win_rate: 54.4,
-                rank: 27
+                rank: 28
               },
               {
                 arena: "models",
@@ -11080,7 +11136,7 @@ var require_latest = __commonJS({
                 category: "website",
                 elo: 1286,
                 win_rate: 64.3,
-                rank: 18
+                rank: 19
               }
             ],
             artificial_analysis: {
@@ -11183,7 +11239,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1271,
+                elo: 1268,
                 win_rate: 63.1,
                 rank: 7
               },
@@ -11204,7 +11260,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1242,
+                elo: 1241,
                 win_rate: 55.8,
                 rank: 11
               },
@@ -11212,35 +11268,35 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1309,
-                win_rate: 58.8,
+                win_rate: 58.7,
                 rank: 15
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1279,
-                win_rate: 60.5,
+                elo: 1273,
+                win_rate: 59.7,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1319,
+                elo: 1318,
                 win_rate: 61,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1317,
-                win_rate: 61.1,
-                rank: 7
+                elo: 1316,
+                win_rate: 60.8,
+                rank: 6
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1318,
-                win_rate: 60.4,
+                win_rate: 60.3,
                 rank: 12
               },
               {
@@ -11253,8 +11309,8 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1321,
-                win_rate: 61.7,
+                elo: 1320,
+                win_rate: 61.5,
                 rank: 7
               },
               {
@@ -11351,9 +11407,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1140,
+                elo: 1137,
                 win_rate: 43.2,
-                rank: 41
+                rank: 42
               },
               {
                 arena: "models",
@@ -11365,16 +11421,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1174,
+                elo: 1175,
                 win_rate: 44.8,
-                rank: 59
+                rank: 60
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1167,
                 win_rate: 42.7,
-                rank: 59
+                rank: 60
               },
               {
                 arena: "models",
@@ -11388,7 +11444,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1226,
                 win_rate: 52.2,
-                rank: 36
+                rank: 37
               },
               {
                 arena: "models",
@@ -11475,14 +11531,14 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1233,
+                elo: 1234,
                 win_rate: 56.7,
                 rank: 35
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1222,
+                elo: 1221,
                 win_rate: 52.6,
                 rank: 38
               },
@@ -11498,7 +11554,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1201,
                 win_rate: 50.1,
-                rank: 46
+                rank: 47
               },
               {
                 arena: "models",
@@ -11512,7 +11568,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1211,
                 win_rate: 51.4,
-                rank: 43
+                rank: 44
               },
               {
                 arena: "models",
@@ -11603,9 +11659,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1242,
+                elo: 1243,
                 win_rate: 57.6,
-                rank: 33
+                rank: 32
               },
               {
                 arena: "models",
@@ -11617,7 +11673,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1211,
+                elo: 1212,
                 win_rate: 51.2,
                 rank: 42
               },
@@ -11626,12 +11682,12 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1237,
                 win_rate: 55.5,
-                rank: 34
+                rank: 35
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1201,
+                elo: 1200,
                 win_rate: 54.5,
                 rank: 27
               },
@@ -11640,7 +11696,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1221,
                 win_rate: 53.4,
-                rank: 38
+                rank: 39
               },
               {
                 arena: "models",
@@ -11722,14 +11778,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1241,
-                win_rate: 61.3,
+                elo: 1240,
+                win_rate: 61.1,
                 rank: 8
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1187,
+                elo: 1185,
                 win_rate: 52.3,
                 rank: 16
               },
@@ -11743,14 +11799,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "htmlslides",
-                elo: 1160,
-                win_rate: 43.2,
+                elo: 1162,
+                win_rate: 43.5,
                 rank: 10
               },
               {
                 arena: "agents",
                 category: "mobileapps",
-                elo: 1220,
+                elo: 1219,
                 win_rate: 53,
                 rank: 12
               },
@@ -11764,7 +11820,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1195,
+                elo: 1192,
                 win_rate: 48,
                 rank: 26
               },
@@ -11778,7 +11834,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1267,
+                elo: 1268,
                 win_rate: 53,
                 rank: 22
               },
@@ -11787,7 +11843,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1295,
                 win_rate: 57.4,
-                rank: 16
+                rank: 17
               },
               {
                 arena: "models",
@@ -11801,14 +11857,14 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1280,
                 win_rate: 53.9,
-                rank: 22
+                rank: 23
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1283,
                 win_rate: 55,
-                rank: 20
+                rank: 21
               }
             ]
           },
@@ -11953,7 +12009,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1286,
+                elo: 1283,
                 win_rate: 68.6,
                 rank: 6
               },
@@ -11967,23 +12023,23 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1263,
+                elo: 1261,
                 win_rate: 60.9,
                 rank: 8
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1348,
+                elo: 1349,
                 win_rate: 64.3,
-                rank: 4
+                rank: 3
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1305,
+                elo: 1303,
                 win_rate: 63,
-                rank: 5
+                rank: 6
               },
               {
                 arena: "models",
@@ -11995,7 +12051,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1321,
+                elo: 1322,
                 win_rate: 62,
                 rank: 4
               },
@@ -12003,20 +12059,20 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "gamedev",
                 elo: 1339,
-                win_rate: 63.1,
+                win_rate: 63,
                 rank: 5
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1279,
-                win_rate: 62.4,
+                elo: 1278,
+                win_rate: 62.3,
                 rank: 4
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1344,
+                elo: 1343,
                 win_rate: 63.9,
                 rank: 3
               },
@@ -12024,7 +12080,7 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "website",
                 elo: 1331,
-                win_rate: 63.1,
+                win_rate: 63,
                 rank: 3
               }
             ]
@@ -12257,7 +12313,7 @@ var require_latest = __commonJS({
             input_cache_read: "0.000000203"
           },
           top_provider: {
-            context_length: 256e3,
+            context_length: 262144,
             max_completion_tokens: null,
             is_moderated: false
           },
@@ -12309,7 +12365,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1180,
+                elo: 1177,
                 win_rate: 54.2,
                 rank: 17
               },
@@ -12330,21 +12386,21 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1190,
+                elo: 1189,
                 win_rate: 50.3,
-                rank: 18
+                rank: 17
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1278,
+                elo: 1279,
                 win_rate: 53.7,
                 rank: 24
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1211,
+                elo: 1209,
                 win_rate: 46.5,
                 rank: 20
               },
@@ -12366,29 +12422,29 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "gamedev",
                 elo: 1267,
-                win_rate: 53.6,
-                rank: 24
+                win_rate: 53.5,
+                rank: 25
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1199,
-                win_rate: 49.4,
-                rank: 29
+                elo: 1198,
+                win_rate: 49.1,
+                rank: 30
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1285,
                 win_rate: 54.2,
-                rank: 21
+                rank: 22
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1284,
-                win_rate: 55.9,
-                rank: 19
+                win_rate: 55.8,
+                rank: 20
               }
             ]
           },
@@ -12870,16 +12926,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1220,
+                elo: 1219,
                 win_rate: 53.1,
                 rank: 39
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1163,
+                elo: 1164,
                 win_rate: 45.3,
-                rank: 63
+                rank: 64
               },
               {
                 arena: "models",
@@ -12900,7 +12956,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1256,
                 win_rate: 57.6,
-                rank: 28
+                rank: 30
               },
               {
                 arena: "models",
@@ -12983,7 +13039,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1057,
+                elo: 1055,
                 win_rate: 37,
                 rank: 30
               },
@@ -12997,14 +13053,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "mobileapps",
-                elo: 1171,
+                elo: 1170,
                 win_rate: 47.7,
                 rank: 25
               },
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1122,
+                elo: 1121,
                 win_rate: 40.5,
                 rank: 25
               }
@@ -13215,7 +13271,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1246,
+                elo: 1247,
                 win_rate: 57,
                 rank: 30
               },
@@ -13238,7 +13294,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1271,
                 win_rate: 60.9,
-                rank: 24
+                rank: 25
               },
               {
                 arena: "models",
@@ -13327,7 +13383,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1115,
+                elo: 1112,
                 win_rate: 44.9,
                 rank: 23
               },
@@ -13348,16 +13404,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1263,
+                elo: 1264,
                 win_rate: 54.3,
                 rank: 26
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1212,
+                elo: 1209,
                 win_rate: 48.2,
-                rank: 18
+                rank: 19
               },
               {
                 arena: "models",
@@ -13369,21 +13425,21 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1234,
+                elo: 1235,
                 win_rate: 51.2,
-                rank: 35
+                rank: 34
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1249,
                 win_rate: 55.1,
-                rank: 31
+                rank: 32
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1193,
+                elo: 1192,
                 win_rate: 54.3,
                 rank: 31
               },
@@ -13392,7 +13448,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1246,
                 win_rate: 51,
-                rank: 31
+                rank: 32
               },
               {
                 arena: "models",
@@ -13499,14 +13555,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "androidnative",
-                elo: 1056,
+                elo: 1057,
                 win_rate: 48,
                 rank: 25
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1128,
+                elo: 1125,
                 win_rate: 47.1,
                 rank: 20
               },
@@ -13527,14 +13583,14 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1181,
+                elo: 1180,
                 win_rate: 49.5,
                 rank: 20
               },
               {
                 arena: "models",
                 category: "3d",
-                elo: 1256,
+                elo: 1257,
                 win_rate: 62.7,
                 rank: 31
               },
@@ -13550,7 +13606,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1227,
                 win_rate: 58.3,
-                rank: 39
+                rank: 40
               },
               {
                 arena: "models",
@@ -13903,7 +13959,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1108,
+                elo: 1106,
                 win_rate: 44,
                 rank: 24
               },
@@ -13924,7 +13980,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1153,
+                elo: 1150,
                 win_rate: 45.7,
                 rank: 22
               },
@@ -13933,19 +13989,19 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1152,
                 win_rate: 41.6,
-                rank: 62
+                rank: 63
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1212,
-                win_rate: 49.6,
-                rank: 44
+                elo: 1211,
+                win_rate: 49.8,
+                rank: 45
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1241,
+                elo: 1242,
                 win_rate: 56.1,
                 rank: 32
               },
@@ -13954,28 +14010,28 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1256,
                 win_rate: 56,
-                rank: 30
+                rank: 31
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1237,
                 win_rate: 51.4,
-                rank: 33
+                rank: 34
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1199,
+                elo: 1196,
                 win_rate: 50.7,
                 rank: 23
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1189,
+                elo: 1188,
                 win_rate: 53.7,
-                rank: 33
+                rank: 34
               }
             ]
           },
@@ -14411,21 +14467,21 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1063,
                 win_rate: 39.6,
-                rank: 83
+                rank: 84
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1107,
                 win_rate: 44,
-                rank: 80
+                rank: 81
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1099,
                 win_rate: 43.6,
-                rank: 79
+                rank: 80
               },
               {
                 arena: "models",
@@ -14505,23 +14561,23 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1104,
+                elo: 1105,
                 win_rate: 46.2,
-                rank: 77
+                rank: 78
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1095,
                 win_rate: 42.9,
-                rank: 82
+                rank: 83
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1051,
                 win_rate: 38.7,
-                rank: 88
+                rank: 89
               },
               {
                 arena: "models",
@@ -14601,23 +14657,23 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1035,
+                elo: 1036,
                 win_rate: 35.9,
-                rank: 89
+                rank: 90
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1052,
                 win_rate: 37.3,
-                rank: 90
+                rank: 91
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1010,
                 win_rate: 33,
-                rank: 98
+                rank: 99
               },
               {
                 arena: "models",
@@ -14697,12 +14753,12 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1172,
                 win_rate: 46.9,
-                rank: 54
+                rank: 55
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1115,
+                elo: 1113,
                 win_rate: 40.3,
                 rank: 45
               },
@@ -14716,16 +14772,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1176,
+                elo: 1177,
                 win_rate: 45.8,
-                rank: 58
+                rank: 59
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1141,
                 win_rate: 41.5,
-                rank: 68
+                rank: 70
               },
               {
                 arena: "models",
@@ -14739,14 +14795,14 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1150,
                 win_rate: 43.1,
-                rank: 60
+                rank: 61
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1197,
                 win_rate: 49.4,
-                rank: 57
+                rank: 56
               }
             ],
             artificial_analysis: {
@@ -14826,14 +14882,14 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1206,
+                elo: 1207,
                 win_rate: 49.6,
                 rank: 43
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1130,
+                elo: 1125,
                 win_rate: 40.5,
                 rank: 43
               },
@@ -14856,12 +14912,12 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1193,
                 win_rate: 46.7,
-                rank: 53
+                rank: 54
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1083,
+                elo: 1082,
                 win_rate: 40.9,
                 rank: 56
               },
@@ -14870,7 +14926,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1196,
                 win_rate: 46.7,
-                rank: 48
+                rank: 49
               },
               {
                 arena: "models",
@@ -14959,14 +15015,14 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1286,
+                elo: 1287,
                 win_rate: 58.6,
                 rank: 21
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1235,
+                elo: 1233,
                 win_rate: 54.7,
                 rank: 12
               },
@@ -14980,16 +15036,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1281,
+                elo: 1282,
                 win_rate: 58.6,
                 rank: 16
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1290,
+                elo: 1291,
                 win_rate: 59.4,
-                rank: 18
+                rank: 20
               },
               {
                 arena: "models",
@@ -15003,14 +15059,14 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1286,
                 win_rate: 58.4,
-                rank: 19
+                rank: 20
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1282,
-                win_rate: 59.8,
-                rank: 21
+                win_rate: 59.7,
+                rank: 22
               },
               {
                 arena: "agents",
@@ -15022,7 +15078,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1221,
+                elo: 1220,
                 win_rate: 59.9,
                 rank: 13
               },
@@ -15036,7 +15092,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1217,
+                elo: 1216,
                 win_rate: 54.2,
                 rank: 14
               }
@@ -15170,7 +15226,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "graphicdesign",
-                elo: 1278,
+                elo: 1277,
                 win_rate: 66,
                 rank: 3
               },
@@ -15332,14 +15388,14 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1134,
+                elo: 1135,
                 win_rate: 43.9,
-                rank: 69
+                rank: 70
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1164,
+                elo: 1161,
                 win_rate: 48.6,
                 rank: 37
               },
@@ -15353,7 +15409,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1244,
+                elo: 1245,
                 win_rate: 58,
                 rank: 31
               },
@@ -15362,12 +15418,12 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1240,
                 win_rate: 55.9,
-                rank: 33
+                rank: 34
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1200,
+                elo: 1199,
                 win_rate: 57.4,
                 rank: 28
               },
@@ -15376,7 +15432,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1215,
                 win_rate: 53,
-                rank: 40
+                rank: 41
               },
               {
                 arena: "models",
@@ -15521,7 +15577,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1089,
+                elo: 1087,
                 win_rate: 44.5,
                 rank: 26
               },
@@ -15535,7 +15591,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1083,
+                elo: 1082,
                 win_rate: 44.1,
                 rank: 27
               },
@@ -15549,7 +15605,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1212,
+                elo: 1213,
                 win_rate: 50.7,
                 rank: 41
               },
@@ -15565,7 +15621,7 @@ var require_latest = __commonJS({
                 category: "website",
                 elo: 1196,
                 win_rate: 56,
-                rank: 58
+                rank: 57
               }
             ]
           },
@@ -15642,14 +15698,14 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1061,
+                elo: 1062,
                 win_rate: 32.9,
-                rank: 84
+                rank: 85
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1151,
+                elo: 1148,
                 win_rate: 43,
                 rank: 40
               },
@@ -15658,21 +15714,21 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1136,
                 win_rate: 41.5,
-                rank: 75
+                rank: 76
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1136,
+                elo: 1137,
                 win_rate: 40.6,
-                rank: 72
+                rank: 73
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1154,
                 win_rate: 43.5,
-                rank: 65
+                rank: 66
               },
               {
                 arena: "models",
@@ -15686,7 +15742,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1128,
                 win_rate: 40.8,
-                rank: 67
+                rank: 68
               },
               {
                 arena: "models",
@@ -16149,19 +16205,19 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1170,
                 win_rate: 48.3,
-                rank: 55
+                rank: 56
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1177,
                 win_rate: 48.1,
-                rank: 61
+                rank: 62
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1180,
+                elo: 1181,
                 win_rate: 50,
                 rank: 56
               },
@@ -16170,7 +16226,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1179,
                 win_rate: 48.1,
-                rank: 57
+                rank: 58
               },
               {
                 arena: "models",
@@ -16184,7 +16240,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1185,
                 win_rate: 49.2,
-                rank: 53
+                rank: 54
               },
               {
                 arena: "models",
@@ -16380,7 +16436,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "graphicdesign",
-                elo: 1195,
+                elo: 1194,
                 win_rate: 48.5,
                 rank: 9
               },
@@ -16395,7 +16451,7 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "logo",
                 elo: 1224,
-                win_rate: 52.5,
+                win_rate: 52.4,
                 rank: 5
               }
             ]
@@ -16474,35 +16530,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1145,
                 win_rate: 41.2,
-                rank: 66
+                rank: 67
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1186,
+                elo: 1183,
                 win_rate: 49.3,
-                rank: 30
+                rank: 29
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1156,
                 win_rate: 44.8,
-                rank: 65
+                rank: 66
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1163,
+                elo: 1164,
                 win_rate: 45.6,
-                rank: 62
+                rank: 63
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1158,
                 win_rate: 44.6,
-                rank: 62
+                rank: 63
               },
               {
                 arena: "models",
@@ -16516,14 +16572,14 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1148,
                 win_rate: 42.7,
-                rank: 61
+                rank: 62
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1157,
                 win_rate: 45,
-                rank: 69
+                rank: 68
               }
             ],
             artificial_analysis: {
@@ -16721,8 +16777,8 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "graphicdesign",
-                elo: 1202,
-                win_rate: 51,
+                elo: 1201,
+                win_rate: 50.8,
                 rank: 6
               },
               {
@@ -16735,7 +16791,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "logo",
-                elo: 1218,
+                elo: 1217,
                 win_rate: 53.6,
                 rank: 6
               }
@@ -17018,7 +17074,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "logo",
-                elo: 1184,
+                elo: 1183,
                 win_rate: 51.4,
                 rank: 9
               }
@@ -17223,7 +17279,7 @@ var require_latest = __commonJS({
           name: "Z.ai: GLM 4.6",
           created: 1759235576,
           description: "Compared with GLM-4.5, this generation brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex...",
-          context_length: 202752,
+          context_length: 2e5,
           architecture: {
             modality: "text->text",
             input_modalities: [
@@ -17237,12 +17293,12 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000043",
-            completion: "0.00000174",
+            completion: "0.00000175",
             input_cache_read: "0.00000008"
           },
           top_provider: {
-            context_length: 202752,
-            max_completion_tokens: 131072,
+            context_length: 198e3,
+            max_completion_tokens: 16384,
             is_moderated: false
           },
           per_request_limits: null,
@@ -17291,7 +17347,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1096,
+                elo: 1093,
                 win_rate: 42.3,
                 rank: 25
               },
@@ -17312,7 +17368,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1200,
+                elo: 1201,
                 win_rate: 54,
                 rank: 44
               },
@@ -17326,16 +17382,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1204,
+                elo: 1205,
                 win_rate: 52.8,
-                rank: 46
+                rank: 45
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1211,
                 win_rate: 54.6,
-                rank: 41
+                rank: 42
               },
               {
                 arena: "models",
@@ -17349,7 +17405,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1207,
                 win_rate: 54,
-                rank: 45
+                rank: 46
               },
               {
                 arena: "models",
@@ -17438,14 +17494,14 @@ var require_latest = __commonJS({
                 arena: "models",
                 category: "3d",
                 elo: 1231,
-                win_rate: 52.9,
+                win_rate: 52.8,
                 rank: 36
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1244,
-                win_rate: 55.4,
+                elo: 1242,
+                win_rate: 55.6,
                 rank: 10
               },
               {
@@ -17458,7 +17514,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1207,
+                elo: 1209,
                 win_rate: 48.8,
                 rank: 43
               },
@@ -17467,7 +17523,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1228,
                 win_rate: 51.9,
-                rank: 38
+                rank: 39
               },
               {
                 arena: "models",
@@ -17479,21 +17535,21 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1224,
-                win_rate: 51.5,
-                rank: 37
+                elo: 1225,
+                win_rate: 51.6,
+                rank: 38
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1225,
+                elo: 1224,
                 win_rate: 53,
                 rank: 41
               },
               {
                 arena: "agents",
                 category: "fullstack",
-                elo: 1117,
+                elo: 1115,
                 win_rate: 43.5,
                 rank: 22
               },
@@ -17507,7 +17563,7 @@ var require_latest = __commonJS({
               {
                 arena: "agents",
                 category: "webapps",
-                elo: 1125,
+                elo: 1124,
                 win_rate: 43.1,
                 rank: 24
               }
@@ -17602,16 +17658,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1192,
+                elo: 1193,
                 win_rate: 50.6,
-                rank: 53
+                rank: 52
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1206,
                 win_rate: 53.1,
-                rank: 42
+                rank: 43
               },
               {
                 arena: "models",
@@ -17625,7 +17681,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1215,
                 win_rate: 53.3,
-                rank: 39
+                rank: 40
               },
               {
                 arena: "models",
@@ -17935,35 +17991,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1146,
                 win_rate: 43.5,
-                rank: 65
+                rank: 66
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1174,
+                elo: 1172,
                 win_rate: 47.2,
-                rank: 32
+                rank: 33
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1152,
                 win_rate: 44,
-                rank: 69
+                rank: 70
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1144,
+                elo: 1145,
                 win_rate: 41.8,
-                rank: 66
+                rank: 67
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1156,
                 win_rate: 43.9,
-                rank: 63
+                rank: 64
               },
               {
                 arena: "models",
@@ -17977,7 +18033,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1125,
                 win_rate: 40.1,
-                rank: 69
+                rank: 70
               },
               {
                 arena: "models",
@@ -18184,7 +18240,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1213,
+                elo: 1214,
                 win_rate: 56,
                 rank: 39
               },
@@ -18198,16 +18254,16 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1203,
+                elo: 1204,
                 win_rate: 53,
-                rank: 47
+                rank: 46
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1192,
                 win_rate: 52.5,
-                rank: 54
+                rank: 55
               },
               {
                 arena: "models",
@@ -18221,7 +18277,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1230,
                 win_rate: 59.3,
-                rank: 35
+                rank: 36
               },
               {
                 arena: "models",
@@ -18702,7 +18758,7 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1140,
                 win_rate: 48.5,
-                rank: 74
+                rank: 75
               },
               {
                 arena: "models",
@@ -18767,9 +18823,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 965,
+                elo: 966,
                 win_rate: 33.3,
-                rank: 96
+                rank: 97
               },
               {
                 arena: "models",
@@ -18958,28 +19014,28 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1150,
                 win_rate: 48,
-                rank: 63
+                rank: 64
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1154,
                 win_rate: 47.9,
-                rank: 68
+                rank: 69
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1139,
+                elo: 1140,
                 win_rate: 46.8,
-                rank: 69
+                rank: 70
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1146,
                 win_rate: 47.2,
-                rank: 66
+                rank: 67
               },
               {
                 arena: "models",
@@ -18993,14 +19049,14 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1132,
                 win_rate: 47.5,
-                rank: 65
+                rank: 66
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1158,
+                elo: 1157,
                 win_rate: 48,
-                rank: 68
+                rank: 69
               }
             ]
           },
@@ -19067,28 +19123,28 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1154,
+                elo: 1155,
                 win_rate: 44.7,
-                rank: 60
+                rank: 61
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1044,
+                elo: 1041,
                 win_rate: 30.8,
                 rank: 48
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1163,
+                elo: 1162,
                 win_rate: 45.1,
-                rank: 63
+                rank: 64
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1187,
+                elo: 1188,
                 win_rate: 47.6,
                 rank: 54
               },
@@ -19097,7 +19153,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1135,
                 win_rate: 40.7,
-                rank: 71
+                rank: 72
               },
               {
                 arena: "models",
@@ -19111,7 +19167,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1147,
                 win_rate: 43.5,
-                rank: 62
+                rank: 63
               },
               {
                 arena: "models",
@@ -19347,37 +19403,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1128,
+                elo: 1129,
                 win_rate: 41.4,
-                rank: 71
+                rank: 72
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1187,
+                elo: 1184,
                 win_rate: 49,
-                rank: 29
+                rank: 28
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1211,
                 win_rate: 54.7,
-                rank: 45
+                rank: 44
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1278,
+                elo: 1279,
                 win_rate: 63.3,
-                rank: 19
+                rank: 18
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1247,
                 win_rate: 59.5,
-                rank: 32
+                rank: 33
               },
               {
                 arena: "models",
@@ -19391,7 +19447,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1231,
                 win_rate: 58.3,
-                rank: 34
+                rank: 35
               },
               {
                 arena: "models",
@@ -19482,37 +19538,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1110,
+                elo: 1111,
                 win_rate: 37,
                 rank: 76
               },
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1167,
+                elo: 1165,
                 win_rate: 44.5,
-                rank: 36
+                rank: 34
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1156,
                 win_rate: 43.4,
-                rank: 66
+                rank: 67
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1168,
                 win_rate: 43.6,
-                rank: 60
+                rank: 61
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1190,
                 win_rate: 46.4,
-                rank: 55
+                rank: 57
               },
               {
                 arena: "models",
@@ -19524,9 +19580,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1154,
+                elo: 1153,
                 win_rate: 42,
-                rank: 58
+                rank: 60
               },
               {
                 arena: "models",
@@ -19619,35 +19675,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1037,
                 win_rate: 36.1,
-                rank: 88
+                rank: 89
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1127,
+                elo: 1126,
                 win_rate: 48.1,
-                rank: 76
+                rank: 77
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1099,
+                elo: 1100,
                 win_rate: 46.7,
-                rank: 78
+                rank: 79
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1107,
                 win_rate: 46.6,
-                rank: 78
+                rank: 79
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1115,
                 win_rate: 52,
-                rank: 71
+                rank: 72
               },
               {
                 arena: "models",
@@ -19729,37 +19785,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 973,
+                elo: 974,
                 win_rate: 29.4,
-                rank: 92
+                rank: 93
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1005,
                 win_rate: 33.4,
-                rank: 99
+                rank: 100
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1040,
                 win_rate: 45.1,
-                rank: 88
+                rank: 89
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1054,
                 win_rate: 40.6,
-                rank: 87
+                rank: 88
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 973,
                 win_rate: 35.5,
-                rank: 92
+                rank: 93
               },
               {
                 arena: "models",
@@ -19853,37 +19909,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 973,
+                elo: 974,
                 win_rate: 29.4,
-                rank: 92
+                rank: 93
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1005,
                 win_rate: 33.4,
-                rank: 99
+                rank: 100
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1040,
                 win_rate: 45.1,
-                rank: 88
+                rank: 89
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1054,
                 win_rate: 40.6,
-                rank: 87
+                rank: 88
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 973,
                 win_rate: 35.5,
-                rank: 92
+                rank: 93
               },
               {
                 arena: "models",
@@ -19978,7 +20034,7 @@ var require_latest = __commonJS({
                 category: "dataviz",
                 elo: 974,
                 win_rate: 39.7,
-                rank: 94
+                rank: 95
               },
               {
                 arena: "models",
@@ -20073,7 +20129,7 @@ var require_latest = __commonJS({
                 category: "dataviz",
                 elo: 974,
                 win_rate: 39.7,
-                rank: 94
+                rank: 95
               },
               {
                 arena: "models",
@@ -20174,9 +20230,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "asciiart",
-                elo: 1212,
+                elo: 1209,
                 win_rate: 51.4,
-                rank: 17
+                rank: 18
               },
               {
                 arena: "models",
@@ -20188,7 +20244,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1205,
+                elo: 1206,
                 win_rate: 56.4,
                 rank: 44
               },
@@ -20197,12 +20253,12 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1233,
                 win_rate: 58.5,
-                rank: 36
+                rank: 37
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1203,
+                elo: 1202,
                 win_rate: 60.8,
                 rank: 26
               },
@@ -20211,7 +20267,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1212,
                 win_rate: 58,
-                rank: 41
+                rank: 42
               },
               {
                 arena: "models",
@@ -20286,28 +20342,28 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1049,
                 win_rate: 38.5,
-                rank: 91
+                rank: 92
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1058,
                 win_rate: 41.7,
-                rank: 86
+                rank: 87
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1028,
                 win_rate: 36.2,
-                rank: 94
+                rank: 95
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1066,
                 win_rate: 46.9,
-                rank: 79
+                rank: 80
               },
               {
                 arena: "models",
@@ -20321,7 +20377,7 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1093,
                 win_rate: 45.5,
-                rank: 78
+                rank: 79
               }
             ]
           }
@@ -20384,7 +20440,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1124,
+                elo: 1125,
                 win_rate: 54.7,
                 rank: 76
               },
@@ -20393,7 +20449,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1095,
                 win_rate: 54.1,
-                rank: 73
+                rank: 74
               },
               {
                 arena: "models",
@@ -20520,7 +20576,7 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1243,
                 win_rate: 59.7,
-                rank: 32
+                rank: 33
               },
               {
                 arena: "models",
@@ -20541,12 +20597,12 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1206,
                 win_rate: 54.4,
-                rank: 43
+                rank: 44
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1147,
+                elo: 1146,
                 win_rate: 50.8,
                 rank: 43
               },
@@ -20555,7 +20611,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1193,
                 win_rate: 55.1,
-                rank: 51
+                rank: 52
               },
               {
                 arena: "models",
@@ -20631,21 +20687,21 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1195,
+                elo: 1196,
                 win_rate: 54.1,
                 rank: 46
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1180,
+                elo: 1179,
                 win_rate: 51.5,
-                rank: 60
+                rank: 61
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1232,
+                elo: 1233,
                 win_rate: 59.4,
                 rank: 36
               },
@@ -20654,7 +20710,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1155,
                 win_rate: 48.4,
-                rank: 64
+                rank: 65
               },
               {
                 arena: "models",
@@ -20666,9 +20722,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1173,
+                elo: 1172,
                 win_rate: 54.6,
-                rank: 55
+                rank: 56
               },
               {
                 arena: "models",
@@ -20750,35 +20806,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1072,
                 win_rate: 40.7,
-                rank: 81
+                rank: 82
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1075,
                 win_rate: 40.9,
-                rank: 85
+                rank: 86
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 987,
                 win_rate: 32.3,
-                rank: 92
+                rank: 93
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1018,
+                elo: 1019,
                 win_rate: 34.3,
-                rank: 95
+                rank: 96
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 991,
                 win_rate: 33.9,
-                rank: 91
+                rank: 92
               },
               {
                 arena: "models",
@@ -20852,35 +20908,35 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1185,
                 win_rate: 61.2,
-                rank: 56
+                rank: 57
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1122,
+                elo: 1123,
                 win_rate: 54.9,
-                rank: 77
+                rank: 78
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1162,
                 win_rate: 59,
-                rank: 60
+                rank: 61
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1163,
                 win_rate: 61.5,
-                rank: 57
+                rank: 58
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1194,
                 win_rate: 61.7,
-                rank: 59
+                rank: 58
               }
             ]
           }
@@ -20947,35 +21003,35 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1185,
                 win_rate: 61.2,
-                rank: 56
+                rank: 57
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1122,
+                elo: 1123,
                 win_rate: 54.9,
-                rank: 77
+                rank: 78
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1162,
                 win_rate: 59,
-                rank: 60
+                rank: 61
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1163,
                 win_rate: 61.5,
-                rank: 57
+                rank: 58
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1194,
                 win_rate: 61.7,
-                rank: 59
+                rank: 58
               }
             ]
           }
@@ -21122,7 +21178,7 @@ var require_latest = __commonJS({
           },
           pricing: {
             prompt: "0.00000009",
-            completion: "0.0000001"
+            completion: "0.00000055"
           },
           top_provider: {
             context_length: 262144,
@@ -21163,35 +21219,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1067,
                 win_rate: 41.1,
-                rank: 82
+                rank: 83
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1081,
                 win_rate: 42.7,
-                rank: 83
+                rank: 84
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1098,
                 win_rate: 47.7,
-                rank: 79
+                rank: 80
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1013,
                 win_rate: 35.2,
-                rank: 97
+                rank: 98
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1015,
                 win_rate: 38.8,
-                rank: 87
+                rank: 88
               },
               {
                 arena: "models",
@@ -21259,28 +21315,28 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1076,
                 win_rate: 51.7,
-                rank: 84
+                rank: 85
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1059,
                 win_rate: 49.4,
-                rank: 85
+                rank: 86
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1035,
                 win_rate: 46.4,
-                rank: 91
+                rank: 92
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1080,
                 win_rate: 55.1,
-                rank: 76
+                rank: 77
               },
               {
                 arena: "models",
@@ -21653,28 +21709,28 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 949,
                 win_rate: 39.8,
-                rank: 103
+                rank: 104
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 968,
                 win_rate: 43.3,
-                rank: 95
+                rank: 96
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 950,
+                elo: 949,
                 win_rate: 39.4,
-                rank: 103
+                rank: 104
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 955,
+                elo: 956,
                 win_rate: 40.5,
-                rank: 94
+                rank: 95
               },
               {
                 arena: "models",
@@ -21818,35 +21874,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1144,
                 win_rate: 47.4,
-                rank: 67
+                rank: 68
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1146,
                 win_rate: 46.9,
-                rank: 72
+                rank: 73
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1166,
+                elo: 1167,
                 win_rate: 48.4,
-                rank: 61
+                rank: 62
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1126,
+                elo: 1127,
                 win_rate: 44.3,
-                rank: 75
+                rank: 76
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1141,
                 win_rate: 48.9,
-                rank: 64
+                rank: 65
               },
               {
                 arena: "models",
@@ -21936,9 +21992,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1155,
+                elo: 1156,
                 win_rate: 52.2,
-                rank: 58
+                rank: 59
               },
               {
                 arena: "models",
@@ -21952,21 +22008,21 @@ var require_latest = __commonJS({
                 category: "dataviz",
                 elo: 1286,
                 win_rate: 71.8,
-                rank: 14
+                rank: 13
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1173,
                 win_rate: 55.1,
-                rank: 58
+                rank: 59
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1193,
                 win_rate: 60.5,
-                rank: 50
+                rank: 51
               },
               {
                 arena: "models",
@@ -22174,19 +22230,19 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1184,
                 win_rate: 53.4,
-                rank: 51
+                rank: 52
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1181,
                 win_rate: 52.6,
-                rank: 59
+                rank: 60
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1218,
+                elo: 1219,
                 win_rate: 60.7,
                 rank: 38
               },
@@ -22195,12 +22251,12 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1159,
                 win_rate: 49.5,
-                rank: 61
+                rank: 62
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1089,
+                elo: 1088,
                 win_rate: 48.7,
                 rank: 53
               },
@@ -22288,9 +22344,9 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1211,
+                elo: 1212,
                 win_rate: 57.7,
-                rank: 41
+                rank: 40
               },
               {
                 arena: "models",
@@ -22302,7 +22358,7 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1185,
+                elo: 1186,
                 win_rate: 57.9,
                 rank: 55
               },
@@ -22311,7 +22367,7 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1231,
                 win_rate: 59.9,
-                rank: 37
+                rank: 38
               },
               {
                 arena: "models",
@@ -22325,7 +22381,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1202,
                 win_rate: 59.2,
-                rank: 47
+                rank: 48
               },
               {
                 arena: "models",
@@ -22407,21 +22463,21 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1212,
                 win_rate: 57.8,
-                rank: 40
+                rank: 41
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1184,
+                elo: 1183,
                 win_rate: 53.4,
-                rank: 57
+                rank: 59
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1192,
                 win_rate: 55.8,
-                rank: 52
+                rank: 53
               },
               {
                 arena: "models",
@@ -22435,14 +22491,14 @@ var require_latest = __commonJS({
                 category: "svg",
                 elo: 1128,
                 win_rate: 51.1,
-                rank: 48
+                rank: 47
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1178,
                 win_rate: 58,
-                rank: 54
+                rank: 55
               },
               {
                 arena: "models",
@@ -22580,37 +22636,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 1155,
+                elo: 1156,
                 win_rate: 54.6,
-                rank: 59
+                rank: 60
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1111,
                 win_rate: 48.1,
-                rank: 79
+                rank: 80
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1072,
                 win_rate: 45.7,
-                rank: 84
+                rank: 85
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1079,
                 win_rate: 45.3,
-                rank: 83
+                rank: 84
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1076,
                 win_rate: 50,
-                rank: 77
+                rank: 78
               },
               {
                 arena: "models",
@@ -22909,28 +22965,28 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 984,
                 win_rate: 37.5,
-                rank: 100
+                rank: 101
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1007,
+                elo: 1008,
                 win_rate: 39,
-                rank: 90
+                rank: 91
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 959,
                 win_rate: 33.8,
-                rank: 101
+                rank: 102
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 995,
                 win_rate: 42.4,
-                rank: 90
+                rank: 91
               },
               {
                 arena: "models",
@@ -23205,37 +23261,37 @@ var require_latest = __commonJS({
               {
                 arena: "models",
                 category: "3d",
-                elo: 931,
+                elo: 932,
                 win_rate: 24.5,
-                rank: 95
+                rank: 96
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1044,
                 win_rate: 38.3,
-                rank: 93
+                rank: 94
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1041,
                 win_rate: 41,
-                rank: 87
+                rank: 88
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 990,
                 win_rate: 33.1,
-                rank: 99
+                rank: 100
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1011,
                 win_rate: 39.1,
-                rank: 88
+                rank: 89
               },
               {
                 arena: "models",
@@ -23370,7 +23426,7 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 1062,
                 win_rate: 51.9,
-                rank: 89
+                rank: 90
               },
               {
                 arena: "models",
@@ -23384,14 +23440,14 @@ var require_latest = __commonJS({
                 category: "gamedev",
                 elo: 1095,
                 win_rate: 56.9,
-                rank: 80
+                rank: 81
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1066,
                 win_rate: 53.3,
-                rank: 80
+                rank: 81
               },
               {
                 arena: "models",
@@ -23463,42 +23519,42 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 926,
                 win_rate: 34,
-                rank: 96
+                rank: 97
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1018,
                 win_rate: 46.4,
-                rank: 97
+                rank: 98
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1031,
                 win_rate: 50,
-                rank: 89
+                rank: 90
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1064,
                 win_rate: 50,
-                rank: 85
+                rank: 86
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1033,
                 win_rate: 46.9,
-                rank: 85
+                rank: 86
               },
               {
                 arena: "models",
                 category: "website",
                 elo: 1020,
                 win_rate: 47.1,
-                rank: 101
+                rank: 100
               }
             ]
           },
@@ -23564,35 +23620,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 922,
                 win_rate: 30.9,
-                rank: 97
+                rank: 98
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1068,
                 win_rate: 50.9,
-                rank: 86
+                rank: 87
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1143,
+                elo: 1144,
                 win_rate: 59.5,
-                rank: 67
+                rank: 68
               },
               {
                 arena: "models",
                 category: "gamedev",
-                elo: 1140,
+                elo: 1141,
                 win_rate: 59.1,
                 rank: 69
               },
               {
                 arena: "models",
                 category: "uicomponent",
-                elo: 1050,
+                elo: 1049,
                 win_rate: 49.7,
-                rank: 81
+                rank: 82
               },
               {
                 arena: "models",
@@ -23662,40 +23718,40 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 909,
                 win_rate: 30.5,
-                rank: 98
+                rank: 99
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1036,
                 win_rate: 47.5,
-                rank: 94
+                rank: 95
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 1073,
+                elo: 1074,
                 win_rate: 49.2,
-                rank: 82
+                rank: 83
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1132,
                 win_rate: 58.5,
-                rank: 73
+                rank: 74
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 1010,
                 win_rate: 45.4,
-                rank: 89
+                rank: 90
               },
               {
                 arena: "models",
                 category: "website",
-                elo: 1033,
+                elo: 1032,
                 win_rate: 47.8,
                 rank: 98
               }
@@ -23765,35 +23821,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 997,
                 win_rate: 46,
-                rank: 91
+                rank: 92
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 1005,
                 win_rate: 47.3,
-                rank: 98
+                rank: 99
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 931,
+                elo: 932,
                 win_rate: 41.1,
-                rank: 100
+                rank: 101
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1031,
                 win_rate: 49.6,
-                rank: 93
+                rank: 94
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 965,
                 win_rate: 43.9,
-                rank: 93
+                rank: 94
               },
               {
                 arena: "models",
@@ -23831,8 +23887,8 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000015",
-            completion: "0.0000006"
+            prompt: "0.0000002",
+            completion: "0.0000008"
           },
           top_provider: {
             context_length: 1048576,
@@ -23873,35 +23929,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 972,
                 win_rate: 40.2,
-                rank: 93
+                rank: 94
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 922,
                 win_rate: 35.8,
-                rank: 104
+                rank: 105
               },
               {
                 arena: "models",
                 category: "dataviz",
-                elo: 922,
+                elo: 923,
                 win_rate: 38.4,
-                rank: 102
+                rank: 103
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 899,
                 win_rate: 33.7,
-                rank: 105
+                rank: 106
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 948,
                 win_rate: 40.8,
-                rank: 95
+                rank: 96
               },
               {
                 arena: "models",
@@ -23979,28 +24035,28 @@ var require_latest = __commonJS({
                 category: "codecategories",
                 elo: 832,
                 win_rate: 26.6,
-                rank: 108
+                rank: 109
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 936,
                 win_rate: 39.3,
-                rank: 99
+                rank: 100
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 834,
                 win_rate: 27.4,
-                rank: 107
+                rank: 108
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 817,
                 win_rate: 25.5,
-                rank: 101
+                rank: 102
               },
               {
                 arena: "models",
@@ -25566,33 +25622,33 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 1160,
                 win_rate: 50.7,
-                rank: 57
+                rank: 58
               },
               {
                 arena: "models",
                 category: "codecategories",
-                elo: 1151,
+                elo: 1150,
                 win_rate: 48.5,
-                rank: 70
+                rank: 71
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 1138,
                 win_rate: 51.4,
-                rank: 70
+                rank: 71
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 1115,
                 win_rate: 43.9,
-                rank: 76
+                rank: 77
               },
               {
                 arena: "models",
                 category: "svg",
-                elo: 1027,
+                elo: 1026,
                 win_rate: 38.8,
                 rank: 70
               },
@@ -25601,7 +25657,7 @@ var require_latest = __commonJS({
                 category: "uicomponent",
                 elo: 1143,
                 win_rate: 52.8,
-                rank: 63
+                rank: 64
               },
               {
                 arena: "models",
@@ -27668,35 +27724,35 @@ var require_latest = __commonJS({
                 category: "3d",
                 elo: 941,
                 win_rate: 39.2,
-                rank: 94
+                rank: 95
               },
               {
                 arena: "models",
                 category: "codecategories",
                 elo: 903,
                 win_rate: 34.8,
-                rank: 106
+                rank: 107
               },
               {
                 arena: "models",
                 category: "dataviz",
                 elo: 897,
                 win_rate: 36,
-                rank: 103
+                rank: 104
               },
               {
                 arena: "models",
                 category: "gamedev",
                 elo: 967,
                 win_rate: 42.3,
-                rank: 100
+                rank: 101
               },
               {
                 arena: "models",
                 category: "uicomponent",
                 elo: 935,
                 win_rate: 38.1,
-                rank: 97
+                rank: 98
               },
               {
                 arena: "models",
