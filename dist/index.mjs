@@ -29,12 +29,79 @@ var require_latest = __commonJS({
   "snapshots/latest.json"(exports$1, module) {
     module.exports = {
       _meta: {
-        fetchedAt: "2026-08-19T06:53:30.739Z",
-        modelCount: 415,
-        providerCount: 60,
+        fetchedAt: "2026-08-20T06:55:20.342Z",
+        modelCount: 414,
+        providerCount: 59,
         source: "openrouter"
       },
       data: [
+        {
+          id: "~z-ai/glm-latest",
+          canonical_slug: "~z-ai/glm-latest",
+          alias_target: {
+            name: "Z.ai: GLM 5.3",
+            slug: "z-ai/glm-5.3"
+          },
+          hugging_face_id: null,
+          name: "Z.ai: GLM Latest",
+          created: 1787151053,
+          description: "This model always redirects to the latest GLM model from Z.ai.",
+          context_length: 1048576,
+          architecture: {
+            modality: "text->text",
+            input_modalities: [
+              "text"
+            ],
+            output_modalities: [
+              "text"
+            ],
+            tokenizer: "Router",
+            instruct_type: null
+          },
+          pricing: {
+            prompt: "0.0000014",
+            completion: "0.0000044",
+            input_cache_read: "0.00000026"
+          },
+          top_provider: {
+            context_length: 1048576,
+            max_completion_tokens: 131072,
+            is_moderated: false
+          },
+          per_request_limits: null,
+          supported_parameters: [
+            "include_reasoning",
+            "max_tokens",
+            "reasoning",
+            "reasoning_effort",
+            "response_format",
+            "temperature",
+            "tool_choice",
+            "tools",
+            "top_k",
+            "top_p"
+          ],
+          default_parameters: {
+            temperature: 1,
+            top_p: 0.95
+          },
+          supported_voices: null,
+          knowledge_cutoff: null,
+          expiration_date: "2098-12-31",
+          links: {
+            details: "/api/v1/models/~z-ai/glm-latest/endpoints"
+          },
+          reasoning: {
+            mandatory: true,
+            default_enabled: true,
+            supported_efforts: [
+              "max",
+              "high",
+              "low"
+            ],
+            default_effort: "max"
+          }
+        },
         {
           id: "z-ai/glm-5.3",
           canonical_slug: "z-ai/glm-5.3-20260816",
@@ -87,6 +154,14 @@ var require_latest = __commonJS({
           links: {
             details: "/api/v1/models/z-ai/glm-5.3-20260816/endpoints"
           },
+          benchmarks: {
+            design_arena: [],
+            artificial_analysis: {
+              intelligence_index: 59.5,
+              coding_index: 74.8,
+              agentic_index: 59.1
+            }
+          },
           reasoning: {
             mandatory: true,
             default_enabled: true,
@@ -105,7 +180,7 @@ var require_latest = __commonJS({
           name: "Qwen: Qwen3.8 27B",
           created: 1786722910,
           description: "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
-          context_length: 262144,
+          context_length: 1e6,
           architecture: {
             modality: "text+image+video->text",
             input_modalities: [
@@ -133,6 +208,7 @@ var require_latest = __commonJS({
           supported_parameters: [
             "frequency_penalty",
             "include_reasoning",
+            "logit_bias",
             "logprobs",
             "max_tokens",
             "presence_penalty",
@@ -160,6 +236,14 @@ var require_latest = __commonJS({
           expiration_date: null,
           links: {
             details: "/api/v1/models/qwen/qwen3.8-27b-20260814/endpoints"
+          },
+          benchmarks: {
+            design_arena: [],
+            artificial_analysis: {
+              intelligence_index: 52,
+              coding_index: 68.1,
+              agentic_index: 50.9
+            }
           },
           reasoning: {
             mandatory: false,
@@ -708,43 +792,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000132",
-            completion: "0.00000396",
-            input_cache_read: "0.000000044",
-            overrides: [
-              {
-                utc_start: 1e3,
-                utc_end: 100,
-                prompt: "0.00000066",
-                completion: "0.00000198",
-                input_cache_read: "0.000000022"
-              },
-              {
-                utc_start: 100,
-                utc_end: 400,
-                prompt: "0.00000132",
-                completion: "0.00000396",
-                input_cache_read: "0.000000044"
-              },
-              {
-                utc_start: 400,
-                utc_end: 600,
-                prompt: "0.00000066",
-                completion: "0.00000198",
-                input_cache_read: "0.000000022"
-              },
-              {
-                utc_start: 600,
-                utc_end: 1e3,
-                prompt: "0.00000132",
-                completion: "0.00000396",
-                input_cache_read: "0.000000044"
-              }
-            ]
+            prompt: "0.000001188",
+            completion: "0.000003564",
+            input_cache_read: "0.0000000396"
           },
           top_provider: {
-            context_length: 1048576,
-            max_completion_tokens: 384e3,
+            context_length: 1048575,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -1692,9 +1746,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000000765",
-            completion: "0.000000153",
-            input_cache_read: "0.0000000153"
+            prompt: "0.000000065",
+            completion: "0.00000014",
+            input_cache_read: "0.000000014"
           },
           top_provider: {
             context_length: 262144,
@@ -3143,9 +3197,9 @@ var require_latest = __commonJS({
           benchmarks: {
             design_arena: [],
             artificial_analysis: {
-              intelligence_index: null,
+              intelligence_index: 34,
               coding_index: 45.3,
-              agentic_index: null
+              agentic_index: 22
             }
           },
           reasoning: {
@@ -5999,7 +6053,7 @@ var require_latest = __commonJS({
           },
           top_provider: {
             context_length: 65536,
-            max_completion_tokens: 66e3,
+            max_completion_tokens: 65536,
             is_moderated: false
           },
           per_request_limits: null,
@@ -7985,9 +8039,9 @@ var require_latest = __commonJS({
               }
             ],
             artificial_analysis: {
-              intelligence_index: null,
+              intelligence_index: 41.7,
               coding_index: 59.1,
-              agentic_index: null
+              agentic_index: 31.2
             }
           },
           reasoning: {
@@ -10560,16 +10614,16 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-08-24",
           links: {
             details: "/api/v1/models/inclusionai/ring-2.6-1t-20260508/endpoints"
           },
           benchmarks: {
             design_arena: [],
             artificial_analysis: {
-              intelligence_index: null,
+              intelligence_index: 31.7,
               coding_index: 42.8,
-              agentic_index: null
+              agentic_index: 20.1
             }
           },
           reasoning: {
@@ -12114,13 +12168,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000003",
-            completion: "0.000002",
-            input_cache_read: "0.00000003"
+            prompt: "0.0000006",
+            completion: "0.0000036",
+            input_cache_read: "0.00000012"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12811,43 +12865,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000132",
-            completion: "0.00000396",
-            input_cache_read: "0.000000044",
-            overrides: [
-              {
-                utc_start: 1e3,
-                utc_end: 100,
-                prompt: "0.00000066",
-                completion: "0.00000198",
-                input_cache_read: "0.000000022"
-              },
-              {
-                utc_start: 100,
-                utc_end: 400,
-                prompt: "0.00000132",
-                completion: "0.00000396",
-                input_cache_read: "0.000000044"
-              },
-              {
-                utc_start: 400,
-                utc_end: 600,
-                prompt: "0.00000066",
-                completion: "0.00000198",
-                input_cache_read: "0.000000022"
-              },
-              {
-                utc_start: 600,
-                utc_end: 1e3,
-                prompt: "0.00000132",
-                completion: "0.00000396",
-                input_cache_read: "0.000000044"
-              }
-            ]
+            prompt: "0.0000016",
+            completion: "0.0000032",
+            input_cache_read: "0.000000135"
           },
           top_provider: {
             context_length: 1048576,
-            max_completion_tokens: 384e3,
+            max_completion_tokens: 393216,
             is_moderated: false
           },
           per_request_limits: null,
@@ -12999,9 +13023,9 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.0000000826",
-            completion: "0.0000001652",
-            input_cache_read: "0.00000001652"
+            prompt: "0.000000088606",
+            completion: "0.000000177212",
+            input_cache_read: "0.0000000177212"
           },
           top_provider: {
             context_length: 1024e3,
@@ -13171,7 +13195,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-08-24",
           links: {
             details: "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
           }
@@ -13655,7 +13679,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-08-24",
           links: {
             details: "/api/v1/models/inclusionai/ling-2.6-flash-20260421/endpoints"
           },
@@ -15450,9 +15474,9 @@ var require_latest = __commonJS({
               }
             ],
             artificial_analysis: {
-              intelligence_index: null,
+              intelligence_index: 18.7,
               coding_index: 25.8,
-              agentic_index: null
+              agentic_index: 3.7
             }
           },
           reasoning: {
@@ -15887,9 +15911,9 @@ var require_latest = __commonJS({
           benchmarks: {
             design_arena: [],
             artificial_analysis: {
-              intelligence_index: null,
+              intelligence_index: 33.7,
               coding_index: 59.5,
-              agentic_index: null
+              agentic_index: 15.1
             }
           }
         },
@@ -17897,13 +17921,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.000000225",
-            completion: "0.0000018",
-            input_cache_read: "0.000000225"
+            prompt: "0.00000025",
+            completion: "0.00000125",
+            input_cache_read: "0.00000025"
           },
           top_provider: {
             context_length: 262144,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 262144,
             is_moderated: false
           },
           per_request_limits: null,
@@ -19581,13 +19605,13 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000022",
+            prompt: "0.000000225",
             completion: "0.0000009",
-            input_cache_read: "0.00000005"
+            input_cache_read: "0.00000006"
           },
           top_provider: {
-            context_length: 196608,
-            max_completion_tokens: 196608,
+            context_length: 65536,
+            max_completion_tokens: null,
             is_moderated: false
           },
           per_request_limits: null,
@@ -19598,7 +19622,6 @@ var require_latest = __commonJS({
             "logprobs",
             "max_tokens",
             "min_p",
-            "parallel_tool_calls",
             "presence_penalty",
             "reasoning",
             "repetition_penalty",
@@ -21971,7 +21994,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: null,
-          expiration_date: null,
+          expiration_date: "2026-08-24",
           links: {
             details: "/api/v1/models/nvidia/nemotron-3-nano-30b-a3b/endpoints"
           },
@@ -27112,9 +27135,9 @@ var require_latest = __commonJS({
               }
             ],
             artificial_analysis: {
-              intelligence_index: null,
+              intelligence_index: 31.4,
               coding_index: 43.5,
-              agentic_index: null
+              agentic_index: 19.9
             }
           },
           reasoning: {
@@ -27507,7 +27530,7 @@ var require_latest = __commonJS({
           },
           supported_voices: null,
           knowledge_cutoff: "2025-03-31",
-          expiration_date: null,
+          expiration_date: "2026-08-24",
           links: {
             details: "/api/v1/models/nvidia/nemotron-nano-9b-v2/endpoints"
           },
@@ -28062,52 +28085,6 @@ var require_latest = __commonJS({
           },
           reasoning: {
             mandatory: false
-          }
-        },
-        {
-          id: "ai21/jamba-large-1.7",
-          canonical_slug: "ai21/jamba-large-1.7",
-          hugging_face_id: "ai21labs/AI21-Jamba-Large-1.7",
-          name: "AI21: Jamba Large 1.7",
-          created: 1754669020,
-          description: "Jamba Large 1.7 is the latest model in the Jamba open family, offering improvements in grounding, instruction-following, and overall efficiency. Built on a hybrid SSM-Transformer architecture with a 256K context...",
-          context_length: 256e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Other",
-            instruct_type: null
-          },
-          pricing: {
-            prompt: "0.000002",
-            completion: "0.000008"
-          },
-          top_provider: {
-            context_length: 256e3,
-            max_completion_tokens: 4096,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "max_tokens",
-            "response_format",
-            "stop",
-            "temperature",
-            "tool_choice",
-            "tools",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2024-08-31",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/ai21/jamba-large-1.7/endpoints"
           }
         },
         {
@@ -34049,19 +34026,19 @@ var require_latest = __commonJS({
             instruct_type: null
           },
           pricing: {
-            prompt: "0.00000027",
-            completion: "0.00000112",
-            input_cache_read: "0.000000135"
+            prompt: "0.00000025",
+            completion: "0.000001"
           },
           top_provider: {
             context_length: 163840,
-            max_completion_tokens: 65536,
+            max_completion_tokens: 163840,
             is_moderated: false
           },
           per_request_limits: null,
           supported_parameters: [
             "frequency_penalty",
             "logit_bias",
+            "logprobs",
             "max_tokens",
             "min_p",
             "presence_penalty",
@@ -34074,6 +34051,7 @@ var require_latest = __commonJS({
             "tool_choice",
             "tools",
             "top_k",
+            "top_logprobs",
             "top_p"
           ],
           default_parameters: {},
@@ -38358,61 +38336,6 @@ var require_latest = __commonJS({
           }
         },
         {
-          id: "mancer/weaver",
-          canonical_slug: "mancer/weaver",
-          hugging_face_id: null,
-          name: "Mancer: Weaver (alpha)",
-          created: 1690934400,
-          description: "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations.",
-          context_length: 8e3,
-          architecture: {
-            modality: "text->text",
-            input_modalities: [
-              "text"
-            ],
-            output_modalities: [
-              "text"
-            ],
-            tokenizer: "Llama2",
-            instruct_type: "alpaca"
-          },
-          pricing: {
-            prompt: "0.0000005",
-            completion: "0.00000075"
-          },
-          top_provider: {
-            context_length: 8e3,
-            max_completion_tokens: 6e3,
-            is_moderated: false
-          },
-          per_request_limits: null,
-          supported_parameters: [
-            "frequency_penalty",
-            "logit_bias",
-            "logprobs",
-            "max_tokens",
-            "min_p",
-            "presence_penalty",
-            "repetition_penalty",
-            "response_format",
-            "seed",
-            "stop",
-            "structured_outputs",
-            "temperature",
-            "top_a",
-            "top_k",
-            "top_logprobs",
-            "top_p"
-          ],
-          default_parameters: {},
-          supported_voices: null,
-          knowledge_cutoff: "2023-06-30",
-          expiration_date: null,
-          links: {
-            details: "/api/v1/models/mancer/weaver/endpoints"
-          }
-        },
-        {
           id: "undi95/remm-slerp-l2-13b",
           canonical_slug: "undi95/remm-slerp-l2-13b",
           hugging_face_id: "Undi95/ReMM-SLERP-L2-13B",
@@ -38708,7 +38631,7 @@ var require_latest = __commonJS({
           }
         }
       ],
-      total_count: 415,
+      total_count: 414,
       links: {
         next: null
       }
